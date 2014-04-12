@@ -1,1 +1,3 @@
 Welcome to the Principia wiki!
+
+This mod aims to replace KSP's unstable physics integration with a higher-order symplectic integrator, adding N-body Newtonian gravitation in the process. Once N-body gravitation with point masses is made playable (including faithful trajectory prediction over long periods and reasonably accurate dynamically-updated trajectory predictions over a few years for vessels under thrust), further interesting physical effects can be added.
