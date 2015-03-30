@@ -77,3 +77,5 @@ Systems stabilized by resonance like the stock Jool system are broken by the inc
 That being said, even once the orbital elements are interpreted correctly, it all depends on whether your system was sanely designed. If it has 50 Duna-sized planets orbiting a Jool-sized body, many of these are going to interplanetary space today.
 ###Do you simulate collisions and tidal forces causing breakup between bodies?
 ... Now you see *this* would be very expensive to calculate.
+###My save keeps getting bigger, eventually it crashes KSP
+Your save remembers all of history, which means it keeps getting longer. We will add a setting in Borel to only keep some finite amount of history and forget what's before. In the meantime, you need to clear history from time to time by getting out of timewarp, pressing `Force Stop` / `Force Start` and hoping that you do not hit the Melonbug (#463).
