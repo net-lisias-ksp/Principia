@@ -1,3 +1,10 @@
+**NOTE:
+The current version is not stable,
+it can corrupt or otherwise destroy saves,
+it has been known to crash, and predictions are horrendously slow.**
+
+**Read *all* of the frequently asked questions (and their answers), or you will incur the wrath of the egg.**
+
 ##General
 ###IRC channel
 The IRC channel is the the #principia channel on EsperNet.
@@ -14,14 +21,7 @@ diomedea, egg | CET (UTC+01:00) | CEST (UTC+02:00)
 `<KSP directory>` is the directory such that the KSP executable is found in `<KSP directory>/KSP.exe`.
 
 ##Installing
-**NOTE:
-The current version is not stable,
-it can corrupt or otherwise destroy saves,
-it has been known to crash, and predictions are horrendously slow.**
-
-**Read *all* of the frequently asked questions (and their answers), or you will incur the wrath of the egg.**
-
-Go to the #principia channel on EsperNet.
+Go to the IRC channel.
 There is a build available for Windows users (32-bit version of KSP only), ask channel operators. 
 For Linux users, ask @Norgg for a build or build instructions, bearing in mind that his build is much more failure-prone than the Windows one at the moment.
 For Macintosh users, **armed_troop** is working on something.
@@ -37,7 +37,7 @@ You need libc++ when using @Norgg's code. For other issues, ask @Norgg.
 
 ##Bug reporting
 So, you crashed, or something similarly unpleasant happened.
-If you crashed or freezed, be specific about the kind of failure you had: did you get an Unity dialog box? Did you get a Windows dialog box, or on *nix, did the process terminate by SIGABRT? Did you get a crash folder (a folder whose name is the date in your KSP install directory?
+If you crashed or froze, be specific about the kind of failure you had: did you get an Unity dialog box? Did you get a Windows dialog box, or on *nix, did the process terminate by SIGABRT? Did you get a crash folder (a folder whose name is the date in your KSP install directory?
 ###Windows dialog box or SIGABRT
 You probably encountered a glog `CHECK` failure. Go to `<KSP directory>\glog`, check that there is a recent FATAL file. Do not send the FATAL file only. Instead, take the most recent INFO file, upload it on gist or pastebin, and link it in the IRC channel. Ask the channel ops for further guidance.
 ###Have a crash folder
@@ -61,4 +61,11 @@ This would break physics. As an example, if planets were to do that, you would n
 ####...it would make the Jool system stable
 The Jool system should be stable if the orbital elements were interpreted correctly (as barycentric rather than as body-centric). Simulations which show it as unstable, such as Matt Roesle's, use a body-centric interpretation of the orbital elements. Specifically, Scott Manley (private communication) has simulated the Jool system for 1000 years (probably with the MERCURY integrator), and has found it to be stable. While this was before the inclusion of Pol, this is unlikely to matter.
 Principia does not currently interpret the orbital elements correctly, because this has not been a priority up to now, it will eventually. In the meantime, enjoy watching Vall grazing Jool before going for a stroll around the solar system.
-###
+###Why don't you parallelize?
+It would hardly improve performance and it would be messy to implement. This is just the kind of algorithm that doesn't lend itself well to that.
+####But...
+Ok, let's look at numbers. The only thing that's performance-critical here is the computation of trajectory predictions (the pink lines). For those we're simulating the interactions of all massive bodies, and only one massless body. Computing all the forces costs 30 μs, and we *need* to synchronize outside of the force computation. Let's say we have a thread pool of 8 threads. We have to enqueue pointers to our data to our threads, and dequeue them, that's 16 locks. An uncontended lock costs about 50 ns, so that's 800 ns to start working, and 800 ns to synchronize when we're done. On a task that's 30 μs when single-threaded, we've spent 1.6 μs doing nothing. Whatever we might nibble away like that is not worth it.
+####But...
+Seriously, better choices of integrators and splittings or even saner handling of timestep will yield speedups to the tone 100x or 1000x. The current force computation will probably be replaced by something completely different in the meantime, maybe at that point parallelism will make sense (or maybe it will still not make sense).
+####But...
+You're welcome to go ahead and implement parallelized force computations, and to benchmark that of course.
