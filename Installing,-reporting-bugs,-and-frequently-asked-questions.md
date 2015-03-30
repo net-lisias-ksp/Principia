@@ -97,3 +97,18 @@ I'll let **ferram4** answer that one.
 On a more serious note, no. And we will not.
 ###Couldn't you gain performance by ignoring the influence/oblateness of far-away bodies / using a nonsymplectic integrator instead / caching the trajectories of the massive bodies?
 We have thought about these options, and we will implement those that might yield improvements in due time in order to get as much accuracy as we can out of a given computational cost.
+###The pink line (the prediction) is wagging wildly, why is that?
+It is encountering a point where the problem gets to stiff. If you don't care about what happens this far in the future, reduce the prediction length, or if you do, reduce the timestep. You will also run into issues where KSP's imprecision when out of timewarp makes the prediction on stiff problems wag, no matter how small the prediction is. A collision a long time away will yield that sort of behaviour. Eventually we'll try being smart and set the length and step of the prediction appropriately, and marking where the prediction cannot be continued without being wildly unreliable.
+###Should I use the patched conics predictions?
+Unless you're in a low orbit, no. You'll waste a lot of fuel on corrections, they are inaccurate. Use Principia's predictions instead, using an appropriate reference frame (for a transfer, one that fixes the place you want to go to).
+
+It is amusing to compare Principia's and KSP's predictions (in the same frame), see for instance [**Yargnit**'s stream](http://www.twitch.tv/yargnit/b/642525716) at 4:53.
+###How do I get into an orbit around L<sub>4</sub> or L<sub>5</sub>?
+[This Imgur album](http://imgur.com/a/H4jij#0) shows the trip there, starting right after getting out of the atmosphere.
+###How do I get into an orbit around L<sub>3</sub>?
+Note that the orbit is *unstable*, which means that no matter how fine your adjustments are, eventually you'll get kicked out of your orbit. However with fine enough tuning you can stay a while, and of course if you come back from time to time to correct your trajectory you can stay there as long as your have fuel.
+The first user to orbit an L<sub>3</sub> point was, as far as I can tell, **Yargnit**, see [his stream](http://www.twitch.tv/yargnit/b/642525716) at 5:40 to see how he did that.
+###Are trajectories around the Minmus-Kerbin L<sub>4</sub> or L<sub>5</sub> points stable?
+It should really be Minmus-(Kerbin-Mun barycentre), but surprisingly, yes! As far as I know **Yargnit** is the one who first got there, see [his stream](http://www.twitch.tv/yargnit/b/642525716) at 5:24.
+###Why can't I get a stable trajectory around the Ike-Duna L<sub>4</sub> or L<sub>5</sub> points?
+Ike is too big (or duna is too small).
