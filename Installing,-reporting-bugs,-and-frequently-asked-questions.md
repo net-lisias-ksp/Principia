@@ -10,7 +10,7 @@ it has been known to crash, and predictions are horrendously slow.**
 The IRC channel is the the #principia channel on EsperNet.
 The operators are in the following timezones:
 
-Channel operators | Timezone | [Why is this still a thing](https://www.youtube.com/watch?v=br0NW9ufUUw)
+Channel operators | Timezone | [How is this still a thing](https://www.youtube.com/watch?v=br0NW9ufUUw)
 ---|---|---
 **ferram4**, **NathanKell** | EST (UTC-05:00) | EDT (UTC-04:00)
 **Norgg**, **TechnicalFool** | WET (UTC+00:00) | WEST (UTC+01:00)
