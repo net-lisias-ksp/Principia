@@ -45,6 +45,10 @@ Send the contents of the `error.log` via gist or pastebin, as well as the conten
 ###Nothing, it just froze
 It is likely that your save got too big and that you ran out of memory while the game was writing the persistence file. Your save is almost certainly corrupted, and will crash on load.
 
+##Known bugs
+* The melonbug #463 (named that way because it was reported by **Wetmelon**) always causes a crash when pressing Force Stop / Force Start at timewarp 100x or more, and sometimes at lower or no timewarp. This is annoying since pressing Force Stop / Force Start is needed to clear history right now, see below. Will be fixed in Borel. A variant of this bug is known as the Lutinbug, it may have been fixed.
+* The tetrydsbug #480 (yes, it was reported by **tetryds**) causes a crash when a vessel goes into the atmosphere then out again. We will try fixing it in Borel.
+
 ##Frequently asked questions
 ###Why don't you keep the planets on rails...
 ####...it would improve performance
