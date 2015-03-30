@@ -85,3 +85,8 @@ Your save remembers all of history, which means it keeps getting longer. We will
 The *pink* line is your predicted trajectory. You can predict for a longer duration by increasing the prediction length setting in the GUI. This will slow things down (sometimes to the point of a crash). If you want to make the prediction faster (or just avoid crashes), you can increase the prediction step. This will however make the prediction less accurate.
 ###How do I plan a burn?
 For now, you cannot, you have to burn by the seat of your pants, or if you are somewhere where the 2-body approximation is good enough, you can use the stock manoeuvre nodes. Eventually we will add support for this.
+###Do you simulate the gravity of player-created vessels and asteroids?
+I'll let **ferram4** answer that one.
+> Umm... Yes, actually!  It's only a few picometers/second^2 from most vessels, but we do simulate it.  Really.  It actually doesn't cost any overhead at all!
+
+On a more serious note, no. And we will not.
