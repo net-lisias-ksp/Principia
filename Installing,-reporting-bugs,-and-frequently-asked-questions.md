@@ -90,3 +90,5 @@ I'll let **ferram4** answer that one.
 > Umm... Yes, actually!  It's only a few μm/s<sup>2</sup> from most vessels, but we do simulate it.  Really.  It actually doesn't cost any overhead at all!
 
 On a more serious note, no. And we will not.
+###Couldn't you gain performance by ignoring the influence/oblateness of far-away bodies / using a nonsymplectic integrator instead / caching the trajectories of the massive bodies
+We have thought about these options, and we will implement those that might yield improvements in due time in order to get as much accuracy as we can out of a given computational cost.
