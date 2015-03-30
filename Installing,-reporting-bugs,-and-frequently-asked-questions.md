@@ -71,3 +71,9 @@ Seriously, better choices of integrators and splittings or even saner handling o
 You're welcome to go ahead and implement parallelized force computations, and to benchmark that of course.
 ###How do I get rid of the annoying GUI?
 You don't. Not in the current version. We'll try fixing that in Borel.
+###I'm using a custom solar system mod, why isn't it stable / is it going to be stable once the initial conditions are properly interpreted?
+Systems stabilized by resonance like the stock Jool system are broken by the incorrect interpetation of the initial conditions, see the section on Jool above.
+
+That being said, even once the orbital elements are interpreted correctly, it all depends on whether your system was sanely designed. If it has 50 Duna-sized planets orbiting a Jool-sized body, many of these are going to interplanetary space today.
+###Do you simulate collisions and tidal forces causing breakup between bodies?
+... Now you see *this* would be very expensive to calculate.
