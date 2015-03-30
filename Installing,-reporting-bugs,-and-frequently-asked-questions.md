@@ -112,5 +112,5 @@ The first user to orbit an L<sub>3</sub> point was, as far as I can tell, **Yarg
 It should really be Minmus-(Kerbin-Mun barycentre), but surprisingly, yes! As far as I know **Yargnit** is the one who first got there, see [his stream](http://www.twitch.tv/yargnit/b/642525716) at 5:24.
 ###Why can't I get a stable trajectory around the Ike-Duna L<sub>4</sub> or L<sub>5</sub> points?
 Ike is too big (or duna is too small).
-###Why don't trajectory plots break at SOI like in stock?
-SOI boundaries do not matter to us.
+###Why don't trajectory plots break at SOI boundaries like in stock?
+SOI boundaries do not matter to us. Instead you choose an appropriate reference frame yourself, with even the option of rotating frames (more options will be added). Eventually we want to put the navball and camera in the same reference frame as the plots, and we definitely want a smoother way of selecting relevant reference frames. For now, you have to deal with the big ugly GUI.
