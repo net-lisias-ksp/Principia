@@ -12,9 +12,9 @@ The operators are in the following timezones:
 
 Channel operators | Timezone | [Why is this still a thing](https://www.youtube.com/watch?v=br0NW9ufUUw)
 ---|---|---
-ferram4, NathanKell | EST (UTC-05:00) | EDT (UTC-04:00)
-Norgg, TechnicalFool | WET (UTC+00:00) | WEST (UTC+01:00)
-diomedea, egg | CET (UTC+01:00) | CEST (UTC+02:00)
+**ferram4**, **NathanKell** | EST (UTC-05:00) | EDT (UTC-04:00)
+**Norgg**, **TechnicalFool** | WET (UTC+00:00) | WEST (UTC+01:00)
+**diomedea**, **egg** | CET (UTC+01:00) | CEST (UTC+02:00)
 
 
 ###Terminology
@@ -23,7 +23,7 @@ diomedea, egg | CET (UTC+01:00) | CEST (UTC+02:00)
 ##Installing
 Go to the IRC channel.
 There is a build available for Windows users (32-bit version of KSP only), ask channel operators. 
-For Linux users, ask @Norgg for a build or build instructions, bearing in mind that his build is much more failure-prone than the Windows one at the moment.
+For Linux users, ask **Norgg** for a build or build instructions, bearing in mind that his build is much more failure-prone than the Windows one at the moment.
 For Macintosh users, **armed_troop** is working on something.
 
 
@@ -33,7 +33,7 @@ Well, first, make sure you put the DLL in the right place. The Principia DLL sho
 You need the [Visual C++ Redistributable Packages for Visual Studio 2013](http://www.microsoft.com/en-us/download/details.aspx?id=40784) (just press the big red `Download` button, download the x86 version, install it).
 Make sure the permissions are set correctly on the folder containing KSP. If in doubt, set its permissions for that folder to `Full Control` for `Everyone` (ask the channel operators how to do that if you don't know).
 ####Linux users
-You need libc++ when using @Norgg's code. For other issues, ask @Norgg.
+You need libc++ when using **Norgg**'s code. For other issues, ask **Norgg**.
 
 ##Bug reporting
 So, you crashed, or something similarly unpleasant happened.
