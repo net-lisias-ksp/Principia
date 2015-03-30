@@ -40,6 +40,10 @@ So, you crashed, or something similarly unpleasant happened.
 If you crashed or freezed, be specific about the kind of failure you had: did you get an Unity dialog box? Did you get a Windows dialog box, or on *nix, did the process terminate by SIGABRT? Did you get a crash folder (a folder whose name is the date in your KSP install directory?
 ###Windows dialog box or SIGABRT
 You probably encountered a glog `CHECK` failure. Go to `<KSP directory>\glog`, check that there is a recent FATAL file. Do not send the FATAL file only. Instead, take the most recent INFO file, upload it on gist or pastebin, and link it in the IRC channel. Ask the channel ops for further guidance.
+###Have a crash folder
+Send the contents of the `error.log` via gist or pastebin, as well as the contents of the `output_log.txt` (a copy may exist in the crash folder, otherwise if the game has not been restarted since the crash it is found at a location is documented on the KSP fora).
+###Nothing, it just froze
+It is likely that your save got too big and that you ran out of memory while the game was writing the persistence file. Your save is almost certainly corrupted, and will crash on load.
 
 ##Frequently asked questions
 ###Why don't you keep the planets on rails...
