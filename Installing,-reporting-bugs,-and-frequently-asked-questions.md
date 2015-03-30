@@ -112,3 +112,5 @@ The first user to orbit an L<sub>3</sub> point was, as far as I can tell, **Yarg
 It should really be Minmus-(Kerbin-Mun barycentre), but surprisingly, yes! As far as I know **Yargnit** is the one who first got there, see [his stream](http://www.twitch.tv/yargnit/b/642525716) at 5:24.
 ###Why can't I get a stable trajectory around the Ike-Duna L<sub>4</sub> or L<sub>5</sub> points?
 Ike is too big (or duna is too small).
+###Why don't trajectory plots break at SOI like in stock?
+SOI boundaries do not matter to us.
