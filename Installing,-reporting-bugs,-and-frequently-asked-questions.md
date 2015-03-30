@@ -84,6 +84,7 @@ That being said, even once the orbital elements are interpreted correctly, it al
 ###Do you simulate collisions and tidal forces causing breakup between bodies?
 ... Now you see *this* would be very expensive to calculate.
 ###My save keeps getting bigger, eventually it crashes KSP, what can I do?
+###The green line (the history) keeps getting longer and is cumbersome, what can I do?
 Your save remembers all of history, which means it keeps getting longer. We will add a setting in Borel to only keep some finite amount of history and forget what's before. In the meantime, you need to clear history from time to time by getting out of timewarp, pressing `Force Stop` / `Force Start` and hoping that you do not hit the Melonbug (#463).
 ###How do I predict my path?
 The *pink* line is your predicted trajectory. You can predict for a longer duration by increasing the prediction length setting in the GUI. This will slow things down (sometimes to the point of a crash). If you want to make the prediction faster (or just avoid crashes), you can increase the prediction step. This will however make the prediction less accurate.
