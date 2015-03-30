@@ -69,3 +69,5 @@ Ok, let's look at numbers. The only thing that's performance-critical here is th
 Seriously, better choices of integrators and splittings or even saner handling of timestep will yield speedups to the tune of 100x or 1000x. The current force computation will probably be replaced by something completely different in the meantime, maybe at that point parallelism will make sense (or maybe it will still not make sense).
 ####But...
 You're welcome to go ahead and implement parallelized force computations, and to benchmark that of course.
+###How do I get rid of the annoying GUI?
+You don't. Not in the current version. We'll try fixing that in Borel.
