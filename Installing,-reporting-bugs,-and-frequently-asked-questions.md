@@ -60,7 +60,9 @@ Eventually we will replace KSP's faulty stock plots with our own and the orbits 
 This would break physics. As an example, if planets were to do that, you would not get Lagrange points. It is an interesting exercise to compute the sum of the centrifugal and gravitational potentials for a body orbiting *the centre* of another (rather than their barycentre) in the reference frame that fixes both bodies and the orbital plane, and computing its gradient. It is easily seen that this gradient does not vanish in 5 points, but in only 3 instead.
 ####...it would make the Jool system stable
 The Jool system should be stable if the orbital elements were interpreted correctly (as barycentric rather than as body-centric). Simulations which show it as unstable, such as Matt Roesle's, use a body-centric interpretation of the orbital elements. Specifically, Scott Manley (private communication) has simulated the Jool system for 1000 years (probably with the MERCURY integrator), and has found it to be stable. While this was before the inclusion of Pol, this is unlikely to matter.
-Principia does not currently interpret the orbital elements correctly, because this has not been a priority up to now, it will eventually. In the meantime, enjoy watching Vall grazing Jool before going for a stroll around the solar system.
+Principia does not currently interpret the orbital elements correctly, because this has not been a priority up to now, it will eventually.
+
+In the meantime, enjoy watching Vall grazing Jool before going for a stroll around the solar system.
 ###Why don't you parallelize?
 It would hardly improve performance and it would be messy to implement. This is just the kind of algorithm that doesn't lend itself well to that.
 ####But...
