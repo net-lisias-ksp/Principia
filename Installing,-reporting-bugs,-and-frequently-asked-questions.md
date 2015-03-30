@@ -87,6 +87,6 @@ The *pink* line is your predicted trajectory. You can predict for a longer durat
 For now, you cannot, you have to burn by the seat of your pants, or if you are somewhere where the 2-body approximation is good enough, you can use the stock manoeuvre nodes. Eventually we will add support for this.
 ###Do you simulate the gravity of player-created vessels and asteroids?
 I'll let **ferram4** answer that one.
-> Umm... Yes, actually!  It's only a few picometers/second^2 from most vessels, but we do simulate it.  Really.  It actually doesn't cost any overhead at all!
+> Umm... Yes, actually!  It's only a few μm/s<sup>2</sup> from most vessels, but we do simulate it.  Really.  It actually doesn't cost any overhead at all!
 
 On a more serious note, no. And we will not.
