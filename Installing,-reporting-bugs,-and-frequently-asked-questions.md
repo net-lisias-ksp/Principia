@@ -46,8 +46,8 @@ Send the contents of the `error.log` via gist or pastebin, as well as the conten
 It is likely that your save got too big and that you ran out of memory while the game was writing the persistence file. Your save is almost certainly corrupted, and will crash on load.
 
 ##Known bugs
-* The melonbug #463 (named that way because it was reported by **Wetmelon**) always causes a crash when pressing Force Stop / Force Start at timewarp 100x or more, and sometimes at lower or no timewarp. This is annoying since pressing Force Stop / Force Start is needed to clear history right now, see below. Will be fixed in Borel. A variant of this bug is known as the Lutinbug, it may have been fixed.
-* The tetrydsbug #480 (yes, it was reported by **tetryds**) causes a crash when a vessel goes into the atmosphere then out again. We will try fixing it in Borel.
+* The autopilot sometimes targets the stock prograde/retrograde vectors rather than the displayed ones when
+fix navball in plotting frame is selected.
 
 ##Frequently asked questions
 ###Why don't you keep the planets on rails...
@@ -75,17 +75,12 @@ Ok, let's look at numbers. The only thing that's performance-critical here is th
 Seriously, better choices of integrators and splittings or even saner handling of timestep will yield speedups to the tune of 100x or 1000x. The current force computation will probably be replaced by something completely different in the meantime, maybe at that point parallelism will make sense (or maybe it will still not make sense).
 ####But...
 You're welcome to go ahead and implement parallelized force computations, and to benchmark that of course.
-###How do I get rid of the annoying GUI?
-You don't. Not in the current version. We'll try fixing that in Borel.
 ###I'm using a custom solar system mod, why isn't it stable / is it going to be stable once the initial conditions are properly interpreted?
 Systems stabilized by resonance like the stock Jool system are broken by the incorrect interpetation of the initial conditions, see the section on Jool above.
 
 That being said, even once the orbital elements are interpreted correctly, it all depends on whether your system was sanely designed. If it has 50 Duna-sized planets orbiting a Jool-sized body, many of these are going to interplanetary space today.
 ###Do you simulate collisions and tidal forces causing breakup between bodies?
 ... Now you see *this* would be very expensive to calculate.
-###My save keeps getting bigger, eventually it crashes KSP, what can I do? /
-The green line (the history) keeps getting longer and is cumbersome, what can I do?
-Your save remembers all of history, which means it keeps getting longer. We will add a setting in Borel to only keep some finite amount of history and forget what's before. In the meantime, you need to clear history from time to time by getting out of timewarp, pressing `Force Stop` / `Force Start` and hoping that you do not hit the Melonbug (#463).
 ###How do I predict my path?
 The *pink* line is your predicted trajectory. You can predict for a longer duration by increasing the prediction length setting in the GUI. This will slow things down (sometimes to the point of a crash). If you want to make the prediction faster (or just avoid crashes), you can increase the prediction step. This will however make the prediction less accurate.
 ###How do I plan a burn?
