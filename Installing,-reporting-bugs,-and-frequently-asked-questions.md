@@ -47,6 +47,7 @@ It is likely that your save got too big and that you ran out of memory while the
 ##Known bugs
 * The autopilot sometimes targets the stock prograde/retrograde vectors rather than the displayed ones when
 fix navball in plotting frame is selected.
+* The code enforcing that the prediction step size should be smaller than or equal to the prediction length was accidentally removed in Borel. Increasing the step size above the length will throw exceptions and make the prediction disappear, the game must be restarted to bring them back.
 
 ##Frequently asked questions
 ###Why don't you keep the planets on rails...
