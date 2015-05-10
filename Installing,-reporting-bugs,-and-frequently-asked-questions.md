@@ -47,7 +47,8 @@ It is likely that your save got too big and that you ran out of memory while the
 ##Known bugs
 * The autopilot sometimes targets the stock prograde/retrograde vectors rather than the displayed ones when
 fix navball in plotting frame is selected.
-* The code enforcing that the prediction step size should be smaller than or equal to the prediction length was accidentally removed in Borel. Increasing the step size above the length will throw exceptions and make the prediction disappear, the game must be restarted to bring them back.
+* The code enforcing that the prediction step size should be smaller than or equal to the prediction length was accidentally removed in Borel. Increasing the step size above the length will throw exceptions and make the prediction disappear, the game must be restarted to bring them back. This will be fixed in the next version.
+* When on a celestial body, the rotation of this body with respect to the other celestial bodies is reversed (interestingly, not its rotation with respect to the fixed stars). One of the most obvious manifestations of this is that the sun sets in the east on Kerbin. This will be fixed in the next version.
 
 ##Frequently asked questions
 ###Why don't you keep the planets on rails...
