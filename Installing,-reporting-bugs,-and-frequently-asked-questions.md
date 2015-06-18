@@ -12,7 +12,7 @@ The operators are in the following timezones:
 
 Channel operators | Timezone | [How is this still a thing](https://www.youtube.com/watch?v=br0NW9ufUUw)
 ---|---|---
-**armed_troop**, **ferram4**, **NathanKell** | EST (UTC-05:00) | EDT (UTC-04:00)
+**armed_troop**, **ferram4**, **NathanKell**, **sdrodge** | EST (UTC-05:00) | EDT (UTC-04:00)
 **Norgg**, **TechnicalFool** | WET (UTC+00:00) | WEST (UTC+01:00)
 **diomedea**, **egg** | CET (UTC+01:00) | CEST (UTC+02:00)
 
@@ -23,7 +23,7 @@ Channel operators | Timezone | [How is this still a thing](https://www.youtube.c
 ##Installing
 Go to the IRC channel.
 There is a build available for Windows users (32-bit version of KSP only), ask channel operators. 
-For Linux 64-bit users, ask **Norgg** for a build or build instructions.
+For Linux 64-bit users, ask **Norgg** or **sdrodge** for a build or build instructions.
 For Macintosh 32-bit users, ask **armed_troop** for a build or build instructions.
 
 ###It's not starting! (`DLLNotFoundException`)
