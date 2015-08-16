@@ -1,7 +1,7 @@
 **NOTE:
 The current version is not stable,
 it can corrupt or otherwise destroy saves,
-it has been known to crash, and timewarp above 100'000x is horrendously slow.**
+it has been known to crash, and timewarp with vessels above 100'000x is horrendously slow.**
 
 **Read *all* of the frequently asked questions (and their answers), or you will incur the wrath of the egg.**
 
