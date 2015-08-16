@@ -72,6 +72,18 @@ fix navball in plotting frame is selected.
 * When using Real Solar System, while solar eclipses in the early fifties are accurate within measurement error, they are off by 10 min in 1961. The cause of this inaccuracy is unknown, we are investigating this.
 
 ##Frequently asked questions
+###What's up with the nav ball?
+If the *Fix nav ball in plotting frame* setting (under *Reference Frame*) is selected, the nav ball will be fixed in the frame, and oriented as follows:
+- if the frame is nonrotating, the reference plane of the navball is Kerbin's equator (or Earth's). The navball therefore indicates right ascension (in hours) and declination (in degrees). Another way of seeing that is that the navball is fixed with respect to the distant stars. The northern celestial hemisphere is blue, the southern one is black.![](https://raw.githubusercontent.com/mockingbirdnest/Principia/master/ksp_plugin_adapter/assets/navball_inertial.png)
+- if the frame is the barycentric rotating frame of a 2-body system, the reference plane of the navball is the orbital plane. The reference direction is the line between the two bodies.![](https://raw.githubusercontent.com/mockingbirdnest/Principia/master/ksp_plugin_adapter/assets/navball_barycentric.png)
+
+If the *Fix nav ball in plotting frame* setting is *not* selected, the nav ball has the usual behaviour. For visual consistency with our custom navballs, we provide the following nav ball by default.![](https://raw.githubusercontent.com/mockingbirdnest/Principia/master/ksp_plugin_adapter/assets/navball_compass.png)
+
+####I don't like your navballs!
+The brown/blue navball can be reverted to its stock texture by removing the `<KSP directory>\Principia\assets\navball_compass.png` file.
+The other two textures cannot be removed (this would cause a crash), but you can replace them by any png you like.
+If you are simply dissatisfied with the colours, but like the general style, this repository contains *Mathematica* code to generate nav balls, that you can tweak to your liking. For instance, *diomedea* uses a dark green/dark blue nav ball with instead of the light blue/brown one.
+
 ###Why don't you keep the planets on rails...
 ####...it would improve performance
 While "rails" (Keplerian evolution) is not entirely unrelated to something that *could* improve performance, it would do the exact opposite with the current choice of integrator. One still needs to compute the positions of all bodies every time the force on a spacecraft is needed, so the the Keplerian evolution would have to be computed instead of the forces on the bodies. Given that the computation of Keplerian evolution is costly (one needs to solve [Kepler's equation](http://en.wikipedia.org/wiki/Kepler%27s_equation), which requires a big lookup table or a handful of trigonometric function evaluations. The quadratic-to-linear change is completely dwarfed by this cost for 20 or so massive bodies.
