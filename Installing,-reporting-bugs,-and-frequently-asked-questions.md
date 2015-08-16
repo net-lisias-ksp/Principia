@@ -28,6 +28,25 @@ There is a build available for Windows users (32-bit version of KSP only), ask c
 For Linux 64-bit users, ask **Norgg** or **sdrodge** for a build or build instructions.
 For Macintosh 32-bit users, ask **armed_troop** for a build or build instructions.
 
+###General recommendations
+Timewarping with vessels is very slow above timewarp 100'000x. While we will try to improve that for Brouwer, when waiting for a specific date, it is best to reduce the number of vessels in game. In particular, asteroids being vessels as far as the game is concerned, removing them is a good idea if you are not interested in them (in particular, if you're using Real Solar Systems, these asteroids are fairly silly). In order to do that, simply delete the `<KSP directory>\GameData\Squad\Parts\Misc\PotatoRoid` folder.
+When no vessels are present timewarp should be very smooth, even at 6'000'000x (in Real Solar System).
+
+###Recommendations for Real Solar System users
+Principia comes with initial state and gravity models configs for all bodies in Real Solar System as of 2015-08-16. Moreover, initial states and gravity models are provided for the following bodies from pozine's *RSS Planets & Moons expanded*:
+- Charon
+- Titania
+- Oberon
+- Ariel
+- Umbriel
+- Miranda
+- Ceres
+- Vesta (fresh data from the Dawn mission :smiley:).
+
+We very strongly recommend that you use Charon, since otherwise Pluto keeps its motion around Charon without having Charon to pull it back, and ends up in a strange orbit.
+
+*No other bodies are supported*, so if you do install pozine's pack, make sure you remove all other bodies: if Real Solar System is installed and unsupported planets are found, the game will crash. This means that you must remove them from the `RSS Planets & Moons.cfg` file, as well as remove their respective folders. You should probably remove their textures too, to reduce memory usage.
+
 ###It's not starting! (`DLLNotFoundException`)
 ####Windows users
 Well, first, make sure you put the DLL in the right place. The Principia DLL should be at `<KSP directory>\GameData\Principia\principia.dll`.
@@ -40,15 +59,17 @@ You need libc++ when using **Norgg**'s code. For other issues, ask **Norgg**.
 So, you crashed, or something similarly unpleasant happened.
 If you crashed or froze, be specific about the kind of failure you had: did you get an Unity dialog box? Did you get a Windows dialog box, or on *nix, did the process terminate by SIGABRT? Did you get a crash folder (a folder whose name is the date in your KSP install directory?
 ###Windows dialog box or SIGABRT
-You probably encountered a glog `CHECK` failure. Go to `<KSP directory>\glog`, check that there is a recent FATAL file. Do not send the FATAL file only. Instead, take the most recent INFO file, upload it on gist or pastebin, and link it in the IRC channel. Ask the channel ops for further guidance.
+You probably encountered a glog `CHECK` failure. Go to `<KSP directory>\glog`, check that there is a recent FATAL file. Do not send the FATAL file only. Instead, take the most recent INFO file, upload it on gist, and link it in the IRC channel. Ask the channel ops for further guidance.
 ###Have a crash folder
-Send the contents of the `error.log` via gist or pastebin, as well as the contents of the `output_log.txt` (a copy may exist in the crash folder, otherwise if the game has not been restarted since the crash it is found at a location is documented on the KSP fora).
+Send the contents of the `error.log` via gist or pastebin, as well as the contents of the `output_log.txt` (a copy may exist in the crash folder, otherwise if the game has not been restarted since the crash it is found at a location is documented on the KSP fora). In that case this may either be a stock KSP bug or a bug on our side, we will determine that by looking at the logs.
 ###Nothing, it just froze
-It is likely that your save got too big and that you ran out of memory while the game was writing the persistence file. Your save is almost certainly corrupted, and will crash on load.
+It is likely that you ran out of memory. If this happened while your persistence file was being written, your save is almost certainly corrupted, and will crash on load.
 
 ##Known bugs
 * The autopilot sometimes targets the stock prograde/retrograde vectors rather than the displayed ones when
 fix navball in plotting frame is selected.
+* An elusive crash occasionally happens, producing a FATAL file along the lines of https://github.com/mockingbirdnest/Principia/issues/617. We are not entirely sure what is happening, we are investigating.
+* When using Real Solar System, while solar eclipses in the early fifties are accurate within measurement error, they are off by 10 min in 1961. The cause of this inaccuracy is unknown, we are investigating this.
 
 ##Frequently asked questions
 ###Why don't you keep the planets on rails...
@@ -91,21 +112,15 @@ I'll let **ferram4** answer that one.
 > Umm... Yes, actually!  It's only a few μm/s<sup>2</sup> from most vessels, but we do simulate it.  Really.  It actually doesn't cost any overhead at all!
 
 On a more serious note, no. And we will not.
-###Couldn't you gain performance by ignoring the influence/oblateness of far-away bodies / using a nonsymplectic integrator instead / caching the trajectories of the massive bodies?
+###Couldn't you gain performance by ignoring the influence/oblateness of far-away bodies / using a nonsymplectic integrator instead
 We have thought about these options, and we will implement those that might yield improvements in due time in order to get as much accuracy as we can out of a given computational cost.
-###The pink line (the prediction) is wagging wildly, why is that?
-It is encountering a point where the problem gets too stiff. If you don't care about what happens this far in the future, reduce the prediction length, or if you do, reduce the timestep. You will also run into issues where KSP's imprecision when out of timewarp makes the prediction on stiff problems wag, no matter how small the prediction is. A collision a long time away will yield that sort of behaviour. Eventually we'll try being smart and set the length and step of the prediction appropriately, and marking where the prediction cannot be continued without being wildly unreliable.
-###Should I use the patched conics predictions?
-Unless you're in a low orbit, no. You'll waste a lot of fuel on corrections, they are inaccurate. Use Principia's predictions instead, using an appropriate reference frame (for a transfer, one that fixes the place you want to go to).
-
-It is amusing to compare Principia's and KSP's predictions (in the same frame), see for instance [**Yargnit**'s stream](http://www.twitch.tv/yargnit/b/642525716) at 4:53.
 ###How do I get into an orbit around L<sub>4</sub> or L<sub>5</sub>?
 [This Imgur album](http://imgur.com/a/H4jij#0) shows the trip there, starting right after getting out of the atmosphere.
 ###How do I get into an orbit around L<sub>3</sub>?
 Note that the orbit is *unstable*, which means that no matter how fine your adjustments are, eventually you'll get kicked out of your orbit. However with fine enough tuning you can stay a while, and of course if you come back from time to time to correct your trajectory you can stay there as long as your have fuel.
-The first user to orbit an L<sub>3</sub> point was, as far as I can tell, **Yargnit**, see [his stream](http://www.twitch.tv/yargnit/b/642525716) at 5:40 to see how he did that.
+The first user to orbit an L<sub>3</sub> point was, as far as I can tell, **Yargnit**, his Twitch stream has sadly disappeared.
 ###Are trajectories around the Minmus-Kerbin L<sub>4</sub> or L<sub>5</sub> points stable?
-It should really be Minmus-(Kerbin-Mun barycentre), but surprisingly, yes! As far as I know **Yargnit** is the one who first got there, see [his stream](http://www.twitch.tv/yargnit/b/642525716) at 5:24.
+It should really be Minmus-(Kerbin-Mun barycentre), but surprisingly, yes! As far as I know **Yargnit** is the one who first got there, his Twitch stream has sadly disappeared.
 ###Why can't I get a stable trajectory around the Ike-Duna L<sub>4</sub> or L<sub>5</sub> points?
 Ike is too big (or duna is too small).
 ###Why don't trajectory plots break at SOI boundaries like in stock?
