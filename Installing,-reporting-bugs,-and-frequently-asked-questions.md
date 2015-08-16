@@ -128,17 +128,22 @@ On a more serious note, no. And we will not.
 We have thought about these options, and we will implement those that might yield improvements in due time in order to get as much accuracy as we can out of a given computational cost.
 ###Why don't trajectory plots break at SOI boundaries like in stock?
 SOI boundaries do not matter to us. Instead you choose an appropriate reference frame yourself, with even the option of rotating frames (more options will be added). Eventually we want to put the navball and camera in the same reference frame as the plots, and we definitely want a smoother way of selecting relevant reference frames. For now, you have to deal with the big ugly GUI.
-###Can I get into some interesting orbit?
-####L<sub>4</sub> or L<sub>5</sub>?
+###Can do [interesting thing]?
+####Go to L<sub>4</sub> or L<sub>5</sub>?
 [This Imgur album](http://imgur.com/a/H4jij#0) shows the trip there, starting right after getting out of the atmosphere.
-####L<sub>3</sub>?
+####Go to L<sub>3</sub>?
 Note that the orbit is *unstable*, which means that no matter how fine your adjustments are, eventually you'll get kicked out of your orbit. However with fine enough tuning you can stay a while, and of course if you come back from time to time to correct your trajectory you can stay there as long as your have fuel.
 The first user to orbit an L<sub>3</sub> point was, as far as I can tell, **Yargnit**, his Twitch stream has sadly disappeared.
 ####Are trajectories around the Minmus-Kerbin L<sub>4</sub> or L<sub>5</sub> points stable?
 It should really be Minmus-(Kerbin-Mun barycentre), but surprisingly, yes! As far as I know **Yargnit** is the one who first got there, his Twitch stream has sadly disappeared.
 ####Why can't I get a stable trajectory around the Ike-Duna L<sub>4</sub> or L<sub>5</sub> points?
 Ike is too big (or duna is too small).
-####Heliosynchronous orbits (RSS)?
+####Can I get into heliosynchronous orbits (RSS)?
 Yes, see for instance https://goo.gl/photos/6AQCcNyskfsHG9xF7.
-####Molniya orbits (RSS)?
+####Can I get into Molniya orbits (RSS)?
 You can get into an eccentric orbit with inclination 63.4 deg even without principia, but with principia the inclination is crucial: with other inclinations the orbit will suffer from apsidal precession.
+####Can I observe astronomical events (RSS)?
+Eclipses can be observed (there is a toggle to disable the Sun's lens flare to help with that), however as mentioned in the "known bugs" section they lose a bit of accuracy after a decade or so. They're quite fun to watch.
+
+For instance, this is the solar eclipse of 1952-02-25, as seen from Semnan:
+![](http://i.imgur.com/DJy03zo.png)
