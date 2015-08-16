@@ -110,13 +110,13 @@ Seriously, better choices of integrators and splittings or even saner handling o
 ####But...
 You're welcome to go ahead and implement parallelized force computations, and to benchmark that of course.
 ###I'm using a custom solar system mod, why isn't it stable / is it going to be stable once the initial conditions are properly interpreted?
-Systems stabilized by resonance like the stock Jool system are broken by the incorrect interpetation of the initial conditions, see the section on Jool above.
+Systems stabilized by resonance like the stock Jool system are broken by the incorrect interpretation of the initial conditions, see the section on Jool above.
 
 That being said, even once the orbital elements are interpreted correctly, it all depends on whether your system was sanely designed. If it has 50 Duna-sized planets orbiting a Jool-sized body, many of these are going to interplanetary space today.
 ###Do you simulate collisions and tidal forces causing breakup between bodies?
 ... Now you see *this* would be very expensive to calculate.
 ###How do I predict my path?
-The *pink* line is your predicted trajectory. You can predict for a longer duration by increasing the prediction length setting in the GUI. This will slow things down (sometimes to the point of a crash). If you want to make the prediction faster (or just avoid crashes), you can increase the prediction step. This will however make the prediction less accurate.
+The *pink* line is your predicted trajectory. You can predict for a longer duration by increasing the prediction length setting in the GUI. This will slow things down (sometimes to the point of a crash). If you want to make the prediction faster (or just avoid crashes), you can increase the tolerance. This will however make the prediction less accurate.
 ###How do I plan a burn?
 For now, you cannot, you have to burn by the seat of your pants, or if you are somewhere where the 2-body approximation is good enough, you can use the stock manoeuvre nodes. Eventually we will add support for this.
 ###Do you simulate the gravity of player-created vessels and asteroids?
