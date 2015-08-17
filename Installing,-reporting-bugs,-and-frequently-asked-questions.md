@@ -82,7 +82,7 @@ If the *Fix nav ball in plotting frame* setting is *not* selected, the nav ball 
 ####I don't like your navballs!
 The brown/blue navball can be reverted to its stock texture by removing the `<KSP directory>\Principia\assets\navball_compass.png` file.
 The other two textures cannot be removed (this would cause a crash), but you can replace them by any png you like.
-If you are simply dissatisfied with the colours, but like the general style, this repository contains *Mathematica* code to generate nav balls, that you can tweak to your liking. For instance, *diomedea* uses a dark green/dark blue nav ball with instead of the light blue/brown one.
+If you are simply dissatisfied with the colours, but like the general style, this repository contains *Mathematica* code to generate nav balls, that you can tweak to your liking. For instance, **diomedea** uses a dark green/dark blue nav ball with instead of the light blue/brown one.
 
 ###Why don't you keep the planets on rails...
 ####...it would improve performance
