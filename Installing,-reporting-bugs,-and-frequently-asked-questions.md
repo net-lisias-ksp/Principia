@@ -128,7 +128,7 @@ On a more serious note, no. And we will not.
 We have thought about these options, and we will implement those that might yield improvements in due time in order to get as much accuracy as we can out of a given computational cost.
 ###Why don't trajectory plots break at SOI boundaries like in stock?
 SOI boundaries do not matter to us. Instead you choose an appropriate reference frame yourself, with even the option of rotating frames (more options will be added). Eventually we want to put the navball and camera in the same reference frame as the plots, and we definitely want a smoother way of selecting relevant reference frames. For now, you have to deal with the big ugly GUI.
-###Can do [interesting thing]?
+###Can I do [interesting thing]?
 ####Go to L<sub>4</sub> or L<sub>5</sub>?
 [This Imgur album](http://imgur.com/a/H4jij#0) shows the trip there, starting right after getting out of the atmosphere.
 ####Go to L<sub>3</sub>?
