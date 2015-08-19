@@ -133,6 +133,18 @@ The Earth is not a point mass nor a homogeneous sphere: it is an extended body. 
 The *J*<sub>2</sub> coefficient strongly affects orbits around the Earth, causing apsidal and [nodal precession](https://en.wikipedia.org/wiki/Nodal_precession). For instance, [молния orbits minimize apsidal precessiond by having an inclination of 63.4 °](https://en.wikipedia.org/wiki/Molniya_orbit#Properties), and [heliosynchronous](https://en.wikipedia.org/wiki/Sun-synchronous_orbit) orbits [exploit nodal precession](https://en.wikipedia.org/wiki/Sun-synchronous_orbit#Technical_details) to stay aligned with the sun.
 
 The initial config for RSS currently gives their proper *J*<sub>2</sub> coefficients to the Sun, the planets, the Moon, and Vesta. Other spherical harmonics are not yet implemented, but *C*<sub>2</sub><sup>2</sup> would definitely be relevant for tidally-locked bodies.
+###What is the epoch of the RSS initial state, and what timescale is used?
+The initial state config gives the solar system its state as given by the JPL HORIZONS service for 1950-01-01T00:00:00 *Temps Dynamique Barycentrique*. The state is however integrated before the game starts, so that the
+game starts at 1951-01-01T00:00:00 *Temps Dynamique Barycentrique*.
+
+The timescale used is *Temps Dynamique Barycentrique*, in particular if you use Kerbal Alarm Clock, the dates given will be in *Temps Dynamique Barycentrique*.
+
+When using civil times based on UTC (after 1972), note that *Temps Dynamique Barycentrique* is within 2 ms
+of *Temps Terrestre*, that *Temps Atomique International* is related to the latter by TT = TAI + 32.184 s,
+and use [tables of TAI - UTC](http://stjarnhimlen.se/comp/time.html#deltat72p).
+
+When using civil times based on the rotation of the Earth before 1972, note that for these purposes TDB, TT and Ephemeris Time are equivalent, and use [tables of ET - UT1](http://stjarnhimlen.se/comp/time.html#deltat16201972).
+
 ###Can I do [interesting thing]?
 ####Go to L<sub>4</sub> or L<sub>5</sub>?
 [This Imgur album](http://imgur.com/a/H4jij#0) shows the trip there, starting right after getting out of the atmosphere.
