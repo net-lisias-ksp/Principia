@@ -7,7 +7,7 @@ it has been known to crash, and timewarp with vessels above 100'000x is horrendo
 
 ##General
 ###IRC channel
-The IRC channel is the the #principia channel on EsperNet.
+The IRC channel is the #principia channel on EsperNet.
 The operators are in the following timezones:
 
 Channel operators | Timezone | [How is this still a thing](https://www.youtube.com/watch?v=br0NW9ufUUw)
@@ -86,7 +86,7 @@ If you are simply dissatisfied with the colours, but like the general style, thi
 
 ###Why don't you keep the planets on rails...
 ####...it would improve performance
-While "rails" (Keplerian evolution) is not entirely unrelated to something that *could* improve performance, it would do the exact opposite with the current choice of integrator. One still needs to compute the positions of all bodies every time the force on a spacecraft is needed, so the the Keplerian evolution would have to be computed instead of the forces on the bodies. Given that the computation of Keplerian evolution is costly (one needs to solve [Kepler's equation](http://en.wikipedia.org/wiki/Kepler%27s_equation), which requires a big lookup table or a handful of trigonometric function evaluations. The quadratic-to-linear change is completely dwarfed by this cost for 20 or so massive bodies.
+While "rails" (Keplerian evolution) is not entirely unrelated to something that *could* improve performance, it would do the exact opposite with the current choice of integrator. One still needs to compute the positions of all bodies every time the force on a spacecraft is needed, so the Keplerian evolution would have to be computed instead of the forces on the bodies. Given that the computation of Keplerian evolution is costly (one needs to solve [Kepler's equation](http://en.wikipedia.org/wiki/Kepler%27s_equation), which requires a big lookup table or a handful of trigonometric function evaluations. The quadratic-to-linear change is completely dwarfed by this cost for 20 or so massive bodies.
 
 It is true that some splittings of the Hamiltonian, e.g., those given by Wisdom and Holman (1991), Duncan, Levison and Lee (1998), Beust (2003), have Keplerian parts, and we will implement these, if only for comparison purposes to see which one we keep in the final implementation.
 
