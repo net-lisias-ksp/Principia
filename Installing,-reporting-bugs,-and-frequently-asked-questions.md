@@ -50,7 +50,7 @@ We very strongly recommend that you use Charon, since otherwise Pluto keeps its 
 ###It's not starting! (`DLLNotFoundException`)
 ####Windows users
 Well, first, make sure you put the DLL in the right place. The Principia DLL should be at `<KSP directory>\GameData\Principia\principia.dll`.
-You need to install the [Visual C++ Redistributable Packages for Visual Studio 2015 on x86](download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x86.exe).
+You need to install the [Visual C++ Redistributable Packages for Visual Studio 2015 on x86](https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x86.exe).
 Make sure the permissions are set correctly on the folder containing KSP. If in doubt, set its permissions for that folder to `Full Control` for `Everyone` (ask the channel operators how to do that if you don't know).
 ####Linux users
 You need libc++ when using **Norgg**'s code. For other issues, ask **Norgg**.
