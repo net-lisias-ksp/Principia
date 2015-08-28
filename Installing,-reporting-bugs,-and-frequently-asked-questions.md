@@ -68,7 +68,8 @@ It is likely that you ran out of memory. If this happened while your persistence
 ##Known bugs
 * The autopilot sometimes targets the stock prograde/retrograde vectors rather than the displayed ones when
 fix navball in plotting frame is selected.
-* An elusive crash occasionally happens, producing a FATAL file along the lines of https://github.com/mockingbirdnest/Principia/issues/617. We are not entirely sure what is happening, we are investigating.
+* An elusive crash occasionally happens, producing a FATAL file along the lines of https://github.com/mockingbirdnest/Principia/issues/617. This is exacerbated by having predictions that pass
+close to the centre of a planet. To alleviate the issue until Brouwer comes out, when launching, keep reasonably short predictions until you have reached orbit.
 * When using Real Solar System, while solar eclipses in the early fifties are accurate within measurement error, they are off by 10 min in 1961. The cause of this inaccuracy is unknown, we are investigating this.
 
 ##Frequently asked questions
