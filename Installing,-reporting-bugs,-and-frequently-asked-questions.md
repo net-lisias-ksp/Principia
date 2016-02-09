@@ -93,15 +93,10 @@ It is true that some splittings of the Hamiltonian, e.g., those given by Wisdom 
 
 At this point we will have code for Kepler evolution and integrators that could be shoehorned into having Keplerian-only behaviour for massive bodies, but we will nonetheless not provide Keplerian-only behaviour, because in the end we're just not interested in that, we're here for the numerical integration problem.
 ####...orbits are wobbly
-The orbits you see plotted in KSP with principia (e.g. Jool around the Sun, or the Mun around Kerbin) are wobbly not because the actual orbits are wobbly, but because the wrong thing is plotted. The orbit of the Mun is plotted *as if it were orbiting the centre of Kerbin*, rather than as an orbit around the barycentre of the Kerbin-Mun system. Similarly the orbit of *the centre of Jool* is plotted *as if it were orbiting the centre of the Sun*, rather than the orbit of the barycentre of the Jool system around the barycentre of the solar system.
+The orbits you see plotted in KSP with principia (e.g. Jool around the Sun, or the Mun around Kerbin) are wobbly not because the actual orbits are wobbly, but because the wrong thing is plotted (specifically, the osculating orbital elements of the bodies are plotted, rather than the mean elements of subsystem barycentres). The orbit of the Mun is plotted *as if it were orbiting the centre of Kerbin*, rather than as an orbit around the barycentre of the Kerbin-Mun system. Similarly the orbit of *the centre of Jool* is plotted *as if it were orbiting the centre of the Sun*, rather than the orbit of the barycentre of the Jool system around the barycentre of the solar system.
 Eventually we will replace KSP's faulty stock plots with our own and the orbits will cease to appear wobbly.
 ####...ok, they're not really wobbly, but I'd like the planets to follow their stock orbits
 This would break physics. As an example, if planets were to do that, you would not get Lagrange points. It is an interesting exercise to compute the sum of the centrifugal and gravitational potentials for a body orbiting *the centre* of another (rather than their barycentre) in the reference frame that fixes both bodies and the orbital plane, and computing its gradient. It is easily seen that this gradient does not vanish in 5 points, but in only 3 instead.
-####...it would make the Jool system stable
-The Jool system should be stable if the orbital elements were interpreted correctly (as barycentric rather than as body-centric). Simulations which show it as unstable, such as Matt Roesle's, use a body-centric interpretation of the orbital elements. Specifically, Scott Manley (private communication) has simulated the Jool system for 1000 years (probably with the MERCURY integrator), and has found it to be stable. While this was before the inclusion of Pol, this is unlikely to matter.
-Principia does not currently interpret the orbital elements correctly, because this has not been a priority up to now, it will eventually.
-
-In the meantime, enjoy watching Vall grazing Jool before going for a stroll around the solar system.
 ###Why don't you parallelize?
 It would hardly improve performance and it would be messy to implement. This is just the kind of algorithm that doesn't lend itself well to that.
 ####But...
@@ -110,16 +105,12 @@ Ok, let's look at numbers. The only thing that's performance-critical here is th
 Seriously, better choices of integrators and splittings or even saner handling of timestep will yield speedups to the tune of 100x or 1000x. The current force computation will probably be replaced by something completely different in the meantime, maybe at that point parallelism will make sense (or maybe it will still not make sense).
 ####But...
 You're welcome to go ahead and implement parallelized force computations, and to benchmark that of course.
-###I'm using a custom solar system mod, why isn't it stable / is it going to be stable once the initial conditions are properly interpreted?
-Systems stabilized by resonance like the stock Jool system are broken by the incorrect interpretation of the initial conditions, see the section on Jool above.
-
-That being said, even once the orbital elements are interpreted correctly, it all depends on whether your system was sanely designed. If it has 50 Duna-sized planets orbiting a Jool-sized body, many of these are going to interplanetary space today.
+###I'm using a custom solar system mod, why isn't it stable?
+It all depends on whether your system was sanely designed. If it has 50 Duna-sized planets orbiting a Jool-sized body, many of these are going to interplanetary space today.
 ###Do you simulate collisions and tidal forces causing breakup between bodies?
 ... Now you see *this* would be very expensive to calculate.
 ###How do I predict my path?
 The *pink* line is your predicted trajectory. You can predict for a longer duration by increasing the prediction length setting in the GUI. This will slow things down (sometimes to the point of a crash). If you want to make the prediction faster (or just avoid crashes), you can increase the tolerance. This will however make the prediction less accurate.
-###How do I plan a burn?
-For now, you cannot, you have to burn by the seat of your pants, or if you are somewhere where the 2-body approximation is good enough, you can use the stock manoeuvre nodes. Eventually we will add support for this.
 ###Do you simulate the gravity of player-created vessels and asteroids?
 I'll let **ferram4** answer that one.
 > Umm... Yes, actually!  It's only a few μm/s<sup>2</sup> from most vessels, but we do simulate it.  Really.  It actually doesn't cost any overhead at all!
