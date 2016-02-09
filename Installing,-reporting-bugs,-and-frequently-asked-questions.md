@@ -30,7 +30,7 @@ For Linux 64-bit users, ask **Norgg** or **sdrodge** for a build or build instru
 For Macintosh 32-bit users, ask **armed_troop** for a build or build instructions.
 
 ###General recommendations
-Timewarping with vessels is very slow above timewarp 100'000x. While we will try to improve that for Brouwer, when waiting for a specific date, it is best to reduce the number of vessels in game. In particular, asteroids being vessels as far as the game is concerned, removing them is a good idea if you are not interested in them (in particular, if you're using Real Solar Systems, these asteroids are fairly silly). In order to do that, simply delete the `<KSP directory>\GameData\Squad\Parts\Misc\PotatoRoid` folder.
+Timewarping with vessels is very slow above timewarp 100'000x. While we will try to improve that in a future version, when waiting for a specific date, it is best to reduce the number of vessels in game. In particular, asteroids being vessels as far as the game is concerned, removing them is a good idea if you are not interested in them (in particular, if you're using Real Solar Systems, these asteroids are fairly silly). In order to do that, simply delete the `<KSP directory>\GameData\Squad\Parts\Misc\PotatoRoid` folder.
 When no vessels are present timewarp should be very smooth, even at 6'000'000x (in Real Solar System).
 
 ###Recommendations for Real Solar System users
@@ -69,8 +69,6 @@ It is likely that you ran out of memory. If this happened while your persistence
 ##Known bugs
 * The autopilot sometimes targets the stock prograde/retrograde vectors rather than the displayed ones when
 fix navball in plotting frame is selected.
-* An elusive crash occasionally happens, producing a FATAL file along the lines of https://github.com/mockingbirdnest/Principia/issues/617. This is exacerbated by having predictions that pass
-close to the centre of a planet. To alleviate the issue until Brouwer comes out, when launching, keep reasonably short predictions until you have reached orbit.
 * When using Real Solar System, while solar eclipses in the early fifties are accurate within measurement error, they are off by 10 min in 1961. The cause of this inaccuracy is unknown, we are investigating this.
 
 ##Frequently asked questions
