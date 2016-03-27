@@ -25,9 +25,8 @@ Channel operators | Timezone | [How is this still a thing](https://www.youtube.c
 
 ##Installing
 Go to the IRC channel.
-There is a build available for Windows users (32-bit version of KSP only), ask channel operators. 
-For Linux 64-bit users, ask **Norgg** or **sdrodge** for a build or build instructions.
-For Macintosh 32-bit users, ask **armed_troop** for a build or build instructions.
+There is a build available for Windows users (32-bit version of KSP only) or Linux 64-bit users, ask the bot as indicated by the channel topic.
+For Macintosh 32-bit users, there is currently no build (**armed_troop** is working on it).
 
 ###General recommendations
 Timewarping with vessels is very slow above timewarp 100'000x. While we will try to improve that in a future version, when waiting for a specific date, it is best to reduce the number of vessels in game. In particular, asteroids being vessels as far as the game is concerned, removing them is a good idea if you are not interested in them (in particular, if you're using Real Solar Systems, these asteroids are fairly silly). In order to do that, simply delete the `<KSP directory>\GameData\Squad\Parts\Misc\PotatoRoid` folder.
