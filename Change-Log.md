@@ -8,8 +8,9 @@
 * Prevent accidental deletion of a non-empty flight plan.
 * Display the total Δv of the flight plan.
 * Limit the amount of time that we are willing to spend computing the trajectory of celestials.  This prevents the game from freezing when trying to extend e.g., the prediction to be very long.  The prediction is just going to be progressively extended over several seconds.
-* Compute and display the apsides of trajectories, which makes it easier to evaluate the altitude of the predicted flight plan.  Note that, for trajectories that are very far from a conic, there may be many apsides.  Also apsides are only displayed with respect to the fixed celestial, if there is one.
-* Tweaked the colors and styles used to display trajectories.
+* Compute and display the apsides of trajectories, which makes it easier to evaluate the altitude of the predicted flight plan.  Note that, for trajectories that are very far from a conic, there may be many apsides. Note that apsides are only displayed with respect to the fixed celestial, if there is one.
+* Tweaked the colours and styles used to display trajectories.
+* Added a button to time warp to the next manœuvre (1 min ahead of the time of ignition).
 * Changed the prediction computation to be defined by a number of steps, not a length.  This makes the amount of work performed at each frame roughly constant.
 * Support for KSP 1.1.2.
 
