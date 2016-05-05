@@ -62,8 +62,6 @@ If you crashed or froze, be specific about the kind of failure you had: did you 
 You probably encountered a glog `CHECK` failure. Go to `<KSP directory>\glog`, check that there is a recent FATAL file. Do not send the FATAL file only. Instead, take the most recent INFO file, upload it on gist, and link it in the IRC channel. Ask the channel ops for further guidance.
 ###Have a crash folder
 Send the contents of the `error.log` via gist or pastebin, as well as the contents of the `output_log.txt` (a copy may exist in the crash folder, otherwise if the game has not been restarted since the crash it is found at a location is documented on the KSP fora). In that case this may either be a stock KSP bug or a bug on our side, we will determine that by looking at the logs.
-###Nothing, it just froze
-It is likely that you ran out of memory. If this happened while your persistence file was being written, your save is almost certainly corrupted, and will crash on load.
 
 ##Known bugs
 * The autopilot sometimes targets the stock prograde/retrograde vectors rather than the displayed ones when
