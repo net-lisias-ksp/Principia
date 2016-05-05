@@ -2,8 +2,8 @@
 
 ## User-facing features
 
-* Joint Windows and Linux build.
 * Added code to try to detect bad installations.
+* Joint Windows and Linux build.
 * Give the user more control over the length of the predicted flight plan trajectory.
 * Prevent accidental deletion of a non-empty flight plan.
 * Display the total Δv of the flight plan.
