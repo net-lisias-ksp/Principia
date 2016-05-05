@@ -16,7 +16,7 @@
 
 ## Bug fixes
 
-* Fixed yet another use-after-free bug (#908) and added checks to detect situations that can lead to this kind of bug.
+* Fixed yet another use-after-free bug ([#908](https://github.com/mockingbirdnest/Principia/issues/908)) and added checks to detect situations that can lead to this kind of bug.
 * Fixed a problem where burns would sometimes result in an infinite Δv.
 
 ## Optimizations
