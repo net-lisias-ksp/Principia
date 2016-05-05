@@ -47,10 +47,10 @@ We very strongly recommend that you use Charon, since otherwise Pluto keeps its 
 
 *No other bodies are supported*, so if you do install pozine's pack, make sure you remove all other bodies: if Real Solar System is installed and unsupported planets are found, the game will crash. This means that you must remove them from the `RSS Planets & Moons.cfg` file, as well as remove their respective folders. You should probably remove their textures too, to reduce memory usage.
 
-###It's not starting! (`DLLNotFoundException`)
+###It's not starting! ("The Principia DLL failed to load.")
 ####Windows users
-Well, first, make sure you put the DLL in the right place. The Principia DLL should be at `<KSP directory>\GameData\Principia\principia.dll`.
-You need to install the [Visual C++ Redistributable Packages for Visual Studio 2015 on x86](http://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x86.exe).
+Well, first, make sure you put the DLL in the right place. The Principia DLL should be at `<KSP directory>\GameData\Principia\x64\principia.dll`.
+You need to install the [Visual C++ Redistributable Packages for Visual Studio 2015 on x64](http://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe).
 Make sure the permissions are set correctly on the folder containing KSP. If in doubt, set its permissions for that folder to `Full Control` for `Everyone` (ask the channel operators how to do that if you don't know).
 ####Linux users
 You need libc++ when using **Norgg**'s code. For other issues, ask **Norgg**.
