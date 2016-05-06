@@ -1,6 +1,6 @@
-- Free return (1211 m/s, 4 h 55 min)
-- Hohmann (1144 m/s, 6 h 23 min)
-- Low energy transfer: an inner resonance transfer (1031 m/s, 2 days 16 h 41 min)
+- [Free return (1211 m/s, 4 h 55 min)](https://github.com/mockingbirdnest/Principia/wiki/A-guide-to-going-to-the-Mun-with-Principia#free-return-1211-ms-4-h-55-min)
+- [Hohmann (1144 m/s, 6 h 23 min)](https://github.com/mockingbirdnest/Principia/wiki/A-guide-to-going-to-the-Mun-with-Principia#hohmann-1144-ms-6-h-23-min)
+- [Low energy transfer: an inner resonance transfer (1031 m/s, 2 days 16 h 41 min)](https://github.com/mockingbirdnest/Principia/wiki/A-guide-to-going-to-the-Mun-with-Principia#low-energy-transfer-an-inner-resonance-transfer-1031-ms-2-days-16-h-41-min)
 
 Let us compare different approaches to going to the Mun, and see how to plan them using the tools provided by Principia.
 For the following examples, we will start from an 80 km altitude circular Kerbin orbit, and reach a 30 km altitude circular Mun orbit. We will use the spacecraft show below (all tanks full), and perform both burns using the main engine (LV-909).
