@@ -3,14 +3,16 @@
 ## User-facing features
 
 * Changed the prediction parameters to be per vessel as opposed to global.  Thus, different vessels may have predictions of different lengths or accuracies.
-* Changed the way that the trajectories of celestials are recorded in saves: instead of recording everything that was computed in the course of the game, only the next 6 months or so are saved.  The rest is recomputed when the save is loaded.  The advantage is that the saves are considerably smaller (a factor of 100x has been observed in simple games).  The drawback is that loading a save is more CPU-intensive and may therefore take longer.
+* Changed the way that the trajectories of celestials are recorded in saves: instead of recording everything that was computed in the course of the game, only the next 6 months or so are saved.  The rest is recomputed when the save is loaded.  The advantage is that the saves are considerably smaller (a factor of 100x has been observed in simple games) which makes choosing a save in KSP faster as it insists on loading all the saves in memory.  The drawback is that loading a save is more CPU-intensive and may therefore take longer.
 * The plugin has a new icon.
 
 ## Bug fixes
 
-* Fixed the stabilization of the Jool system in the stock game which had stopped working in Буняковский.
-* Fixed a situation where adaptive step integration would crash when the system was already integrated to the desired final time.
-* Fixed a problem where the start of a flight plan would be discarded to the point that it had no burns anymore and various pieces of the code would disagree as to whether the vessel still had a flight plan.
+* Fixed the stabilization of the Jool system in the stock game which had stopped working in Буняковский.  This is the hotfix previously released as *Буняковский 6*.
+* Fixed a situation where adaptive step integration would crash when the system was already integrated to the desired final time ([#1024](https://github.com/mockingbirdnest/Principia/issues/1024)).
+* Fixed a problem where the start of a flight plan would be discarded to the point that it had no burns anymore and various pieces of the code would disagree as to whether the vessel still had a flight plan ([#1022](https://github.com/mockingbirdnest/Principia/issues/1022), [#1023](https://github.com/mockingbirdnest/Principia/issues/1023)).
+
+See all [16](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2016-05-05T16%3A00%3A00..2016-05-20T21%3A59%3A59+sort%3Acreated-asc) pull requests between Буняковский and Burnside.
 
 # Буняковский
 
