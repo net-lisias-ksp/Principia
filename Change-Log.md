@@ -1,3 +1,11 @@
+# Burnside
+
+* Fixed the stabilization of the Jool system in the stock game which had stopped working in Буняковский.
+* Fixed a situation where adaptive step integration would crash when the system was already integrated to the desired final time.
+* Changed the way that the trajectories of celestials are recorded in saves: instead of recording everything that was computed in the course of the game, only the next 6 months or so are saved.  The rest is recomputed when the save is loaded.  The advantage is that the saves are considerably smaller (a factor of 100x has been observed in simple games).  The drawback is that loading a save is more CPU-intensive and may therefore take longer.
+* Fixed a crash in some situations where a vessel didn't have a flight plan.
+* Changed the prediction parameters to be per vessel as opposed to global.
+
 # Буняковский
 
 ## User-facing features
