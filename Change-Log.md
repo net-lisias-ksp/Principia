@@ -107,3 +107,19 @@ Tidally locked bodies no longer spin back and forth madly (on the other hand, th
 * C++14-related improvements were made to not_null.
 
 For more details, see all [195](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2015-08-15T15%3A00%3A00..2016-02-09T22%3A00%3A00+sort%3Acreated-asc) pull requests between Bourbaki and Brouwer.
+
+# [Bourbaki](https://en.wikipedia.org/wiki/Nicolas_Bourbaki)
+
+## User-facing changes
+
+* Ephemeris: the celestial bodies are integrated on their own, with their own (much larger) timestep (45 min);
+their trajectories are then fitted using чебышёв series, yielding continuous trajectories. This means that when there are no vessels (including asteroids, see the FAQ), timewarp at very high speed (6'000'000x was tested in RealSolarSystem) is smooth.
+* The predictions are computed using an adaptive step size, so they're faster and less fiddly (you still get a tolerance setting, but it doesn't need as much attention as the step size setting; the step size will shorten near periapsis and lengthen near apoapsis on its own). The histories are still in fixed steps of 10 s.
+* There is an initial configuration for RealSolarSystem: the planets will start in the right places as given by the JPL HORIZONS service, and they are given gravity models using the freshest data available (Vesta's model is from Dawn data, some Cassini data gets used).  A side effect of that is that the moon becomes far more accurate: since the motion of the moon is very much a 3-body problem, it cannot be accurately represented in RealSolarSystem alone. In particular, real-life eclipses can be observed in Principia + RealSolarSystem. This configuration also includes J2 for the Sun, the planets, the Moon, and Vesta, so the resulting effects are felt (precession of Earth orbits, the possibility of heliosynchronous orbits, etc.).
+* Bourbaki is save-compatible with Borel.  However, for RealSolarSystem users, please note that unless you reset the plugin, the new initial state and gravity model configuration files will not be taken into account.
+
+## Library changes
+
+* Reimplemented the integrators: the symplectic Runge-Kutta-Nyström integrator was reimplemented more cleanly, an embedded explicit Runge-Kutta-Nyström integrator was implemented. Abstractions for differential equations were created.
+
+For more details, see all [89](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-05-06T22%3A00%3A00..2015-08-15T15%3A59%3A59+sort%3Acreated-asc) pull requests between Borel and Bourbaki.
