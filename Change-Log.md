@@ -75,7 +75,7 @@ For more details see all [19](https://github.com/mockingbirdnest/Principia/pulls
 * The whole Frenet trihedron is now displayed in the correct reference frame when "fix navball in plotting frame" is selected.
 * The initial state (and thus the evolution) of the system is now deterministic even when not using RealSolarSystem.
 Tidally locked bodies no longer spin back and forth madly (on the other hand, they may not be tidally locked if their mean period differs from their Jacobi osculating period).
-* When using stock, the Jool system is modified, cancelling the apocalypse. Specifically, we make the inner Jool system nonresonant, since we have been unable to replicate the results (Manley, priv. comm.) according to which some interpretations of the orbital elements yielded a stable Laplace resonance, despite systematic searches of the Jacobi osculating elements. In addition, at Scott Manley (@illectro)'s and @pdn4kd's suggestion, we put Bop in a surprisingly stable, though highly precessing, retrograde orbit. The modified system is stable for upwards of a century.
+* When using stock, the Jool system is modified, cancelling the apocalypse. Specifically, we make the inner Jool system nonresonant, since we have been unable to replicate the results (Manley, priv. comm.) according to which some interpretations of the orbital elements yielded a stable Laplace resonance, despite systematic searches of the Jacobi osculating elements. In addition, at [Scott Manley](https://www.youtube.com/user/szyzyg)'s and [@pdn4kd](https://github.com/pdn4kd)'s suggestion, we put Bop in a surprisingly stable, though highly precessing, retrograde orbit. The modified system is stable for upwards of a century.
 * Flight planning has been implemented.
 
 ## Modder-facing changes
@@ -86,7 +86,7 @@ Tidally locked bodies no longer spin back and forth madly (on the other hand, th
 
 * The Windows build now uses profile-guided optimization (we estimate that this improves performance by ~20%); in theory this could be extended to other platforms.
 * The evaluation of the Чебышёв series has been significantly optimized.
-* @sarbian made trajectory rendering faster (as he pointed out, there is still lots of room for improvement).
+* [@sarbian](https://github.com/sarbian) made trajectory rendering faster (as he pointed out, there is still lots of room for improvement).
 Other features:
 
 # Library changes
@@ -97,9 +97,9 @@ Other features:
 * Discrete trajectories were reworked, with a heavy dose of CRTP.
 * In preparation for the surface frame in the future, RotatingBody was added.
 * The C++ interface headers and C# extern declarations were repetitive and error-prone, this was exacerbated by the addition of journalling code and replaying code, so a generator was written to produce all of that from an annotated proto.
-* @pdn4kd contributed some tests of lunar eclipse timings.
+* [@pdn4kd](https://github.com/pdn4kd) contributed some tests of lunar eclipse timings.
 * For both Kepler orbits and lunar eclipse timings, a simple root finder was needed, bisection does the job for now.
-* A bibliography was written, at @pdn4kd's request (it is somewhat out of date).
+* A bibliography was written, at [@pdn4kd](https://github.com/pdn4kd)'s request (it is somewhat out of date).
 * SolarSystem, a class for initializing ephemerides from protobuf text format configuration files for testing purposes was written.
 * A script for generating the initial state configuration files from the emails sent by JPL's HORIZONS system was written (the gravity model configuration file is hand-curated).
 * An utility turns the protobuf text format configuration files into KSP ModuleManager configuration files for RSS support.
