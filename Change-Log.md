@@ -110,7 +110,7 @@ For more details, see all [195](https://github.com/mockingbirdnest/Principia/pul
 
 # [Bourbaki](https://en.wikipedia.org/wiki/Nicolas_Bourbaki)
 
-## User-facing changes
+## User-facing features
 
 * Ephemeris: the celestial bodies are integrated on their own, with their own (much larger) timestep (45 min);
 their trajectories are then fitted using чебышёв series, yielding continuous trajectories. This means that when there are no vessels (including asteroids, see the FAQ), timewarp at very high speed (6'000'000x was tested in RealSolarSystem) is smooth.
