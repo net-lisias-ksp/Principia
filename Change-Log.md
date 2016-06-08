@@ -14,7 +14,7 @@
 
 See all [16](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2016-05-05T16%3A00%3A00..2016-05-20T21%3A59%3A59+sort%3Acreated-asc) pull requests between Буняковский and Burnside.
 
-# Буняковский
+# [Буняковский](https://en.wikipedia.org/wiki/Viktor_Bunyakovsky)
 
 ## User-facing features
 
@@ -51,7 +51,7 @@ See all [16](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q
 See all [75](
 https://github.com/mockingbirdnest/Principia/pulls?page=1&q=is%3Apr+is%3Aclosed+merged%3A2016-02-22T20%3A00%3A00..2016-05-05T16%3A59%3A59+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Buffon and Буняковский.
 
-# Buffon
+# [Buffon](https://en.wikipedia.org/wiki/Georges-Louis_Leclerc,_Comte_de_Buffon)
 
 ## User-facing features
 
