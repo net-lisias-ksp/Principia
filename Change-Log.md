@@ -1,4 +1,4 @@
-# Burnside
+# [Burnside](https://en.wikipedia.org/wiki/William_Burnside)
 
 ## User-facing features
 
