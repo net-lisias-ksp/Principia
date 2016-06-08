@@ -87,9 +87,8 @@ Tidally locked bodies no longer spin back and forth madly (on the other hand, th
 * The Windows build now uses profile-guided optimization (we estimate that this improves performance by ~20%); in theory this could be extended to other platforms.
 * The evaluation of the Чебышёв series has been significantly optimized.
 * [@sarbian](https://github.com/sarbian) made trajectory rendering faster (as he pointed out, there is still lots of room for improvement).
-Other features:
 
-# Library changes
+## Library changes
 
 * Everything that crosses the C++/C# interface can now be journalled if the right flag is set, allowing us to replay the C++ side of a session; this is useful for tracking down tricky bugs, and it enables profile-guided optimization.
 * In order to get the full Frenet trihedron, (which was needed for manœuvres, since the Δv is defined in the Frenet frame at the point of ignition) geometric acceleration (the acceleration of a free-falling trajectory) in any reference frame was needed. To do that we created two abstractions, RigidMotion, the derivative of a RigidTransformation, and DynamicFrame, the definition of an arbitrary reference frame. The navigation frames (the frames in which the trajectory is drawn, or with which the manœuvres are defined) implement that (see BodyCentredNonRotatingDynamicFrame and BarycentricRotatingDynamicFrame).
