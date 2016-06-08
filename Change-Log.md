@@ -49,3 +49,20 @@ See all [16](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q
 
 See all [75](
 https://github.com/mockingbirdnest/Principia/pulls?page=1&q=is%3Apr+is%3Aclosed+merged%3A2016-02-22T20%3A00%3A00..2016-05-05T16%3A59%3A59+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Buffon and Буняковский.
+
+# Buffon
+
+## User-facing features
+
+* The integrators now limit the number of steps they perform, and terminate if their step size vanishes. This avoids issues where the plugin would hang when the trajectory would accidentally get very close to the centre of a celestial body or spend a long time in a low orbit.
+* The version identifier of the plugin is now displayed in the UI to make it is easier to assert what version is running.
+
+## Bug fixes
+
+* A use-after-free bug has been fixed which caused a variety of crashes ([#872](https://github.com/mockingbirdnest/Principia/issues/872), [#881](https://github.com/mockingbirdnest/Principia/issues/881), [#889](https://github.com/mockingbirdnest/Principia/issues/889), [#896](https://github.com/mockingbirdnest/Principia/issues/896)) when the historical trajectory was shortened in a way that would cause it to start after the beginning of the flight plan.
+
+## Library changes
+
+* A verbosity option has been added to the journalling which makes it easier for us to reproduce crashes.
+
+For more details see all [19](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+merged%3A2016-02-09T21%3A00%3A00..2016-02-22T20%3A00%3A00+is%3Aclosed+) pull requests between Brouwer and Buffon.
