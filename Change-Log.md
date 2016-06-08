@@ -32,6 +32,7 @@ See all [16](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q
 
 ## Bug fixes
 
+* Fixed a crash when saving with RealSolarSystem installed ([#905](https://github.com/mockingbirdnest/Principia/issues/905)).  This is the hotfix previously released as *Buffon 12*.
 * Fixed yet another use-after-free bug ([#908](https://github.com/mockingbirdnest/Principia/issues/908)) and added checks to detect situations that can lead to this kind of bug.
 * Fixed a problem where burns would sometimes result in an infinite Δv.
 
