@@ -67,3 +67,44 @@ https://github.com/mockingbirdnest/Principia/pulls?page=1&q=is%3Apr+is%3Aclosed+
 * A verbosity option has been added to the journalling which makes it easier for us to reproduce crashes.
 
 For more details see all [19](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+merged%3A2016-02-09T21%3A00%3A00..2016-02-22T20%3A00%3A00+is%3Aclosed+) pull requests between Brouwer and Buffon.
+
+# [Brouwer](https://en.wikipedia.org/wiki/L._E._J._Brouwer)
+
+## User-facing features
+
+* The whole Frenet trihedron is now displayed in the correct reference frame when "fix navball in plotting frame" is selected.
+* The initial state (and thus the evolution) of the system is now deterministic even when not using RealSolarSystem.
+Tidally locked bodies no longer spin back and forth madly (on the other hand, they may not be tidally locked if their mean period differs from their Jacobi osculating period).
+* When using stock, the Jool system is modified, cancelling the apocalypse. Specifically, we make the inner Jool system nonresonant, since we have been unable to replicate the results (Manley, priv. comm.) according to which some interpretations of the orbital elements yielded a stable Laplace resonance, despite systematic searches of the Jacobi osculating elements. In addition, at Scott Manley (@illectro)'s and @UmbralRaptor's suggestion, we put Bop in a surprisingly stable, though highly precessing, retrograde orbit. The modified system is stable for upwards of a century.
+* Flight planning has been implemented.
+
+## Modder-facing changes
+
+* When a Cartesian initial state cfg is not given, the KSP orbital elements are interpreted in a hierarchical osculating Jacobi fashion; for instance, the orbital elements of Jool are the osculating elements at game start of the orbit of the barycentre of the Jool system around the barycentre of the (sun, moho, eve, gilly, kerbin, mun, minmus, duna, ike, dres) system; the elements of Laythe are the osculating elements at game start of the orbit of Laythe around Jool; the elements of Vall are the osculating elements at game start of the orbit of Vall around the Laythe-Jool barycentre.
+
+## Optimizations:
+
+* The Windows build now uses profile-guided optimization (we estimate that this improves performance by ~20%); in theory this could be extended to other platforms.
+* The evaluation of the Чебышёв series has been significantly optimized.
+* @sarbian made trajectory rendering faster (as he pointed out, there is still lots of room for improvement).
+Other features:
+
+# Library changes
+
+* Everything that crosses the C++/C# interface can now be journalled if the right flag is set, allowing us to replay the C++ side of a session; this is useful for tracking down tricky bugs, and it enables profile-guided optimization.
+* In order to get the full Frenet trihedron, (which was needed for manœuvres, since the Δv is defined in the Frenet frame at the point of ignition) geometric acceleration (the acceleration of a free-falling trajectory) in any reference frame was needed. To do that we created two abstractions, RigidMotion, the derivative of a RigidTransformation, and DynamicFrame, the definition of an arbitrary reference frame. The navigation frames (the frames in which the trajectory is drawn, or with which the manœuvres are defined) implement that (see BodyCentredNonRotatingDynamicFrame and BarycentricRotatingDynamicFrame).
+* In order to interpret the orbital elements of KSP in the hierarchical Jacobi fashion described above, support was added for Kepler orbits (implementation), Jacobi coordinates, and hierarchical systems.
+* Discrete trajectories were reworked, with a heavy dose of CRTP.
+* In preparation for the surface frame in the future, RotatingBody was added.
+* The C++ interface headers and C# extern declarations were repetitive and error-prone, this was exacerbated by the addition of journalling code and replaying code, so a generator was written to produce all of that from an annotated proto.
+* @UmbralRaptor contributed some tests of lunar eclipse timings.
+* For both Kepler orbits and lunar eclipse timings, a simple root finder was needed, bisection does the job for now.
+* A bibliography was written, at @UmbralRaptor's request (it is somewhat out of date).
+* SolarSystem, a class for initializing ephemerides from protobuf text format configuration files for testing purposes was written.
+* A script for generating the initial state configuration files from the emails sent by JPL's HORIZONS system was written (the gravity model configuration file is hand-curated).
+* An utility turns the protobuf text format configuration files into KSP ModuleManager configuration files for RSS support.
+* Various geometric utilities were added: angles (implementation), spherical coordinates (more are needed).
+* More C++11/14 features were used as they became available (for instance, the units are now constexpr), in addition we now use std::experimental::optional.
+* C++14-related improvements were made to not_null.
+
+For more details, see all [195](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2015-08-15T15%3A00%3A00..2016-02-09T22%3A00%3A00+sort%3Acreated-asc) pull requests between Bourbaki and Brouwer.
