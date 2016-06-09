@@ -147,6 +147,10 @@ For more details see all [11](https://github.com/mockingbirdnest/Principia/pulls
 
 # [Bessel](https://en.wikipedia.org/wiki/Friedrich_Bessel)
 
+## User-facing features
+
+* Rudimentary predictions have been added.  The predictions are currently using the same integration method (McLachlan and Atela's 1992 optimal 5th order method), with the same splitting of the Hamiltonian (kinetic + potential energy), this is somewhat usable but unacceptably slow.
+
 For more details see all [5](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-23T23%3A00%3A00..2015-02-28T13%3A59%3A59+sort%3Acreated-asc+) pull requests between Bernstein and Bessel.
 
 # [Bernstein](https://en.wikipedia.org/wiki/Sergei_Natanovich_Bernstein)
@@ -160,6 +164,10 @@ For more details see all [6](https://github.com/mockingbirdnest/Principia/pulls?
 # [Banach](https://en.wikipedia.org/wiki/Stefan_Banach)
 
 First non-ɑ release (also known as: first β release).  It might be possible to play.
+
+## User-facing features
+
+* Serialization has been implemented.  It is now possible to save the state of Principia. 
 
 For more details see all [39](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-01-21T21%3A00%3A00..2015-02-16T20%3A59%3A59+sort%3Acreated-asc+) pull requests between Agnesi and Banach.
 
