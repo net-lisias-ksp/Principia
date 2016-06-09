@@ -126,6 +126,19 @@ For more details see all [89](https://github.com/mockingbirdnest/Principia/pulls
 
 # [Borel](https://en.wikipedia.org/wiki/%C3%89mile_Borel)
 
+## User-facing features
+* Ported to version 1.0.x of KSP.
+* Added custom navball settings, so that the navball can be fixed in the reference frame in which the trajectory is plotted; the IVA navball is unaffected; when using the custom navball, the prograde/retrograde vectors are now in the correct reference frame, consistent with what is shown is map view; the rest of the Frenet trihedron (the radial and normal vectors) are unaffected at the moment and will be fixed in another version.
+* Added a setting to clip histories.
+* Added a toolbar button to show/hide the UI.
+* The UI now acknowledges the F2 key.
+* Less memory-hungry.
+
+## Bug fixes
+* Fixed a crash ([#463](https://github.com/mockingbirdnest/Principia/issues/463)) when attempting to integrate with tmax_is_exact and tmax is at the end of the trajectory.
+* Fixed a crash ([#480](https://github.com/mockingbirdnest/Principia/issues/480)) caused by an access a non-existent vessel.
+* Fixed a UI bug ([#502](https://github.com/mockingbirdnest/Principia/issues/502) where, if the vessel is switched, the map kept showing the trace from the last viewed vessel.
+
 For more details see all [27](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-03-22T15%3A00%3A00..2015-05-06T21%3A59%3A59+sort%3Acreated-asc+) pull requests between Bolzano and Borel.
 
 # [Bolzano](https://en.wikipedia.org/wiki/Bernard_Bolzano)
@@ -146,6 +159,8 @@ For more details see all [6](https://github.com/mockingbirdnest/Principia/pulls?
 
 # [Banach](https://en.wikipedia.org/wiki/Stefan_Banach)
 
+First non-ɑ release (also known as: first β release).  It might be possible to play.
+
 For more details see all [39](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-01-21T21%3A00%3A00..2015-02-16T20%3A59%3A59+sort%3Acreated-asc+) pull requests between Agnesi and Banach.
 
 # [Agnesi](https://en.wikipedia.org/wiki/Maria_Gaetana_Agnesi)
@@ -157,5 +172,7 @@ For more details see all [4](https://github.com/mockingbirdnest/Principia/pulls?
 For more details see all [2](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-01-17T17%3A00%3A00..2015-01-18T22%3A59%3A59+sort%3Acreated-asc+) pull requests between Abel and Ackermann.
 
 # [Abel](https://en.wikipedia.org/wiki/Niels_Henrik_Abel)
+
+First public release.  Not exactly usable.  Lots of development before that point.
 
 For more details see all [300](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2010-01-01T01%3A00%3A00..2015-01-17T16%3A59%3A59+sort%3Acreated-asc+) pull requests before Abel.
