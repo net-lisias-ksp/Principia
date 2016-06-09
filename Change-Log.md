@@ -123,3 +123,21 @@ their trajectories are then fitted using чебышёв series, yielding continu
 * Reimplemented the integrators: the symplectic Runge-Kutta-Nyström integrator was reimplemented more cleanly, an embedded explicit Runge-Kutta-Nyström integrator was implemented. Abstractions for differential equations were created.
 
 For more details see all [89](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-05-06T22%3A00%3A00..2015-08-15T15%3A59%3A59+sort%3Acreated-asc) pull requests between Borel and Bourbaki.
+
+# [Borel](https://en.wikipedia.org/wiki/%C3%89mile_Borel)
+
+# [Bolzano](https://en.wikipedia.org/wiki/Bernard_Bolzano)
+
+# [Bessel](https://en.wikipedia.org/wiki/Friedrich_Bessel)
+
+# [Bernstein](https://en.wikipedia.org/wiki/Sergei_Natanovich_Bernstein)
+
+# [Bernoulli](https://en.wikipedia.org/wiki/Daniel_Bernoulli)
+
+# [Banach](https://en.wikipedia.org/wiki/Stefan_Banach)
+
+# [Agnesi](https://en.wikipedia.org/wiki/Maria_Gaetana_Agnesi)
+
+# [Ackermann](https://en.wikipedia.org/wiki/Wilhelm_Ackermann)
+
+# [Abel](https://en.wikipedia.org/wiki/Niels_Henrik_Abel)
