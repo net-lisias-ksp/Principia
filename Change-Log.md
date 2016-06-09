@@ -126,11 +126,11 @@ For more details see all [89](https://github.com/mockingbirdnest/Principia/pulls
 
 # [Borel](https://en.wikipedia.org/wiki/%C3%89mile_Borel)
 
-For more details see all [](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-03-22T15%3A00%3A00..2015-05-06T21%3A59%3A59+sort%3Acreated-asc+) pull requests between Bolzano and Borel.
+For more details see all [11](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-03-22T15%3A00%3A00..2015-05-06T21%3A59%3A59+sort%3Acreated-asc+) pull requests between Bolzano and Borel.
 
 # [Bolzano](https://en.wikipedia.org/wiki/Bernard_Bolzano)
 
-For more details see all [](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-28T14%3A00%3A00..2015-03-22T14%3A59%3A59+sort%3Acreated-asc+) pull requests between Bessel and Bolzano.
+For more details see all [5](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-28T14%3A00%3A00..2015-03-22T14%3A59%3A59+sort%3Acreated-asc+) pull requests between Bessel and Bolzano.
 
 # [Bessel](https://en.wikipedia.org/wiki/Friedrich_Bessel)
 
@@ -138,24 +138,24 @@ For more details see all [](https://github.com/mockingbirdnest/Principia/pulls?u
 
 # [Bernstein](https://en.wikipedia.org/wiki/Sergei_Natanovich_Bernstein)
 
-For more details see all [](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-22T23%3A00%3A00..2015-02-23T22%3A59%3A59+sort%3Acreated-asc+) pull requests between Bernoulli and Bernstein.
+For more details see all [6](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-22T23%3A00%3A00..2015-02-23T22%3A59%3A59+sort%3Acreated-asc+) pull requests between Bernoulli and Bernstein.
 
 # [Bernoulli](https://en.wikipedia.org/wiki/Daniel_Bernoulli)
 
-For more details see all [](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-16T21%3A00%3A00..2015-02-22T22%3A59%3A59+sort%3Acreated-asc+) pull requests between Banach and Bernoulli.
+For more details see all [6](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-16T21%3A00%3A00..2015-02-22T22%3A59%3A59+sort%3Acreated-asc+) pull requests between Banach and Bernoulli.
 
 # [Banach](https://en.wikipedia.org/wiki/Stefan_Banach)
 
-For more details see all [](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-01-21T21%3A00%3A00..2015-02-16T20%3A59%3A59+sort%3Acreated-asc+) pull requests between Agnesi and Banach.
+For more details see all [39](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-01-21T21%3A00%3A00..2015-02-16T20%3A59%3A59+sort%3Acreated-asc+) pull requests between Agnesi and Banach.
 
 # [Agnesi](https://en.wikipedia.org/wiki/Maria_Gaetana_Agnesi)
 
-For more details see all [](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-01-18T23%3A00%3A00..2015-01-21T20%3A59%3A59+sort%3Acreated-asc+) pull requests between Ackermann and Agnesi.
+For more details see all [4](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-01-18T23%3A00%3A00..2015-01-21T20%3A59%3A59+sort%3Acreated-asc+) pull requests between Ackermann and Agnesi.
 
 # [Ackermann](https://en.wikipedia.org/wiki/Wilhelm_Ackermann)
 
-For more details see all [](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-01-17T17%3A00%3A00..2015-01-18T22%3A59%3A59+sort%3Acreated-asc+) pull requests between Abel and Ackermann.
+For more details see all [2](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-01-17T17%3A00%3A00..2015-01-18T22%3A59%3A59+sort%3Acreated-asc+) pull requests between Abel and Ackermann.
 
 # [Abel](https://en.wikipedia.org/wiki/Niels_Henrik_Abel)
 
-For more details see all [](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2010-01-01T01%3A00%3A00..2015-01-17T16%3A59%3A59+sort%3Acreated-asc+) pull requests before Abel.
+For more details see all [300](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2010-01-01T01%3A00%3A00..2015-01-17T16%3A59%3A59+sort%3Acreated-asc+) pull requests before Abel.
