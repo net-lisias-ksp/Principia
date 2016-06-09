@@ -143,6 +143,14 @@ For more details see all [27](https://github.com/mockingbirdnest/Principia/pulls
 
 # [Bolzano](https://en.wikipedia.org/wiki/Bernard_Bolzano)
 
+## Optimizations
+
+* Changed the serialization code to read/write data in chunks instead of holding several copies of the entire serialized form in memory.
+
+## Library changes
+
+* Added numerous integrators, and restructured the code to separate the symplectic Runge-Kutta-Nyström integrators from the symplectic partitioned Runge-Kutta integrators.  Started to analyze their numerical characteristics and performance.
+
 For more details see all [11](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-28T14%3A00%3A00..2015-03-22T14%3A59%3A59+sort%3Acreated-asc+) pull requests between Bessel and Bolzano.
 
 # [Bessel](https://en.wikipedia.org/wiki/Friedrich_Bessel)
@@ -151,13 +159,26 @@ For more details see all [11](https://github.com/mockingbirdnest/Principia/pulls
 
 * Rudimentary predictions have been added.  The predictions are currently using the same integration method (McLachlan and Atela's 1992 optimal 5th order method), with the same splitting of the Hamiltonian (kinetic + potential energy), this is somewhat usable but unacceptably slow.
 
+## Bug fixes
+
+* Fixed a bug ([461](https://github.com/mockingbirdnest/Principia/issues/461)) where Principia would switch to a nonrotating reference frame while still in the atmosphere.
+
 For more details see all [5](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-23T23%3A00%3A00..2015-02-28T13%3A59%3A59+sort%3Acreated-asc+) pull requests between Бернштейн and Bessel.
 
 # [Бернштейн](https://en.wikipedia.org/wiki/Sergei_Natanovich_Bernstein)
 
+## Bug fixes
+
+* Fixed a crash on revert to VAB: when reverting to VAB, the old save was loaded immediately, but the time was only reset when exiting the VAB. Running Principia in the editor caused it to integrate back to the future, and caused a crash when KSP's time was reverted.  Thanks to [@diomedea](https://github.com/diomedea) for reporting this.
+
 For more details see all [6](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-22T23%3A00%3A00..2015-02-23T22%3A59%3A59+sort%3Acreated-asc+) pull requests between Bernoulli and Бернштейн.
 
 # [Bernoulli](https://en.wikipedia.org/wiki/Daniel_Bernoulli)
+
+## User-facing features
+
+* Improved logging by printing out the stack trace in case of crash, as well as the base address of the DLL.
+* Minor UI improvements.
 
 For more details see all [6](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-16T21%3A00%3A00..2015-02-22T22%3A59%3A59+sort%3Acreated-asc+) pull requests between Banach and Bernoulli.
 
@@ -167,7 +188,11 @@ First non-ɑ release (also known as: first β release).  It might be possible to
 
 ## User-facing features
 
-* Serialization has been implemented.  It is now possible to save the state of Principia. 
+* Serialization has been implemented.  It is now possible to save the state of Principia.
+
+## Optimization
+
+* Improved rendering performance by not reallocating gigantic objects at every frame.  Thanks to [@sarbian](https://github.com/sarbian) for pointing this out.
 
 For more details see all [39](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-01-21T21%3A00%3A00..2015-02-16T20%3A59%3A59+sort%3Acreated-asc+) pull requests between Agnesi and Banach.
 
