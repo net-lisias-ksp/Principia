@@ -161,7 +161,7 @@ For more details see all [11](https://github.com/mockingbirdnest/Principia/pulls
 
 ## Bug fixes
 
-* Fixed a bug ([461](https://github.com/mockingbirdnest/Principia/issues/461)) where Principia would switch to a nonrotating reference frame while still in the atmosphere.
+* Fixed a bug ([#461](https://github.com/mockingbirdnest/Principia/issues/461)) where Principia would switch to a nonrotating reference frame while still in the atmosphere.
 
 For more details see all [5](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-23T23%3A00%3A00..2015-02-28T13%3A59%3A59+sort%3Acreated-asc+) pull requests between Бернштейн and Bessel.
 
