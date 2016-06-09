@@ -151,11 +151,11 @@ For more details see all [11](https://github.com/mockingbirdnest/Principia/pulls
 
 * Rudimentary predictions have been added.  The predictions are currently using the same integration method (McLachlan and Atela's 1992 optimal 5th order method), with the same splitting of the Hamiltonian (kinetic + potential energy), this is somewhat usable but unacceptably slow.
 
-For more details see all [5](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-23T23%3A00%3A00..2015-02-28T13%3A59%3A59+sort%3Acreated-asc+) pull requests between Bernstein and Bessel.
+For more details see all [5](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-23T23%3A00%3A00..2015-02-28T13%3A59%3A59+sort%3Acreated-asc+) pull requests between Бернштейн and Bessel.
 
-# [Bernstein](https://en.wikipedia.org/wiki/Sergei_Natanovich_Bernstein)
+# [Бернштейн](https://en.wikipedia.org/wiki/Sergei_Natanovich_Bernstein)
 
-For more details see all [6](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-22T23%3A00%3A00..2015-02-23T22%3A59%3A59+sort%3Acreated-asc+) pull requests between Bernoulli and Bernstein.
+For more details see all [6](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-02-22T23%3A00%3A00..2015-02-23T22%3A59%3A59+sort%3Acreated-asc+) pull requests between Bernoulli and Бернштейн.
 
 # [Bernoulli](https://en.wikipedia.org/wiki/Daniel_Bernoulli)
 
