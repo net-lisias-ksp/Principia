@@ -173,6 +173,6 @@ For more details see all [2](https://github.com/mockingbirdnest/Principia/pulls?
 
 # [Abel](https://en.wikipedia.org/wiki/Niels_Henrik_Abel)
 
-First public release.  Not exactly usable.  Lots of development before that point.
+First public release.  Not exactly usable.  About 9 months of development before that point.
 
 For more details see all [300](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2010-01-01T01%3A00%3A00..2015-01-17T16%3A59%3A59+sort%3Acreated-asc+) pull requests before Abel.
