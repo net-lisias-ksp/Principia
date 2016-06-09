@@ -173,9 +173,27 @@ For more details see all [39](https://github.com/mockingbirdnest/Principia/pulls
 
 # [Agnesi](https://en.wikipedia.org/wiki/Maria_Gaetana_Agnesi)
 
+## Bug fixes
+
+* Fixed a crash due to adding 0-part vessels to the physics bubble.
+* Fixed a bug where the plugin would still manage the physics bubble at ground level on bodies without an atmosphere.
+* Fixed a bug where a crashed vessel would keep being simulated.
+
+## Optimization
+
+* Improved performance by not calling FindObjectOfType at every frame.
+
+## Library changes
+
+* Started work on serialization using the Google protocol buffer library.
+
 For more details see all [4](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-01-18T23%3A00%3A00..2015-01-21T20%3A59%3A59+sort%3Acreated-asc+) pull requests between Ackermann and Agnesi.
 
 # [Ackermann](https://en.wikipedia.org/wiki/Wilhelm_Ackermann)
+
+## User-facing features
+
+* Better logging and UI controls for logging.
 
 For more details see all [2](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-01-17T17%3A00%3A00..2015-01-18T22%3A59%3A59+sort%3Acreated-asc+) pull requests between Abel and Ackermann.
 
