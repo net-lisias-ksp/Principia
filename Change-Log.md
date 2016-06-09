@@ -106,7 +106,7 @@ Tidally locked bodies no longer spin back and forth madly (on the other hand, th
 * More C++11/14 features were used as they became available (for instance, the units are now constexpr), in addition we now use std::experimental::optional.
 * C++14-related improvements were made to not_null.
 
-For more details, see all [195](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2015-08-15T15%3A00%3A00..2016-02-09T22%3A00%3A00+sort%3Acreated-asc) pull requests between Bourbaki and Brouwer.
+For more details see all [195](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2015-08-15T15%3A00%3A00..2016-02-09T22%3A00%3A00+sort%3Acreated-asc) pull requests between Bourbaki and Brouwer.
 
 # [Bourbaki](https://en.wikipedia.org/wiki/Nicolas_Bourbaki)
 
@@ -122,4 +122,4 @@ their trajectories are then fitted using чебышёв series, yielding continu
 
 * Reimplemented the integrators: the symplectic Runge-Kutta-Nyström integrator was reimplemented more cleanly, an embedded explicit Runge-Kutta-Nyström integrator was implemented. Abstractions for differential equations were created.
 
-For more details, see all [89](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-05-06T22%3A00%3A00..2015-08-15T15%3A59%3A59+sort%3Acreated-asc) pull requests between Borel and Bourbaki.
+For more details see all [89](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2015-05-06T22%3A00%3A00..2015-08-15T15%3A59%3A59+sort%3Acreated-asc) pull requests between Borel and Bourbaki.
