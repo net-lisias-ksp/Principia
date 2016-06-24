@@ -53,6 +53,8 @@ Make sure the permissions are set correctly on the folder containing KSP. If in 
 ####Linux users
 You need libc++ when using **Norgg**'s code. For other issues, ask **Norgg**.
 
+Also, your working directory *needs* to be `<KSP directory>` for principia.so to be found.
+
 ##Bug reporting
 So, you crashed, or something similarly unpleasant happened.
 If you crashed or froze, be specific about the kind of failure you had: did you get an Unity dialog box? Did you get a Windows dialog box, or on *nix, did the process terminate by SIGABRT? Did you get a crash folder (a folder whose name is the date in your KSP install directory?
