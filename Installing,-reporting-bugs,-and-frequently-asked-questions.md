@@ -53,7 +53,7 @@ Make sure the permissions are set correctly on the folder containing KSP. If in 
 ####Linux users
 You need libc++ when using **Norgg**'s code. For other issues, ask **Norgg**.
 
-Also, your working directory *needs* to be `<KSP directory>` for principia.so to be found.
+Also, your working directory *needs* to be `<KSP directory>`, otherwise `principia.so` will not be found.
 
 ##Bug reporting
 So, you crashed, or something similarly unpleasant happened.
