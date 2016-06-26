@@ -1,3 +1,27 @@
+# [بوژگانی]https://en.wikipedia.org/wiki/Abu_al-Wafa%27_Buzjani
+
+## User-facing features
+
+* Principia now works with KSP version 1.1.3.  Older versions of KSP are no longer supported.
+* The time of periapsides and apoapsides is now displayed on the trajectories.
+* The norm of the velocity in the plotting frame is displayed when the navball is fixed in the plotting frame.
+* The check that the C++ 2015 Redistributable runtime is properly installed on Windows has been tightened.
+
+## Modder-facing changes
+
+* The state of the ephemeris at startup is now logged to help in debugging modified solar systems.
+* The fix that prevents the Jool system from getting unstable is now applied more strictly, so that modified stock solar system don't get clobbered by this fix.
+* Gravity models may now be specified using Keplerian elements (in addition to Cartesian elements).
+
+## Bug fixes
+
+* An obscure bug has been fixed that would infrequently cause the trajectories of the celestials to be discontinuous because of cancellations in Чебышёв series.
+* Fixed a bug where the vessels would take a hard turn when the sphere-of-influence changes ([#1053](https://github.com/mockingbirdnest/Principia/issues/1053)).
+
+## Known issues
+
+* The release name, being in Farsi, is written right-to-left.  KSP doesn't know how to do such an advanced thing, so it shows up inverted in the UI.  Apologies to Farsi speakers.
+
 # [Burnside](https://en.wikipedia.org/wiki/William_Burnside)
 
 ## User-facing features
