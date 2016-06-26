@@ -1,4 +1,4 @@
-# [بوژگانی]https://en.wikipedia.org/wiki/Abu_al-Wafa%27_Buzjani
+# [بوژگانی](https://en.wikipedia.org/wiki/Abu_al-Wafa%27_Buzjani)
 
 ## User-facing features
 
