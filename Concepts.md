@@ -21,4 +21,19 @@ Now transport yourself to the surface of the Moon, and bring a telescope with yo
 
 Which one of these is the real trajectory of the satellite?  Well, both.  They are both correct, but they are not both equally useful.  Imagine that you are a flight controller trying to adjust the satellite so that it remains exactly on top of your house.  The second representation is useless because a small drift that would cause you to completely lose TV reception would just manifest itself as a minor twist of the broken watch spring.  The first representation is what the flight controller wants to use: they can use precision thrusters to nudge the satellite a bit so that TV reception stays optimal in the desired region.
 
-For the same reason, Principia offers a choice of *plotting frame* that you can use to display your trajectories.  Each of these plotting frame is most useful in specific circumstances.  At the moment we only have two plotting frames
+For the same reason, Principia offers a choice of *plotting frame* that you can use to display your trajectories.  Each of these plotting frame is most useful in specific circumstances.  At the moment you can choose between two kinds of plotting  frames using the `Plotting frame selection...` panel.
+
+* Non-rotating reference frames centred on a celestial
+
+You can use the panel to pick the celestial (a planet or one of its natural satellite) to use as the centre.  This plotting frame is pinned to the centre of the celestial, moves with it and doesn't rotate with respect to distant stars.  For instance, if you use such a frame centered on Jupiter, Jupiter will look like it doesn't move, and if you look at a distant star like Sirius it will also appear immobile.  On the other hand the Sun and the natural satellites of Jupiter will appear to move around.
+
+This frame is mostly useful when entering or leaving an orbit around a celestial: because the celestial looks immobile you can tune your approach and make sure that you don't come in too fast, don't enter the atmosphere or (horror!) don't crash on the surface.
+
+* Reference frame fixed the barycentre of two celestials and the line between them
+
+Again, you can use the panel to pick the two celestials that determine the plotting frame.  This plotting frame is pinned on the barycentre (i.e., centre of mass) of the two celestials and the line between the celestials appears immobile.  Take the case of the Earth and the Moon.  Curiously the barycentre of the Earth-Moon system is located about 1700 km *inside* the Earth.  That point will appear immobile (not that it matters because you don't want your rocket to go there).  More interestingly, both the Earth and the Moon will stay in fixed directions, although their distance will vary a bit over time (due to the eccentricity of the Moon's orbit).  The distant stars, the Sun and all other celestials will appear to move around.
+
+This frame is useful for planning and executing a trajectory that goes from one celestial to another.  Imagine that you try to play an Apollo mission: you can very accurately plan your trajectory from the Earth to the Moon and see how close it gets to the surface and with what velocity.  That would be extremely hard in another plotting frame as the Moon would keep dancing around.
+
+
+We'll probably add more kinds of plotting frames in future versions, to help with other kinds of manœuvres.
