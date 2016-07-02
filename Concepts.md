@@ -38,3 +38,11 @@ For the same reason, Principia offers a choice of *plotting frame* that you can 
     This frame is useful for planning and executing a trajectory that goes from one celestial to another.  Imagine that you try to play an Apollo mission: you can very accurately plan your trajectory from the Earth to the Moon and see its general shape: free return, gravity boost, etc.
 
 We'll probably add more kinds of plotting frames in future versions, to help with other kinds of manœuvres (e.g., landing, rendezvous, etc.).
+
+# Navball
+
+<<TBW>>
+
+# Flight planning
+
+<<TBW>>
