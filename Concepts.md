@@ -21,7 +21,7 @@ Now transport yourself to the surface of the Moon, and bring a telescope with yo
 
 Which one of these is the real trajectory of the satellite?  Well, both.  They are both correct, but they are not both equally useful.  Imagine that you are a flight controller trying to adjust the satellite so that it remains exactly on top of your house.  The second representation is useless because a small drift that would cause you to completely lose TV reception would just manifest itself as a minor twist of the broken watch spring.  The first representation is what the flight controller wants to use: they can use precision thrusters to nudge the satellite a bit so that TV reception stays optimal in the desired region.
 
-For the same reason, Principia offers a choice of *plotting frame* that you can use to display your trajectories.  Each of these plotting frame is most useful in specific circumstances.  At the moment you can choose between two kinds of plotting  frames using the `Plotting frame selection...` panel.
+For the same reason, Principia offers a choice of *plotting frame* that you can use to display your trajectories.  Each of these plotting frame is most useful in specific circumstances.  You can choose between two kinds of plotting  frames using the `Plotting frame selection...` panel.
 
 * Non-rotating reference frames centred on a celestial
 
@@ -35,4 +35,4 @@ For the same reason, Principia offers a choice of *plotting frame* that you can 
 
     This frame is useful for planning and executing a trajectory that goes from one celestial to another.  Imagine that you try to play an Apollo mission: you can very accurately plan your trajectory from the Earth to the Moon and see how close it gets to the surface and with what velocity.  That would be extremely hard in another plotting frame as the Moon would keep dancing around.
 
-We'll probably add more kinds of plotting frames in future versions, to help with other kinds of manœuvres.
+We'll probably add more kinds of plotting frames in future versions, to help with other kinds of manœuvres (e.g., landing, rendezvous, etc.).
