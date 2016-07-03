@@ -89,13 +89,15 @@ All the sliders in the flight plan editor are exponential sliders: the farther t
 
 Veteran players of stock KSP will be familiar with the terms prograde, retrograde, radial, and normal. In Principia, the terminology is different, as described below:
 
-Stock KSP	Principia	Symbol
-Prograde	Tangent	tangent
-Retrograde	-Tangent	-tangent
-Radial In	Normal	normal
-Radial Out	-Normal	-normal
-Normal	Binormal	binormal
-Anti-Normal	-Binormal	-binormal
+|Stock KSP|Principia|Symbol|
+|---|---|---|
+|Prograde|Tangent|![tangent](http://wiki.kerbalspaceprogram.com/images/thumb/a/a4/Prograde.svg/64px-Prograde.svg.png)|
+|Retrograde|-Tangent|![-tangent](http://wiki.kerbalspaceprogram.com/images/thumb/0/02/Retrograde.svg/64px-Retrograde.svg.png)|
+|Radial In|Normal|![normal](http://wiki.kerbalspaceprogram.com/images/thumb/8/81/Radial-in.svg/64px-Radial-in.svg.png)|
+|Radial Out|-Normal|![-normal](http://wiki.kerbalspaceprogram.com/images/thumb/9/9a/Radial-out.svg/64px-Radial-out.svg.png)|
+|Normal|Binormal|![binormal](http://wiki.kerbalspaceprogram.com/images/thumb/0/01/Normal.svg/64px-Normal.svg.png)|
+|Anti-Normal|-Binormal|![-binormal](http://wiki.kerbalspaceprogram.com/images/thumb/1/19/Anti-normal.svg/64px-Anti-normal.svg.png)|
+
 KSP's terminology makes some amount of sense for Keplerian orbits: prograde is a standard term (posigrade is also frequent), the next vector is the orthogonalization of the inward radial vector (towards the planet), the third vector is normal to the orbital plane.
 
 In Principia, all three vectors depend on the choice of frame, much like how in stock KSP the velocity vector varies with choice of surface, orbit, or target modes. In addition, orbits are arbitrary curves in 3d, which may curve away from the nearest body.
