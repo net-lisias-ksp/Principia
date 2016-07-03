@@ -47,7 +47,7 @@ We'll probably add more kinds of plotting frames in future versions, to help wit
 
 # Navball
 
-In stock KSP your vessel is always within the *sphere of influence* of a single celestial (roughly, the celestial closest to you).  The navball is defined by that celestial: the blue/brown color separation is parallel to the surface, and the 0/180 line is the North/South axis.
+In stock KSP your vessel is always within the *sphere of influence* of a single celestial.  The navball is defined by that celestial: the blue/brown color separation is parallel to the surface and the line from the N marker to the 180 marker is parallel to the North/South axis.
 
 In Principia things get more complicated because (in the interesting missions at least) your vessel is not under the influence of a single celestial, but of several (or many) celestials.  This is for instance the case when navigating to a [Lagrangian points](https://en.wikipedia.org/wiki/Lagrangian_point) or when orbiting a complex system like Jupiter and its natural satellites.  Having the navball align on the celestial that currently has the largest influence is not very helpful because it would appear to flip semi-randomly depending on who pulls the stronger.
 
@@ -55,11 +55,11 @@ The Principia UI has a button `Fix navball in plotting frame` which you can use 
 
 * Non-rotating reference frames centred on a celestial
 
-    The navball is painted light and dark grey.  When using the unmodified stock game, the separation between the colors is parallel to the equator of Kerbin.  When using RealSolarSystem the separation between the colors is parallel to the equator of the Earth and the 0/180 line is parallel to the line joining the Spring and Autumn equinoxes.  In all cases, the navball is immobile with respect to distant stars.
+    The navball is painted light and dark grey.  When using the unmodified stock game, the separation between the colors is parallel to the equator of Kerbin.  When using RealSolarSystem the separation between the colours is parallel to the equator of the Earth and the line from the ♈ marker to the 12 marker is parallel to the line joining the Spring and Autumn equinoxes.  In all cases, the navball is immobile with respect to distant stars.  (Directions on this navball are given as [right ascensions](https://en.wikipedia.org/wiki/Right_ascension) in hours.)
 
 * Reference frame fixing the barycentre of two celestials and the line between them
 
-    The navball is painted light and dark purple.  The separation between the colors is parallel to the orbital plane of the two celestials (remember that this plane is pinned) and the 0/180 line is parallel to the line between the two celestials.
+    The navball is painted light and dark purple.  The separation between the colours is parallel to the orbital plane of the two celestials (remember that this plane is pinned) and the line from the 0 (I) marker to the 180 (II) marker is parallel to the line between the two celestials.
 
 # Flight planning
 
