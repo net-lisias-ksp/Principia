@@ -87,7 +87,7 @@ All the sliders in the flight plan editor are exponential sliders: the farther t
 
 ## Terminology
 
-Veteran players of stock KSP will be familiar with the terms *prograde*, *retrograde*, *radial*, and *normal*.  This terminology makes sense for conics: prograde is a standard term , the next vector is the orthogonalization of the inward radial vector (towards the planet), the third vector is normal to the orbital plane.
+Veteran players of stock KSP will be familiar with the terms *prograde*, *retrograde*, *radial*, and *normal*.  This terminology makes sense for conics: prograde is a standard term, the next vector is the orthogonalisation of the inward radial vector (towards the planet), the third vector is normal to the orbital plane.
 
 In Principia, all three components of Δv depend on the choice of frame.  In addition, orbits are arbitrary curves in 3D, which may curve away from the nearest body.  Thus, we use a different terminology, closer to mathematical conventions:
 
