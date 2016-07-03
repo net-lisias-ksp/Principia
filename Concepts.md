@@ -1,4 +1,8 @@
-<<What this is, why you should read it, etc.>>
+This page is a bit of a wall of text.  Why should you read it, when you have just downloaded Principia and want to go play with it and have fun?
+
+Well, it turns out that N-body celestial mechanics is rather more complicated than the 2-body simplification offered by stock KSP.  In order to help planning and understanding elaborate missions that take advantage of N-body physics, Principia provides a number of tools that let you look at trajectories in different frames, use more advanced navballs, or plan complex flight paths.
+
+So if you want to become a senior rocket pilot, to execute [gravity assists](https://en.wikipedia.org/wiki/Gravity_assist), [horseshoe orbits](https://en.wikipedia.org/wiki/Horseshoe_orbit), [Lissajous orbits](https://en.wikipedia.org/wiki/Lissajous_orbit), [heliosynchronous orbits](https://en.wikipedia.org/wiki/Sun-synchronous_orbit), [ballistic captures](https://en.wikipedia.org/wiki/Ballistic_capture) and [Oberth manœuvres](https://en.wikipedia.org/wiki/Oberth_effect), please read on.  Oh, and you'll be able to say these [six words you never say at NASA](https://xkcd.com/1244/).
 
 # Trajectories
 
