@@ -73,6 +73,8 @@ While Principia makes it possible to plan complex trajectories, it's important t
 
 * Principia doesn't help you execute the flight plan.  Once you are done with the planning, you need to execute the manœuvres by hand by starting and cutting off the engines just at the right time.  You will not get this completely right, and in some cases a delay of a fraction of a second may cause significant changes to the trajectory down the road.  That's ok, don't try to overdo it, you can always schedule a minor correction to compensate for any inaccuracies.  In real life rocket scientists do just that as they learn more about the gravitational fields around unexplored celestials.
 
+## User interface
+
 Now on to flight planning.  A flight plan is made of a number of *manœuvres*, which are segments where your engine is burning.  These segments are painted in solid orange red.  In between manœuvres, your vessel is *coasting*, i.e., is just moving under the influence of gravity. The coasting segments are painted in dashed baby blue.
 
 To create a flight plan, click `Flight plan...` on the main Principia UI.  This opens the flight plan editor.  At the top you can specify the overall `Plan length`.  No burn can be beyond the end of the flight plan, so in order to add burns in the distant future you may have to increase the plan length.  The parameters `Maximal step count per segment` and `Tolerance` control the accuracy of the computation of each segment (burn or coasting) of your plan.  As explained above, a long flight plan with very accurate computations might make the game feel sluggish.
@@ -82,3 +84,26 @@ At the bottom of the flight plan editor you'll find buttons to `Delete last man�
 Above the first manœuvre are displayed the total Δv and the count-down to the next manœuvre.  Also, if you tick `Show on navball`, the direction of the next manœuvre is indicated on the navball to help effecting the burn in the right direction.
 
 All the sliders in the flight plan editor are exponential sliders: the farther to the left (or right) you drag them the bigger effect they have on the quantity that you are tuning.  This makes it possible to enter large quantities (by dragging far to the left or right) while retaining the option to do fine tuning (by dragging very little away from the midpoint).
+
+## Terminology
+
+Veteran players of stock KSP will be familiar with the terms prograde, retrograde, radial, and normal. In Principia, the terminology is different, as described below:
+
+Stock KSP	Principia	Symbol
+Prograde	Tangent	tangent
+Retrograde	-Tangent	-tangent
+Radial In	Normal	normal
+Radial Out	-Normal	-normal
+Normal	Binormal	binormal
+Anti-Normal	-Binormal	-binormal
+KSP's terminology makes some amount of sense for Keplerian orbits: prograde is a standard term (posigrade is also frequent), the next vector is the orthogonalization of the inward radial vector (towards the planet), the third vector is normal to the orbital plane.
+
+In Principia, all three vectors depend on the choice of frame, much like how in stock KSP the velocity vector varies with choice of surface, orbit, or target modes. In addition, orbits are arbitrary curves in 3d, which may curve away from the nearest body.
+
+## Limitations
+
+At the moment, flight planning suffers from the following limitations, which we'll try to address in future releases:
+
+* The engines used for a burn are either the active engines, the RCS or an instant impulse.  In practice this means that you'll probably want to have an active engine when doing your planning.  Furthermore, solid-state engines cannot be activated without running them at full power, so it's not really possible to use them in planning.
+
+* The mass used for computing the flight plan is the one when you actually edit the plan.  It you later do a vessel separation, it will change the mass and will effectively make the flight plan useless: you'll need to delete it and re-create it.
