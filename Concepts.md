@@ -31,17 +31,31 @@ For the same reason, Principia offers a choice of *plotting frame* that you can 
 
     This frame is the one in which the stock KSP displays its conics (the trajectories are only conics in this particular kind of frame).
 
-* Reference frame fixed the barycentre of two celestials and the line between them
+* Reference frame fixing the barycentre of two celestials and the line between them
 
     Again, you can use the panel to pick the two celestials that determine the plotting frame.  This plotting frame is pinned on the barycentre (i.e., centre of mass) of the two celestials and the line between the celestials appears immobile.  Take the case of the Earth and the Moon.  Curiously the barycentre of the Earth-Moon system is located about 1700 km *inside* the Earth.  That point will appear immobile (not that it matters because you don't want your rocket to go there).  More interestingly, both the Earth and the Moon will stay in fixed directions, although their distance will vary a bit over time (due to the eccentricity of the Moon's orbit).  The distant stars, the Sun and all other celestials will appear to move around.
 
-    This frame is useful for planning and executing a trajectory that goes from one celestial to another.  Imagine that you try to play an Apollo mission: you can very accurately plan your trajectory from the Earth to the Moon and see its general shape: free return, gravity boost, etc.
+    In addition, the plane defined by the velocities of the two celestials is also pinned.  Generally this plane is what you might think of as the plane of the "orbit" of one celestial around the other, e.g., the plane of the Moon orbit in the above example.
+
+    This frame is useful for planning and executing a trajectory that goes from one celestial to another.  Imagine that you try to play an Apollo mission: you can very accurately plan your trajectory from the Earth to the Moon and see its general shape: free return, gravity boost, etc.  This frame is also useful for reaching [Lagrangian points](https://en.wikipedia.org/wiki/Lagrangian_point) since these points appear immobile.
 
 We'll probably add more kinds of plotting frames in future versions, to help with other kinds of manœuvres (e.g., landing, rendezvous, etc.).
 
 # Navball
 
-<<TBW>>
+In stock KSP your vessel is always within the *sphere of influence* of a single celestial (roughly, the celestial closest to you).  The navball is defined by that celestial: the blue/brown color separation is parallel to the surface, and the 0/180 line is the North/South axis.
+
+In Principia things get more complicated because (in the interesting missions at least) your vessel is not under the influence of a single celestial, but of several (or many) celestials.  This is for instance the case when navigating to a [Lagrangian points](https://en.wikipedia.org/wiki/Lagrangian_point) or when orbiting a complex system like Jupiter and its natural satellites.  Having the navball align on the celestial that currently has the largest influence is not very helpful because it would appear to flip semi-randomly depending on who pulls the stronger.
+
+The Principia UI has a button `Fix navball in plotting frame` which you can use to align the navball on the elements that are invariant in the plotting frame that you selected.  The navball also changes color to give you a visual clue of its meaning.  The exact meaning of the navball in each plotting frame is as follows:
+
+* Non-rotating reference frames centred on a celestial
+
+    The navball is painted light and dark grey.  The separation between the colors is parallel to the equator of Kerbin (for the stock game) or of the Earth (if using Real Solar System).  The navball is immobile with respect to distant stars.
+
+* Reference frame fixing the barycentre of two celestials and the line between them
+
+    The navball is painted light and dark purple.  The separation between the colors is parallel to the orbital plane of the two celestials (remember that this plane is pinned) and the 0/180 line is parallel to the line between the two celestials.
 
 # Flight planning
 
