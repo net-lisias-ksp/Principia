@@ -51,7 +51,7 @@ The Principia UI has a button `Fix navball in plotting frame` which you can use 
 
 * Non-rotating reference frames centred on a celestial
 
-    The navball is painted light and dark grey.  The separation between the colors is parallel to the equator of Kerbin (for the stock game) or of the Earth (if using Real Solar System).  The navball is immobile with respect to distant stars.
+    The navball is painted light and dark grey.  When using the unmodified stock game, the separation between the colors is parallel to the equator of Kerbin.  When using RealSolarSystem the separation between the colors is parallel to the equator of the Earth and the 0/180 line is parallel to the line joining the Spring and Autumn equinoxes.  In all cases, the navball is immobile with respect to distant stars.
 
 * Reference frame fixing the barycentre of two celestials and the line between them
 
