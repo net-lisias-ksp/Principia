@@ -7,6 +7,8 @@ Go to the IRC channel.
 There is a build available for Windows users (64-bit version of KSP only) or Linux 64-bit users, ask the bot as indicated by the channel topic.
 For Macintosh 64-bit users, we don't have a build at this point.  Contact us if you are interested in contributing one.
 
+Don't reuse an existing save after installing Principia, create a new one (see below).
+
 #Troubleshooting 
 ##It's not starting!
 ####Windows users
@@ -24,6 +26,9 @@ You need libc++ and libc++abi 3.5-2.
 Also, your working directory *needs* to be `<KSP directory>`, otherwise `principia.so` will not be found.
 
 Different distros seem to behave in different manners.  If you run into trouble, feel free to contribute a pull request.
+
+##My vessels are all over the place
+After installing Principia, you should start from a clean slate with all vessels on the ground.  If you try to reuse an existing save the vessels might be all over the place and behave strangely because the physics has effectively changed.
 
 #Usage recommendations
 ##Timewarping
