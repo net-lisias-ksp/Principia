@@ -68,10 +68,10 @@ The list of [issues](https://github.com/mockingbirdnest/Principia/issues) contai
 
 ##Go to L<sub>3</sub>?
 Note that the orbit is *unstable*, which means that no matter how fine your adjustments are, eventually you'll get kicked out of your orbit. However with fine enough tuning you can stay a while, and of course if you come back from time to time to correct your trajectory you can stay there as long as your have fuel.
-The first user to orbit an L<sub>3</sub> point was, as far as I can tell, **Yargnit**, his Twitch stream has sadly disappeared.
+The first user to orbit an L<sub>3</sub> point was, as far as we can tell, **Yargnit**, his Twitch stream has sadly disappeared.
 
 ##Are trajectories around the Minmus-Kerbin L<sub>4</sub> or L<sub>5</sub> points stable?
-It should really be Minmus-(Kerbin-Mun barycentre), but surprisingly, yes! As far as I know **Yargnit** is the one who first got there, his Twitch stream has sadly disappeared.
+It should really be Minmus-(Kerbin-Mun barycentre), but surprisingly, yes! As far as we know **Yargnit** is the one who first got there, his Twitch stream has sadly disappeared.
 
 ##Why can't I get a stable trajectory around the Ike-Duna L<sub>4</sub> or L<sub>5</sub> points?
 Ike is too big (or duna is too small).
