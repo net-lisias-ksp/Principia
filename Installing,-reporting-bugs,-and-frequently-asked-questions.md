@@ -51,6 +51,9 @@ We very strongly recommend that you use Charon, since otherwise Pluto keeps its 
 
 *No other celestial bodies are supported*, so if you do install pozine's pack, make sure you remove all other bodies: if RealSolarSystem is installed and unsupported celestials are found, the game will crash. This means that you must remove them from the `RSS Planets & Moons.cfg` file, as well as remove their respective folders. You should probably remove their textures too, to reduce memory usage.
 
+##Copernicus users
+If you are trying to build your own solar system by extending the stock one, you might run into stability problems in the Jool system.  This manifests itself by a crash and an error message like "Apocalypse occurred at..." in the `FATAL` log file.  To solve the problem, you might need to simulate your solar system in an external tool and find its regions of stability.  As a first step, we recommend that you try to make Bob retrograde as it helps a lot with the stability of Jool.
+
 #Reporting bugs
 So, you crashed, or something similarly unpleasant happened.
 
@@ -92,6 +95,9 @@ Eclipses can be observed (there is a toggle to disable the Sun's lens flare to h
 
 For instance, this is the solar eclipse of 1952-02-25, as seen from Semnan:
 ![](http://i.imgur.com/DJy03zo.png)
+
+##Can I do rendezvous?
+Yes, but it's a bit tricky because we don't have (yet) a plotting frame that helps with this.  [This video](https://www.youtube.com/watch?v=uWTsh1KswDg) shows how it can be done (near the end).
 
 #Getting Help
 ##IRC channel
