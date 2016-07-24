@@ -19,7 +19,9 @@ The main Principia UI let you control the length of the history (`Max history le
 
 Once Principia has computed a trajectory (maybe the prediction showing where your vessel will go based on its current position and velocity) it must display it.  It is important to understand that the same trajectory will look very different depending on the frame in which it's plotted.
 
-Let's make the following thought experiment: you may have a parabolic TV antenna on your roof.  This antenna points towards a satellite in geostationary orbit.  You cannot see the satellite with the naked eye but if you could you would notice that it virtually doesn't move in the sky.  In truth it wiggles a bit around its average position, but it's as good as fixed.  That's why you can have your antenna installed once and for all and never need to touch it again.
+Let's make the following thought experiment: you may have a parabolic TV antenna on your roof.  This antenna points towards a satellite in geostationary orbit.  You cannot see the satellite with the naked eye but if you could you would notice that it virtually doesn't move in the sky.  In truth it wiggles a bit around its average position, but it's as good as fixed.  That's why you can have your antenna installed once and for all and never need to touch it again.  The Sun, on the other hand, moves around you once every 24 hours, that's the day-night cycle.  This picture illustrates the situation:
+
+![Earth surface frame](http://i.imgur.com/Qxz3FiZ.png)
 
 Now transport yourself to the surface of the Moon, and bring a telescope with you.  You can see your house and of course it rotates with the Earth every 24 hours.  The antenna is bolted to your house and also rotates every 24 hours.  The satellite is not bolted to anything but, by virtue of being geostationary, it also rotates every 24 hours, so its trajectory *seen from the Moon* is a circle around the Earth.  Actually, seen from the Moon the Earth slowly revolves with a period of about a month so the trajectory of the satellite looks more like a broken watch spring.
 
