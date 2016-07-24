@@ -51,7 +51,7 @@ We very strongly recommend that you use Charon, since otherwise Pluto keeps its 
 
 *No other celestial bodies are supported*, so if you do install pozine's pack, make sure you remove all other bodies: if RealSolarSystem is installed and unsupported celestials are found, the game will crash. This means that you must remove them from the `RSS Planets & Moons.cfg` file, as well as remove their respective folders. You should probably remove their textures too, to reduce memory usage.
 
-##Copernicus users
+##Kopernicus users
 If you are trying to build your own solar system by extending the stock one, you might run into stability problems in the Jool system.  This manifests itself by a crash and an error message like "Apocalypse occurred at..." in the `FATAL` log file.  To solve the problem, you might need to simulate your solar system in an external tool and find its regions of stability.  As a first step, we recommend that you try to make Bob retrograde as it helps a lot with the stability of Jool.
 
 #Reporting bugs
