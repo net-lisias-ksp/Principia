@@ -52,7 +52,12 @@ We very strongly recommend that you use Charon, since otherwise Pluto keeps its 
 *No other celestial bodies are supported*, so if you do install pozine's pack, make sure you remove all other bodies: if RealSolarSystem is installed and unsupported celestials are found, the game will crash. This means that you must remove them from the `RSS Planets & Moons.cfg` file, as well as remove their respective folders. You should probably remove their textures too, to reduce memory usage.
 
 ##Kopernicus users
-If you are trying to build your own solar system by extending the stock one, you might run into stability problems in the Jool system.  This manifests itself by a crash and an error message like "Apocalypse occurred at..." in the `FATAL` log file.  To solve the problem, you might need to simulate your solar system in an external tool and find its regions of stability.  As a first step, we recommend that you try to make Bob retrograde as it helps a lot with the stability of Jool.
+If you are trying to build your own solar system, you might run into stability problems. This manifests itself by a crash and an error message like "Apocalypse occurred at..." in the `FATAL` log file.
+To solve the problem, you might need to simulate your solar system in an external tool and find its regions of stability.
+
+In particular, if you simply add bodies to the existing Kerbal system, even if they are themselves stable and do not perturb the Kerbal system significantly, issues will appear in the existing Jool system, whose stock version is unstable: when no modifications are made to the solar system we detect that and change the Jool system, but as soon as you have a custom system, you need to deal with Jool yourself too.
+
+A possible solution to the Jool problem specifically is to increase the size of the orbits of the Joolian moons, while making Bop's orbit retrograde. [This Kopernicus configuration](https://gist.githubusercontent.com/eggrobin/31f6d0c246ecbe50423488f867fe7051/raw/55b814cd14b3c9fdd63119cee96dacb847e2e9ea/retrobop.cfg) will do this, like Principia does on a stock system. A word of warning: if your mod rescales the stock system, that config will not do the job; make a big (or small) retrobop yourself.
 
 #Reporting bugs
 So, you crashed, or something similarly unpleasant happened.
