@@ -89,6 +89,8 @@ At the bottom of the flight plan editor you'll find buttons to `Delete last man�
 
 Above the first manœuvre are displayed the total Δv and the count-down to the next manœuvre.  Also, if you tick `Show on navball`, the direction of the next manœuvre is indicated on the navball to help effecting the burn in the right direction.
 
+Note that, unlike stock KSP, the timer to the next manœuvre next to the navball _doesn't_count_down_ to the start or end of the burn.  That's because that countdown only makes sense for burns that are applied instantaneously (as in stock KSP) but in Principia burns are applied continuously.  In order to execute a manœuvre you have to either take a look at the times in the flight plan editor, or take a look at the shape of the prediction (which should change to become similar to the flight plan) and control your burn accordingly.
+
 All the sliders in the flight plan editor are exponential sliders: the farther to the left (or right) you drag them the bigger effect they have on the quantity that you are tuning.  This makes it possible to enter large quantities (by dragging far to the left or right) while retaining the option to do fine tuning (by dragging very little away from the midpoint).
 
 ## Terminology
