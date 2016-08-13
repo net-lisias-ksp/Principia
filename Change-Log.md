@@ -30,6 +30,8 @@ For more details see all [8](https://github.com/mockingbirdnest/Principia/pulls?
 
 * The release name, being in Farsi, is written right-to-left.  KSP doesn't know how to do such an advanced thing, so it shows up inverted in the UI.  Apologies to Farsi speakers.
 
+For more details see all [8](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2016-05-20T21%3A00%3A00..2016-06-26T18%3A59%3A59+sort%3Acreated-asc) pull requests between Буняковский and بوژگانی.
+
 # [Burnside](https://en.wikipedia.org/wiki/William_Burnside)
 
 ## User-facing features
