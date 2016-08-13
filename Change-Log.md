@@ -1,5 +1,7 @@
 # [Cantor](https://en.wikipedia.org/wiki/Georg_Cantor)
 
+[And we're out of β, we're releasing on time!](https://www.youtube.com/watch?v=Y6ljFaKRTrI)  We believe that the mod as now sufficiently functional and stable to be fun to play with, so we are making it more broadly available.  Download it [here](https://goo.gl/eZbr4e).
+
 ## User-facing features
 
 * When using stock KSP, the clock now properly uses 6-hour days instead of 24-hour days ([#1085](https://github.com/mockingbirdnest/Principia/issues/1085)).
