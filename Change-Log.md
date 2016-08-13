@@ -1,3 +1,11 @@
+# [Cantor](https://en.wikipedia.org/wiki/Georg_Cantor)
+
+## User-facing features
+
+* When using stock KSP, the clock now properly uses 6-hour days instead of 24-hour days ([#1085](https://github.com/mockingbirdnest/Principia/issues/1085)).
+
+For more details see all [8](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2016-06-26T19%3A00%3A00..2016-07-23T18%3A59%3A59+sort%3Acreated-asc) pull requests between بوژگانی and Cantor.
+
 # [بوژگانی](https://en.wikipedia.org/wiki/Abu_al-Wafa%27_Buzjani)
 
 ## User-facing features
