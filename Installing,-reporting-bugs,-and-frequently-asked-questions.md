@@ -3,8 +3,8 @@
 In these FAQ, `<KSP directory>` is the directory such that the KSP executable is found in `<KSP directory>/KSP.exe`.
 
 #Installing
-Go to the IRC channel.
-There is a build available for Windows users (64-bit version of KSP only) or Linux 64-bit users, ask the bot as indicated by the channel topic.
+A link to the binaries for Windows and Ubuntu x64 can be found in the original post of the [forum thread](http://forum.kerbalspaceprogram.com/index.php?/topic/62205--).
+
 For Macintosh 64-bit users, we don't have a build at this point.  Contact us if you are interested in contributing one.
 
 Don't reuse an existing save after installing Principia, create a new one (see below).
