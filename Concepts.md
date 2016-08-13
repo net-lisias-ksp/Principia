@@ -2,7 +2,7 @@ This page is a bit of a wall of text.  Why should you read it, when you have jus
 
 Well, it turns out that N-body celestial mechanics is rather more complicated than the 2-body simplification offered by stock KSP.  In order to help planning and understanding elaborate missions that take advantage of N-body physics, Principia provides a number of tools that let you look at trajectories in different frames, use more advanced navballs and plan complex flight paths.
 
-So if you want to become a senior rocket pilot, to execute [gravity assists](https://en.wikipedia.org/wiki/Gravity_assist), [horseshoe orbits](https://en.wikipedia.org/wiki/Horseshoe_orbit), [Lissajous orbits](https://en.wikipedia.org/wiki/Lissajous_orbit), [heliosynchronous orbits](https://en.wikipedia.org/wiki/Sun-synchronous_orbit), [ballistic captures](https://en.wikipedia.org/wiki/Ballistic_capture) and [Oberth manœuvres](https://en.wikipedia.org/wiki/Oberth_effect), please read on.  Oh, and you'll be able to say these [six words you never say at NASA](https://xkcd.com/1244/).
+So if you want to become a senior rocket pilot, to execute [horseshoe orbits](https://en.wikipedia.org/wiki/Horseshoe_orbit), [Lissajous orbits](https://en.wikipedia.org/wiki/Lissajous_orbit), [heliosynchronous orbits](https://en.wikipedia.org/wiki/Sun-synchronous_orbit) and [ballistic captures](https://en.wikipedia.org/wiki/Ballistic_capture), please read on.  Oh, and you'll be able to say these [six words you never say at NASA](https://xkcd.com/1244/).
 
 # Trajectories
 
@@ -75,7 +75,7 @@ While Principia makes it possible to plan complex trajectories, it's important t
 
 * Principia doesn't help you optimise the flight plan, e.g. by minimising the Δv.  You've got to look for good flight plans yourself, using intuition and trial and errors.  You'll get better over time.  And yes, it's hard, that's what they hire PhDs to do this in real life.
 
-* Principia doesn't help you execute the flight plan.  Once you are done with the planning, you need to execute the manœuvres by hand by starting and cutting off the engines just at the right time.  You will not get this completely right, and in some cases a delay of a fraction of a second may cause significant changes to the trajectory down the road.  That's ok, don't try to overdo it, you can always schedule a minor correction to compensate for any inaccuracies.  In real life rocket scientists do just that as they learn more about the gravitational fields around unexplored celestials.
+* Principia doesn't help you execute the flight plan.  Once you are done with the planning, you need to execute the manœuvres by hand by starting and cutting off the engines just at the right time.  You will not get this completely right, and in some cases a delay of a fraction of a second may cause significant changes to the trajectory down the road.  That's ok, don't try to overdo it, you can always schedule a minor correction to compensate for any inaccuracies.  In real life rocket scientists do just that as they learn more about the gravitational fields around unexplored celestials or because of intrinsic inacuracies in the intensity of the burns.
 
 ## User interface
 
