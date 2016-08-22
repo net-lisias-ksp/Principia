@@ -37,8 +37,7 @@ Timewarping with vessels is very slow above timewarp 100'000x. While we will try
 When no vessels are present timewarp should be very smooth, even at 6'000'000x (in RealSolarSystem).
 
 ##RealSolarSystem users
-Principia comes with initial state and gravity models configs for all celestial bodies in RealSolarSystem as of 2015-08-16. Moreover, initial states and gravity models are provided for the following celestials from pozine's *RSS Planets & Moons expanded*:
-- Charon
+Principia comes with initial state and gravity models configs for all celestial bodies in RealSolarSystem as of 2016-08-22. Moreover, initial states and gravity models are provided for the following celestials from pozine's *RSS Planets & Moons expanded*:
 - Titania
 - Oberon
 - Ariel
@@ -46,8 +45,6 @@ Principia comes with initial state and gravity models configs for all celestial 
 - Miranda
 - Ceres
 - Vesta (fresh data from the Dawn mission :smiley:).
-
-We very strongly recommend that you use Charon, since otherwise Pluto keeps its motion around Charon without having Charon to pull it back, and ends up in a strange orbit.
 
 *No other celestial bodies are supported*, so if you do install pozine's pack, make sure you remove all other bodies: if RealSolarSystem is installed and unsupported celestials are found, the game will crash. This means that you must remove them from the `RSS Planets & Moons.cfg` file, as well as remove their respective folders. You should probably remove their textures too, to reduce memory usage.
 
