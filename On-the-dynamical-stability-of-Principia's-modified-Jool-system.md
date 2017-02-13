@@ -147,7 +147,7 @@ assumptions becomes unacceptable, since we do not simulate bodies colliding or b
 While we may take a guess at the Ляпунов time from the errors above, it would be interesting to give a proper estimate, ideally
 computed by integrating the variational equation.
 ### Statistical analysis
-Once we have local error control and close encounter detection, we simulate a large number of millimetrically perturbed systems
+Once we have local error control and close encounter detection, we could simulate a large number of millimetrically perturbed systems
 to estimate the probability that the system will last a given time.
 ### Understand the behaviour of Bop's eccentricity and inclination
 There are clearly several periodic effects at work on the first five years, which affect both eccentricity and inclination in
