@@ -23,7 +23,7 @@ specifically:
 
 - by increasing the size of the orbits of Vall and Tylo, thereby preventing breakdowns of the inner
   Jool system due to resonances;
-- by making the orbit of Bop retrograde<sup id = "a3">[3](#f3)</sup>, so that it doesn't get boosted out
+- by making the orbit of Bop retrograde<sup name = "a3">[3](#f3)</sup>, so that it doesn't get boosted out
   of the system by Tylo (which now comes closer to it).
 While the resulting system does not appear likely to break down within a century, we find that it is highly
 chaotic, mostly because of interactions between Bop and Tylo. In the remainder of this document, we discuss
@@ -125,7 +125,7 @@ barycentre of the inner Jool system.
 | ![](http://i.imgur.com/BZ6BX0r.png) | ![](http://i.imgur.com/rTpSP6l.png) | ![](http://i.imgur.com/u0JxXl5.png) | ![](http://i.imgur.com/LY1PEO5.png) |
 
 We can see strong nodal and apsidal precession, as can be expected from orbiting the inner Jool system, which behaves
-roughly like a very oblate mass<sup id = "a4">[4](#f4)</sup>. The behaviour of the eccentricity and inclination is
+roughly like a very oblate mass<sup name = "a4">[4](#f4)</sup>. The behaviour of the eccentricity and inclination is
 complex. Again the specifics after a decade depend on amplified numerical errors; we look at the first five "predictable"
 years.
 
