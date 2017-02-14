@@ -154,7 +154,7 @@ There are clearly several periodic effects at work on the first five years, whic
 similar ways. Do the periods match those of the inner moons? Could we see something from a Fourier transform?
 
 ---
-<b id="f1">1.</b> [↑](#a1) Principia offers a plethora of integrators; in this document we use a 12th order symmetric linear multistep
+<b><a id="f1">1.</a></b> [↑](#a1) Principia offers a plethora of integrators; in this document we use a 12th order symmetric linear multistep
 integrator from a paper by
 [Gerald Quinlan and Scott Tremaine (1990), Symmetric multistep methods for the numerical integration of planetary orbits](http://adsabs.harvard.edu/full/1990AJ....100.1694Q).  
 <b id="f2">2.</b> [↑](#a2) We call the failure to fit a polynomial to the trajectory an apocalypse; the check was introduced in [#612](https://github.com/mockingbirdnest/Principia/pull/612/files#diff-d8d4eb7565ea0fc981a4f857def9715bR345), in response to a bug that reminded us of a tweet by [Katie Mack (2014)](https://twitter.com/AstroKatie/status/518697246305439745).  
