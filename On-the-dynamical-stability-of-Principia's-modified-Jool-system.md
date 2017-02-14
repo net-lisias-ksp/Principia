@@ -2,7 +2,7 @@
 ―Scott Manley
 
 Principia computes the trajectory of the celestial bodies by integrating the equations of
-motion<sup id="a1">[1](#f1)</sup>; as a result,
+motion<sup name="a1">[1](#f1)</sup>; as a result,
 if the system is unstable, it may break down in-game. This is in fact the case of the stock system: while the
 specifics depend on how KSP's Keplerian orbital elements are translated into a Cartesian initial state, with
 Principia's interpretation as hierarchical Jacobi elements, the Jool system breaks down within 19 days, with
@@ -15,7 +15,7 @@ a close encounter between Vall and Laythe.
 What would actually happen in that encounter is unclear (impact, breakup by tidal forces, or simply ejection
 of Vall are all possibilities), and Principia is unable to properly simulate it: besides these physical
 considerations, the integration error explodes, and the sharp bend in the trajectory causes a failure of the
-polynomial fitting<sup id="a2">[2](#f2)</sup>. This can be seen in the image on the right above. In any case,
+polynomial fitting<sup name="a2">[2](#f2)</sup>. This can be seen in the image on the right above. In any case,
 the final outcome is likely to have a very wild dependence on the initial conditions.
 
 Principia remedies to this by [modifying the Jool system](https://github.com/mockingbirdnest/Principia/blob/2016081314-Cantor/ksp_plugin_adapter/ksp_plugin_adapter.cs#L1400-L1468),
@@ -154,9 +154,9 @@ There are clearly several periodic effects at work on the first five years, whic
 similar ways. Do the periods match those of the inner moons? Could we see something from a Fourier transform?
 
 ---
-<b><a id="f1">1.</a></b> [↑](#a1) Principia offers a plethora of integrators; in this document we use a 12th order symmetric linear multistep
+<b><a name="f1">1.</a></b> [↑](#a1) Principia offers a plethora of integrators; in this document we use a 12th order symmetric linear multistep
 integrator from a paper by
 [Gerald Quinlan and Scott Tremaine (1990), Symmetric multistep methods for the numerical integration of planetary orbits](http://adsabs.harvard.edu/full/1990AJ....100.1694Q).  
-<b id="f2">2.</b> [↑](#a2) We call the failure to fit a polynomial to the trajectory an apocalypse; the check was introduced in [#612](https://github.com/mockingbirdnest/Principia/pull/612/files#diff-d8d4eb7565ea0fc981a4f857def9715bR345), in response to a bug that reminded us of a tweet by [Katie Mack (2014)](https://twitter.com/AstroKatie/status/518697246305439745).  
-<b id="f3">3.</b> [↑](#a3) We call it [retrobop](https://github.com/mockingbirdnest/Principia/blob/2016081314-Cantor/ksp_plugin/plugin.cpp#L179).  
-<b id="f4">4.</b> [↑](#a4) As [@pdn4kd](https://github.com/pdn4kd) puts it, an oblate megajool (megajoule?).  
+<b name="f2">2.</b> [↑](#a2) We call the failure to fit a polynomial to the trajectory an apocalypse; the check was introduced in [#612](https://github.com/mockingbirdnest/Principia/pull/612/files#diff-d8d4eb7565ea0fc981a4f857def9715bR345), in response to a bug that reminded us of a tweet by [Katie Mack (2014)](https://twitter.com/AstroKatie/status/518697246305439745).  
+<b name="f3">3.</b> [↑](#a3) We call it [retrobop](https://github.com/mockingbirdnest/Principia/blob/2016081314-Cantor/ksp_plugin/plugin.cpp#L179).  
+<b name="f4">4.</b> [↑](#a4) As [@pdn4kd](https://github.com/pdn4kd) puts it, an oblate megajool (megajoule?).  
