@@ -23,7 +23,7 @@ specifically:
 
 - by increasing the size of the orbits of Vall and Tylo, thereby preventing breakdowns of the inner
   Jool system due to resonances;
-- by making the orbit of Bop retrograde<sup name = "a3">[3](#f3)</sup>, so that it doesn't get boosted out
+- by making the orbit of Bop retrograde<sup name = "a3">[3](#f3)</sup>, as suggested by Scott Manley and [@pdn4kd](https://github.com/pdn4kd), so that it doesn't get boosted out
   of the system by Tylo (which now comes closer to it).
 While the resulting system does not appear likely to break down within a century, we find that it is highly
 chaotic, mostly because of interactions between Bop and Tylo. In the remainder of this document, we discuss
