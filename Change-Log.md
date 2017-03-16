@@ -18,7 +18,7 @@
 
 ## Bug fixes
 
-* When using an unstable solar system, the "apocalypse" that occurs when two celestials collide is now reported in the UI instead of causing a mysterious crash ([#1014](https://github.com/mockingbirdnest/Principia/issues/1014), [#1015](https://github.com/mockingbirdnest/Principia/issues/1015)).
+* When using an unstable solar system, the "apocalypse" that occurs when two celestials collide is now reported in the UI instead of causing a mysterious crash ([#1114](https://github.com/mockingbirdnest/Principia/issues/1114), [#1115](https://github.com/mockingbirdnest/Principia/issues/1115)).
 
 * The rewrite of the physics bubble fixed several bugs:
   * The phantom accelerations which sometimes prevented warping are gone ([#1138](https://github.com/mockingbirdnest/Principia/issues/1138)).
