@@ -14,7 +14,7 @@
   * A frame centred on a body and directed towards a second body.
   * A frame centred on a body and rotating with the surface of that body.  For that frame, the navball tracks the surface and is oriented North-East-Down.
 
-* The handling of the physics bubble has been completely rewritten to take advantage of the new features of KSP version 1.2.x.  This makes the conservation of energy works correctly (previously the energy would slowly drift in some cases), it allows collisions to be properly detected and reported, and it opens up the possibility of more precise physics computations in the future.
+* The handling of the physics bubble has been completely rewritten to take advantage of the new features of KSP version 1.2.x.  Unless engines (including RCS) are thrusting, a vessel will follow its free-falling trajectory regardless of whether or not it is timewarping.
 
 ## Bug fixes
 
