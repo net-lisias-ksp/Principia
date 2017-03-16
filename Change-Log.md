@@ -1,3 +1,31 @@
+# [Cardano](https://en.wikipedia.org/wiki/Gerolamo_Cardano)
+
+*NOTE: Cardano is not released yet.  This is a draft of the release note.*
+
+**WARNING: Cardano is *not* save-compatible with previous versions of Principia.  If you have a game saved with Cantor or earlier, it won't load (or it will crash) if you try to use it in Cardano.**
+
+## User-facing features
+
+* Principia now works with KSP version 1.2.2.  Older versions of KSP are no longer supported ([#1150](https://github.com/mockingbirdnest/Principia/issues/1150), [#1237](https://github.com/mockingbirdnest/Principia/issues/1237), [#1244](https://github.com/mockingbirdnest/Principia/issues/1244)).
+
+* Celestials now have proper axial tilt and rotation.  This is particularly useful when using RealSolarSystem.  For instance, the [rings of Saturn](http://i.imgur.com/I5DqakT.png) are (correctly) shown in the same plane as its satellites.  Previously they would show up as being in the Ecliptic, at an angle from the satellites.  Similarly the [lightning of the Earth](http://i.imgur.com/LknBHOL.png) correctly reflects the seasons.
+
+* Two new plotting frames have been added:
+  * A frame centred on a body and directed towards a second body.
+  * A frame centred on a body and rotating with the surface of that body.  For that frame, the navball tracks the surface and is oriented North-East-Down.
+
+* The handling of the physics bubble has been completely rewritten to take advantage of the new features of KSP version 1.2.x.  This makes the conservation of energy works correctly (previously the energy would slowly drift in some cases), it allows collisions to be properly detected and reported, and it opens up the possibility of more precise physics computations in the future.
+
+## Bug fixes
+
+* When using an unstable solar system, the "apocalypse" that occurs when two celestials collide is now reported in the UI instead of causing a mysterious crash ([#1014](https://github.com/mockingbirdnest/Principia/issues/1014), [#1015](https://github.com/mockingbirdnest/Principia/issues/1015)).
+
+* The rewrite of the physics bubble fixed several bugs:
+  * The phantom accelerations which sometimes prevented warping are gone ([#1138](https://github.com/mockingbirdnest/Principia/issues/1138)).
+  * The gravitational acceleration is now calculated for each vessel, not for the centre of mass of the loaded vessels.  This fixes problems where accelerations would be incorrect on some vessels, resulting in jumps and sudden shifts of the gravity vector ([#1048](https://github.com/mockingbirdnest/Principia/issues/1048)).
+
+For more details see all [148+](https://github.com/mockingbirdnest/Principia/pulls?page=6&q=is%3Apr+is%3Aclosed+merged%3A2016-07-23T18%3A59%3A59..2017-03-28T00%3A00%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cantor and Cardano.
+
 # [Cantor](https://en.wikipedia.org/wiki/Georg_Cantor)
 
 [And we're out of β, we're releasing on time!](https://www.youtube.com/watch?v=Y6ljFaKRTrI)  We believe that the mod as now sufficiently functional and stable to be fun to play with, so we are making it more broadly available.  Download it [here](https://goo.gl/eZbr4e).
