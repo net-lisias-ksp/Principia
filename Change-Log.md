@@ -24,6 +24,10 @@
   * The phantom accelerations which sometimes prevented warping are gone ([#1138](https://github.com/mockingbirdnest/Principia/issues/1138)).
   * The gravitational acceleration is now calculated for each vessel, not for the centre of mass of the loaded vessels.  This fixes problems where accelerations would be incorrect on some vessels, resulting in jumps and sudden shifts of the gravity vector ([#1048](https://github.com/mockingbirdnest/Principia/issues/1048)).
 
+## Correctness
+
+* We had noticed that we were not able to predict very precisely the position of some small bodies of the solar system, so we made a thorough analysis of the behaviour of Phobos.  It turns out that the spherical harmonics *C₂₂* and *S₂₂* of Mars have a considerable influence on the orbit of its satellites.  Unfortunately, adding them to our model would, as things stand, make the game too slow.  We'll try to improve this in the future, maybe by using symmetric linear multistep integrators.
+
 We have not released for 8 months.  Going forward, we plan to release more often, even if that means making smaller changes in each release.  We'll try to have a new release coincident with each new moon.
 
 For more details see all [148+](https://github.com/mockingbirdnest/Principia/pulls?page=6&q=is%3Apr+is%3Aclosed+merged%3A2016-07-23T18%3A59%3A59..2017-03-28T00%3A00%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cantor and Cardano.
