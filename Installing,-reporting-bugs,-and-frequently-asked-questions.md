@@ -4,7 +4,7 @@ In these FAQ, `<KSP directory>` is the directory such that the KSP executable is
 
 Note that Principia Cantor targets KSP 1.1.3. It will *not* work with later versions of KSP, including the current version.
 
-#Installing
+# Installing
 The binaries for Windows and Ubuntu x64 can be found [here](https://goo.gl/eZbr4e).
 
 For Macintosh 64-bit users, we don't have a build at this point.  Contact us if you are interested in contributing one.
