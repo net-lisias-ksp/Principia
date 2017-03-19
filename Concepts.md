@@ -61,13 +61,17 @@ In Principia things get more complicated because (in the interesting missions at
 
 The Principia UI has a button `Fix navball in plotting frame` which you can use to align the navball on the elements that are invariant in the plotting frame that you selected.  The navball also changes color to give you a visual clue of its meaning.  The exact meaning of the navball in each plotting frame is as follows:
 
-* Non-rotating reference frames centred on a celestial
+* Reference frame fixing the surface of a celestial
+
+* Non-rotating reference frame fixing the centre of a celestial
 
     The navball is painted light and dark grey.  When using the unmodified stock game, the separation between the colors is parallel to the equator of Kerbin.  When using RealSolarSystem the separation between the colours is parallel to the equator of the Earth and the line from the ♈ marker to the 12 marker is parallel to the line joining the Spring and Autumn equinoxes.  In all cases, the navball is immobile with respect to distant stars.  (Directions on this navball are given as [right ascensions](https://en.wikipedia.org/wiki/Right_ascension) in hours.)
 
 * Reference frame fixing the barycentre of two celestials and the line between them
 
     The navball is painted light and dark purple.  The separation between the colours is parallel to the orbital plane of the two celestials (remember that this plane is pinned) and the line from the 0 (I) marker to the 180 (II) marker is parallel to the line between the two celestials.
+
+* Reference frame fixing the centre of a celestial and the line towards another celestial
 
 # Flight planning
 
