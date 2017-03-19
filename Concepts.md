@@ -29,9 +29,11 @@ Now transport yourself to the surface of the Moon, and bring a telescope with yo
 
 Which one of these is the real trajectory of the satellite?  Well, both.  They are both correct, but they are not both equally useful.  Imagine that you are a flight controller trying to adjust the satellite so that it remains exactly on top of your house.  The second representation is useless because a small drift that would cause you to completely lose TV reception would just manifest itself as a minor change in the shape of the crushed spring.  The first representation is what the flight controller wants to use: they can use precision thrusters to nudge the satellite a bit so that TV reception stays optimal in the desired region.
 
-For the same reason, Principia offers a choice of *plotting frame* that you can use to display your trajectories.  Each of these plotting frame is most useful in specific circumstances.  You can choose between two kinds of plotting  frames using the `Plotting frame selection...` panel.
+For the same reason, Principia offers a choice of *plotting frame* that you can use to display your trajectories.  Each of these plotting frame is most useful in specific circumstances.  You can choose between four kinds of plotting  frames using the `Plotting frame selection...` panel.
 
-* Non-rotating reference frames centred on a celestial
+* Reference frame fixing the surface of a celestial
+
+* Non-rotating reference frame fixing the centre of a celestial
 
     You can use the panel to pick the celestial (a planet or one of its natural satellite) to use as the centre.  This plotting frame is pinned to the centre of the celestial, moves with it and doesn't rotate with respect to distant stars.  For instance, if you use such a frame centered on Jupiter, Jupiter will look like it doesn't move, and if you look at a distant star like Sirius it will also appear immobile.  On the other hand the Sun and the natural satellites of Jupiter will appear to move around.
 
@@ -46,6 +48,8 @@ For the same reason, Principia offers a choice of *plotting frame* that you can 
     In addition, the plane defined by the velocities of the two celestials is also pinned.  Generally this plane is what you might think of as the plane of the "orbit" of one celestial around the other, e.g., the plane of the Moon orbit in the above example.
 
     This frame is useful for planning and executing a trajectory that goes from one celestial to another.  Imagine that you try to play an Apollo mission: you can very accurately plan your trajectory from the Earth to the Moon and see its general shape: free return, gravity boost, etc.  This frame is also useful for reaching [Lagrangian points](https://en.wikipedia.org/wiki/Lagrangian_point) since these points appear immobile.
+
+* Reference frame fixing the centre of a celestial and the line towards another celestial
 
 We'll probably add more kinds of plotting frames in future versions, to help with other kinds of manœuvres (e.g., landing, rendezvous, etc.).
 
