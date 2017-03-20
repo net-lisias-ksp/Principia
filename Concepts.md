@@ -57,7 +57,7 @@ For the same reason, Principia offers a choice of *plotting frame* that you can 
 
     A frame similar to the previous one, except that instead of pinning the barycentre of two celestials, it pins the centre of one of the celestials.  In the case of the Earth and the Moon, the Earth will appear immobile and the Moon will stay in a fixed direction, although its distance will vary a bit over time (due to the eccentricity of its orbit).  The distant stars, the Sun and all other celestials will appear to move around.
 
-    This frame is useful for planning and executing a trajectory that goes from one celestial to another.
+    This frame is useful for when your vessel is close to a celestial, but the direction of another celestial is important: for instance, if you are in low Earth orbit but must orient your solar panels towards the Sun.
 
 We'll probably add more kinds of plotting frames in future versions, to help with other kinds of manœuvres (e.g., rendezvous, etc.).
 
