@@ -33,7 +33,7 @@ For the same reason, Principia offers a choice of *plotting frame* that you can 
 
 * Reference frame fixing the surface of a celestial
 
-    You can use the panel to pick the celestial (a planet or one of its natural satellite) to use as the centre. This plotting frame is pinned to the centre of the celestial, moves with it and rotates with its surface.  For instance, if you use such a frame centered on Jupiter, Jupiter will look like it doesn't move, and if you look at its surface the atmospheric features (e.g., the Great Red Spot) will appear immobile.  On the other hand the distant stars like Sirius, the Sun and the natural satellites of Jupiter will appear to move around.
+    You can use the panel to pick the celestial (a planet or one of its natural satellite) to use as the centre. This plotting frame is pinned to the centre of the celestial and rotates with its surface.  For instance, if you use such a frame centered on Jupiter, Jupiter will look like it doesn't move, and if you look at its surface the atmospheric features (e.g., the Great Red Spot) will appear immobile.  On the other hand the distant stars like Sirius, the Sun and the natural satellites of Jupiter will appear to move around.
 
     This frame is useful when entering or leaving an orbit around a celestial: because the celestial looks immobile you can tune your approach and make sure that you don't come in too fast, don't enter the atmosphere or (horror!) don't crash on the surface.  It is also the most useful for any manœuvre that happens in low orbit (think International Space Station for instance).
 
@@ -55,7 +55,7 @@ For the same reason, Principia offers a choice of *plotting frame* that you can 
 
     A frame similar to the previous one, except that instead of pinning the barycentre of two celestials, it pins the centre of one of the celestials.  In the case of the Earth and the Moon, the Earth will appear immobile and the Moon will stay in a fixed direction, although its distance will vary a bit over time (due to the eccentricity of its orbit).  The distant stars, the Sun and all other celestials will appear to move around.
 
-    This frame is also useful for planning and executing a trajectory that goes from one celestial to another.
+    This frame is useful for planning and executing a trajectory that goes from one celestial to another.
 
 We'll probably add more kinds of plotting frames in future versions, to help with other kinds of manœuvres (e.g., rendezvous, etc.).
 
@@ -69,6 +69,8 @@ The Principia UI has a button `Fix navball in plotting frame` which you can use 
 
 * Reference frame fixing the surface of a celestial
 
+    The navball is similar to that of the stock KSP: the ground is brown and the sky is blue.  The separation between the colours is parallel to the surface of the celestial below your vessel.  The line from the N marker to the 180 marker is parallel to the North/South axis.
+
 * Non-rotating reference frame fixing the centre of a celestial
 
     The navball is painted light and dark grey.  When using the unmodified stock game, the separation between the colors is parallel to the equator of Kerbin.  When using RealSolarSystem the separation between the colours is parallel to the equator of the Earth and the line from the ♈ marker to the 12 marker is parallel to the line joining the Spring and Autumn equinoxes.  In all cases, the navball is immobile with respect to distant stars.  (Directions on this navball are given as [right ascensions](https://en.wikipedia.org/wiki/Right_ascension) in hours.)
@@ -78,6 +80,8 @@ The Principia UI has a button `Fix navball in plotting frame` which you can use 
     The navball is painted light and dark purple.  The separation between the colours is parallel to the orbital plane of the two celestials (remember that this plane is pinned) and the line from the 0 (I) marker to the 180 (II) marker is parallel to the line between the two celestials.
 
 * Reference frame fixing the centre of a celestial and the line towards another celestial
+
+    The navball is painted light and dark orange.  The separation between the colours is parallel to the orbital plane of the two celestials (remember that this plane is pinned) and the line from the filled circle (●) to the open circle (○) marker is parallel to the line from the pinned celestial to the other celestial.
 
 # Flight planning
 
