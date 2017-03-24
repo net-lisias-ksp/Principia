@@ -26,11 +26,12 @@
 
 ## Library changes
 
-* Implemented symmetric linear multistep integrators.
+* Implemented symmetric linear multistep integrators (not used in this release).
 * Ported the symplectic partitioned Runge-Kutta integrators (more general than the Runge-Kutta-Nyström integrators) to a form compatible with the implementation used for the Runge-Kutta-Nyström integrators.
 Principia's `integrators` library now has 37 different fixed step conjugate-symplectic and symplectic integrators.
 * Integrators are now based on `Instance`s, which hold any persistent state that the integrator might need in addition to the state of the system; this is important for resumability of multistep or variable-step integrators.
 * Constructors of `Rotation`s from Euler angles and (appropriately for this release) Cardano angles have been added. These are used in [pre-existing code](https://github.com/mockingbirdnest/Principia/blob/1d5806f3d567dd05f7423db813a99847ab007f9a/physics/kepler_orbit_body.hpp#L217-L220) (Keplerian elements) as well as for the rotations defining [the surface frame of celestials](https://github.com/mockingbirdnest/Principia/blob/6d5239c902206375ee4b125dc4767c86ecc183c0/physics/rotating_body_body.hpp#L99-L104), used to implement axial tilt.
+* Implemented a proper [double-double addition](https://github.com/mockingbirdnest/Principia/blob/11bff4cbb5b6d1560eade37f5a573e979aca9850/numerics/double_precision_body.hpp#L203-L210), since the (pre-existing) [compensated summation](https://github.com/mockingbirdnest/Principia/blob/11bff4cbb5b6d1560eade37f5a573e979aca9850/numerics/double_precision_body.hpp#L51-L60) was not up to the task of the ill-conditioned sum in linear multistep integrators
 
 ## Correctness
 
