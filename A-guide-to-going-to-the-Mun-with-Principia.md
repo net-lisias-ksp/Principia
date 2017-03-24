@@ -5,7 +5,7 @@
 Let us compare different approaches to going to the Mun, and see how to plan them using the tools provided by Principia.
 For the following examples, we will start from an 80 km altitude circular Kerbin orbit, and reach a 30 km altitude circular Mun orbit. We will use the spacecraft show below (all tanks full), and perform both burns using the main engine (LV-909).
 ![LV-909; FL-T400; FL-R25; Small Inline Reaction Wheel; OKTO2; PB-NUK; 4x RV-105.](http://i.imgur.com/8RKDnPk.png)
-###Free return (1211 m/s, 4 h 55 min)
+### Free return (1211 m/s, 4 h 55 min)
 We create a flight plan, set the reference frame to Kerbin-centred non-rotating, and create a manœuvre. We give it enough tangent Δv to reach the orbit of the Mun. This part is very similar to stock.
 ![](http://i.imgur.com/3OOJFoc.gif)
 Since there are no spheres of influence, there is no such thing as an encounter in principia; in order to aim for the Mun, we first switch to the Kerbin-Mun barycentric rotating frame. In that frame, Kerbin and the Mun move very little, and only towards and away from each other (the reference frame fixes the Kerbin-Mun line).
@@ -31,7 +31,7 @@ Shortening the flight plan to show a single orbital period, we see that the orbi
 ![](http://i.imgur.com/OMuQRwN.png)
 Here is a look at the overall trajectory. The total Δv cost is about 1211 m/s, and the transfer takes 4 h 55 min from the start of injection burn to the end of the insertion burn.
 ![](http://i.imgur.com/FotbpcY.png)
-###Hohmann (1144 m/s, 6 h 23 min)
+### Hohmann (1144 m/s, 6 h 23 min)
 Let us look at a more common Mun transfer, the Hohmann-like approach with which veteran players of KSP will be familiar. The planning of the injection burn is very similar to the free return case above, except we aim for the other side of the Mun, which is far cheaper.
 
 We aim for the Mun, on the cheap side.
@@ -45,7 +45,7 @@ We can now add a circularization burn.
 Here is the overall trajectory in the Kerbin-Mun barycentric reference frame. The total Δv cost is about 1144 m/s, the duration is 6 h 23 min.
 ![](http://i.imgur.com/WCqbNih.png)
 Veteran KSP players might note that in stock, such a transfer can be executed with only ~1113 m/s of Δv; this is an artifact of patched conics.
-###Low energy transfer: an inner resonance transfer (1031 m/s, 2 days 16 h 41 min)
+### Low energy transfer: an inner resonance transfer (1031 m/s, 2 days 16 h 41 min)
 While the previous two transfers were usual KSP operations planned using principia's tools, this one truly relies on *N*-body dynamics.
 It gains 10% Δv over the more conventional approach, but takes a lot more time.
 
