@@ -35,7 +35,7 @@ Principia's `integrators` library now has 37 different fixed step conjugate-symp
 
 ## Astronomy
 
-* We had noticed that we were not able to predict very precisely the position of some small bodies of the solar system, so we made a thorough analysis of the behaviour of Phobos.  It turns out that the spherical harmonics *C₂₂* and *S₂₂* of Mars have a considerable influence on the orbit of its satellites.  Unfortunately, adding them to our model would, as things stand, make the game too slow, and was too complex for implementation in Cardano.  We'll try to improve this in the future, maybe by using symmetric linear multistep integrators.
+* We had noticed that we were not able to predict very precisely the position of some small bodies of the solar system, so we made a thorough analysis of the behaviour of Phobos.  It turns out that the spherical harmonics *C*₂₂ and *S*₂₂ of Mars have a considerable influence on the orbit of its satellites.  Unfortunately, adding them to our model would, as things stand, make the game too slow, and was too complex for implementation in Cardano.  We'll try to improve this in the future, maybe by using symmetric linear multistep integrators.
 * We analysed [the dynamical stability of the retrobop system](https://github.com/mockingbirdnest/Principia/wiki/On-the-dynamical-stability-of-Principia's-modified-Jool-system), noticing that it is highly chaotic.
 
 We have not released for 8 months.  Going forward, we plan to release more often, even if that means making smaller changes in each release.  We'll try to have a new release coincident with each new moon.
