@@ -40,7 +40,7 @@ Principia's `integrators` library now has 37 different fixed step conjugate-symp
 
 We have not released for 8 months.  Going forward, we plan to release more often, even if that means making smaller changes in each release.  We'll try to have a new release coincident with each new moon.
 
-For more details see all [148+](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2016-07-23T18%3A59%3A59..2017-03-28T00%3A00%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cantor and Cardano.
+For more details see all [164+](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2016-07-23T18%3A59%3A59..2017-03-28T00%3A00%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cantor and Cardano.
 
 # [Cantor](https://en.wikipedia.org/wiki/Georg_Cantor)
 
