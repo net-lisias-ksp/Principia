@@ -57,7 +57,8 @@ For the same reason, Principia offers a choice of *plotting frame* that you can 
 
     A frame similar to the previous one, except that instead of pinning the barycentre of two celestials, it pins the centre of one of the celestials.  In the case of the Earth and the Moon, the Moon will appear immobile and the Earth will stay in a fixed direction, although its distance will vary a bit over time (due to the eccentricity of its orbit).  The distant stars, the Sun and all other celestials will appear to move around.
 
-    This frame is useful for when your vessel is close to a celestial, but the direction of another celestial is important: for instance, if you are in low Earth orbit but must orient your solar panels towards the Sun. Another application in heliosynchronous orbits: in the Earth-Centred Sun-Aligned reference frame, the terminator does not move, and a heliosynchronous orbit is one that does not drift in that frame.
+    This frame is useful for when your vessel is close to a celestial, but the direction of another celestial is important: for instance, if you are in low Earth orbit but must orient your solar panels towards the Sun.
+Another application is heliosynchronous orbits: in the Earth-Centred Sun-Aligned reference frame, the terminator does not move, and a heliosynchronous orbit is one that does not drift in that frame.
 
 
 Of these reference frames, all but the barycentric frame fix the centre of a celestial body. Since that body is fixed, the closest approaches (periapsides) and furthest separations (apoapsides) between the vessel and that body are visible on the trajectory, and are labelled with the Pe and Ap markers. Since the barycentric frame does have any fixed body, no apsis markers are shown.
