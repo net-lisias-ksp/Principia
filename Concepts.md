@@ -85,7 +85,7 @@ The Principia UI has a button `Fix navball in plotting frame` which you can use 
 
 * Reference frame fixing the barycentre of two celestials and the line between them
 
-    The navball is painted light and dark purple.  The separation between the colours is parallel to the orbital plane of the two celestials (remember that this plane is pinned) and the line from the 0 (II) marker to the 180 (I) marker is parallel to the line between the two celestials.
+    The navball is painted light and dark purple.  The separation between the colours is parallel to the orbital plane of the two celestials (remember that this plane is pinned) and the line from the 0 (Ⅱ) marker to the 180 (Ⅰ) marker is parallel to the line between the two celestials.
 
 * Reference frame fixing the centre of a celestial and the line towards another celestial
 
