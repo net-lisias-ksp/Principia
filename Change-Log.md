@@ -24,9 +24,17 @@
   * The phantom accelerations which sometimes prevented warping are gone ([#1138](https://github.com/mockingbirdnest/Principia/issues/1138)).
   * The gravitational acceleration is now calculated for each vessel, not for the centre of mass of the loaded vessels.  This fixes problems where accelerations would be incorrect on some vessels, resulting in jumps and sudden shifts of the gravity vector ([#1048](https://github.com/mockingbirdnest/Principia/issues/1048)).
 
+## Library changes
+
+* Implemented symmetric linear multistep integrators.
+* Ported the symplectic partitioned Runge-Kutta integrators (more general than the Runge-Kutta-Nyström integrators) to a form compatible with the implementation used for the Runge-Kutta-Nyström integrators.
+Principia's `integrators` library now has 37 different fixed step conjugate-symplectic and symplectic integrators.
+* Integrators are now based on `Instance`s, which hold any persistent state that the integrator might need in addition to the state of the system; this is important for resumability of multistep or variable-step integrators.
+* Constructors of `Rotation`s from Euler angles and (appropriately for this release) Cardano angles have been added. These are used in [pre-existing code](https://github.com/mockingbirdnest/Principia/blob/1d5806f3d567dd05f7423db813a99847ab007f9a/physics/kepler_orbit_body.hpp#L217-L220) (Keplerian elements) as well as for the rotations defining [the surface frame of celestials](https://github.com/mockingbirdnest/Principia/blob/6d5239c902206375ee4b125dc4767c86ecc183c0/physics/rotating_body_body.hpp#L99-L104), used to implement axial tilt.
+
 ## Correctness
 
-* We had noticed that we were not able to predict very precisely the position of some small bodies of the solar system, so we made a thorough analysis of the behaviour of Phobos.  It turns out that the spherical harmonics *C₂₂* and *S₂₂* of Mars have a considerable influence on the orbit of its satellites.  Unfortunately, adding them to our model would, as things stand, make the game too slow.  We'll try to improve this in the future, maybe by using symmetric linear multistep integrators.
+* We had noticed that we were not able to predict very precisely the position of some small bodies of the solar system, so we made a thorough analysis of the behaviour of Phobos.  It turns out that the spherical harmonics *C₂₂* and *S₂₂* of Mars have a considerable influence on the orbit of its satellites.  Unfortunately, adding them to our model would, as things stand, make the game too slow, and was too complex for implementation in Cardano.  We'll try to improve this in the future, maybe by using symmetric linear multistep integrators.
 
 We have not released for 8 months.  Going forward, we plan to release more often, even if that means making smaller changes in each release.  We'll try to have a new release coincident with each new moon.
 
