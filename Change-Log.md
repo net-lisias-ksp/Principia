@@ -50,6 +50,10 @@ For more details see all [148+](https://github.com/mockingbirdnest/Principia/pul
 
 * When using stock KSP, the clock now properly uses 6-hour days instead of 24-hour days ([#1085](https://github.com/mockingbirdnest/Principia/issues/1085)).
 
+## Library changes
+
+* Implemented date and time literals that are interpreted at compile time. Using these, [four time scales](https://github.com/mockingbirdnest/Principia/blob/2016081314-Cantor/astronomy/time_scales.hpp#L31-L34) are available to write [`Instant` literals, again interpreted at compile time](https://github.com/mockingbirdnest/Principia/blob/2016081314-Cantor/astronomy/time_scales_test.cpp#L78-L101): *Temps Terrestre* (TT), *Temps Atomique International* (TAI), Coordinated Universal Time (UTC), and UT1. [The dates in the lunar eclipse tests now use UT1 literals](https://github.com/mockingbirdnest/Principia/blob/2016081314-Cantor/astronomy/lunar_eclipse_test.cpp#L243-L248).
+
 For more details see all [8](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2016-06-26T19%3A00%3A00..2016-07-23T18%3A59%3A59+sort%3Acreated-asc) pull requests between بوژگانی and Cantor.
 
 # [بوژگانی](https://en.wikipedia.org/wiki/Abu_al-Wafa%27_Buzjani)
