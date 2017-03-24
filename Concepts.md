@@ -31,13 +31,13 @@ Which one of these is the real trajectory of the satellite?  Well, both.  They a
 
 For the same reason, Principia offers a choice of *plotting frame* that you can use to display your trajectories.  Each of these plotting frame is most useful in specific circumstances.  You can choose between four kinds of plotting  frames using the `Plotting frame selection...` panel.
 
-* Reference frame fixing the surface of a celestial
+* Reference frame fixing the surface of a celestial (e.g. Earth-Centred Earth-Fixed, ECEF)
 
     You can use the panel to pick the celestial (a planet or one of its natural satellite) to use as the centre. This plotting frame is pinned to the centre of the celestial and rotates with its surface.  For instance, if you use such a frame centered on Jupiter, Jupiter will look like it doesn't move, and if you look at its surface the atmospheric features (e.g., the Great Red Spot) will appear immobile.  On the other hand the distant stars like Sirius, the Sun and the natural satellites of Jupiter will appear to move around.
 
-    This frame is useful when taking off or landing: because the celestial looks immobile you can tune your approach and make sure that you don't come in too fast, don't enter the atmosphere or (horror!) don't crash on the surface.  It is also useful for synchronous orbits.
+    This frame is useful when taking off or landing: because the celestial looks immobile you can tune your approach, see where you'll land (note however that atmospheric effects are not predicted), and make sure that you don't come in too fast or too steep.  It is also useful for synchronous orbits (or semisynchronous orbits), since they will be periodic in this reference frame.
 
-* Non-rotating reference frame fixing the centre of a celestial
+* Non-rotating reference frame fixing the centre of a celestial (e.g. Earth-Centred Inertial, ECI)
 
     A frame similar to the previous one, except that it doesn't rotate with the celestial and stays fixed with respect to distant stars.  For instance, if you use such a frame centered on Jupiter, Jupiter will look like it doesn't move, and if you look at a distant star like Sirius it will also appear immobile.  On the other hand the Sun and the natural satellites of Jupiter will appear to move around.
 
@@ -45,7 +45,7 @@ For the same reason, Principia offers a choice of *plotting frame* that you can 
 
     This frame is the one in which the stock KSP displays its conics (the trajectories are only conics in this particular kind of frame).
 
-* Reference frame fixing the barycentre of two celestials and the line between them
+* Reference frame fixing the barycentre of two celestials and the line between them (e.g. Earth Moon Barycentric, EMB)
 
     You can use the panel to pick the two celestials that determine the plotting frame.  This plotting frame is pinned on the barycentre (i.e., centre of mass) of the two celestials and the line between the celestials appears immobile.  Take the case of the Earth and the Moon.  Curiously the barycentre of the Earth-Moon system is located about 1700 km *inside* the Earth.  That point will appear immobile (not that it matters because you don't want your rocket to go there).  More interestingly, both the Earth and the Moon will stay in fixed directions, although their distance will vary a bit over time (due to the eccentricity of the Moon's orbit).  The distant stars, the Sun and all other celestials will appear to move around.
 
@@ -53,11 +53,16 @@ For the same reason, Principia offers a choice of *plotting frame* that you can 
 
     This frame is useful for planning and executing a trajectory that goes from one celestial to another.  Imagine that you try to play an Apollo mission: you can very accurately plan your trajectory from the Earth to the Moon and see its general shape: free return, gravity boost, etc.  This frame is also useful for reaching [Lagrangian points](https://en.wikipedia.org/wiki/Lagrangian_point) since these points appear immobile.
 
-* Reference frame fixing the centre of a celestial and the line towards another celestial
+* Reference frame fixing the centre of a celestial and the line towards another celestial (e.g. Earth-Centred Sun-Aligned, ECSA)
 
-    A frame similar to the previous one, except that instead of pinning the barycentre of two celestials, it pins the centre of one of the celestials.  In the case of the Earth and the Moon, the Earth will appear immobile and the Moon will stay in a fixed direction, although its distance will vary a bit over time (due to the eccentricity of its orbit).  The distant stars, the Sun and all other celestials will appear to move around.
+    A frame similar to the previous one, except that instead of pinning the barycentre of two celestials, it pins the centre of one of the celestials.  In the case of the Earth and the Moon, the Moon will appear immobile and the Earth will stay in a fixed direction, although its distance will vary a bit over time (due to the eccentricity of its orbit).  The distant stars, the Sun and all other celestials will appear to move around.
 
-    This frame is useful for when your vessel is close to a celestial, but the direction of another celestial is important: for instance, if you are in low Earth orbit but must orient your solar panels towards the Sun.
+    This frame is useful for when your vessel is close to a celestial, but the direction of another celestial is important: for instance, if you are in low Earth orbit but must orient your solar panels towards the Sun. Another application in heliosynchronous orbits: in the Earth-Centred Sun-Aligned reference frame, the terminator does not move, and a heliosynchronous orbit is one that does not drift in that frame.
+
+
+Of these reference frames, all but the barycentric frame fix the centre of a celestial body. Since that body is fixed, the closest approaches (periapsides) and furthest separations (apoapsides) between the vessel and that body are visible on the trajectory, and are labelled with the Pe and Ap markers. Since the barycentric frame does have any fixed body, no apsis markers are shown.
+
+Displaying the trajectory in a reference frame that fixes the centre of a body allows you to check (visually, as well as with the apsis markers) that you don't enter the atmosphere or (horror!) crash on the surface. If a periapsis is below the mean surface (0 m altitude) of the celestial body, it is shown as an orange impact marker.  No such warning is shown if the periapsis is merely inside the atmosphere, so check the altitude!
 
 We'll probably add more kinds of plotting frames in future versions, to help with other kinds of manœuvres (e.g., rendezvous, etc.).
 
