@@ -8,7 +8,7 @@
 
 * Principia now works with KSP version 1.2.2.  Older versions of KSP are no longer supported ([#1150](https://github.com/mockingbirdnest/Principia/issues/1150), [#1237](https://github.com/mockingbirdnest/Principia/issues/1237), [#1244](https://github.com/mockingbirdnest/Principia/issues/1244)).
 
-* Celestials may now have proper axial tilt and rotation.  This is particularly useful when using RealSolarSystem.  For instance, the [rings of Saturn](http://i.imgur.com/I5DqakT.png) are (correctly) shown in the same plane as its satellites.  Previously they would show up as being in the Ecliptic, at an angle from the satellites.  Similarly the [lightning of the Earth](http://i.imgur.com/LknBHOL.png) correctly reflects the seasons.
+* Celestials may now have proper axial tilt and rotation.  This is particularly useful when using RealSolarSystem.  For instance, the [rings of Saturn](http://i.imgur.com/I5DqakT.png) are (correctly) shown in the same plane as its satellites.  Previously they would show up as being in the plane of Earth's equator, at an angle from the satellites.  Similarly the [lightning of the Earth](http://i.imgur.com/LknBHOL.png) correctly reflects the seasons.
 
 * Two new plotting frames have been added:
   * A frame centred on a body and directed towards a second body.
