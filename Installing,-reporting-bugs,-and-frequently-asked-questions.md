@@ -51,8 +51,7 @@ Principia comes with initial state and gravity models configs for all celestial 
 *No other celestial bodies are supported*, so if you do install pozine's pack, make sure you remove all other bodies: if RealSolarSystem is installed and unsupported celestials are found, the game will crash. This means that you must remove them from the `RSS Planets & Moons.cfg` file, as well as remove their respective folders. You should probably remove their textures too, to reduce memory usage.
 
 ## Kopernicus users
-If you are trying to build your own solar system, you might run into stability problems. This manifests itself by a crash and an error message like "Apocalypse occurred at..." in the `FATAL` log file.
-To solve the problem, you might need to simulate your solar system in an external tool and find its regions of stability.
+If you are trying to build your own solar system, you might run into stability problems. This manifests itself by a pop-up message like "Apocalypse occurred at..." and an error in the logs.  To solve the problem, you might need to simulate your solar system in an external tool and find its regions of stability.
 
 In particular, if you simply add bodies to the existing Kerbal system, even if they are themselves stable and do not perturb the Kerbal system significantly, issues will appear in the existing Jool system, whose stock version is unstable: when no modifications are made to the solar system we detect that and change the Jool system, but as soon as you have a custom system, you need to deal with Jool yourself too.
 
