@@ -148,3 +148,5 @@ At the moment, flight planning suffers from the following limitations, which we'
 * The mass used for computing the flight plan is the one when you actually edit the plan.  It you later do a vessel separation, it will change the mass and will effectively make the flight plan useless: you'll need to delete it and re-create it.
 
 * There is no good support for rendezvous between vessels.  You may actually achieve a rendezvous with quite a bit of nudging and fudging and budging, but what is missing is really a plotting frame tied to one vessel that would give a proper view of the approach of the other vessel.
+
+* Displaying the history may be slow.  If that happens, you may want to try shortening the history.  In the future we plan to address this problem by downsampling the history for rendering purposes.
