@@ -119,7 +119,10 @@ Channel operators | Timezone | [How is this still a thing](https://www.youtube.c
 # Random user comments
 ## I don't like your navballs!
 The brown/blue navball can be reverted to its stock texture by removing the `<KSP directory>\Principia\assets\navball_compass.png` file.
-The other two textures cannot be removed (this would cause a crash), but you can replace them by any png you like.
+The other textures cannot be removed (this would cause a crash), but you can replace them by any `png` you like, including the stock navball which can be found, e.g., in the [forums](http://forum.kerbalspaceprogram.com/index.php?/topic/138490-request-navball-map/#comment-2549941).  Note that you may have to rotate the stock navball for some of our reference frames.
+
+There are also useful threads in the [forums](http://forum.kerbalspaceprogram.com/index.php?/topic/63113-making-high-contrast-nav-ball/&page=8) where users publish custom navballs.
+
 If you are simply dissatisfied with the colours, but like the general style, this repository contains *Mathematica* code to generate navballs, that you can tweak to your liking.
 
 ## Why don't you keep the planets on rails, it would improve performance?
