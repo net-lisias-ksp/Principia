@@ -4,7 +4,7 @@ NOTE: Cartan is not released yet. This is a draft of the release note.
 
 ## User-facing features
 
-* Principia now supports a vessel-centred frame directed along the horizontal and the vertical with respect to a celestial.  This is useful for performing rendezvous.  The points of closest approach and the points where the active vessel crosses the plane of the target vessel trajectory are displayed on the prediction and flight plan.  See [xxx] for details regarding the use of this frame.
+* Principia now supports a vessel-centred frame directed along the horizontal and the vertical of a celestial.  This is useful for performing rendezvous.  The points of closest approach and the points where the active vessel crosses the plane of the target vessel trajectory are displayed on the prediction and flight plan.  See [xxx] for details regarding the use of this frame.
 
 * The integrators used for computing the positions of the celestials and the histories of the vessels have been changed.  We now use symmetric linear multistep integrators instead of symplectic Runge-Kutta-Nyström integrators.  The former are conjugate-symplectic, which is nearly as good as symplectic, and they produce much denser output.  As a consequence the integration of the celestials is much more precise (errors in the meters instead of thousands of kilometers) and the integration of the vessels is about 5 times faster.  Warping at 100,000x is completely smooth even with 20 vessels, and wrapping at 1,000,000x is janky but usable.
 
