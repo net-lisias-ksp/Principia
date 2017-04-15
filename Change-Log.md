@@ -4,11 +4,21 @@ NOTE: Cartan is not released yet. This is a draft of the release note.
 
 ## User-facing features
 
+* Principia now supports a vessel-centred frame directed along the horizontal and the vertical with respect to a celestial.  This is useful for performing rendezvous.  The points of closest approach and the points where the active vessel crosses the plane of the target vessel trajectory are displayed on the prediction and flight plan.  See [xxx] for details regarding the use of this frame.
+
+* The integrators used for computing the positions of the celestials and the histories of the vessels have been changed.  We now use symmetric linear multistep integrators instead of symplectic Runge-Kutta-Nyström integrators.  The former are conjugate-symplectic, which is nearly as good as symplectic, and they produce much denser output.  As a consequence the integration of the celestials is much more precise (errors in the meters instead of thousands of kilometers) and the integration of the vessels is about 5 times faster.  Warping at 100,000x is completely smooth even with 20 vessels, and wrapping at 1,000,000x is janky but usable.
+
 ## Bug fixes
 
-## Library changes
+* The stabilization of the Jool system that was introduced in Brouwer got lost in Cardano, causing an Apocalypse in some situations.  This has been fixed ([#1319](https://github.com/mockingbirdnest/Principia/issues/1319)).
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-03-25T17%3A00%3A00..2017-04-26T14%3A00%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cardano and Cartan.
+* A crash might happen during EVA if the unfortunate Kerbal would touch a non-physically-significant part, such as a barometre.  This has been fixed by going up the part tree until a physically-significant part is found ([#1308](https://github.com/mockingbirdnest/Principia/issues/1308)).
+
+* A crash might happen when warping from the sphere of influence of a celestial to that of another, especially if the second celestial is large (e.g., Kerbol).  This has been fixed by properly detecting the change of sphere of influence ([#1302](https://github.com/mockingbirdnest/Principia/issues/1302)).
+
+* Creating a manœuvre with the reference frame fixing the centre of a celestial and the line towards another celestial (e.g. Earth-Centred Sun-Aligned, ECSA) would systematically cause a crash ([#1293] (https://github.com/mockingbirdnest/Principia/issues/1293)).
+
+For more details see all [37+](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-03-25T17%3A00%3A00..2017-04-26T14%3A00%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cardano and Cartan.
 
 # [Cardano](https://en.wikipedia.org/wiki/Gerolamo_Cardano)
 
