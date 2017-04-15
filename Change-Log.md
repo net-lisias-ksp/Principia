@@ -2,6 +2,8 @@
 
 NOTE: Cartan is not released yet. This is a draft of the release note.
 
+NOTE: Cartan is save-compatible with Cardano.  However, existing saves won't take advantage of the faster integrators.  You'll need to create a new save to see the speed-up.
+
 ## User-facing features
 
 * Principia now supports a vessel-centred frame directed along the horizontal and the vertical of a celestial.  This is useful for performing rendezvous.  The points of closest approach and the points where the active vessel crosses the plane of the target vessel trajectory are displayed on the prediction and flight plan.  See [xxx] for details regarding the use of this frame.
