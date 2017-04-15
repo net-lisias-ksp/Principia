@@ -1,3 +1,15 @@
+# [Cartan](https://en.wikipedia.org/wiki/%C3%89lie_Cartan)
+
+NOTE: Cartan is not released yet. This is a draft of the release note.
+
+## User-facing features
+
+## Bug fixes
+
+## Library changes
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-03-25T17%3A00%3A00..2017-04-26T14%3A00%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cardano and Cartan.
+
 # [Cardano](https://en.wikipedia.org/wiki/Gerolamo_Cardano)
 
 **WARNING: Cardano is *not* save-compatible with previous versions of Principia.  If you have a game saved with Cantor or earlier, it won't load (or it will crash) if you try to use it in Cardano.**
