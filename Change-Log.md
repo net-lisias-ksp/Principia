@@ -20,6 +20,8 @@ NOTE: Cartan is save-compatible with Cardano.  However, existing saves won't tak
 
 * Creating a manœuvre with the reference frame fixing the centre of a celestial and the line towards another celestial (e.g. Earth-Centred Sun-Aligned, ECSA) would systematically cause a crash ([#1293](https://github.com/mockingbirdnest/Principia/issues/1293)).
 
+* In some cases Principia would lose track of a vessel and then find it again, but it would be confused about its sphere of influence.  Combined with the tilt this might cause strange drifts ([#1299](https://github.com/mockingbirdnest/Principia/issues/1299)).  
+
 For more details see all [37+](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-03-25T17%3A00%3A00..2017-04-26T14%3A00%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cardano and Cartan.
 
 # [Cardano](https://en.wikipedia.org/wiki/Gerolamo_Cardano)
