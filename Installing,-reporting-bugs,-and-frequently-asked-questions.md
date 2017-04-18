@@ -32,7 +32,7 @@ After installing Principia, you should start from a clean slate with all vessels
 
 # Usage recommendations
 ## Timewarping
-Timewarping with vessels is smooth at timewarp 100 000× (the maximum wrap supported by the stock KSP) but janky at timewarp 1 000 000× (permitted by some mods). This can be alleviated by reducing the number of vessels in the game. In particular, asteroids being vessels as far as the game is concerned, removing them is a good idea if you are not interested in them (if you're using RealSolarSystem, these asteroids are fairly silly). In order to do that, simply delete the `<KSP directory>\GameData\Squad\Parts\Misc\PotatoRoid` folder.
+Timewarping with vessels is smooth at timewarp 100 000× (the maximum warp supported by the stock KSP) but janky at timewarp 1 000 000× (permitted by some mods). This can be alleviated by reducing the number of vessels in the game. In particular, asteroids being vessels as far as the game is concerned, removing them is a good idea if you are not interested in them (if you're using RealSolarSystem, these asteroids are fairly silly). In order to do that, simply delete the `<KSP directory>\GameData\Squad\Parts\Misc\PotatoRoid` folder.
 
 When no vessels are present timewarp should be very smooth, even at 6 000 000× (in RealSolarSystem).
 
