@@ -20,8 +20,6 @@ Make sure you put the DLL in the right place. The Principia DLL should be at `<K
 
 If you get the message "Dependencies, namely the Visual C++ Redistributable Packages for Visual Studio 2015 on x64, were not found", well, you need to install the [Visual C++ Redistributable Packages for Visual Studio 2015 on x64](http://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe).
 
-Make sure the permissions are set correctly on the folder containing KSP. If in doubt, set its permissions for that folder to `Full Control` for `Everyone`.
-
 #### Linux users
 You need libc++ and libc++abi 3.5-2.
 
