@@ -74,7 +74,7 @@ Another application is heliosynchronous orbits: in the Earth-Centred Sun-Aligned
 
    This reference frame is only available if you have a target vessel.  You select it by setting the speed display of the navball to target mode.  You can use the panel to pick the reference celestial.  This reference frame is only used for plotting and cannot be used to specify a manœuvre.  Take the case where the selected vessel is the International Space Station and the celestial is the Earth.  The Space Station will appear immobile and the Earth will stay in the same direction, wobbling up and down below the Space Station by about 10 kilometers over the course of an orbit.
 
-   This is useful for performing rendezvous, since the target vessel doesn't move.  The points of closest approach to the target vessel and the nodes where your trajectory intersects the orbital plane of the target vessel are displayed on your prediction and flight plan.
+   This is useful for performing rendezvous, since the target vessel doesn't move (see our [guide on rendezvous](https://github.com/mockingbirdnest/Principia/wiki/A-guide-to-performing-low-orbit-rendezvous/3bb254e1378bcba1c014a5990eec15c3ae5eb17d) for more).  The points of closest approach to the target vessel and the nodes where your trajectory intersects the orbital plane of the target vessel are displayed on your prediction and flight plan.
 
 Some these reference frames fix the centre of a celestial body. Since that body is fixed, the closest approaches (periapsides) and furthest separations (apoapsides) between the vessel and that body are visible on the trajectory, and are labelled with the Pe and Ap markers.
 
