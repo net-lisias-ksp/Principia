@@ -158,7 +158,7 @@ In Principia, all three components of Δv depend on the choice of frame.  In add
 
 # Limitations
 
-The trajectories of celestial bodies and other vessels are currently drawn by KSP, and thus appear to wobble (see the FAQ) and are not drawn in the current plotting frame; eventually principia will handle these trajectories too.
+The trajectories of celestial bodies and other vessels are currently drawn by KSP, and thus appear to wobble (see the FAQ) and are not drawn in the current plotting frame; eventually Principia will handle these trajectories too.
 
 At the moment, flight planning suffers from the following limitations, which we'll try to address in future releases:
 
