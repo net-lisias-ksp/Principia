@@ -4,6 +4,16 @@ Well, it turns out that N-body celestial mechanics is rather more complicated th
 
 So if you want to become a senior rocket pilot, to execute [horseshoe orbits](https://en.wikipedia.org/wiki/Horseshoe_orbit), [Lissajous orbits](https://en.wikipedia.org/wiki/Lissajous_orbit), [heliosynchronous orbits](https://en.wikipedia.org/wiki/Sun-synchronous_orbit) and [ballistic captures](https://en.wikipedia.org/wiki/Ballistic_capture), please read on.  Oh, and you'll be able to say these [six words you never say at NASA](https://xkcd.com/1244/).
 
+# User Interface Changes
+
+Principia changes some of the ways that you interact with the map view compared to the stock game.  Specifically:
+
+* To select a target vessel in map view, check `Select target vessel...` in the main Principia window, and click on the target.
+
+* To switch to a vessel from map view, target it then press `Switch To` in the main Principia window.
+
+* To centre the camera on a celestial or vessel, left-click on it.
+
 # Trajectories
 
 A trajectory is a line depicting the positions of a vessel.  In stock KSP, all trajectories are conics so there is not a lot of complexity to displaying or understanding them.  With N-body physics, though, trajectories may become more complex (and are certainly not conics in the interesting cases) so Principia comes with additional tools for plotting trajectories.
@@ -66,11 +76,11 @@ Another application is heliosynchronous orbits: in the Earth-Centred Sun-Aligned
 
    This is useful for performing rendezvous, since the target vessel doesn't move.  The points of closest approach to the target vessel and the nodes where your trajectory intersects the orbital plane of the target vessel are displayed on your prediction and flight plan.
 
-Of these reference frames, all but the barycentric frame fix the centre of a celestial body. Since that body is fixed, the closest approaches (periapsides) and furthest separations (apoapsides) between the vessel and that body are visible on the trajectory, and are labelled with the Pe and Ap markers. Since the barycentric frame does have any fixed body, no apsis markers are shown.
+Some these reference frames fix the centre of a celestial body. Since that body is fixed, the closest approaches (periapsides) and furthest separations (apoapsides) between the vessel and that body are visible on the trajectory, and are labelled with the Pe and Ap markers.
 
 Displaying the trajectory in a reference frame that fixes the centre of a body allows you to check (visually, as well as with the apsis markers) that you don't enter the atmosphere or (horror!) crash on the surface. If a periapsis is below the mean surface (0 m altitude) of the celestial body, it is shown as an orange impact marker.  No such warning is shown if the periapsis is merely inside the atmosphere, so check the altitude!
 
-We'll probably add more kinds of plotting frames in future versions, to help with other kinds of manœuvres (e.g., rendezvous, etc.).
+Similarly, for the reference frame that fixes the target vessel, the closest approaches and the nodes intersecting the orbital plane of the target vessel are visible on the trajectory.  The latter are labelled with the AN and DN markers (ascending node and descending node).
 
 # Navball
 
@@ -114,7 +124,7 @@ While Principia makes it possible to plan complex trajectories, it's important t
 
 The controls that let you plan your flight won't allow you to tune your Δv or your burn times extremely precisely (typically no finer than 1 mm/s).  That's intentional: even if you were able to construct a flight plan that way, you wouldn't be able to execute it.  If a small change of your Δv has a large effect on your future trajectory, you probably want to make smaller burns at different points along your mission.
 
-## User interface
+## Flight planning user interface
 
 Now on to flight planning.  A flight plan is made of a number of *manœuvres*, which are segments where your engine is burning.  These segments are painted in solid orange red.  In between manœuvres, your vessel is *coasting*, i.e., is just moving under the influence of gravity. The coasting segments are painted in dashed baby blue.
 
@@ -146,7 +156,7 @@ In Principia, all three components of Δv depend on the choice of frame.  In add
 |Normal|Binormal|![binormal](http://wiki.kerbalspaceprogram.com/images/thumb/0/01/Normal.svg/64px-Normal.svg.png)|
 |Anti-Normal|-Binormal|![-binormal](http://wiki.kerbalspaceprogram.com/images/thumb/1/19/Anti-normal.svg/64px-Anti-normal.svg.png)|
 
-## Limitations
+# Limitations
 
 The trajectories of celestial bodies and other vessels are currently drawn by KSP, and thus appear to wobble (see the FAQ) and are not drawn in the current plotting frame; eventually principia will handle these trajectories too.
 
@@ -155,7 +165,5 @@ At the moment, flight planning suffers from the following limitations, which we'
 * The engines used for a burn are either the active engines, the RCS or an instant impulse.  In practice this means that you'll probably want to have an active engine when doing your planning.  Furthermore, solid-state engines cannot be activated without running them at full power, so it's not really possible to use them in planning.
 
 * The mass used for computing the flight plan is the one when you actually edit the plan.  It you later do a vessel separation, it will change the mass and will effectively make the flight plan useless: you'll need to delete it and re-create it.
-
-* There is no good support for rendezvous between vessels.  You may actually achieve a rendezvous with quite a bit of nudging and fudging and budging, but what is missing is really a plotting frame tied to one vessel that would give a proper view of the approach of the other vessel.
 
 * Displaying the history may be slow.  If that happens, you may want to try shortening the history.  In the future we plan to address this problem by downsampling the history for rendering purposes.
