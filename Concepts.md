@@ -88,13 +88,17 @@ The Principia UI has a button `Fix navball in plotting frame` which you can use 
 
     The navball is painted light and dark grey.  When using the unmodified stock game, the separation between the colors is parallel to the equator of Kerbin.  When using RealSolarSystem the separation between the colours is parallel to the equator of the Earth and the line from the ♈︎ marker to the 12 marker is parallel to the line joining the Spring and Autumn equinoxes.  In all cases, the navball is immobile with respect to distant stars.  (Directions on this navball are given as [right ascensions](https://en.wikipedia.org/wiki/Right_ascension) in hours.)
 
-* Reference frame fixing the barycentre of two celestials and the line between them
+* Reference frame fixing the barycentre of two celestials, the plane in which they move about the barycentre, and the line between them
 
     The navball is painted light and dark purple.  The separation between the colours is parallel to the orbital plane of the two celestials (remember that this plane is pinned) and the line from the 0 (Ⅱ) marker to the 180 (Ⅰ) marker is parallel to the line between the two celestials.
 
-* Reference frame fixing the centre of a celestial and the line towards another celestial
+* Reference frame fixing the centre of a celestial, the plane of its orbit around its parent, and the line towards another celestial
 
     The navball is painted light and dark orange.  The separation between the colours is parallel to the orbital plane of the two celestials (remember that this plane is pinned) and the line from the filled circle (●) to the open circle (○) marker is parallel to the line from the pinned celestial to the other celestial.
+
+* Reference frame fixing the target vessel, the plane of its orbit around a celestial, and the line between them
+
+    The navball is painted light and dark red.  The separation between the colours is parallel to the orbital plane of the target vessel and the line from the brown circle to the blue circle markers is the vertical of the target vessel (brown toward the ground, blue towards the sky).
 
 # Flight planning
 
