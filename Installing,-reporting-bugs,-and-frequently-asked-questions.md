@@ -107,9 +107,9 @@ The operators are in the following timezones:
 
 Channel operators | Timezone | [How is this still a thing](https://www.youtube.com/watch?v=br0NW9ufUUw)
 ---|---|---
-**regex** | PST (UTC-08:00) | PDT (UTC-07:00)
+**NathanKell**, **regex** | PST (UTC-08:00) | PDT (UTC-07:00)
 **Felger**, **UmbralRaptor** | CST (UTC-06:00) | CDT (UTC-05:00)
-**armed_troop**, **ferram4**, **NathanKell**, **sdrodge** | EST (UTC-05:00) | EDT (UTC-04:00)
+**armed_troop**, **ferram4**, **sdrodge** | EST (UTC-05:00) | EDT (UTC-04:00)
 **Norgg**, **TechnicalFool** | WET (UTC+00:00) | WEST (UTC+01:00)
 **diomedea**, **egg**, **e_14159**, **Thomas**, **Sarbian** | CET (UTC+01:00) | CEST (UTC+02:00)
 **darklight** | AEST (UTC+10:00) | it's not a thing there
