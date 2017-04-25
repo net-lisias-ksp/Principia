@@ -1,7 +1,5 @@
 # [Cartan](https://en.wikipedia.org/wiki/%C3%89lie_Cartan)
 
-NOTE: Cartan is not released yet. This is a draft of the release note.
-
 NOTE: Cartan is save-compatible with Cardano.  However, existing saves won't take advantage of the faster integrators.  You'll need to create a new save to see the speed-up.
 
 ## User-facing features
