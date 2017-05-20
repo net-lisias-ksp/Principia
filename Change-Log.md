@@ -1,3 +1,13 @@
+# [Catalan](https://en.wikipedia.org/wiki/Eug%C3%A8ne_Charles_Catalan)
+
+NOTE: Catalan is not available yet.  This is a draft of the release notes
+
+## User-facing features
+
+## Bug fixes
+
+For more details see all [XX](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-04-23T11%3A59%3A00..2017-05-21T11%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cartan and Catalan.
+
 # [Cartan](https://en.wikipedia.org/wiki/%C3%89lie_Cartan)
 
 NOTE: Cartan is save-compatible with Cardano.  However, existing saves won't take advantage of the faster integrators.  You'll need to create a new save to see the speed-up.
