@@ -4,9 +4,25 @@ NOTE: Catalan is not available yet.  This is a draft of the release notes
 
 ## User-facing features
 
+No new features in this version, we have focused on fixing bugs, repaying technical debts and doing code restructuring that will be necessary for implementing new features in the future.
+
 ## Bug fixes
 
-For more details see all [XX](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-04-23T11%3A59%3A00..2017-05-21T11%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cartan and Catalan.
+* The game might crash when trying to do an EVA after landing on a celestial with no atmosphere (such as Mün).  This has been fixed by tweaking the manageability altitude of the vessel ([#1345](https://github.com/mockingbirdnest/Principia/issues/1345)).
+
+* When trying to land on a celestial with no atmosphere, the vessel might sink below the ground, or the celestial surface might jitter, making it hard or impossible to land.  This has been fixed by the same change as the previous bug ([#1346](https://github.com/mockingbirdnest/Principia/issues/1346)).
+
+* When transitoning from space to the atmosphere of a planet (such as Kerbin) the velocity would sometimes increase by 200 m/s, which happens to be the velocity of the surface.  This has been fixed by setting the degrees of freedom in the proper frame during the transition ([#1366](https://github.com/mockingbirdnest/Principia/issues/1366)).
+
+* The planets would sometimes be moving back and forth along their trajectory, or even leave it.  This seemed more likely to happen with custom solar system that have a binary system of planet.  This has been fixed by asking KSP to properly update the positions ([#1369](https://github.com/mockingbirdnest/Principia/issues/1369)).
+
+* The radial-in and radial-out direction of the autopilot were inverted when in space.  This boiled down to a confusion in KSP where the radial-in icon sets the autopilot to radial-out and vice-versa.  Principia has been modified to compensate for this ([#1370](https://github.com/mockingbirdnest/Principia/issues/1370)).
+
+* The Apocalypse window would freeze the UI.  This problem had been reported in Cardano but we couldn't reproduce it at the time.  We have now been able to reproduce it and to fix it ([#1319](https://github.com/mockingbirdnest/Principia/issues/1319), [#1376](https://github.com/mockingbirdnest/Principia/issues/1376)).
+
+* A `NullReferenceException` would sometimes be propagated to KSP and result in an error message in the logs and the UI.  This has been fixed by properly checking for null pointers in the C# code ([#1380](https://github.com/mockingbirdnest/Principia/issues/1380)).
+
+For more details see all [27+](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-04-23T11%3A59%3A00..2017-05-21T11%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cartan and Catalan.
 
 # [Cartan](https://en.wikipedia.org/wiki/%C3%89lie_Cartan)
 
