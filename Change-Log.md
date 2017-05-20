@@ -22,6 +22,14 @@ No new features in this version, we have focused on fixing bugs, repaying techni
 
 * A `NullReferenceException` would sometimes be propagated to KSP and result in an error message in the logs and the UI.  This has been fixed by properly checking for null pointers in the C# code ([#1380](https://github.com/mockingbirdnest/Principia/issues/1380)).
 
+## Library changes
+
+* It is now possible to describe a solar system using a data file containing [keplerian coordinates](https://github.com/mockingbirdnest/Principia/blob/master/astronomy/kerbol_initial_state_0_0.proto.txt) (cartesian coordinates have been supported for a long time).
+
+* Date literals can now be written as [Julian](https://github.com/mockingbirdnest/Principia/blob/master/astronomy/time_scales_test.cpp#L363) or [Modified Julian](https://github.com/mockingbirdnest/Principia/blob/master/astronomy/time_scales_test.cpp#L368) dates, which are convenient when describing astronomical phenonema.
+
+* Orbits may now be described using a large variety of [keplerian elements](https://github.com/mockingbirdnest/Principia/blob/master/physics/kepler_orbit.hpp#L27) which obviates the need to perform offline computations to transform the characteristics of a body into something acceptable by Principia.
+
 For more details see all [27+](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-04-23T11%3A59%3A00..2017-05-21T11%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cartan and Catalan.
 
 # [Cartan](https://en.wikipedia.org/wiki/%C3%89lie_Cartan)
