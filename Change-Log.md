@@ -1,10 +1,10 @@
 # [Catalan](https://en.wikipedia.org/wiki/Eug%C3%A8ne_Charles_Catalan)
 
-NOTE: Catalan is not available yet.  This is a draft of the release notes
+NOTE: Catalan is not available yet.  This is a draft of the release notes.
 
 ## User-facing features
 
-No new features in this version, we have focused on fixing bugs, repaying technical debts and doing code restructuring that will be necessary for implementing new features in the future.
+No new features in this version, we have focused on fixing bugs, repaying technical debt and doing code restructuring that will be necessary for implementing new features in the future.
 
 ## Bug fixes
 
@@ -14,7 +14,7 @@ No new features in this version, we have focused on fixing bugs, repaying techni
 
 * When transitoning from space to the atmosphere of a planet (such as Kerbin) the velocity would sometimes increase by 200 m/s, which happens to be the velocity of the surface.  This has been fixed by setting the degrees of freedom in the proper frame during the transition ([#1366](https://github.com/mockingbirdnest/Principia/issues/1366)).
 
-* The planets would sometimes be moving back and forth along their trajectory, or even leave it.  This seemed more likely to happen with custom solar system that have a binary system of planet.  This has been fixed by asking KSP to properly update the positions ([#1369](https://github.com/mockingbirdnest/Principia/issues/1369)).
+* The planets would sometimes be moving back and forth along their trajectory, or even leave it.  This seemed more likely to happen with a custom solar system that has a binary system of planet.  This has been fixed by asking KSP to properly update the positions ([#1369](https://github.com/mockingbirdnest/Principia/issues/1369)).
 
 * The radial-in and radial-out direction of the autopilot were inverted when in space.  This boiled down to a confusion in KSP where the radial-in icon sets the autopilot to radial-out and vice-versa.  Principia has been modified to compensate for this ([#1370](https://github.com/mockingbirdnest/Principia/issues/1370)).
 
