@@ -30,7 +30,7 @@ No new features in this version, we have focused on fixing bugs, repaying techni
 
 * Orbits may now be described using a large variety of [keplerian elements](https://github.com/mockingbirdnest/Principia/blob/master/physics/kepler_orbit.hpp#L27) which obviates the need to perform offline computations to transform the characteristics of a body into something acceptable by Principia.
 
-For more details see all [27+](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-04-23T11%3A59%3A00..2017-05-21T11%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cartan and Catalan.
+For more details see all [28](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-04-23T11%3A59%3A00..2017-05-21T11%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cartan and Catalan.
 
 # [Cartan](https://en.wikipedia.org/wiki/%C3%89lie_Cartan)
 
