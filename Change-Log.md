@@ -8,13 +8,13 @@ No new features in this version, we have focused on fixing bugs, repaying techni
 
 ## Bug fixes
 
-* The game might crash when trying to do an EVA after landing on a celestial with no atmosphere (such as Mün).  This has been fixed by tweaking the manageability altitude of the vessel ([#1345](https://github.com/mockingbirdnest/Principia/issues/1345)).
+* When using BetterTimeWarp, the game would crash when trying to do an EVA after landing on a celestial with no atmosphere (such as Mün).  This has been fixed by tweaking the manageability altitude of the vessel ([#1345](https://github.com/mockingbirdnest/Principia/issues/1345)).
 
-* When trying to land on a celestial with no atmosphere, the vessel might sink below the ground, or the celestial surface might jitter, making it hard or impossible to land.  This has been fixed by the same change as the previous bug ([#1346](https://github.com/mockingbirdnest/Principia/issues/1346)).
+* When using BetterTimeWarp, and trying to land on a celestial with no atmosphere, the vessel would sink below the ground, or the celestial surface would jitter, making it hard or impossible to land.  This has been fixed by the same change as the previous bug ([#1346](https://github.com/mockingbirdnest/Principia/issues/1346)).
 
-* When transitoning from space to the atmosphere of a planet (such as Kerbin) the velocity would sometimes increase by 200 m/s, which happens to be the velocity of the surface.  This has been fixed by setting the degrees of freedom in the proper frame during the transition ([#1366](https://github.com/mockingbirdnest/Principia/issues/1366)).
+* When transitioning from space to the atmosphere of a planet (such as Kerbin) the velocity would sometimes increase by the velocity of the surface (200 m/s on Kerbin).  This has been fixed by setting the degrees of freedom in the proper frame during the transition ([#1366](https://github.com/mockingbirdnest/Principia/issues/1366)).
 
-* The planets would sometimes be moving back and forth along their trajectory, or even leave it.  This seemed more likely to happen with a custom solar system that has a binary system of planet.  This has been fixed by asking KSP to properly update the positions ([#1369](https://github.com/mockingbirdnest/Principia/issues/1369)).
+* The planets would sometimes be moving back and forth along their trajectory, or even leave it.  This seemed more likely to happen with a custom solar system that has a double planet.  This has been fixed by asking KSP to properly update the positions ([#1369](https://github.com/mockingbirdnest/Principia/issues/1369)).
 
 * The radial-in and radial-out direction of the autopilot were inverted when in space.  This boiled down to a confusion in KSP where the radial-in icon sets the autopilot to radial-out and vice-versa.  Principia has been modified to compensate for this ([#1370](https://github.com/mockingbirdnest/Principia/issues/1370)).
 
@@ -24,11 +24,11 @@ No new features in this version, we have focused on fixing bugs, repaying techni
 
 ## Library changes
 
-* It is now possible to describe a solar system using a data file containing [keplerian coordinates](https://github.com/mockingbirdnest/Principia/blob/master/astronomy/kerbol_initial_state_0_0.proto.txt) (cartesian coordinates have been supported for a long time).
+* It is now possible to describe a solar system using a data file containing [keplerian coordinates](https://github.com/mockingbirdnest/Principia/blob/2017052520-Catalan/astronomy/kerbol_initial_state_0_0.proto.txt) (cartesian coordinates have been supported for a long time).
 
-* Date literals can now be written as [Julian](https://github.com/mockingbirdnest/Principia/blob/master/astronomy/time_scales_test.cpp#L363) or [Modified Julian](https://github.com/mockingbirdnest/Principia/blob/master/astronomy/time_scales_test.cpp#L368) dates, which are convenient when describing astronomical phenonema.
+* Date literals can now be written as [Julian](https://github.com/mockingbirdnest/Principia/blob/2017052520-Catalan/astronomy/time_scales_test.cpp#L363) or [Modified Julian](https://github.com/mockingbirdnest/Principia/blob/2017052520-Catalan/astronomy/time_scales_test.cpp#L368) dates, which are convenient when describing astronomical phenonema.
 
-* Orbits may now be described using a large variety of [keplerian elements](https://github.com/mockingbirdnest/Principia/blob/master/physics/kepler_orbit.hpp#L27) which obviates the need to perform offline computations to transform the characteristics of a body into something acceptable by Principia.
+* Orbits may now be described using a large variety of [keplerian elements](https://github.com/mockingbirdnest/Principia/blob/2017052520-Catalan/physics/kepler_orbit.hpp#L27) which obviates the need to perform offline computations to transform the characteristics of a body into something acceptable by Principia. Note that while it is possible to specify a large number of combinations of elements, the computations are numerically quite naive, and may be result in large errors near singularities.
 
 For more details see all [28](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-04-23T11%3A59%3A00..2017-05-21T11%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cartan and Catalan.
 
