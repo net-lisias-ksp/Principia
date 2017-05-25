@@ -1,7 +1,5 @@
 # [Catalan](https://en.wikipedia.org/wiki/Eug%C3%A8ne_Charles_Catalan)
 
-NOTE: Catalan is not available yet.  This is a draft of the release notes.
-
 ## User-facing features
 
 No new features in this version, we have focused on fixing bugs, repaying technical debt and doing code restructuring that will be necessary for implementing new features in the future.
@@ -20,7 +18,7 @@ No new features in this version, we have focused on fixing bugs, repaying techni
 
 * The Apocalypse window would freeze the UI.  This problem had been reported in Cardano but we couldn't reproduce it at the time.  We have now been able to reproduce it and to fix it ([#1319](https://github.com/mockingbirdnest/Principia/issues/1319), [#1376](https://github.com/mockingbirdnest/Principia/issues/1376)).
 
-* A `NullReferenceException` would sometimes be propagated to KSP and result in an error message in the logs and the UI.  This has been fixed by properly checking for null pointers in the C# code ([#1380](https://github.com/mockingbirdnest/Principia/issues/1380)).
+* A `NullReferenceException` would sometimes be propagated to KSP and result in an error message in the logs and the UI.  This has been fixed by properly checking for null pointers in the C♯ code ([#1380](https://github.com/mockingbirdnest/Principia/issues/1380)).
 
 ## Library changes
 
