@@ -12,7 +12,7 @@ NOTE: Cauchy is not available yet. This is a draft of the release notes.
 
 * A vessel would sometimes accelerate when a Kerbal was performing an EVA.  This boils down to ladders being magic in KSP, as illustrated by this hilarious [video](https://www.youtube.com/watch?v=-THq8Gip-Us).  When a Kerbal holds a ladder, that ladder exerts on the Kerbal a force equal to its weight, even if the Kerbal is in weightlessness. When the Kerbal lets go of the ladder, that force goes down to zero.  This was fixed by ignoring the magic ladder force ([#1415](https://github.com/mockingbirdnest/Principia/issues/1415)).
 
-* Some parts would sometimes be offset from their expected position on the launch pad.  This was due to the vessel being in the "prelaunch" state for a few frames, and has been fixed by having Principia wait for a few frames until it exits that state ([#1421](https://github.com/mockingbirdnest/Principia/issues/1421)).
+* Some parts would sometimes be offset from their expected position on the launch pad.  This was due to the vessel being in the "prelaunch" state for a few frames, and has been fixed by having Principia wait until it exits that state ([#1421](https://github.com/mockingbirdnest/Principia/issues/1421)).
 
 * Reading saves that had long trajectories would sometimes crash because data structures for the oldest parts of the trajectories would become corrupted.  This has been fixed, and the saves that had this problem in Catalan should be loadable again in Cauchy ([#1422](https://github.com/mockingbirdnest/Principia/issues/1422)).
 
