@@ -4,7 +4,19 @@ NOTE: Cauchy is not available yet. This is a draft of the release notes.
 
 ## User-facing features
 
+* The speed of the vessel in the plotting frame is now shown on the periapsis, apoapsis, and locally closest approach markers. The speed normal to the reference plane is shown on the ascending/descending node markers.  This helps in particular when tuning approaches and rendezvous.
+
+* The speed display and the reference mode selection have been unified.  TODO(egg): Add more.
+
+* Principia now supports targeting a celestial.  Also, the nodes are now displayed in the MCEA and EMB frames.  TODO(egg): Add more.
+
+* The trajectory of the target vessel is now rendered in the target-mobile frames.  TODO(egg): Add more.
+
+* The UI has been make a bit simpler and smaller by removing useless information about the state of the plugin.
+
 ## Bug fixes
+
+* Vessels would sometimes slowly rotate away from the closest celestial, even if no torque had been previously applied.  This has been fixed by making the positions and transforms passed to Unity consistent ([#1307](https://github.com/mockingbirdnest/Principia/issues/1307)).
 
 * Switching vessels via the Principia UI would sometimes lock the menu and the map view.  This has been fixed by clearing the lock at the proper place ([#1402](https://github.com/mockingbirdnest/Principia/issues/1402)).
 
@@ -18,9 +30,13 @@ NOTE: Cauchy is not available yet. This is a draft of the release notes.
 
 * Principia would sometimes crash if a save was happening at the same time as exiting physical time warp.  This has been fixed by making sure that the plugin doesn't do any integration if its time is before that of the vessel trajectories ([#1441](https://github.com/mockingbirdnest/Principia/issues/1441)).
 
+* Markers, in particular for apoapsides and periapsides, would sometimes be drawn in the middle of nowhere (i.e., not on the trajectory).  This was due to a data corruption in the vessel trajectories ([#1395](https://github.com/mockingbirdnest/Principia/issues/1395)).
+
 * Landing on the Moon with RealSolarSystem was sometime problematic.  This has been fixed in RealSolarSystem by raising the minimum timewarp altitude ([#1440](https://github.com/mockingbirdnest/Principia/issues/1440)).
 
 ## Library changes
+
+* Some support has been added for projective geometry and pinhole camera perspective.  This will allow us in the future to make the rendering of trajectories faster and smoother.
 
 For more details see all [40](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-05-21T12%3A00%3A00..2017-06-17T11%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Catalan and Cauchy.
 
