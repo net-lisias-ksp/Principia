@@ -6,13 +6,17 @@ NOTE: Cauchy is not available yet. This is a draft of the release notes.
 
 * The speed of the vessel in the plotting frame is now shown on the periapsis, apoapsis, and locally closest approach markers. The speed normal to the reference plane is shown on the ascending/descending node markers.  This helps in particular when tuning approaches and rendezvous.
 
-* The speed display and the reference mode selection have been unified.  TODO(egg): Add more.
+* The speed display mode (surface vs. orbit) has been unified with our reference frame selection selection have been unified: the speed display is in surface mode if and only if the surface frame (Body-Centred Body-Fixed) is selected.
 
-* Principia now supports targeting a celestial.  Also, the nodes are now displayed in the MCEA and EMB frames.  TODO(egg): Add more.
+* The speed displayed on the navball is always the speed of the vessel in the plotting frame, even when the vessel is not being managed by Principia.
 
-* The trajectory of the target vessel is now rendered in the target-mobile frames.  TODO(egg): Add more.
+* The nodes—intersections with the reference (orbit) plane—are now displayed in the body-centred parent-aligned and barycentric rotating frames; this should make interplanetary flight planning easier.
+
+* The trajectory of the target vessel is now rendered in reference frames where the target is not fixed. Its history is goldenrod, and its prediction is pig pink.
 
 * The UI has been make a bit simpler and smaller by removing useless information about the state of the plugin.
+
+* For compatibility with 3rd party mods that require celestial targeting for some of their features, it is now possible to target a celestial. This has no interaction with Principia, in particular it is independent from reference frame selection: it exists solely for compatibility. 
 
 ## Bug fixes
 
