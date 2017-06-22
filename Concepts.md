@@ -94,7 +94,7 @@ Displaying the trajectory in a reference frame that fixes the centre of a body a
 
 Similarly, for the reference frame that fixes the target vessel, the closest approaches are visible on the trajectory, with separation and speed in the target LVLH frame.
 
-In reference frames whose reference plane in an orbital plane (that is, the barycentric frame, the body-centred parent-aligned frame, and the target LVLH frame), the nodes intersecting the orbital plane of the target vessel are shown. They are labelled with the AN and DN markers—ascending node and descending node—; the component of the velocity that is orthogonal to the orbital plane is shown (this corresponds to stock's angle display on nodes, but works for arbitrary trajectories).
+When the reference plane of the plotting frame is an orbital plane (that is, when the plotting frame is a barycentric frame, a body-centred parent-aligned frame, or the target LVLH frame), the nodes intersecting the orbital plane of the target vessel are shown. They are labelled with the AN and DN markers, for ascending node and descending node. The component of the velocity that is orthogonal to the orbital plane is shown (this corresponds to stock's angle display on nodes, but works for arbitrary trajectories).
 
 # Navball
 
