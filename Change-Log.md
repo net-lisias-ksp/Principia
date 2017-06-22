@@ -6,7 +6,7 @@ NOTE: Cauchy is not available yet. This is a draft of the release notes.
 
 * The speed of the vessel in the plotting frame is now shown on the periapsis, apoapsis, and locally closest approach markers. The speed normal to the reference plane is shown on the ascending/descending node markers.  This helps in particular when tuning approaches and rendezvous.
 
-* The speed display mode (surface vs. orbit) has been unified with our reference frame selection selection have been unified: the speed display is in surface mode if and only if the surface frame (Body-Centred Body-Fixed) is selected.
+* The speed display mode (surface vs. orbit) has been unified with our reference frame selection: the speed display is in surface mode if and only if the surface frame (Body-Centred Body-Fixed) is selected.
 
 * The speed displayed on the navball is always the speed of the vessel in the plotting frame, even when the vessel is not being managed by Principia.
 
