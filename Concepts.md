@@ -47,7 +47,7 @@ For the same reason, Principia offers a choice of *plotting frame* that you can 
 
 * Reference frame fixing the surface of a celestial (e.g., Earth-Centred Earth-Fixed, ECEF)
 
-    Selecting this reference frame as the plotting frame sets the navball speed display to surface mode, and setting the navball speed display to surface mode sets this reference frame as the plotting frame. Setting the navball speed display to orbit mode switches the plotting frame back to the last non-surface reference frame. If the active vessel is in an atmosphere, the Body-Centred Body-Fixed frame can only be selected for the body in whose atmosphere the active vessel lies.
+    Selecting this reference frame as the plotting frame sets the navball speed display to surface mode, and conversely setting the navball speed display to surface mode sets this reference frame as the plotting frame. Setting the navball speed display to orbit mode switches the plotting frame back to the last non-surface reference frame. If the active vessel is in an atmosphere, the Body-Centred Body-Fixed frame can only be selected for the body in whose atmosphere the active vessel lies.
 
     You can use the panel to pick the celestial (a planet or one of its natural satellite) to use as the centre. This plotting frame is pinned to the centre of the celestial and rotates with its surface.  For instance, if you use such a frame centered on Jupiter, Jupiter will look like it doesn't move, and if you look at its surface the atmospheric features (e.g., the Great Red Spot) will appear immobile.  On the other hand the distant stars like Sirius, the Sun and the natural satellites of Jupiter will appear to move around.
 
@@ -88,7 +88,7 @@ Another application is heliosynchronous orbits: in the Earth-Centred Sun-Aligned
 
    This is useful for performing rendezvous, since the target vessel doesn't move (see our [guide on rendezvous](https://github.com/mockingbirdnest/Principia/wiki/A-guide-to-performing-low-orbit-rendezvous/3bb254e1378bcba1c014a5990eec15c3ae5eb17d) for more).  The points of closest approach to the target vessel and the nodes where your trajectory intersects the orbital plane of the target vessel are displayed on your prediction and flight plan.
 
-Some these reference frames fix the centre of a celestial body. Since that body is fixed, the closest approaches (periapsides) and furthest separations (apoapsides) between the vessel and that body are visible on the trajectory, and are labelled with the Pe and Ap markers; the speed in the frame and the altitude are shown.
+Some of these reference frames fix the centre of a celestial body. Since that body is fixed, the closest approaches (periapsides) and furthest separations (apoapsides) between the vessel and that body are visible on the trajectory, and are labelled with the Pe and Ap markers; the speed in the frame and the altitude are shown.
 
 Displaying the trajectory in a reference frame that fixes the centre of a body allows you to check (visually, as well as with the apsis markers) that you don't enter the atmosphere or (horror!) crash on the surface. If a periapsis is below the mean surface (0 m altitude) of the celestial body, it is shown as an orange impact marker.  No such warning is shown if the periapsis is merely inside the atmosphere or inside a mountain, so check the altitude!
 
