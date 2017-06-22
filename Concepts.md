@@ -43,11 +43,15 @@ For the same reason, Principia offers a choice of *plotting frame* that you can 
 
 * Reference frame fixing the surface of a celestial (e.g., Earth-Centred Earth-Fixed, ECEF)
 
+    Selecting this reference frame as the plotting frame sets the navball speed display to surface mode, and setting the navball speed display to surface mode sets this reference frame as the plotting frame. Setting the navball speed display to orbit mode switches the plotting frame back to the last non-surface reference frame. If the active vessel is in an atmosphere, the Body-Centred Body-Fixed frame can only be selected for the body in whose atmosphere the active vessel lies.
+
     You can use the panel to pick the celestial (a planet or one of its natural satellite) to use as the centre. This plotting frame is pinned to the centre of the celestial and rotates with its surface.  For instance, if you use such a frame centered on Jupiter, Jupiter will look like it doesn't move, and if you look at its surface the atmospheric features (e.g., the Great Red Spot) will appear immobile.  On the other hand the distant stars like Sirius, the Sun and the natural satellites of Jupiter will appear to move around.
 
     This frame is useful when taking off or landing: because the celestial looks immobile you can tune your approach, see where you'll land (note however that atmospheric effects are not predicted), and make sure that you don't come in too fast or too steep.  It is also useful for synchronous orbits (or semisynchronous orbits), since they will be periodic in this reference frame.
 
 * Non-rotating reference frame fixing the centre of a celestial (e.g., Earth-Centred Inertial, ECI)
+
+Selecting this reference frame as the plotting frame sets the navball speed display to orbit mode.
 
     A frame similar to the previous one, except that it doesn't rotate with the celestial and stays fixed with respect to distant stars.  For instance, if you use such a frame centered on Jupiter, Jupiter will look like it doesn't move, and if you look at a distant star like Sirius it will also appear immobile.  On the other hand the Sun and the natural satellites of Jupiter will appear to move around.
 
@@ -57,6 +61,8 @@ For the same reason, Principia offers a choice of *plotting frame* that you can 
 
 * Reference frame fixing the barycentre of two celestials, the plane in which they move about the barycentre, and the line between them (e.g., Earth Moon Barycentric, EMB)
 
+Selecting this reference frame as the plotting frame sets the navball speed display to orbit mode.
+
     You can use the panel to pick the two celestials that determine the plotting frame.  This plotting frame is pinned on the barycentre (i.e., centre of mass) of the two celestials and the line between the celestials appears immobile.  Take the case of the Earth and the Moon.  Curiously the barycentre of the Earth-Moon system is located about 1700 km *inside* the Earth.  That point will appear immobile (not that it matters because you don't want your rocket to go there).  More interestingly, both the Earth and the Moon will stay in fixed directions, although their distance will vary a bit over time (due to the eccentricity of the Moon's orbit).  The distant stars, the Sun and all other celestials will appear to move around.
 
     In addition, the plane defined by the velocities of the two celestials is also pinned.  Generally this plane is what you might think of as the plane of the "orbit" of one celestial around the other, e.g., the plane of the Moon's orbit in the above example.
@@ -64,6 +70,8 @@ For the same reason, Principia offers a choice of *plotting frame* that you can 
     This frame is useful for planning and executing a trajectory that goes from one celestial to another.  Imagine that you try to play an Apollo mission: you can very accurately plan your trajectory from the Earth to the Moon and see its general shape: free return, gravity boost, etc.  This frame is also useful for reaching [Lagrangian points](https://en.wikipedia.org/wiki/Lagrangian_point) since these points appear immobile.
 
 * Reference frame fixing the centre of a celestial, the plane of its orbit around its parent, and the line between them (e.g., Earth-Centred Sun-Aligned, ECSA)
+
+Selecting this reference frame as the plotting frame sets the navball speed display to orbit mode.
 
     A frame similar to the previous one, except that instead of pinning the barycentre of two celestials, it pins the centre of one of the celestials.  In the case of the Earth and the Moon, the Moon will appear immobile and the Earth will stay in a fixed direction, although its distance will vary a bit over time (due to the eccentricity of its orbit).  The distant stars, the Sun and all other celestials will appear to move around.
 
