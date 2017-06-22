@@ -22,6 +22,7 @@ For the active vessel, Principia may display three trajectories:
 * The *history*, painted in acid green, shows where your vessel was in the past.
 * The *prediction*, painted in fuchsia, shows where your vessel will go if you just sit on your hands: no engine burns, no separations, no nothing.
 * The *flight plan*, painted in alternating segments of solid orange red and dashed baby blue, shows where your vessel will go if you execute the planned flight plan with no errors (more on flight planning later).
+
 If there is a target vessel and the selected frame is not centred on the target, the trajectory of the target is also displayed:
 * its history is shown in goldenrod;
 * its prediction is shown in pig pink.
