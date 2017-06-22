@@ -76,11 +76,13 @@ Another application is heliosynchronous orbits: in the Earth-Centred Sun-Aligned
 
    This is useful for performing rendezvous, since the target vessel doesn't move (see our [guide on rendezvous](https://github.com/mockingbirdnest/Principia/wiki/A-guide-to-performing-low-orbit-rendezvous/3bb254e1378bcba1c014a5990eec15c3ae5eb17d) for more).  The points of closest approach to the target vessel and the nodes where your trajectory intersects the orbital plane of the target vessel are displayed on your prediction and flight plan.
 
-Some these reference frames fix the centre of a celestial body. Since that body is fixed, the closest approaches (periapsides) and furthest separations (apoapsides) between the vessel and that body are visible on the trajectory, and are labelled with the Pe and Ap markers.
+Some these reference frames fix the centre of a celestial body. Since that body is fixed, the closest approaches (periapsides) and furthest separations (apoapsides) between the vessel and that body are visible on the trajectory, and are labelled with the Pe and Ap markers; the speed in the frame and the altitude are shown.
 
-Displaying the trajectory in a reference frame that fixes the centre of a body allows you to check (visually, as well as with the apsis markers) that you don't enter the atmosphere or (horror!) crash on the surface. If a periapsis is below the mean surface (0 m altitude) of the celestial body, it is shown as an orange impact marker.  No such warning is shown if the periapsis is merely inside the atmosphere, so check the altitude!
+Displaying the trajectory in a reference frame that fixes the centre of a body allows you to check (visually, as well as with the apsis markers) that you don't enter the atmosphere or (horror!) crash on the surface. If a periapsis is below the mean surface (0 m altitude) of the celestial body, it is shown as an orange impact marker.  No such warning is shown if the periapsis is merely inside the atmosphere or inside a mountain, so check the altitude!
 
-Similarly, for the reference frame that fixes the target vessel, the closest approaches and the nodes intersecting the orbital plane of the target vessel are visible on the trajectory.  The latter are labelled with the AN and DN markers (ascending node and descending node).
+Similarly, for the reference frame that fixes the target vessel, the closest approaches are visible on the trajectory, with separation and speed in the target LVLH frame.
+
+In reference frames whose reference plane in an orbital plane (that is, the barycentric frame, the body-centred parent-aligned frame, and the target LVLH frame), the nodes intersecting the orbital plane of the target vessel are shown. They are labelled with the AN and DN markers—ascending node and descending node—; the component of the velocity that is orthogonal to the orbital plane is shown (this corresponds to stock's angle display on nodes, but works for arbitrary trajectories).
 
 # Navball
 
