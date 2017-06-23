@@ -1,7 +1,5 @@
 # [Cauchy](https://en.wikipedia.org/wiki/Augustin-Louis_Cauchy)
 
-NOTE: Cauchy is not available yet. This is a draft of the release notes.
-
 ## User-facing features
 
 * The speed of the vessel in the plotting frame is now shown on the periapsis, apoapsis, and locally closest approach markers. The speed normal to the reference plane is shown on the ascending/descending node markers.  This helps in particular when tuning approaches and rendezvous.
