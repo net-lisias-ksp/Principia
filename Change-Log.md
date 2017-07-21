@@ -20,6 +20,10 @@
 
 * A crash would occur when a Kerbal on EVA was unloaded.  This has been fixed by better checking the state of the EVA controller ([#1466](https://github.com/mockingbirdnest/Principia/issues/1466)). This issue was not in Cauchy, since it was introduced in pull request [#1459](https://github.com/mockingbirdnest/Principia/issues/1459), but it affected at least one user who built from master between releases.
 
+## Library changes
+
+* Support has been added for efficiently computing the parts of a segment hidden by a sphere.  This is a significant step towards the goal of making the rendering of trajectories faster and smoother.
+
 For more details see all [16](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-06-17T12%3A30%3A00..2017-07-21T21%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cauchy and Cayley.
 
 # [Cauchy](https://en.wikipedia.org/wiki/Augustin-Louis_Cauchy)
