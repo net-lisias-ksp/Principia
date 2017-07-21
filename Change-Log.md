@@ -6,7 +6,7 @@
 
 * Vessel trajectories are now displayed for the selected vessel in the tracking station ([#1457](https://github.com/mockingbirdnest/Principia/issues/1457)).
 
-* The colour of the horizon in the inertial frame navball has been change to use "horizon blue" instead of "dark dark blue".  This makes the manoeuvre marker more readable, as it happened to have the same colour as the horizon band, see [#1449](https://github.com/mockingbirdnest/Principia/issues/1449).
+* The colour of the horizon in the inertial frame navball has been change to use "horizon blue" instead of "dark dark blue".  This makes the manœuvre marker more readable, as it happened to have the same colour as the horizon band, see [#1449](https://github.com/mockingbirdnest/Principia/issues/1449).
 
 * A reminder has been added in the UI when it's time to update Principia because a new moon has passed.
 
