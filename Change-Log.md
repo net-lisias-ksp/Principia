@@ -16,9 +16,9 @@
 
 * In some circumstances KSP would report a collision with a null collider, which confused Principia and caused a crash ([#1447](https://github.com/mockingbirdnest/Principia/issues/1447)). This has been fixed by ignoring such collisions.
 
-* A Kerbal in EVA would sometimes be spawned several metres away from the vessel.  This is because in this case the Kerbal ignores collisions with the ship for a little while, and is nudged back to the airlock.  This nudging conflicted with the nudging done by Principia ([#1459](https://github.com/mockingbirdnest/Principia/issues/1459)).
+* A Kerbal in EVA would sometimes be spawned several metres away from the vessel.  This is because in this case the Kerbal ignores collisions with the ship for a little while, and is nudged back to the airlock.  This nudging conflicted with the nudging done by Principia ([#1452](https://github.com/mockingbirdnest/Principia/issues/1452)).
 
-* A crash would occur when a Kerbal on EVA was unloaded.  This has been fixed by better checking the state of the EVA controller ([#1467](https://github.com/mockingbirdnest/Principia/issues/1467)). This issue was not in Cauchy, since it was introduced in pull request [#1459](https://github.com/mockingbirdnest/Principia/issues/1459), but it affected at least one user who built from master between releases.
+* A crash would occur when a Kerbal on EVA was unloaded.  This has been fixed by better checking the state of the EVA controller ([#1466](https://github.com/mockingbirdnest/Principia/issues/1466)). This issue was not in Cauchy, since it was introduced in pull request [#1459](https://github.com/mockingbirdnest/Principia/issues/1459), but it affected at least one user who built from master between releases.
 
 For more details see all [16](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-06-17T12%3A30%3A00..2017-07-21T21%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cauchy and Cayley.
 
