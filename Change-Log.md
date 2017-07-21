@@ -6,19 +6,21 @@
 
 * Vessel trajectories are now displayed for the selected vessel in the tracking station ([#1457](https://github.com/mockingbirdnest/Principia/issues/1457)).
 
-* The colour of the horizon in the inertial frame navball has been change to use "horizon blue" instead of "greyish grey".  This makes it more readable.
+* The colour of the horizon in the inertial frame navball has been change to use "horizon blue" instead of "dark dark blue".  This makes the manoeuvre marker more readable, as it happened to have the same colour as the horizon band, see [#1449](https://github.com/mockingbirdnest/Principia/issues/1449).
 
 * A reminder has been added in the UI when it's time to update Principia because a new moon has passed.
 
 ## Bug fixes
 
-* Unpacked vessels were sometimes off by one frame.
-
-* An exception would sometimes be thrown when accepting a contract to rescue a Kerbal from the surface of a body.  This has been fixed by better checking the state of the EVA controller ([#1467](https://github.com/mockingbirdnest/Principia/issues/1467)).
+* Since KSP 1.2, the parts of unpacked vessels are lagging behind the current time (and the parts of loaded packed vessels), instead of the orbits being ahead of the current time. This challenged some assumptions made by Principia, and was the root cause of many bugs (including bugs worked around in previous versions), such as [#1272](https://github.com/mockingbirdnest/Principia/issues/1272), [#1416](https://github.com/mockingbirdnest/Principia/issues/1416), [#1441](https://github.com/mockingbirdnest/Principia/issues/1441), and [#1473](https://github.com/mockingbirdnest/Principia/issues/1473), as well as mysterious and worrying errors in the logs. This was fixed by advancing vessels in time when KSP expects them to be advanced.
 
 * Principia would sometimes crash when reentering a vessel from EVA.  This was due to some parts having null colliders and was fixed by ignoring these colliders ([#1465](https://github.com/mockingbirdnest/Principia/issues/1465)).
 
 * A Kerbal in EVA would sometimes be spawned several metres away from the vessel.  This is because in this case the Kerbal ignores collisions with the ship for a little while, and is nudged back to the airlock.  This nudging conflicted with the nudging done by Principia ([#1459](https://github.com/mockingbirdnest/Principia/issues/1459)).
+
+* In some circumstances KSP would report a collision with a null collider, which confused Principia and caused a crash ([#1447](https://github.com/mockingbirdnest/Principia/issues/1447)). This has been fixed by ignoring such collisions.
+
+* A crash would occur when a Kerbal on EVA was unloaded.  This has been fixed by better checking the state of the EVA controller ([#1467](https://github.com/mockingbirdnest/Principia/issues/1467)). This issue was not in Cauchy, since it was introduced in pull request [#1459](https://github.com/mockingbirdnest/Principia/issues/1459), but it affected at least one user who built from master between releases.
 
 For more details see all [16](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-06-17T12%3A30%3A00..2017-07-21T21%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cauchy and Cayley.
 
