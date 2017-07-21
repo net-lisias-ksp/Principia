@@ -14,11 +14,9 @@
 
 * Since KSP 1.2, the parts of unpacked vessels are lagging behind the current time (and the parts of loaded packed vessels), instead of the orbits being ahead of the current time. This challenged some assumptions made by Principia, and was the root cause of many bugs (including bugs worked around in previous versions), such as [#1272](https://github.com/mockingbirdnest/Principia/issues/1272), [#1416](https://github.com/mockingbirdnest/Principia/issues/1416), [#1441](https://github.com/mockingbirdnest/Principia/issues/1441), and [#1473](https://github.com/mockingbirdnest/Principia/issues/1473), as well as mysterious and worrying errors in the logs. This was fixed by advancing vessels in time when KSP expects them to be advanced.
 
-* Principia would sometimes crash when reentering a vessel from EVA.  This was due to some parts having null colliders and was fixed by ignoring these colliders ([#1465](https://github.com/mockingbirdnest/Principia/issues/1465)).
+* In some circumstances KSP would report a collision with a null collider, which confused Principia and caused a crash ([#1447](https://github.com/mockingbirdnest/Principia/issues/1447)). This has been fixed by ignoring such collisions.
 
 * A Kerbal in EVA would sometimes be spawned several metres away from the vessel.  This is because in this case the Kerbal ignores collisions with the ship for a little while, and is nudged back to the airlock.  This nudging conflicted with the nudging done by Principia ([#1459](https://github.com/mockingbirdnest/Principia/issues/1459)).
-
-* In some circumstances KSP would report a collision with a null collider, which confused Principia and caused a crash ([#1447](https://github.com/mockingbirdnest/Principia/issues/1447)). This has been fixed by ignoring such collisions.
 
 * A crash would occur when a Kerbal on EVA was unloaded.  This has been fixed by better checking the state of the EVA controller ([#1467](https://github.com/mockingbirdnest/Principia/issues/1467)). This issue was not in Cauchy, since it was introduced in pull request [#1459](https://github.com/mockingbirdnest/Principia/issues/1459), but it affected at least one user who built from master between releases.
 
