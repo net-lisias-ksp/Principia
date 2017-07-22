@@ -5,9 +5,7 @@ In these FAQ, `<KSP directory>` is the directory such that the KSP executable is
 Note that Principia Cardano targets KSP 1.2.2.
 
 # Installing
-The binaries for Windows and Ubuntu x64 can be found in the readme.
-
-For Macintosh users, we don't have a build at this point. [**@lamont-granquist**](https://github.com/lamont-granquist) has been providing [builds](https://github.com/lamont-granquist/Principia/releases) that are regularly updated to track our master.
+The binaries for Windows, macOS, and Ubuntu x64 can be found in the readme.
 
 Don't reuse an existing save after installing Principia, create a new one (see below).
 
