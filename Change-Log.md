@@ -1,7 +1,4 @@
 # [Cayley](https://en.wikipedia.org/wiki/Arthur_Cayley)
-
-*Cayley is not released yet.  This is a draft of the change log.*
-
 ## User-facing features
 
 * Vessel trajectories are now displayed for the selected vessel in the tracking station ([#1457](https://github.com/mockingbirdnest/Principia/issues/1457)).
