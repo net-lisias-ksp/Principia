@@ -10,6 +10,8 @@
 
 * A reminder has been added in the UI when it's time to update Principia because a new moon has passed.
 
+* The release we distribute now includes the Macintosh version.
+
 ## Bug fixes
 
 * Since KSP 1.2, the parts of unpacked vessels are lagging behind the current time (and the parts of loaded packed vessels), instead of the orbits being ahead of the current time. This challenged some assumptions made by Principia, and was the root cause of many bugs (including bugs worked around in previous versions), such as [#1272](https://github.com/mockingbirdnest/Principia/issues/1272), [#1416](https://github.com/mockingbirdnest/Principia/issues/1416), [#1441](https://github.com/mockingbirdnest/Principia/issues/1441), and [#1473](https://github.com/mockingbirdnest/Principia/issues/1473), as well as mysterious and worrying errors in the logs. This was fixed by advancing vessels in time when KSP expects them to be advanced.
