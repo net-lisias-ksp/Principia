@@ -2,7 +2,7 @@
 
 In these FAQ, `<KSP directory>` is the directory such that the KSP executable is found in `<KSP directory>/KSP.exe`.
 
-Note that Principia Cardano targets KSP 1.2.2.
+Note that Principia currently targets KSP 1.2.2.
 
 # Installing
 The binaries for Windows, macOS, and Ubuntu x64 can be found in the readme.
