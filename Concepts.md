@@ -19,13 +19,13 @@ Principia changes some of the ways that you interact with the map view compared 
 A trajectory is a line depicting the positions of a vessel.  In stock KSP, all trajectories are conics so there is not a lot of complexity to displaying or understanding them.  With N-body physics, though, trajectories may become more complex (and are certainly not conics in the interesting cases) so Principia comes with additional tools for plotting trajectories.
 
 For the active vessel, Principia may display three trajectories:
-* The *history*, painted in acid green, shows where your vessel was in the past.
-* The *prediction*, painted in fuchsia, shows where your vessel will go if you just sit on your hands: no engine burns, no separations, no nothing.
-* The *flight plan*, painted in alternating segments of solid orange red and dashed baby blue, shows where your vessel will go if you execute the planned flight plan with no errors (more on flight planning later).
+* The *history*, painted in lime ![](http://via.placeholder.com/10/aaff32?text=%20), shows where your vessel was in the past.
+* The *prediction*, painted in fuchsia ![](http://via.placeholder.com/10/ed0dd9?text=%20), shows where your vessel will go if you just sit on your hands: no engine burns, no separations, no nothing.
+* The *flight plan*, painted in alternating segments of solid pink ![](http://via.placeholder.com/10/ff81c0?text=%20) and dashed periwinkle blue ![](http://via.placeholder.com/10/8f99fb?text=%20), shows where your vessel will go if you execute the planned flight plan with no errors (more on flight planning later).
 
 If there is a target vessel and the selected frame is not centred on the target, the trajectory of the target is also displayed:
-* its history is shown in goldenrod;
-* its prediction is shown in pig pink.
+* its history is shown in goldenrod ![](http://via.placeholder.com/10/fac205?text=%20);
+* its prediction is shown in light mauve ![](http://via.placeholder.com/10/c292a1?text=%20).
 
 The main Principia UI let you control the length of the history (`Max history length`) and the settings of the prediction and flight plan (`Tolerance` and `Length` under `Prediction Settings`).  There are trade-offs in using these parameters: keeping a long history is aesthetically pleasing but it may also be confusing and may consume a lot of memory.  Computing a long prediction (or flight plan) with a low tolerance may end up consuming lots of CPU and make the game feel unresponsive.  Use your judgement: you probably don't need a 1 metre tolerance when planning a multi-month trip to Jupiter, but you may need that when entering orbit.
 
