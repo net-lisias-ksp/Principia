@@ -1,5 +1,7 @@
 Before using the mod we recommend that you read the [concepts](https://github.com/mockingbirdnest/Principia/wiki/Concepts) document which explains the most important parts of Principia.  In particular, you should learn about the [plotting frame](https://github.com/mockingbirdnest/Principia/wiki/Concepts#plotting-frame) and [flight planning](https://github.com/mockingbirdnest/Principia/wiki/Concepts#flight-planning).
 
+INSTALL: Download the binary (Ubuntu, macOS, and Windows) [HERE](https://goo.gl/w3VKtA) or, if you don't trust our binary, build the mod from the Cayley release.
+
 You might also want to go through our
 [tutorial](https://github.com/mockingbirdnest/Principia/wiki/A-guide-to-going-to-the-Mun-with-Principia) which shows how 
 to go to the Mun with Principia in an energy-efficient manner.
