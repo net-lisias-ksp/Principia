@@ -1,3 +1,19 @@
+# [Чебышёв](https://en.wikipedia.org/wiki/Pafnuty_Chebyshev)
+*This is a draft of the change log.  Чебышёв is not available yet.*
+## User-facing features
+
+* The performance of the mod has been increased considerably (of the order of 5x to 10x faster) by implementing our own plotting of trajectories.  By cleverly choosing the segments to draw we are able to send less graphic requests to OpenGL, while at the same time making the trajectories much smoother (no more angles in the prediction, in particular).  This addresses numerous user complaints, for instance [#1487](https://github.com/mockingbirdnest/Principia/issues/1487).
+
+* Support for tracking burns has been added.  These are burns where the force stays tangent to the trajectory instead of being applied in a fixed direction ([#876](https://github.com/mockingbirdnest/Principia/issues/876)).
+
+* Both KSP 1.2.2 and KSP 1.3 are supported by this version.  Make sure you download the correct binary for your favorite version of KSP.
+
+## Bug fixes
+
+* The plotting frame would revert to 'body-centred inertial' if the 'Revert to Launch' command was used.  This has been fixed by keeping track of the display mode ([#1453](https://github.com/mockingbirdnest/Principia/issues/1453)).
+
+* The performance in the space center view was very poor.  This was a regression introduced in Cayley and it has been fixed by avoiding frequent calls to find the tracking station ([#1486](https://github.com/mockingbirdnest/Principia/issues/1486)).
+
 # [Cayley](https://en.wikipedia.org/wiki/Arthur_Cayley)
 ## User-facing features
 
