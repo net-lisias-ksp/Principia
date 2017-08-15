@@ -2,7 +2,7 @@
 *This is a draft of the change log.  Чебышёв is not available yet.*
 ## User-facing features
 
-* The performance of trajectory plotting (the main performance issue in previous versions of Principia) has been increased considerably (of the order of 5× to 10× faster) by implementing our own plotting of trajectories.  By cleverly choosing the segments to draw we are able to spend less time drawing or processing the trajectory, while at the same time making the trajectories much smoother (no more angles in the prediction, in particular).  This addresses numerous user complaints, for instance [#1487](https://github.com/mockingbirdnest/Principia/issues/1487).
+* The speed of trajectory plotting (the main performance issue in previous versions of Principia) has been increased considerably (of the order of 5× to 10× faster) by implementing our own plotting of trajectories.  By cleverly choosing the segments to draw we are able to spend less time drawing or processing the trajectory, while at the same time making the trajectories much smoother (no more angles in the prediction, in particular).  This addresses numerous user complaints, for instance [#1487](https://github.com/mockingbirdnest/Principia/issues/1487).
 
 * Support for tracking burns has been added.  These are burns where the force stays tangent to the trajectory instead of being applied in a fixed direction ([#876](https://github.com/mockingbirdnest/Principia/issues/876)). This is a significant improvement in usability for long, low-thrust burns, which are frequent in RealSolarSystem.
 
