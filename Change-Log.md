@@ -1,3 +1,19 @@
+# [Cesàro](https://en.wikipedia.org/wiki/Ernesto_Ces%C3%A0ro)
+
+*This is a draft of the change log.  Cesàro is not available yet.*
+
+## User-facing features
+
+* The history of the vessels is now integrated on multiple threads.  This brings significant performance gains on multi-core processors.  This is particularly visible when warping at 1 000 000× and above with multiple vessels.  Note that the asteroids are vessels from the perspective of KSP, so most game situations actually have many vessels.
+
+## Bug fixes
+
+* Principia might die when crashing a vessel into another.  This has been fixed by detecting that some parts are in the process of being destroyed and ignoring them in the physics computations ([#1553](https://github.com/mockingbirdnest/Principia/issues/1553)).
+
+* An incompatibility between Principia and Kerbal Inventory System (KIS) which caused Principia to crash has been fixed in KIS, thanks to [@ihsoft](https://github.com/ihsoft) ([#1549](https://github.com/mockingbirdnest/Principia/issues/1549) and [KIS #221](https://github.com/ihsoft/KIS/issues/221)).
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-08-13T21%3A00%3A00..2017-09-16T23%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Чебышёв and Cesàro.
+
 # [Чебышёв](https://en.wikipedia.org/wiki/Pafnuty_Chebyshev)
 
 ## User-facing features
