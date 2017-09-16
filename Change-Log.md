@@ -4,7 +4,7 @@
 
 ## User-facing features
 
-* The history of the vessels is now integrated on multiple threads.  This brings significant performance gains on multi-core processors.  This is particularly visible when warping at 1 000 000× and above with multiple vessels.  Note that the asteroids are vessels from the perspective of KSP, so most game situations actually have many vessels.
+* The history of the vessels is now integrated on multiple threads, one per vessel.  This brings significant performance gains on multi-core processors.  This is particularly visible when warping at 1 000 000× and above with multiple vessels.  Note that the asteroids are vessels from the perspective of KSP, so most game situations actually have many vessels.
 
 ## Bug fixes
 
