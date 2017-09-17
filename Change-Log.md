@@ -12,7 +12,7 @@
 
 * An incompatibility between Principia and Kerbal Inventory System (KIS) which caused Principia to crash has been fixed in KIS, thanks to [@ihsoft](https://github.com/ihsoft) ([#1549](https://github.com/mockingbirdnest/Principia/issues/1549) and [KIS #221](https://github.com/ihsoft/KIS/issues/221)).
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-08-13T21%3A00%3A00..2017-09-16T23%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Чебышёв and Cesàro.
+For more details see all [24](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-08-13T21%3A00%3A00..2017-09-16T23%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Чебышёв and Cesàro.
 
 # [Чебышёв](https://en.wikipedia.org/wiki/Pafnuty_Chebyshev)
 
