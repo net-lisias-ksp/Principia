@@ -1,10 +1,8 @@
 # [Cesàro](https://en.wikipedia.org/wiki/Ernesto_Ces%C3%A0ro)
 
-*This is a draft of the change log.  Cesàro is not available yet.*
-
 ## User-facing features
 
-* The history of the vessels is now integrated on multiple threads, one per vessel.  This brings significant performance gains on multi-core processors.  This is particularly visible when warping at 1 000 000× and above with multiple vessels.  Note that the asteroids are vessels from the perspective of KSP, so most game situations actually have many vessels.
+* The history of the vessels is now integrated on multiple threads, one per vessel.  This brings significant performance gains on multi-core processors.  This is particularly visible when warping at 1 000 000× and above with multiple vessels.  Note that the asteroids are vessels from the perspective of KSP, so most game situations actually have many vessels.  (This improvement does not apply to MacOS because Apple did not support `shared_mutex` prior to 10.12.)
 
 ## Bug fixes
 
