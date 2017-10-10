@@ -1,3 +1,13 @@
+# [Chasles](https://en.wikipedia.org/wiki/Michel_Chasles)
+
+*This is a draft of the change log. Chasles is not available yet.*
+
+## User-facing features
+
+## Bug fixes
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-09-16T00%3A00%3A00..2017-10-19T11%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cesàro and Chasles.
+
 # [Cesàro](https://en.wikipedia.org/wiki/Ernesto_Ces%C3%A0ro)
 
 ## User-facing features
