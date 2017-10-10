@@ -14,6 +14,8 @@
 
 * Principia would sometimes crash when starting to warp.  While the problem has not been completely elucidated, this is believed to be caused by a violated invariant in predictions.  The management of predictions has been extensively rewritten to enforce stronger invariants ([#1561](https://github.com/mockingbirdnest/Principia/issues/1561)).
 
+* Pressing a non-expanding button on the plotting frame UI would raise (and log) an exception.  This has been fixed by properly handling the celestials that don't have satellites ([#1532](https://github.com/mockingbirdnest/Principia/issues/1532)). 
+
 * A number of compilation warnings emitted by Clang have been fixed, which should make the code easier to port and more correct.  (Thanks to [@aw1621107](https://github.com/aw1621107) for numerous pull requests.)
 
 For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-09-17T00%3A00%3A00..2017-10-19T11%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cesàro and Chasles.
