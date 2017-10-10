@@ -4,7 +4,7 @@
 
 ## User-facing features
 
-* On celestials that don't have an atmosphere, Principia is now able to manage the vessels even when KSP uses a rotating reference frame, all the way down to the ground.  This is the final resolution of issues that has been annoying players for some time as it was virtually impossible to land on mountains (see for example [#1413](https://github.com/mockingbirdnest/Principia/issues/1413) and [#1440](https://github.com/mockingbirdnest/Principia/issues/1440)).  As soon as a vessel touches the ground, Principia hands it over to KSP.  As soon as it leaves the ground, Principia takes control again.  This means that if, for instance, you have a Kerbal frolicking on Minmus, when she jumps and leave the ground Principia will apply full N-body gravitation until she hits the ground again.
+* On celestials that don't have an atmosphere, Principia is now able to manage the vessels even when KSP uses a rotating reference frame, all the way down to the ground.  This is the final resolution of issues that has been annoying players for some time as it was virtually impossible to land on mountains (see for example [#1413](https://github.com/mockingbirdnest/Principia/issues/1413) and [#1440](https://github.com/mockingbirdnest/Principia/issues/1440)).  As soon as a vessel touches the ground, Principia hands it over to KSP.  As soon as it leaves the ground, Principia takes control again.  This means that if, for instance, you have a Kerbal frolicking on Minmus, when she jumps and leaves the ground Principia will apply full N-body gravitation until she hits the ground again.
 
     We plan to do this for celestials that have an atmosphere in a future release, but this requires some synchronization with the releases of [Ferram Aerospace Research](ferram4/Ferram-Aerospace-Research).
 
@@ -14,7 +14,7 @@
 
 * Principia would sometimes crash when starting to warp.  While the problem has not been completely elucidated, this is believed to be caused by a violated invariant in predictions.  The management of predictions has been extensively rewritten to enforce stronger invariants ([#1561](https://github.com/mockingbirdnest/Principia/issues/1561)).
 
-* A number of compilation warnings emitted by Clang have been fixed, which should make the code easier to port and more correct.  (Thanks to @aw1621107(https://github.com/aw1621107) for numerous pull requests.)
+* A number of compilation warnings emitted by Clang have been fixed, which should make the code easier to port and more correct.  (Thanks to [@aw1621107](https://github.com/aw1621107) for numerous pull requests.)
 
 For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-09-17T00%3A00%3A00..2017-10-19T11%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Cesàro and Chasles.
 
