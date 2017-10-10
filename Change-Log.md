@@ -6,7 +6,7 @@
 
 * On celestials that don't have an atmosphere, Principia is now able to manage the vessels even when KSP uses a rotating reference frame, all the way down to the ground.  This is the final resolution of issues that has been annoying players for some time as it was making it virtually impossible to land on mountains (see for example [#1413](https://github.com/mockingbirdnest/Principia/issues/1413) and [#1440](https://github.com/mockingbirdnest/Principia/issues/1440)).  As soon as a vessel touches the ground, Principia hands it over to KSP.  As soon as it leaves the ground, Principia takes control again.  This means that if, for instance, you have a Kerbas frolicking on Minmus, when she jumps and leave the ground Principia will apply full N-body gravitation until she hits the ground again.
 
-We plan to do this for celestials that have an atmosphere in a future release, but this requires some synchronization with the releases of [Ferram Aerospace Research](ferram4/Ferram-Aerospace-Research).
+    We plan to do this for celestials that have an atmosphere in a future release, but this requires some synchronization with the releases of [Ferram Aerospace Research](ferram4/Ferram-Aerospace-Research).
 
 * KSP 1.2.2, 1.3.0 and 1.3.1 are supported by this version. Make sure you download the correct binary for your favourite version of KSP (the game will crash otherwise).
 
