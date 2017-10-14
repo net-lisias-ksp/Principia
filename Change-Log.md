@@ -12,7 +12,7 @@
 
 ## Bug fixes
 
-* With KSP 1.3, the trajectory markers (apsides, nodes, target approaches) would sometimes get nonsensical multiple labels, e.g. [a target approach node with the text "DN" and "Pe"](https://user-images.githubusercontent.com/2284290/31515614-0be46882-af96-11e7-8566-18150687b331.png).  Principia no longer attempts to reuse the `MapNode` objects if the marker type changes.
+* With KSP 1.3, the trajectory markers (apsides, nodes, target approaches) would sometimes get nonsensical multiple labels, e.g. [a target approach node with the text "DN" and "Pe"](https://i.imgur.com/a0TISDV.png?1).  Principia no longer attempts to reuse the `MapNode` objects if the marker type changes.
 
 * Principia would sometimes crash when starting to warp.  While the problem has not been completely elucidated, this is believed to be caused by a violated invariant in predictions.  The management of predictions has been extensively rewritten to enforce stronger invariants ([#1561](https://github.com/mockingbirdnest/Principia/issues/1561)).
 
