@@ -1,7 +1,5 @@
 # [Chasles](https://en.wikipedia.org/wiki/Michel_Chasles)
 
-*This is a draft of the change log. Chasles is not available yet.*
-
 ## User-facing features
 
 * On celestials that don't have an atmosphere, Principia is now able to manage the vessels even when KSP uses a rotating reference frame, all the way down to the ground.  This is the final resolution of issues that has been annoying players for some time as it was virtually impossible to land on mountains (see for example [#1413](https://github.com/mockingbirdnest/Principia/issues/1413), [#1440](https://github.com/mockingbirdnest/Principia/issues/1440), and [#1591](https://github.com/mockingbirdnest/Principia/issues/1591)).  As soon as a vessel touches the ground, Principia hands it over to KSP.  As soon as it leaves the ground, Principia takes control again.  This means that if, for instance, you have a Kerbal frolicking on Minmus, when she jumps and leaves the ground Principia will apply full N-body gravitation until she hits the ground again.
