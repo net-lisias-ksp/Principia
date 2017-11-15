@@ -1,4 +1,5 @@
 ### Versions
+* [陈景润](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#陈景润)
 * [Chasles](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#chasles)
 * [Cesàro](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#ces%C3%A0ro)
 * [Чебышёв](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#%D0%A7%D0%B5%D0%B1%D1%8B%D1%88%D1%91%D0%B2)
