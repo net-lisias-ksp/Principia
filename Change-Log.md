@@ -2,11 +2,17 @@
 
 *This is a draft of the release note.  陈景润 is not available yet.*
 
+## User-facing features
+
+* A longstanding problem has been fixed which makes the saves smaller and the histories smoother.  Previously, one point was retained every 10 seconds in the history, which would cause the saves to become uncomfortably large after playing for some time.  When warping, we could not retain one point every 10 seconds (the history would have grown to gigabytes) so we opted for only retaining points "once in a while"; the unfortunate consequence was that the history produced by warp would be drawn incorrectly, with spikes and loops and other nonphysical artifacts.  All these issues have been fixed by intelligently downsampling the history to make its size much smaller [#228](https://github.com/mockingbirdnest/Principia/issues/228).
+
 ## Bug fixes
 
 * Principia would sometimes crash when switich the camera from the Sun to a vessel when the velocity or altitude were extremely large.  This was due to a subtle bug in the integrator used to compute the prediction, which caused it to lose a small amount of accuracy when computing the times at which the integration takes place [#1595](https://github.com/mockingbirdnest/Principia/issues/1595).
 
-* Deleting the last manœuvre in the flight planner sometimes caused the bottom of the flight planning window to vanish off the top of the screen.  The window was no longer accessible and there is no way for the user to drag it back on-screen.  This has been fixed by making sure that some part of the window always remains on-screen [#1609](https://github.com/mockingbirdnest/Principia/issues/1609).
+* Principia would sometimes crash when a vessel was trying to leave the surface.  This was fixed by properly detecting the case where KSP does not have a collider yet [#1618](https://github.com/mockingbirdnest/Principia/issues/1618).
+
+* Deleting the last manœuvre in the flight planner sometimes caused the bottom of the flight planning window to vanish off the top of the screen.  The window was no longer accessible and there is no way for the user to drag it back on-screen.  This has been fixed by making sure that some part of the window always remains on-screen [#1609](https://github.com/mockingbirdnest/Principia/issues/1609).  (Thanks to [@aw1621107](https://github.com/aw1621107) for the fix.)
 
 
 
