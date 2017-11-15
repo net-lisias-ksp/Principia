@@ -1,6 +1,6 @@
 # [陈景润](https://en.wikipedia.org/wiki/Chen_Jingrun)
 
-*This is a draft of the release note.  陈景润 is not available yet.*
+*This is a draft of the change log.  陈景润 is not available yet.*
 
 ## User-facing features
 
