@@ -1,3 +1,9 @@
+# [陈景润](https://en.wikipedia.org/wiki/Chen_Jingrun)
+
+*This is a draft of the release note.  陈景润 is not available yet.*
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-09-17T00%3A00%3A00..2017-10-14T13%3A59%3A00..2017-11-15T21%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Chasles and 陈景润.
+
 # [Chasles](https://en.wikipedia.org/wiki/Michel_Chasles)
 
 ## User-facing features
