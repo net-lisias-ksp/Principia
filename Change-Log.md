@@ -2,7 +2,15 @@
 
 *This is a draft of the release note.  陈景润 is not available yet.*
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-09-17T00%3A00%3A00..2017-10-14T13%3A59%3A00..2017-11-15T21%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Chasles and 陈景润.
+## Bug fixes
+
+* Principia would sometimes crash when switich the camera from the Sun to a vessel when the velocity or altitude were extremely large.  This was due to a subtle bug in the integrator used to compute the prediction, which caused it to lose a small amount of accuracy when computing the times at which the integration takes place [#1595](https://github.com/mockingbirdnest/Principia/issues/1595).
+
+* Deleting the last manœuvre in the flight planner sometimes caused the bottom of the flight planning window to vanish off the top of the screen.  The window was no longer accessible and there is no way for the user to drag it back on-screen.  This has been fixed by making sure that some part of the window always remains on-screen [#1609](https://github.com/mockingbirdnest/Principia/issues/1609).
+
+
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-10-14T13%3A59%3A00..2017-11-15T21%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between Chasles and 陈景润.
 
 # [Chasles](https://en.wikipedia.org/wiki/Michel_Chasles)
 
