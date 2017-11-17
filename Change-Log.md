@@ -1,10 +1,9 @@
 # [陈景润](https://en.wikipedia.org/wiki/Chen_Jingrun)
 
-*This is a draft of the change log.  陈景润 is not available yet.*
-
 ## User-facing features
 
 * A longstanding problem has been fixed, making the saves smaller and the histories smoother.  Previously, one point was retained every 10 seconds in the history, which would cause the saves to become uncomfortably large after playing for some time.  When warping, we could not afford to retain one point every 10 seconds (the history would have grown to gigabytes) so we opted for only retaining a point "once in a while"; the unfortunate consequence was that the history produced by warp would be drawn incorrectly, with spikes and loops and other nonphysical artifacts.  All these issues have been fixed by intelligently downsampling the history to make its size much smaller while retaining the accuracy necessary to draw it ([#228](https://github.com/mockingbirdnest/Principia/issues/228)).
+* This is the last version to support KSP 1.3.0.  The next version will only support KSP 1.2.2 and 1.3.1.
 
 ## Bug fixes
 
