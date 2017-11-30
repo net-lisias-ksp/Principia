@@ -80,7 +80,7 @@ For the same reason, Principia offers a choice of *plotting frame* that you can 
     A frame similar to the previous one, except that instead of pinning the barycentre of two celestials, it pins the centre of one of the celestials.  In the case of the Earth and the Moon, the Moon will appear immobile and the Earth will stay in a fixed direction, although its distance will vary a bit over time (due to the eccentricity of its orbit).  The distant stars, the Sun and all other celestials will appear to move around.
 
     This frame is useful for when your vessel is close to a celestial, but the direction of another celestial is important: for instance, if you are in low Earth orbit but must orient your solar panels towards the Sun.
-Another application is heliosynchronous orbits: in the Earth-Centred Sun-Aligned reference frame, the terminator does not move, and a heliosynchronous orbit is one that does not drift in that frame. This frame may also be useful for navigation around Lagrangian points L1 and L2 thanks to their proximity to the smaller celestial.
+Another application is heliosynchronous orbits: in the Earth-Centred Sun-Aligned reference frame, the terminator does not move, and a heliosynchronous orbit is one that does not drift in that frame. This frame may also be useful for navigation around Lagrangian points L<sub>1</sub> and L<sub>2</sub> thanks to their proximity to the smaller celestial.
 
 * Reference frame fixing the target vessel, the plane of its orbit around a celestial, and the line between them (e.g., Target Local Vertical Local Horizontal at Earth, TgT LVLH@E)
 
