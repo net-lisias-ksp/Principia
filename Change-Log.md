@@ -14,6 +14,7 @@
   * replace the Adams-Moulton integrator by a finite difference computation to evaluate the velocities;
   * determine during the force computation if a vessel moves inside a celestial and propagate this information all the way to KSP to kill the vessel;
   * change the downsampling of histories to make it more resilient to failures to downsample.
+* When using EditorTime in conjunction with Principia, a crash could occur when waiting more than the maximum history length before launching.  This has been fixed by managing the histories based on the actual time of the Principia plugin ([#1641](https://github.com/mockingbirdnest/Principia/issues/1641)).
 
 For more details see all [25](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-11-15T22%3A00%3A00..2017-12-16T16%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between 陈景润 and Christoffel.
 
