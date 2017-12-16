@@ -1,3 +1,16 @@
+# [Christoffel](https://en.wikipedia.org/wiki/Elwin_Bruno_Christoffel)
+
+## User-facing features
+
+* The capability to start and stop the Principia plugin has been removed.  While it was useful at the beginning of the development of Principia when the code was unstable, it had overlived its usefulness and was causing crashes.  It is nowadays critical for Principia and KSP to stay in sync so Principia must be constantly running.
+* As announced previously, KSP 1.3.0 is no longer supported.  Principia only works with KSP 1.2.2 and 1.3.1.
+
+## Bug fixes
+
+* Principia used to show, when in the tracking station, the trajectory of the last targetted vessel in addition to the trajectory of the active vessel.  This has been fixed by removing the trajectory of the target in this situation ([#1620](https://github.com/mockingbirdnest/Principia/issues/1620)).
+
+For more details see all [25](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-11-15T22%3A00%3A00..2017-12-16T16%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between 陈景润 and Christoffel.
+
 # [陈景润](https://en.wikipedia.org/wiki/Chen_Jingrun)
 
 ## User-facing features
