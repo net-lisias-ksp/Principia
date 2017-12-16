@@ -1,5 +1,7 @@
 # [Christoffel](https://en.wikipedia.org/wiki/Elwin_Bruno_Christoffel)
 
+*This is a draft of the change log.  Christoffel is not available yet.*
+
 ## User-facing features
 
 * The capability to start and stop the Principia plugin has been removed.  While it was useful at the beginning of the development of Principia when the code was unstable, it had overlived its usefulness and was causing crashes.  It is nowadays critical for Principia and KSP to stay in sync so Principia must be constantly running.
