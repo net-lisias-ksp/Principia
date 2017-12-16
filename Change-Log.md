@@ -3,7 +3,7 @@
 *This is a draft of the change log.  Christoffel is not available yet.*
 
 ## User-facing features
-
+* Vessels going through a celestial body will now correctly be destroyed, even at high time warp.
 * The capability to start and stop the Principia plugin has been removed.  While it was useful at the beginning of the development of Principia when the code was unstable, it had overlived its usefulness and was causing crashes.  It is nowadays critical for Principia and KSP to stay in sync so Principia must be constantly running.
 * As announced previously, KSP 1.3.0 is no longer supported.  Principia only works with KSP 1.2.2 and 1.3.1.
 
