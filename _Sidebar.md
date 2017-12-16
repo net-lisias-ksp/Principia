@@ -1,4 +1,5 @@
 ### Versions
+* [Christoffel](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#christoffel)
 * [陈景润](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#陈景润)
 * [Chasles](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#chasles)
 * [Cesàro](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#ces%C3%A0ro)
