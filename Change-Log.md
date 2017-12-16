@@ -10,6 +10,10 @@
 ## Bug fixes
 
 * Principia used to show, when in the tracking station, the trajectory of the last targetted vessel in addition to the trajectory of the active vessel.  This has been fixed by removing the trajectory of the target in this situation ([#1620](https://github.com/mockingbirdnest/Principia/issues/1620)).
+* Principia would sometimes crash when timewarping in the space centre ([#1628](https://github.com/mockingbirdnest/Principia/issues/1628)).  The root cause was that the vessel would go through a celestial and KSP would not detect the collision because of timewarping.  Our integrator would however fail to conserve energy and start to oscillate because the vessel was temporarily too close to the gravitational singularity at the centre of the celestial.  To fix this rather complex bug we had to:
+  * replace the Adams-Moulton integrator by a finite difference computation to evaluate the velocities;
+  * determine during the force computation if a vessel moves inside a celestial and propagate this information all the way to KSP to kill the vessel;
+  * change the downsampling of histories to make it more resilient to failures to downsample.
 
 For more details see all [25](https://github.com/mockingbirdnest/Principia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2017-11-15T22%3A00%3A00..2017-12-16T16%3A59%3A00+sort%3Acreated-asc&utf8=%E2%9C%93) pull requests between 陈景润 and Christoffel.
 
