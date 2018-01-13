@@ -1,3 +1,23 @@
+# [Clifford](https://en.wikipedia.org/wiki/William_Kingdon_Clifford)
+
+*This is a draft of the change log.  Clifford is not yet available.*
+
+## User-facing features
+
+No new features in this version.  We have been on vacation, and have focused on some deep restructuring for future changes.
+
+## Modder-facing changes
+
+* When building a gravity model, it is now possible to specify the integrator to use and its time step.  The default integrator has been tuned for our solar system, but is not guaranteed to be conservative, especially for systems that are not very stable.  By specifying a different integrator or time step, it is possible to ensure energy conservation at the expense of more costly computations.
+
+## Astronomy
+
+* We started looking into the possibility of building a model of the extrasolar system TRAPPIST-1.  More work is required, but we expect to be able to include this in a future release.
+
+## Numerics
+
+* We are investigating switching from the Clenshaw method of evaluating polynomials expressed in the Чебышёв base to the Estrin method for polynomials expressed in the monomial base, as the latter seems significantly faster.  This might show up in a future release.
+
 # [Christoffel](https://en.wikipedia.org/wiki/Elwin_Bruno_Christoffel)
 
 ## User-facing features
