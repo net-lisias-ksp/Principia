@@ -1,10 +1,14 @@
 # [Clifford](https://en.wikipedia.org/wiki/William_Kingdon_Clifford)
 
-*This is a draft of the change log.  Clifford is not yet available.*
+*This is a draft of the change log.  Clifford is not available yet.*
 
 ## User-facing features
 
 No new features in this version.  We have been on vacation, and have focused on some deep restructuring for future changes.
+
+## Bug fixes
+
+* A bug has been fixed in double precision subtraction of `Point`s which could have led to small inaccuracies in some computations ([#1624](https://github.com/mockingbirdnest/Principia/issues/1624)).  
 
 ## Modder-facing changes
 
@@ -17,6 +21,8 @@ No new features in this version.  We have been on vacation, and have focused on 
 ## Numerics
 
 * We are investigating switching from the Clenshaw method of evaluating polynomials expressed in the Чебышёв base to the Estrin method for polynomials expressed in the monomial base, as the latter seems significantly faster.  This might show up in a future release.
+
+For more details see all [17](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2017-12-16T17%3A00%3A00..2018-01-13T22%3A59%3A00+sort%3Acreated-asc) pull requests between Christoffel and Clifford.
 
 # [Christoffel](https://en.wikipedia.org/wiki/Elwin_Bruno_Christoffel)
 
