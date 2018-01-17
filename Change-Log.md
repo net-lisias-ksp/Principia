@@ -1,7 +1,5 @@
 # [Clifford](https://en.wikipedia.org/wiki/William_Kingdon_Clifford)
 
-*This is a draft of the change log.  Clifford is not available yet.*
-
 ## User-facing features
 
 No new features in this version.  We have been on vacation, and have focused on some deep restructuring for future changes.
