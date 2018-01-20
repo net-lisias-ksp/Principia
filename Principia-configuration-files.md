@@ -226,21 +226,26 @@ In the absence of other mods, none of the configurations are present.
 With RealSolarSystem, the `principia_gravity_model` and `principia_initial_state` nodes are both present, since they
 use a `:NEEDS[RealSolarSystem]` clause.
 
-Modders should make careful use the `@` operator (modify an existing node), `%` operator (modify or create),
-`:NEEDS` clause (condition on the presence of a mod) to ensure the requirement is met.
+Modders should make careful use the `@` operator (modify an existing node) and `:NEEDS[]` clause (condition on the presence of a mod) to ensure the requirement is met.
 
 > *Example*: a modder creating a mod AdditionalRealBodies which adds bodies to RealSolarSystem should append
 their initial states to `principia_initial_state` and their *sufficient* gravity models to
 `principia_gravity_model` with
-`@principia_initial_state:FOR[AdditionalRealBodies]:NEEDS[RealSolarSystem]:FINAL` and
-`@principia_gravity_model:FOR[AdditionalRealBodies]:NEEDS[RealSolarSystem]:FINAL`.
+`@principia_initial_state:FOR[AdditionalRealBodies]:NEEDS[RealSolarSystem]` and
+`@principia_gravity_model:FOR[AdditionalRealBodies]:NEEDS[RealSolarSystem]`.
 
-> TODO(egg): the `:FINAL` requirement is a defect. Principia should use the operator `%` and have a `FOR` clause
-so that modders can use the `%` operator if they do not collide, and an `AFTER` clause if they do.
+> A modder creating a new solar system mod NeuesSonnensystem should create *nominal* gravity models in a node
+without any ModuleManager predicates, `principia_gravity_model`.  Alternatively, they can create *sufficient*
+gravity models in that node and provide an initial state in`principia_initial_state`.
 
-> A modder creating a new solar system mod NeuesSonnensystem should create *nominal* gravity models using
-`%principia_gravity_model:FOR[NeuesSonnensystem]`.  Alternatively, they can create *sufficient* gravity models
-in that node and provide an initial state with `%principia_initial_state:FOR[NeuesSonnensystem]`
+> If the author of NeuesSonnensystem wishes some aspect of the system to be conditioned on the presence or
+absence of Principia, they can do so in a patch
+`@Kopernicus:FOR[NeuesSonnensystem]:NEEDS[Principia]` or
+`@Kopernicus:FOR[NeuesSonnensystem]:NEEDS[!Principia]`.
+
+Note that the mathematical operators of ModuleManager will not work on the `quantity` values of Principia
+configuration nodes.  Since ModuleManager is [Turing-complete](https://forum.kerbalspaceprogram.com/index.php?/topic/50533--/&page=142&tab=comments#comment-2530142), we
+leave it as an exercise to the reader to perform arithmetic on these values.
 
 Modders should refer to the [ModuleManager thread](https://forum.kerbalspaceprogram.com/index.php?/topic/50533--)
 for documentation. 
