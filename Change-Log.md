@@ -1,3 +1,23 @@
+# [Cohen](https://en.wikipedia.org/wiki/Paul_Cohen)
+
+*This is a draft of the change log.  Cohen is not available yet.*
+
+## User-facing features
+
+* The computation of the positions and velocities of the celestials has been changed.  We used to use the Clenshaw method for polynomials expressed in the Чебышёв basis, we are now using the Estrin method for polynomials expressed in the monomial basis.  This bring up a 30% speed-up at a modest cost in interpolation accurary (centimetres).
+
+## Bug fixes
+
+* A bug has been fixed where the Principia main window would sometimes be saved off-screen and would be impossible to bring back on screen ([#1677](https://github.com/mockingbirdnest/Principia/issues/1677)).  This has been addressed by making sure that all Principia windows stay on screen by 50 pixels.
+
+* A bug has been fixed where Principia would crash when a vessel collides with a celestial at high warp ([#1703](https://github.com/mockingbirdnest/Principia/issues/1703)).  We now properly detect the collision and refrain from compressing the trajectory as it may be chaotic.
+
+## Miscellaneous
+
+* On Windows, Principia is now distributed as a set of fives DLLs instead of one.  While we don't expect that this will have any effect on users (you'll still install Principia by dropping the `Principia` folder in the `GameData` folder) we anticipate that it will make it easier to optimize the code using profile-guided optimization.
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-01-13T22%3A59%3A00..2018-02-11T22%3A59%3A00+sort%3Acreated-asc) pull requests between Clifford and Cohen.
+
 # [Clifford](https://en.wikipedia.org/wiki/William_Kingdon_Clifford)
 
 ## User-facing features
