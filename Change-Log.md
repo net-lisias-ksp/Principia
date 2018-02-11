@@ -16,7 +16,7 @@
 
 * On Windows, Principia is now distributed as a set of fives DLLs instead of one.  While we don't expect that this will have any effect on users (you'll still install Principia by dropping the `Principia` folder in the `GameData` folder) we anticipate that it will make it easier to optimize the code using profile-guided optimization.
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-01-13T22%3A59%3A00..2018-02-11T22%3A59%3A00+sort%3Acreated-asc) pull requests between Clifford and Cohen.
+For more details see all [36](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-01-13T22%3A59%3A00..2018-02-11T22%3A59%3A00+sort%3Acreated-asc) pull requests between Clifford and Cohen.
 
 # [Clifford](https://en.wikipedia.org/wiki/William_Kingdon_Clifford)
 
