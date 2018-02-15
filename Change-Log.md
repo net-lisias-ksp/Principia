@@ -1,7 +1,5 @@
 # [Cohen](https://en.wikipedia.org/wiki/Paul_Cohen)
 
-*This is a draft of the change log.  Cohen is not available yet.*
-
 ## User-facing features
 
 * The computation of the positions and velocities of the celestials has been changed.  We used to use the Clenshaw method for polynomials expressed in the Чебышёв basis, we are now using the Estrin method for polynomials expressed in the monomial basis.  This bring up a 30% speed-up at a modest cost in interpolation accurary (centimetres).
