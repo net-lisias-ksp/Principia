@@ -2,7 +2,7 @@
 
 ## User-facing features
 
-* The computation of the positions and velocities of the celestials has been changed.  We used to use the Clenshaw method for polynomials expressed in the Чебышёв basis, we are now using the Estrin method for polynomials expressed in the monomial basis.  This bring up a 30% speed-up at a modest cost in interpolation accurary (centimetres).
+* The computation of the positions and velocities of the celestials has been changed.  We used to use the Clenshaw method for polynomials expressed in the Чебышёв basis, we are now using the Estrin method for polynomials expressed in the monomial basis.  This brings up a 30% speed-up at a modest cost in interpolation accuracy (centimetres).
 
 ## Bug fixes
 
