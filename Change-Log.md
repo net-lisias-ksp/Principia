@@ -4,14 +4,15 @@
 
 ## Bug fixes
 
-* A bug has been fixed where trajectories in frames tied to Pol and Bop would appear horribly wiggly and Pol and Bop would exhibit hourly oscillations ([#1741](https://github.com/mockingbirdnest/Principia/issues/1741)).  This has been addressed by using a different integrator for the KSP system.
+* A bug has been fixed where trajectories in frames tied to Pol and Bop would appear horribly wiggly and Pol and Bop would exhibit hourly oscillations ([#1741](https://github.com/mockingbirdnest/Principia/issues/1741)).  This has been addressed by using a different integrator (Blanes-Moan) for the KSP system, which is more resilient to the instabilities present in the Jool system.  For the real solar system we are still using a Quinlan-Tremaine integrator as there are no stability issues and this integrator yields more accurate results.
 
 ## Known issues
 
 * An issue has been reported where, when navigating at large distance from Kerbol (far beyond the orbit of Eeloo) it becomes virtually impossible to plot the predictions or the flight plans ([#1737](https://github.com/mockingbirdnest/Principia/issues/1737)).  This is due to the conjugation of two effects: 
-1. As the vessel goes very far from Kerbol, it is necessary to zoom out a lot to see a picture of the entire system. This means that the prediction looks smaller and smaller on the screen.
-1. At the same time, the vessel moves more and more slowly, which increases the number of steps that need to be computed to display a sizeable prediction.
-All this requires to integrate the entire solar system as well as the vessel over extremely long periods of time and at some point this becomes so costly that Principia cannot keep up and the prediction looks smaller and smaller and may even become invisible.
+  1. As the vessel goes very far from Kerbol, it is necessary to zoom out a lot to see a picture of the entire system. This means that the prediction looks smaller and smaller on the screen.
+  1. At the same time, the vessel moves more and more slowly, which increases the number of steps that need to be computed to display a sizeable prediction.
+
+  All this requires to integrate the entire solar system as well as the vessel over extremely long periods of time and at some point this becomes so costly that Principia cannot keep up and the prediction looks smaller and smaller and may even become invisible.
 We do not expect this issue to be ever fixable, as the amount of computation needed for interstellar travel would be immense.
 
 For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-02-11T23%3A00%3A00..2018-03-11T22%3A59%3A59+sort%3Acreated-asc) pull requests between Cohen and Coxeter.
