@@ -2,9 +2,17 @@
 
 *This is a draft of the change log.  Coxeter is not available yet.*
 
+## User-facing features
+
+* The performance of all the code having to do with numerical analysis (including some of the integrators) has been significantly improved, with benchmarks demonstrating a speed-up of up to 2×.  In particular, operations involving 3-dimensional vectors, linear algebra and square roots are now inplemented using the Intel SSE3 intrinsics to take advantage of SIMD instructions.  Also, some costly usages of heap storage and of `std::pow` have been removed.  Finally, the computation of velocities for symmetric linear multistep integrators (used with Real Solar System) has been made faster and more precise.
+
 ## Bug fixes
 
 * A bug has been fixed where trajectories in frames tied to Pol and Bop would appear horribly wiggly and Pol and Bop would exhibit hourly oscillations ([#1741](https://github.com/mockingbirdnest/Principia/issues/1741)).  This has been addressed by using a different integrator (Blanes-Moan) for the KSP system, which is more resilient to the instabilities present in the Jool system.  For the real solar system we are still using a Quinlan-Tremaine integrator as there are no stability issues and this integrator yields more accurate results.
+
+## Modder-facing changes
+
+* An entry point named `ExternalGetNearestPlannedCoastDegreesOfFreedom` has been added to our API to help mods which want to implement closed-loop guidance ([#1659](https://github.com/mockingbirdnest/Principia/issues/1659)) and ([#1729](https://github.com/mockingbirdnest/Principia/issues/1729)).
 
 ## Known issues
 
@@ -62,6 +70,7 @@ For more details see all [17](https://github.com/mockingbirdnest/Principia/pulls
 # [Christoffel](https://en.wikipedia.org/wiki/Elwin_Bruno_Christoffel)
 
 ## User-facing features
+
 * Vessels going through a celestial body will now correctly be destroyed, even at high time warp.
 * The capability to start and stop the Principia plugin has been removed.  While it was useful at the beginning of the development of Principia when the code was unstable, it had overlived its usefulness and was causing crashes.  It is nowadays critical for Principia and KSP to stay in sync so Principia must be constantly running.
 * As announced previously, KSP 1.3.0 is no longer supported.  Principia only works with KSP 1.2.2 and 1.3.1.
