@@ -4,7 +4,10 @@
 
 ## User-facing features
 
-* The performance of all the code having to do with numerical analysis (including some of the integrators) has been significantly improved, with benchmarks demonstrating a speed-up of up to 2×.  In particular, operations involving 3-dimensional vectors, linear algebra and square roots are now inplemented using the Intel SSE3 intrinsics to take advantage of SIMD instructions.  Also, some costly usages of heap storage and of `std::pow` have been removed.  Finally, the computation of velocities for symmetric linear multistep integrators (used with Real Solar System) has been made faster and more precise.
+* The performance of all the code having to do with numerical analysis (including some of the integrators) has been significantly improved, with benchmarks demonstrating a speed-up of up to 2×.  In particular:
+  -  operations involving 3-dimensional vectors, linear algebra and square roots are now implemented using the Intel SSE2 intrinsics to take advantage of SIMD instructions;
+  - some costly usages of heap storage and of `std::pow` have been removed.
+* The velocities for symmetric linear multistep integrators (used with Real Solar System) are now computed from the accelerations and two positions, instead of being purely computed by a difference formula on the positions. This is more accurate, and it is also significantly cheaper, since it can be done without double-double precision.
 
 ## Bug fixes
 
@@ -14,16 +17,7 @@
 
 * An entry point named `ExternalGetNearestPlannedCoastDegreesOfFreedom` has been added to our API to help mods which want to implement closed-loop guidance ([#1659](https://github.com/mockingbirdnest/Principia/issues/1659)) and ([#1729](https://github.com/mockingbirdnest/Principia/issues/1729)).
 
-## Known issues
-
-* An issue has been reported where, when navigating at large distance from Kerbol (far beyond the orbit of Eeloo) it becomes virtually impossible to plot the predictions or the flight plans ([#1737](https://github.com/mockingbirdnest/Principia/issues/1737)).  This is due to the conjugation of two effects: 
-  1. As the vessel goes very far from Kerbol, it is necessary to zoom out a lot to see a picture of the entire system. This means that the prediction looks smaller and smaller on the screen.
-  1. At the same time, the vessel moves more and more slowly, which increases the number of steps that need to be computed to display a sizeable prediction.
-
-  All this requires to integrate the entire solar system as well as the vessel over extremely long periods of time and at some point this becomes so costly that Principia cannot keep up and the prediction looks smaller and smaller and may even become invisible.
-We do not expect this issue to be ever fixable, as the amount of computation needed for interstellar travel would be immense.
-
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-02-11T23%3A00%3A00..2018-03-11T22%3A59%3A59+sort%3Acreated-asc) pull requests between Cohen and Coxeter.
+For more details see all [28](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-02-11T23%3A00%3A00..2018-03-11T22%3A59%3A59+sort%3Acreated-asc) pull requests between Cohen and Coxeter.
 
 # [Cohen](https://en.wikipedia.org/wiki/Paul_Cohen)
 
