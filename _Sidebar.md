@@ -1,4 +1,5 @@
 ### Versions
+* [Coxeter](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#coxeter)
 * [Cohen](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#cohen)
 * [Clifford](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#clifford)
 * [Christoffel](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#christoffel)
