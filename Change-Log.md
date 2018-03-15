@@ -12,7 +12,7 @@
 
 ## Bug fixes
 
-* A bug has been fixed where trajectories in frames tied to Pol and Bop would appear horribly wiggly and Pol and Bop would exhibit hourly oscillations ([#1741](https://github.com/mockingbirdnest/Principia/issues/1741)).  This has been addressed by using a different integrator (Blanes-Moan) for the KSP system, which is more resilient to the instabilities present in the Jool system.  For the real solar system we are still using a Quinlan-Tremaine integrator as there are no stability issues and this integrator yields more accurate results.
+* A bug has been fixed where trajectories in frames tied to Pol and Bop would appear horribly wiggly and Pol and Bop would exhibit hourly oscillations ([#1741](https://github.com/mockingbirdnest/Principia/issues/1741)).  This has been addressed by using a different integrator (Blanes-Moan) for the KSP system, which is more resilient to the instabilities present in the Jool system.  For the real solar system we are still using a Quinlan-Tremaine integrator as there are no stability issues and this integrator yields more accurate results.  Note that the benefits of the Blanes-Moan integrator will only be visible if you create a new save.
 
 ## Modder-facing changes
 
