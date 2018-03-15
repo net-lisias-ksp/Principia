@@ -17,7 +17,7 @@
 
 * An entry point named `ExternalGetNearestPlannedCoastDegreesOfFreedom` has been added to our API to help mods which want to implement closed-loop guidance ([#1659](https://github.com/mockingbirdnest/Principia/issues/1659) and [#1729](https://github.com/mockingbirdnest/Principia/issues/1729)).
 
-For more details see all [28](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-02-11T23%3A00%3A00..2018-03-11T22%3A59%3A59+sort%3Acreated-asc) pull requests between Cohen and Coxeter.
+For more details see all [30](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-02-11T23%3A00%3A00..2018-03-15T22%3A59%3A59+sort%3Acreated-asc) pull requests between Cohen and Coxeter.
 
 # [Cohen](https://en.wikipedia.org/wiki/Paul_Cohen)
 
