@@ -8,6 +8,7 @@
   -  operations involving 3-dimensional vectors, linear algebra and square roots are now implemented using the Intel SSE2 intrinsics to take advantage of SIMD instructions;
   - some costly usages of heap storage and of `std::pow` have been removed.
 * The velocities for symmetric linear multistep integrators (used with Real Solar System) are now computed from the accelerations and two positions, instead of being purely computed by a difference formula on the positions. This is more accurate, and it is also significantly cheaper, since it can be done without double-double precision.
+* KSP 1.2.2, 1.3.1 and 1.4.1 are supported by this version. Make sure you download the correct binary for your favourite version of KSP (the game will crash otherwise).
 
 ## Bug fixes
 
