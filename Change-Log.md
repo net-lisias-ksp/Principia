@@ -1,7 +1,5 @@
 # [Coxeter](https://en.wikipedia.org/wiki/Harold_Scott_MacDonald_Coxeter)
 
-*This is a draft of the change log.  Coxeter is not available yet.*
-
 ## User-facing features
 
 * The performance of all the code having to do with numerical analysis (including some of the integrators) has been significantly improved, with benchmarks demonstrating a speed-up of up to 2×.  In particular:
