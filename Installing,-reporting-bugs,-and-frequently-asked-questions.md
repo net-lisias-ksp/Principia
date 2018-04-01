@@ -2,10 +2,10 @@
 
 In these FAQ, `<KSP directory>` is the directory such that the KSP executable is found in `<KSP directory>/KSP.exe`.
 
-Note that Principia currently targets KSP 1.2.2 and 1.3.1.
+Note that Principia currently targets KSP 1.2.2, 1.3.1, and 1.4.1.
 
 # Installing
-The binaries for Windows, macOS, and Ubuntu x64 can be found in the [README](https://github.com/mockingbirdnest/Principia/blob/master/README.md).
+The binaries for Windows, macOS, and Ubuntu x64 can be found in the [README](https://github.com/mockingbirdnest/Principia/blob/master/README.md).  Unzip the archive and copy the `Principia` folder into the `GameData` folder of your installation of KSP.
 
 Don't reuse an existing save after installing Principia, create a new one (see below).
 
@@ -19,7 +19,7 @@ Make sure you put the DLL in the right place. The Principia DLL should be at `<K
 If you get the message "Dependencies, namely the Visual C++ Redistributable Packages for Visual Studio 2015 on x64, were not found", well, you need to install the [Visual C++ Redistributable Packages for Visual Studio 2015 on x64](http://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe).
 
 #### Linux users
-You need libc++ and libc++abi 3.9.1-2.
+You need libc++ and libc++abi 6.0.2.
 
 Also, your working directory *needs* to be `<KSP directory>`, otherwise `principia.so` will not be found.
 
