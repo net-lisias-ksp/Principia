@@ -1,3 +1,17 @@
+# [Cramer](https://en.wikipedia.org/wiki/Gabriel_Cramer)
+
+*This is a draft of the change log.  Cramer is not available yet.*
+
+## User-facing features
+
+No new features in this version.  We have spent a fair amount of time upgrading to newer compilers (Visual Studio 2017, Clang 5.0) and to C++17.
+
+**Very importantly, these upgrades mean that you need to upgrade your C++ runtime.**  On Windows you must install the [Visual C++ Redistributable Packages for Visual Studio 2017 on x64](https://go.microsoft.com/fwlink/?LinkId=746572).  On Linux you need to install version 6.0-2 of libc++abi (if using Ubuntu, this comes natively with Bionic Beaver).  On Mac there are no changes, we still support El Capitan or later.
+
+## Bug fixes
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-03-15T23%3A00%3A00..2018-04-08T23%3A59%3A59+sort%3Acreated-asc) pull requests between Cramer and Coxeter.
+
 # [Coxeter](https://en.wikipedia.org/wiki/Harold_Scott_MacDonald_Coxeter)
 
 ## User-facing features
