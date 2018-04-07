@@ -16,10 +16,13 @@ Don't reuse an existing save after installing Principia for the first time, crea
 Make sure you put the DLL in the right place. The Principia DLL should be at `<KSP directory>\GameData\Principia\{Linux64,MacOS64,x64}\principia.dll`.
 
 #### Windows users
-If you get the message "Dependencies, namely the Visual C++ Redistributable Packages for Visual Studio 2015 on x64, were not found", well, you need to install the [Visual C++ Redistributable Packages for Visual Studio 2015 on x64](http://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe).
+If you get the message "Dependencies, namely the Visual C++ Redistributable Packages for Visual Studio 2017 on x64, were not found", well, you need to install the [Visual C++ Redistributable Packages for Visual Studio 2017 on x64](https://go.microsoft.com/fwlink/?LinkId=746572).
+
+#### Mac users
+You need El Capitan or later.
 
 #### Linux users
-You need libc++ and libc++abi 3.9.1-2.
+You need libc++ and libc++abi 6.0-2.
 
 Also, your working directory *needs* to be `<KSP directory>`, otherwise `principia.so` will not be found.
 
