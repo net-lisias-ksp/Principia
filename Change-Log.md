@@ -10,7 +10,7 @@ No new features in this version.  We have spent a fair amount of time upgrading 
 
 ## Bug fixes
 
-* A bug has been fixed where the manœuvre marker would jump at the time of ignition.  This stemmed from a confusion between the vessel orbit and the manœuvre node patch orbit. This was almost always incorrect as the vessel orbit may change, but it was only really visible, e.g., when changes of celestial sphere of influence were involved ([#1728](https://github.com/mockingbirdnest/Principia/issues/1728)).
+* A bug has been fixed where the manœuvre marker would jump at the time of ignition.  This stemmed from a confusion between the vessel's current osculating orbit and the conic patch for the manœuvre node. This this was particularly noticeable when changes of sphere of influence were involved ([#1728](https://github.com/mockingbirdnest/Principia/issues/1728)).
 
 For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-03-15T23%3A00%3A00..2018-04-08T23%3A59%3A59+sort%3Acreated-asc) pull requests between Cramer and Coxeter.
 
