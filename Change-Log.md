@@ -6,6 +6,8 @@ No new features in this version.  We have spent a fair amount of time upgrading 
 
 **Very importantly, these upgrades mean that you need to upgrade your C++ runtime.**  On Windows you must install the [Visual C++ Redistributable Packages for Visual Studio 2017 on x64](https://go.microsoft.com/fwlink/?LinkId=746572).  On Linux you need to install version 6.0-2 of libc++abi (if using Ubuntu, this comes natively with Bionic Beaver).  On Mac there are no changes, we still support El Capitan or later.
 
+This is the last version to support KSP 1.2.2. The next version will only support KSP 1.3.1 and 1.4.x.
+
 ## Bug fixes
 
 * A bug has been fixed where the manœuvre marker would jump at the time of ignition.  This stemmed from a confusion between the vessel's current osculating orbit and the conic patch for the manœuvre node. This this was particularly noticeable when changes of sphere of influence were involved ([#1728](https://github.com/mockingbirdnest/Principia/issues/1728)).
