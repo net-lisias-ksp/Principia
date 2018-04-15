@@ -1,7 +1,5 @@
 # [Cramer](https://en.wikipedia.org/wiki/Gabriel_Cramer)
 
-*This is a draft of the change log.  Cramer is not available yet.*
-
 ## User-facing features
 
 No new features in this version.  We have spent a fair amount of time upgrading to newer compilers (Visual Studio 2017, Clang 5.0) and to C++17.
