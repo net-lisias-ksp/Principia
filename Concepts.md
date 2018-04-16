@@ -132,7 +132,7 @@ This is good enough for fly-by-the-seat-of-your-pants, cowboy-style piloting, bu
 
 While Principia makes it possible to plan complex trajectories, it's important to understand that there are two things that it *doesn't* do because, well, they are part of the fun of using realistic N-body physics:
 
-* Principia doesn't help you optimise the flight plan, e.g. by minimising the Δv.  You've got to look for good flight plans yourself, using intuition and trial and errors.  You'll get better over time.  And yes, it's hard, that's what they hire PhDs to do this.
+* Principia doesn't help you optimise the flight plan, e.g. by minimising the Δv.  You've got to look for good flight plans yourself, using intuition and trial and errors.  You'll get better over time.  And yes, it's hard, that's why they hire PhDs to do this.
 
 * Principia doesn't help you execute the flight plan.  Once you are done with the planning, you need to execute the manœuvres by hand by starting and cutting off the engines just at the right time.  You will not get this completely right, and in some cases a delay of a fraction of a second may cause significant changes to the trajectory down the road.  That's ok, don't try to overdo it, you can always schedule a minor correction to compensate for any inaccuracies.  In real life rocket scientists do just that as they learn more about the gravitational fields around unexplored celestials or because of intrinsic inaccuracies in the intensity of the burns.
 
