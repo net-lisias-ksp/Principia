@@ -7,7 +7,7 @@ Note that Principia currently targets KSP 1.2.2, 1.3.1, and 1.4.1.
 # Installing
 The binaries for Windows, macOS, and Ubuntu x64 can be found in the [README](https://github.com/mockingbirdnest/Principia/blob/master/README.md).  Unzip the archive and copy the `Principia` folder into the `GameData` folder of your installation of KSP.
 
-Don't reuse an existing save after installing Principia for the first time, create a new one (see below).  When upgrading to a new version of Principia it's fine to reuse an existing save as we maintain backward compatibility.
+Don't reuse an existing save after installing Principia for the first time, create a new one ([see below](#existing_save)).  When upgrading to a new version of Principia it's fine to reuse an existing save as we maintain backward compatibility.
 
 # Troubleshooting 
 ## It's not starting!
@@ -28,8 +28,8 @@ Also, your working directory *needs* to be `<KSP directory>`, otherwise `princip
 
 Different distros seem to behave in different manners.  If you run into trouble, feel free to contribute a pull request.
 
-## My vessels are all over the place
-After installing Principia, you should start from a clean slate with all vessels on the ground.  If you try to reuse an existing save the vessels might be all over the place and behave strangely because the physics has effectively changed.
+## <a name="existing_save"></a>My vessels are all over the place
+After installing Principia, you should start from a clean slate with all vessels on the ground.  If you try to reuse an existing save, you may or may not like the result. We will restart integration of the solar system since the origin (it will take a little while the first time you start the game with Principia) and we'll move the celestials to the positions that we have computed. As an example, the Moon is likely to move quite a bit, so if you were flying towards the Moon you may find yourself going towards the-moon-is-not-here-anymore.
 
 # Usage recommendations
 ## Timewarping
