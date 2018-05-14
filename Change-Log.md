@@ -1,7 +1,5 @@
 # [Darboux](https://en.wikipedia.org/wiki/Jean_Gaston_Darboux)
 
-*This is a draft of the change log, Darboux is not available yet.*
-
 ## User-facing features
 
 * The saves are now compressed using [Gipfeli](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42050.pdf), which makes saves about 2.5× smaller.  Also, the protocol buffers used for saving are allocated in an arena.  Together, these changes make large saves about twice as fast to read and write.
