@@ -7,7 +7,7 @@
 * The saves are now compressed using [Gipfeli](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42050.pdf), which makes saves about 2.5× smaller.  Also, the protocol buffers used for saving are allocated in an arena.  Together, these changes make large saves about twice as fast to read and write.
 * We have implemented our own cube root for orbital element computations because the ones provided by the platforms are often slow and/or imprecise. 
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-04-09T00%3A00%3A00..2018-05-13T20%3A59%3A59+sort%3Acreated-asc) pull requests between Cramer and Coxeter.
+For more details see all [32](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-04-09T00%3A00%3A00..2018-05-13T20%3A59%3A59+sort%3Acreated-asc) pull requests between Darboux and Cramer.
 
 # [Cramer](https://en.wikipedia.org/wiki/Gabriel_Cramer)
 
