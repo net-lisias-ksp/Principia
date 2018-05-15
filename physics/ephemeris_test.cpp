@@ -236,7 +236,7 @@ TEST_P(EphemerisTest, FlowWithAdaptiveStepSpecialCase) {
       t0_ + period,
       Ephemeris<ICRS>::AdaptiveStepParameters(
           EmbeddedExplicitRungeKuttaNyströmIntegrator<
-              DormandالمكاوىPrince1986RKN434FM,
+              DormandElMikkawyPrince1986RKN434FM,
               Ephemeris<ICRS>::NewtonianMotionEquation>(),
           max_steps,
           1e-9 * Metre,
@@ -248,7 +248,7 @@ TEST_P(EphemerisTest, FlowWithAdaptiveStepSpecialCase) {
       trajectory.back().time,
       Ephemeris<ICRS>::AdaptiveStepParameters(
           EmbeddedExplicitRungeKuttaNyströmIntegrator<
-              DormandالمكاوىPrince1986RKN434FM,
+              DormandElMikkawyPrince1986RKN434FM,
               Ephemeris<ICRS>::NewtonianMotionEquation>(),
           max_steps,
           1e-9 * Metre,
@@ -407,7 +407,7 @@ TEST_P(EphemerisTest, EarthProbe) {
       t0_ + period,
       Ephemeris<ICRS>::AdaptiveStepParameters(
           EmbeddedExplicitRungeKuttaNyströmIntegrator<
-              DormandالمكاوىPrince1986RKN434FM,
+              DormandElMikkawyPrince1986RKN434FM,
               Ephemeris<ICRS>::NewtonianMotionEquation>(),
           max_steps,
           1e-9 * Metre,
@@ -475,7 +475,7 @@ TEST_P(EphemerisTest, EarthProbe) {
                   t0_ + std::numeric_limits<double>::infinity() * Second,
                   Ephemeris<ICRS>::AdaptiveStepParameters(
                       EmbeddedExplicitRungeKuttaNyströmIntegrator<
-                          DormandالمكاوىPrince1986RKN434FM,
+                          DormandElMikkawyPrince1986RKN434FM,
                           Ephemeris<ICRS>::NewtonianMotionEquation>(),
                       max_steps,
                       1e-9 * Metre,

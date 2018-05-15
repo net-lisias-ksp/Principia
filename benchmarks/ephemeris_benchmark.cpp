@@ -539,7 +539,7 @@ void FlowEphemerisWithAdaptiveStep(
       t,
       Ephemeris<Barycentric>::AdaptiveStepParameters(
           EmbeddedExplicitRungeKuttaNyströmIntegrator<
-              DormandالمكاوىPrince1986RKN434FM,
+              DormandElMikkawyPrince1986RKN434FM,
               Ephemeris<Barycentric>::NewtonianMotionEquation>(),
           /*max_steps=*/std::numeric_limits<std::int64_t>::max(),
           /*length_integration_tolerance=*/1 * Metre,

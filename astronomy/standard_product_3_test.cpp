@@ -388,7 +388,7 @@ TEST_P(StandardProduct3DynamicsTest, PerturbedKeplerian) {
             it->time,
             Ephemeris<ICRS>::AdaptiveStepParameters(
                 EmbeddedExplicitRungeKuttaNyströmIntegrator<
-                    DormandالمكاوىPrince1986RKN434FM,
+                    DormandElMikkawyPrince1986RKN434FM,
                     Ephemeris<ICRS>::NewtonianMotionEquation>(),
                 std::numeric_limits<std::int64_t>::max(),
                 /*length_integration_tolerance=*/1 * Milli(Metre),

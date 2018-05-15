@@ -710,7 +710,7 @@ TEST_F(PluginIntegrationTest, Prediction) {
       plugin.NewBodyCentredNonRotatingNavigationFrame(celestial));
   Ephemeris<Barycentric>::AdaptiveStepParameters adaptive_step_parameters(
       EmbeddedExplicitRungeKuttaNyströmIntegrator<
-          DormandالمكاوىPrince1986RKN434FM,
+          DormandElMikkawyPrince1986RKN434FM,
           Ephemeris<Barycentric>::NewtonianMotionEquation>(),
       /*max_steps=*/14,
       /*length_integration_tolerance=*/1 * Milli(Metre),

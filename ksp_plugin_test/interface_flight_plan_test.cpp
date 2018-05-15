@@ -114,7 +114,7 @@ class InterfaceFlightPlanTest : public ::testing::Test {
   InterfaceFlightPlanTest()
       : adaptive_step_parameters_(
             EmbeddedExplicitRungeKuttaNyströmIntegrator<
-                DormandالمكاوىPrince1986RKN434FM,
+                DormandElMikkawyPrince1986RKN434FM,
                 Ephemeris<Barycentric>::NewtonianMotionEquation>(),
             /*max_steps=*/111,
             /*length_integration_tolerance=*/222 * Metre,
