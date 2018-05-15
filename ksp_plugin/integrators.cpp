@@ -21,7 +21,7 @@ using integrators::SymmetricLinearMultistepIntegrator;
 using integrators::SymplecticRungeKuttaNyströmIntegrator;
 using integrators::methods::BlanesMoan2002SRKN14A;
 using integrators::methods::Fine1987RKNG34;
-using integrators::methods::DormandالمكاوىPrince1986RKN434FM;
+using integrators::methods::DormandElMikkawyPrince1986RKN434FM;
 using integrators::methods::Quinlan1999Order8A;
 using quantities::si::Minute;
 using quantities::si::Second;
@@ -71,7 +71,7 @@ Ephemeris<Barycentric>::AdaptiveStepParameters
 DefaultPsychohistoryParameters() {
   return Ephemeris<Barycentric>::AdaptiveStepParameters(
       EmbeddedExplicitRungeKuttaNyströmIntegrator<
-          DormandالمكاوىPrince1986RKN434FM,
+          DormandElMikkawyPrince1986RKN434FM,
           Position<Barycentric>>(),
       /*max_steps=*/std::numeric_limits<std::int64_t>::max(),
       /*length_integration_tolerance=*/1 * Milli(Metre),
@@ -81,7 +81,7 @@ DefaultPsychohistoryParameters() {
 Ephemeris<Barycentric>::AdaptiveStepParameters DefaultPredictionParameters() {
   return Ephemeris<Barycentric>::AdaptiveStepParameters(
       EmbeddedExplicitRungeKuttaNyströmIntegrator<
-          DormandالمكاوىPrince1986RKN434FM,
+          DormandElMikkawyPrince1986RKN434FM,
           Position<Barycentric>>(),
       /*max_steps=*/1000,
       /*length_integration_tolerance=*/1 * Metre,
