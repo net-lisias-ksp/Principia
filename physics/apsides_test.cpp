@@ -128,7 +128,7 @@ TEST_F(ApsidesTest, ComputeApsidesDiscreteTrajectory) {
       t0 + 10 * JulianYear,
       Ephemeris<World>::AdaptiveStepParameters(
           EmbeddedExplicitRungeKuttaNyströmIntegrator<
-              DormandالمكاوىPrince1986RKN434FM,
+              DormandElMikkawyPrince1986RKN434FM,
               Ephemeris<World>::NewtonianMotionEquation>(),
           std::numeric_limits<std::int64_t>::max(),
           1e-3 * Metre,
@@ -389,7 +389,7 @@ TEST_F(ApsidesTest, ComputeNodes) {
       t0 + 10 * JulianYear,
       Ephemeris<World>::AdaptiveStepParameters(
           EmbeddedExplicitRungeKuttaNyströmIntegrator<
-              DormandالمكاوىPrince1986RKN434FM,
+              DormandElMikkawyPrince1986RKN434FM,
               Ephemeris<World>::NewtonianMotionEquation>(),
           std::numeric_limits<std::int64_t>::max(),
           1e-3 * Metre,

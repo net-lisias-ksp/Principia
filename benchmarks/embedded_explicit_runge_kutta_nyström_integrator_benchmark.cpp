@@ -220,12 +220,12 @@ void BM_EmbeddedExplicitRungeKuttaNyströmIntegratorSolveHarmonicOscillator3D(
 
 BENCHMARK_TEMPLATE2(
     BM_EmbeddedExplicitRungeKuttaNyströmIntegratorSolveHarmonicOscillator1D,
-    methods::DormandالمكاوىPrince1986RKN434FM, ODE1D)
+    methods::DormandElMikkawyPrince1986RKN434FM, ODE1D)
     ->Unit(benchmark::kMillisecond);
 
 BENCHMARK_TEMPLATE2(
     BM_EmbeddedExplicitRungeKuttaNyströmIntegratorSolveHarmonicOscillator3D,
-    methods::DormandالمكاوىPrince1986RKN434FM, ODE3D)
+    methods::DormandElMikkawyPrince1986RKN434FM, ODE3D)
     ->Unit(benchmark::kMillisecond);
 
 }  // namespace integrators

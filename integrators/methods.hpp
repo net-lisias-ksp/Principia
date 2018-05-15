@@ -546,7 +546,7 @@ struct Fine1987RKNG34 : EmbeddedExplicitGeneralizedRungeKuttaNyström {
 
 // Coefficients from [DEP87a], table 3 (the RKN4(3)4FM).
 // Minimizes the 4th order truncation error.
-struct DormandالمكاوىPrince1986RKN434FM :
+struct DormandElMikkawyPrince1986RKN434FM :
     EmbeddedExplicitRungeKuttaNyström {
   static constexpr int higher_order = 4;
   static constexpr int lower_order = 3;
@@ -1063,8 +1063,9 @@ struct Ruth1983 : SymplecticPartitionedRungeKutta {
 
 // Coefficients from [Suz90]; see also the Japanese version:
 // 鈴木 (1990), 量子系のフラクタル経路積分法 と量子コヒーレンス,
+// Suzuki (1990), Fractal Path Integration Method for Quantum Systems and Quantum Coherence,
 // https://www.jstage.jst.go.jp/article/soken/82/3/82_KJ00004703731/_pdf.
-struct 鈴木1990 : SymplecticPartitionedRungeKutta {
+struct Suzuki1990 : SymplecticPartitionedRungeKutta {
   static constexpr int order = 4;
   static constexpr bool time_reversible = true;
   static constexpr int evaluations = 5;
@@ -1090,7 +1091,7 @@ struct 鈴木1990 : SymplecticPartitionedRungeKutta {
 // NOTE(egg): The coefficients were derived from equations 5.4 through 5.17
 // rather than computed from the wᵢ given in tables 1 and 2.  The results were
 // then cross-checked against those obtained from the tables.
-struct 吉田1990Order6A : SymplecticPartitionedRungeKutta {
+struct Yoshida1990Order6A : SymplecticPartitionedRungeKutta {
   static constexpr int order = 6;
   static constexpr bool time_reversible = true;
   static constexpr int evaluations = 7;
@@ -1115,7 +1116,7 @@ struct 吉田1990Order6A : SymplecticPartitionedRungeKutta {
                                                    +0.51004341191845769875,
                                                    +0.392256805238778631910}}};
 };
-struct 吉田1990Order6B : SymplecticPartitionedRungeKutta {
+struct Yoshida1990Order6B : SymplecticPartitionedRungeKutta {
   static constexpr int order = 6;
   static constexpr bool time_reversible = true;
   static constexpr int evaluations = 7;
@@ -1140,7 +1141,7 @@ struct 吉田1990Order6B : SymplecticPartitionedRungeKutta {
                                                    +0.72205442492378755359,
                                                    +0.71992408398839154551}}};
 };
-struct 吉田1990Order6C : SymplecticPartitionedRungeKutta {
+struct Yoshida1990Order6C : SymplecticPartitionedRungeKutta {
   static constexpr int order = 6;
   static constexpr bool time_reversible = true;
   static constexpr int evaluations = 7;
@@ -1165,7 +1166,7 @@ struct 吉田1990Order6C : SymplecticPartitionedRungeKutta {
                                                    -0.34812637695304568885,
                                                    +0.72389128119964896645}}};
 };
-struct 吉田1990Order8A : SymplecticPartitionedRungeKutta {
+struct Yoshida1990Order8A : SymplecticPartitionedRungeKutta {
   static constexpr int order = 8;
   static constexpr bool time_reversible = true;
   static constexpr int evaluations = 15;
@@ -1206,7 +1207,7 @@ struct 吉田1990Order8A : SymplecticPartitionedRungeKutta {
                                                    +1.43131625920334216684,
                                                    +0.521213104349852132174}}};
 };
-struct 吉田1990Order8B : SymplecticPartitionedRungeKutta {
+struct Yoshida1990Order8B : SymplecticPartitionedRungeKutta {
   static constexpr int order = 8;
   static constexpr bool time_reversible = true;
   static constexpr int evaluations = 15;
@@ -1247,7 +1248,7 @@ struct 吉田1990Order8B : SymplecticPartitionedRungeKutta {
                                                    -0.42522792949060316509,
                                                    +0.744096146014606550401}}};
 };
-struct 吉田1990Order8C : SymplecticPartitionedRungeKutta {
+struct Yoshida1990Order8C : SymplecticPartitionedRungeKutta {
   static constexpr int order = 8;
   static constexpr bool time_reversible = true;
   static constexpr int evaluations = 15;
@@ -1288,7 +1289,7 @@ struct 吉田1990Order8C : SymplecticPartitionedRungeKutta {
                                                    +0.999190057189585020872,
                                                    +0.314515325105213909024}}};
 };
-struct 吉田1990Order8D : SymplecticPartitionedRungeKutta {
+struct Yoshida1990Order8D : SymplecticPartitionedRungeKutta {
   static constexpr int order = 8;
   static constexpr bool time_reversible = true;
   static constexpr int evaluations = 15;
@@ -1329,7 +1330,7 @@ struct 吉田1990Order8D : SymplecticPartitionedRungeKutta {
                                                    +0.584268791397964334130,
                                                    +0.457422123114821329143}}};
 };
-struct 吉田1990Order8E : SymplecticPartitionedRungeKutta {
+struct Yoshida1990Order8E : SymplecticPartitionedRungeKutta {
   static constexpr int order = 8;
   static constexpr bool time_reversible = true;
   static constexpr int evaluations = 15;
@@ -1386,7 +1387,7 @@ using internal::BlanesMoan2002SRKN14A;
 using internal::BlanesMoan2002SRKN6B;
 using internal::CandyRozmus1991ForestRuth1990;
 using internal::DormandPrince1986RK547FC;
-using internal::DormandالمكاوىPrince1986RKN434FM;
+using internal::DormandElMikkawyPrince1986RKN434FM;
 using internal::EmbeddedExplicitGeneralizedRungeKuttaNyström;
 using internal::EmbeddedExplicitRungeKutta;
 using internal::EmbeddedExplicitRungeKuttaNyström;
@@ -1423,15 +1424,15 @@ using internal::Ruth1983;
 using internal::SymmetricLinearMultistep;
 using internal::SymplecticPartitionedRungeKutta;
 using internal::SymplecticRungeKuttaNyström;
-using internal::吉田1990Order6A;
-using internal::吉田1990Order6B;
-using internal::吉田1990Order6C;
-using internal::吉田1990Order8A;
-using internal::吉田1990Order8B;
-using internal::吉田1990Order8C;
-using internal::吉田1990Order8D;
-using internal::吉田1990Order8E;
-using internal::鈴木1990;
+using internal::Yoshida1990Order6A;
+using internal::Yoshida1990Order6B;
+using internal::Yoshida1990Order6C;
+using internal::Yoshida1990Order8A;
+using internal::Yoshida1990Order8B;
+using internal::Yoshida1990Order8C;
+using internal::Yoshida1990Order8D;
+using internal::Yoshida1990Order8E;
+using internal::Suzuki1990;
 namespace methods = _methods;
 
 }  // namespace _methods
