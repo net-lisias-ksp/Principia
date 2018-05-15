@@ -28,7 +28,7 @@ using geometry::Inertial;
 using geometry::Velocity;
 using integrators::EmbeddedExplicitRungeKuttaNyströmIntegrator;
 using integrators::SymmetricLinearMultistepIntegrator;
-using integrators::methods::DormandالمكاوىPrince1986RKN434FM;
+using integrators::methods::DormandElMikkawyPrince1986RKN434FM;
 using integrators::methods::QuinlanTremaine1990Order12;
 using quantities::GravitationalParameter;
 using quantities::Pow;
@@ -98,7 +98,7 @@ TEST_F(ApsidesTest, ComputeApsidesDiscreteTrajectory) {
       t0 + 10 * JulianYear,
       Ephemeris<World>::AdaptiveStepParameters(
           EmbeddedExplicitRungeKuttaNyströmIntegrator<
-              DormandالمكاوىPrince1986RKN434FM,
+              DormandElMikkawyPrince1986RKN434FM,
               Position<World>>(),
           std::numeric_limits<std::int64_t>::max(),
           1e-3 * Metre,
@@ -191,7 +191,7 @@ TEST_F(ApsidesTest, ComputeNodes) {
       t0 + 10 * JulianYear,
       Ephemeris<World>::AdaptiveStepParameters(
           EmbeddedExplicitRungeKuttaNyströmIntegrator<
-              DormandالمكاوىPrince1986RKN434FM,
+              DormandElMikkawyPrince1986RKN434FM,
               Position<World>>(),
           std::numeric_limits<std::int64_t>::max(),
           1e-3 * Metre,
