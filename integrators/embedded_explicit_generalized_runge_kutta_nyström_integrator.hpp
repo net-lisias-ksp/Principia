@@ -53,7 +53,7 @@ using namespace principia::quantities::_quantities;
 // consistent with the one we use for Runge-Kutta-Nyström methods (which have no
 // a′).  However, note that Fine uses ^ for the low order method, whereas we use
 // it for the high order method, consistently with the notation used by Dormand,
-// المكاوى, and Prince for RKN methods.
+// المكاوى (ElMikkawy), and Prince for RKN methods.
 
 // Alternative notations use a and b for the velocity Runge Kutta matrix and
 // weights: [Mur98] uses (c, α, a, β̂, b̂, β, b), and [Dor96] uses

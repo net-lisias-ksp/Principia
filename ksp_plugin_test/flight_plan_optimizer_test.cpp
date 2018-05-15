@@ -545,7 +545,7 @@ class MetricTest
         ephemeris_.get(),
         Ephemeris<Barycentric>::AdaptiveStepParameters(
             EmbeddedExplicitRungeKuttaNyströmIntegrator<
-                DormandالمكاوىPrince1986RKN434FM,
+                DormandElMikkawyPrince1986RKN434FM,
                 Ephemeris<Barycentric>::NewtonianMotionEquation>(),
             /*max_steps=*/1000,
             /*length_integration_tolerance=*/1 * Milli(Metre),

@@ -35,7 +35,7 @@
     eegrkn_action, eerkn_action, eerk_action)                        \
   PRINCIPIA_INTEGRATOR_CASE(AdaptiveStepSizeIntegrator,              \
                             DORMAND_ELMIKKAWY_PRINCE_1986_RKN_434FM, \
-                            DormandالمكاوىPrince1986RKN434FM,        \
+                            DormandElMikkawyPrince1986RKN434FM,        \
                             eerkn_action)                            \
   PRINCIPIA_INTEGRATOR_CASE(AdaptiveStepSizeIntegrator,              \
                             DORMAND_PRINCE_1986_RK_547FC,            \
@@ -193,39 +193,39 @@
                             sprk_action)                                      \
   PRINCIPIA_INTEGRATOR_CASE(FixedStepSizeIntegrator,                          \
                             SUZUKI_1990,                                      \
-                            鈴木1990,                                         \
+                            Suzuki1990,                                         \
                             sprk_action)                                      \
   PRINCIPIA_INTEGRATOR_CASE(FixedStepSizeIntegrator,                          \
                             YOSHIDA_1990_ORDER_6A,                            \
-                            吉田1990Order6A,                                  \
+                            Yoshida1990Order6A,                                  \
                             sprk_action)                                      \
   PRINCIPIA_INTEGRATOR_CASE(FixedStepSizeIntegrator,                          \
                             YOSHIDA_1990_ORDER_6B,                            \
-                            吉田1990Order6B,                                  \
+                            Yoshida1990Order6B,                                  \
                             sprk_action)                                      \
   PRINCIPIA_INTEGRATOR_CASE(FixedStepSizeIntegrator,                          \
                             YOSHIDA_1990_ORDER_6C,                            \
-                            吉田1990Order6C,                                  \
+                            Yoshida1990Order6C,                                  \
                             sprk_action)                                      \
   PRINCIPIA_INTEGRATOR_CASE(FixedStepSizeIntegrator,                          \
                             YOSHIDA_1990_ORDER_8A,                            \
-                            吉田1990Order8A,                                  \
+                            Yoshida1990Order8A,                                  \
                             sprk_action)                                      \
   PRINCIPIA_INTEGRATOR_CASE(FixedStepSizeIntegrator,                          \
                             YOSHIDA_1990_ORDER_8B,                            \
-                            吉田1990Order8B,                                  \
+                            Yoshida1990Order8B,                                  \
                             sprk_action)                                      \
   PRINCIPIA_INTEGRATOR_CASE(FixedStepSizeIntegrator,                          \
                             YOSHIDA_1990_ORDER_8C,                            \
-                            吉田1990Order8C,                                  \
+                            Yoshida1990Order8C,                                  \
                             sprk_action)                                      \
   PRINCIPIA_INTEGRATOR_CASE(FixedStepSizeIntegrator,                          \
                             YOSHIDA_1990_ORDER_8D,                            \
-                            吉田1990Order8D,                                  \
+                            Yoshida1990Order8D,                                  \
                             sprk_action)                                      \
   PRINCIPIA_INTEGRATOR_CASE(FixedStepSizeIntegrator,                          \
                             YOSHIDA_1990_ORDER_8E,                            \
-                            吉田1990Order8E,                                  \
+                            Yoshida1990Order8E,                                  \
                             sprk_action)
 
 namespace principia {

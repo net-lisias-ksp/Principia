@@ -413,7 +413,7 @@ FlightPlan::FlightPlan()
       ephemeris_(make_not_null<Ephemeris<Barycentric>*>()),
       adaptive_step_parameters_(
           EmbeddedExplicitRungeKuttaNyströmIntegrator<
-              DormandالمكاوىPrince1986RKN434FM,
+              DormandElMikkawyPrince1986RKN434FM,
               Ephemeris<Barycentric>::NewtonianMotionEquation>(),
           /*max_steps=*/1,
           /*length_integration_tolerance=*/1 * Metre,

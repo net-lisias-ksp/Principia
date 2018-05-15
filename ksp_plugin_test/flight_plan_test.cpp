@@ -130,7 +130,7 @@ class FlightPlanTest : public testing::Test {
         ephemeris_.get(),
         Ephemeris<Barycentric>::AdaptiveStepParameters(
             EmbeddedExplicitRungeKuttaNyströmIntegrator<
-                DormandالمكاوىPrince1986RKN434FM,
+                DormandElMikkawyPrince1986RKN434FM,
                 Ephemeris<Barycentric>::NewtonianMotionEquation>(),
             /*max_steps=*/1000,
             /*length_integration_tolerance=*/1 * Milli(Metre),
@@ -229,7 +229,7 @@ TEST_F(FlightPlanTest, Singular) {
       ephemeris_.get(),
       Ephemeris<Barycentric>::AdaptiveStepParameters(
           EmbeddedExplicitRungeKuttaNyströmIntegrator<
-              DormandالمكاوىPrince1986RKN434FM,
+              DormandElMikkawyPrince1986RKN434FM,
               Ephemeris<Barycentric>::NewtonianMotionEquation>(),
           /*max_steps=*/1000,
           /*length_integration_tolerance=*/1 * Milli(Metre),
@@ -411,7 +411,7 @@ TEST_F(FlightPlanTest, SetAdaptiveStepParameter) {
   EXPECT_THAT(flight_plan_->SetAdaptiveStepParameters(
         Ephemeris<Barycentric>::AdaptiveStepParameters(
             EmbeddedExplicitRungeKuttaNyströmIntegrator<
-                DormandالمكاوىPrince1986RKN434FM,
+                DormandElMikkawyPrince1986RKN434FM,
                 Ephemeris<Barycentric>::NewtonianMotionEquation>(),
             /*max_steps=*/1,
             /*length_integration_tolerance=*/1 * Milli(Metre),
@@ -437,7 +437,7 @@ TEST_F(FlightPlanTest, SetAdaptiveStepParameter) {
   EXPECT_OK(flight_plan_->SetAdaptiveStepParameters(
       Ephemeris<Barycentric>::AdaptiveStepParameters(
           EmbeddedExplicitRungeKuttaNyströmIntegrator<
-              DormandالمكاوىPrince1986RKN434FM,
+              DormandElMikkawyPrince1986RKN434FM,
               Ephemeris<Barycentric>::NewtonianMotionEquation>(),
           /*max_steps=*/10000,
           /*length_integration_tolerance=*/1 * Milli(Metre),
