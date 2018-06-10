@@ -8,7 +8,7 @@ We have added a simulation of the [TRAPPIST-1](https://en.wikipedia.org/wiki/TRA
 
 We used the most recently published observational data (from [K2](https://en.wikipedia.org/wiki/Kepler_(spacecraft)#Second_Light_(K2)) and [Spitzer](https://en.wikipedia.org/wiki/Spitzer_Space_Telescope)) and ran a [transit-timing variation](https://en.wikipedia.org/wiki/Transit-timing_variation) optimization to build a configuration that accurately models the real-life behavior of the planetary system (the transits are accurate to within a minute).
 
-Our mini-mod comes as a patch on top of [@GregroxMun](https://github.com/GregroxMun)'s [SLIPPIST-1](https://spacedock.info/mod/1883/Seven%20Worlds%20of%20SLIPPIST-1) mod.  See [somewhere]() for details on installing our TRAPPIST-1 support and its prerequisites.
+Our mini-mod comes as a patch on top of [@GregroxMun](https://github.com/GregroxMun)'s [SLIPPIST-1](https://spacedock.info/mod/1883/Seven%20Worlds%20of%20SLIPPIST-1) mod.  See [somewhere]() for details on installing it and its prerequisites.
 
 ## Bug fixes
 
