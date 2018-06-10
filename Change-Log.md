@@ -12,7 +12,7 @@ Our mini-mod comes as a patch on top of [@GregroxMun](https://github.com/Gregrox
 
 ## Bug fixes
 
-* A number of bugs have been fixed in the C# code which resulted in memory leaks.  In particular, displaying a long flight plan could leak memory at the rate of 1 GiB/minute, quickly making the machine unusable.  These issues have been addressed by better management of memory across the C++/C# interface, notably using the [Dispose pattern](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/dispose-pattern).
+* A number of bugs have been fixed in the C# code which resulted in memory leaks.  In particular, displaying a long flight plan could leak memory at the rate of 1 GiB/minute, quickly making the machine unusable ([#1797](https://github.com/mockingbirdnest/Principia/issues/1797)).  These issues have been addressed by better management of memory across the C++/C# interface, notably using the [Dispose pattern](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/dispose-pattern).
 
 For more details see all [16](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-05-13T21%3A00%3A00..2018-06-10T20%3A59%3A59+sort%3Acreated-asc) pull requests between Dedekind and Darboux.
 
