@@ -4,6 +4,10 @@
 
 ## User-facing features
 
+A simulation of the [TRAPPIST-1](https://en.wikipedia.org/wiki/TRAPPIST-1) extrasolar planetary system has been added as a mini-mod, "Trappist-1 for Principia".  TRAPPIST-1 is a system of 7 tightly coupled Earth-like planets orbiting close to an ultracool dwarf star where *n*-body gravitation plays an important role, so it's an interesting application of Principia.
+
+We started from the most recently published observational data and ran a [transit-timing variation](https://en.wikipedia.org/wiki/Transit-timing_variation) optimization to build a configuration for the system that accurately models its real-life behavior.  Our mini-mod comes as a patch on top of @GregoxMun's SLIPPIST-1 mod.  See [somewhere]() for details on installing our TRAPPIST-1 support and its prerequisite.
+
 ## Bug fixes
 
 * A number of bugs have been fixed in the C# code which resulted in memory leaks.  In particular, displaying a long flight plan could leak memory at the rate of 1 GiB/minute, quickly making the machine unusable.  These issues have been addressed by better management of memory across the C++/C# interface, notably using the [Dispose pattern](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/dispose-pattern).
