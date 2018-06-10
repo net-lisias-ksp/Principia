@@ -1,4 +1,5 @@
 ### Versions
+* [Dedekind](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#dedekind)
 * [Darboux](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#darboux)
 * [Cramer](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#cramer)
 * [Coxeter](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#coxeter)
