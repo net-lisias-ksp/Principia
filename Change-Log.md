@@ -12,7 +12,7 @@ We started from the most recently published observational data and ran a [transi
 
 * A number of bugs have been fixed in the C# code which resulted in memory leaks.  In particular, displaying a long flight plan could leak memory at the rate of 1 GiB/minute, quickly making the machine unusable.  These issues have been addressed by better management of memory across the C++/C# interface, notably using the [Dispose pattern](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/dispose-pattern).
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-05-13T21%3A00%3A00..2018-06-10T20%3A59%3A59+sort%3Acreated-asc) pull requests between Dedekind and Darboux.
+For more details see all [16](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-05-13T21%3A00%3A00..2018-06-10T20%3A59%3A59+sort%3Acreated-asc) pull requests between Dedekind and Darboux.
 
 # [Darboux](https://en.wikipedia.org/wiki/Jean_Gaston_Darboux)
 
