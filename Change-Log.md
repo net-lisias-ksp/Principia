@@ -4,9 +4,9 @@
 
 ## User-facing features
 
-A simulation of the [TRAPPIST-1](https://en.wikipedia.org/wiki/TRAPPIST-1) extrasolar planetary system has been added as a mini-mod, "Trappist-1 for Principia".  TRAPPIST-1 is a system of 7 tightly coupled Earth-like planets orbiting close to an ultracool dwarf star where *n*-body gravitation plays an important role, so it's an interesting application of Principia.
+We have added a simulation of the [TRAPPIST-1](https://en.wikipedia.org/wiki/TRAPPIST-1) extrasolar planetary system as a mini-mod, “[Trappist-1 for Principia]()”.  TRAPPIST-1 is a system of seven tightly coupled Earth-like planets orbiting close to an ultracool dwarf star where *n*-body gravitation plays an important role, so it's an interesting application of Principia.
 
-We started from the most recently published observational data and ran a [transit-timing variation](https://en.wikipedia.org/wiki/Transit-timing_variation) optimization to build a configuration for the system that accurately models its real-life behavior.  Our mini-mod comes as a patch on top of @GregoxMun's SLIPPIST-1 mod.  See [somewhere]() for details on installing our TRAPPIST-1 support and its prerequisite.
+We used the most recently published observational data (from [K2](https://en.wikipedia.org/wiki/Kepler_(spacecraft)#Second_Light_(K2)) and [Spitzer](https://en.wikipedia.org/wiki/Spitzer_Space_Telescope)) and ran a [transit-timing variation](https://en.wikipedia.org/wiki/Transit-timing_variation) optimization to build a configuration that accurately models the real-life behavior of the planetary system (the transits are accurate to within a minute).  Our mini-mod comes as a patch on top of [@GregroxMun](https://github.com/GregroxMun)'s [SLIPPIST-1](https://spacedock.info/mod/1883/Seven%20Worlds%20of%20SLIPPIST-1) mod.  See [somewhere]() for details on installing our TRAPPIST-1 support and its prerequisites.
 
 ## Bug fixes
 
