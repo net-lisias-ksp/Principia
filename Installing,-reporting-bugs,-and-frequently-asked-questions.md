@@ -4,10 +4,21 @@ In these FAQ, `<KSP directory>` is the directory such that the KSP executable is
 
 Note that Principia currently targets KSP 1.2.2, 1.3.1, and 1.4.1.
 
-# Installing
+# Installing Principia
 The binaries for Windows, macOS, and Ubuntu x64 can be found in the [README](https://github.com/mockingbirdnest/Principia/blob/master/README.md).  Unzip the archive and copy the `Principia` folder into the `GameData` folder of your installation of KSP.
 
 Don't reuse an existing save after installing Principia for the first time, create a new one ([see below](#existing_save)).  When upgrading to a new version of Principia it's fine to reuse an existing save as we maintain backward compatibility.
+
+# Installing “Trappist-1 for Principia”
+“Trappist-1 for Principia” is a mini-mod that simulates the [TRAPPIST-1](https://en.wikipedia.org/wiki/TRAPPIST-1) extrasolar planetary system. TRAPPIST-1 is composed of seven tightly coupled Earth-like planets orbiting close to an ultracool dwarf star where *n*-body gravitation plays an important role, so it's an interesting application of Principia.
+
+The simulation uses the most recently published observational data (from [K2](https://en.wikipedia.org/wiki/Kepler_(spacecraft)#Second_Light_(K2)) and [Spitzer](https://en.wikipedia.org/wiki/Spitzer_Space_Telescope)) and is based on a [transit-timing variation](https://en.wikipedia.org/wiki/Transit-timing_variation) optimization.  It accurately models the real-life behavior of the planetary system: the transits are accurate to within a minute.
+
+Our mini-mod comes as a patch on top of @GregroxMun's SLIPPIST-1 mod. To install, do the following:
+* Download SLIPPIST-1 from CKAN or from [Spacedock](https://spacedock.info/mod/1883/Seven) and install it.
+* Download Kopernicus from [GitHub](https://github.com/Kopernicus/Kopernicus/releases) and install it.
+* Download the “[Trappist-1 for Principia]()” zip file, unzip it, and drop the `Trappist-1 for Principia` folder in your `GameData` folder.
+* Start KSP and enjoy the view.
 
 # Troubleshooting 
 ## It's not starting!
