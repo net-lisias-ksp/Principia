@@ -2,7 +2,7 @@
 
 In these FAQ, `<KSP directory>` is the directory such that the KSP executable is found in `<KSP directory>/KSP.exe`.
 
-Note that Principia currently targets KSP 1.2.2, 1.3.1, and 1.4.1.
+Note that Principia currently targets KSP 1.3.1 and 1.4.3.
 
 # Installing Principia
 The binaries for Windows, macOS, and Ubuntu x64 can be found in the [README](https://github.com/mockingbirdnest/Principia/blob/master/README.md).  Unzip the archive and copy the `Principia` folder into the `GameData` folder of your installation of KSP.
