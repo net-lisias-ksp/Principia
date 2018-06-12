@@ -14,9 +14,9 @@ Don't reuse an existing save after installing Principia for the first time, crea
 
 The simulation uses the most recently published observational data (from [K2](https://en.wikipedia.org/wiki/Kepler_(spacecraft)#Second_Light_(K2)) and [Spitzer](https://en.wikipedia.org/wiki/Spitzer_Space_Telescope)) and is based on a [transit-timing variation](https://en.wikipedia.org/wiki/Transit-timing_variation) optimization.  It accurately models the real-life behavior of the planetary system: the transits are accurate to within a minute.
 
-Our mini-mod comes as a patch on top of @GregroxMun's SLIPPIST-1 mod. To install, do the following:
-* Download SLIPPIST-1 from [Spacedock](https://spacedock.info/mod/1883/Seven) and install it.
-* Download Kopernicus from [GitHub](https://github.com/Kopernicus/Kopernicus/releases) and install it.
+Our mini-mod comes as a patch on top of [@GregroxMun](https://github.com/GregroxMun)'s SLIPPIST-1 mod.  To install, do the following:
+* Install [SLIPPIST-1](https://forum.kerbalspaceprogram.com/index.php?/topic/157020-143-seven-worlds-around-slippist-1-v05-update-june-7th-2018/).
+* Install [Kopernicus](https://forum.kerbalspaceprogram.com/index.php?/topic/140580-143-kopernicus-release-2-may-6/).
 * Download the “[Trappist-1 for Principia]()” zip file, unzip it, and drop the `Trappist-1 for Principia` folder in the `GameData` folder of your installation of KSP.
 * Start KSP and enjoy the view.
 
