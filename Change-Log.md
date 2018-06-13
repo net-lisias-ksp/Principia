@@ -1,10 +1,8 @@
 # [Dedekind](https://en.wikipedia.org/wiki/Richard_Dedekind)
 
-*This is a draft of the change log.  Dedekind is not available yet.*
-
 ## User-facing features
 
-We have added a simulation of the [TRAPPIST-1](https://en.wikipedia.org/wiki/TRAPPIST-1) extrasolar planetary system as a mini-mod, “[Trappist-1 for Principia]()”.  TRAPPIST-1 is a system of seven tightly coupled Earth-like planets orbiting close to an ultracool dwarf star where *n*-body gravitation plays an important role, so it's an interesting application of Principia.  For example, [this picture](https://i.imgur.com/2XwQg3W.png) shows a low-energy transfer from Trappist-1e to Trappist-1f with ballistic capture where the final orbit exhibits resonance with the rest of the system.
+We have added a simulation of the [TRAPPIST-1](https://en.wikipedia.org/wiki/TRAPPIST-1) extrasolar planetary system as a mini-mod, “Trappist-1 for Principia”.  TRAPPIST-1 is a system of seven tightly coupled Earth-like planets orbiting close to an ultracool dwarf star where *n*-body gravitation plays an important role, so it's an interesting application of Principia.  For example, [this picture](https://i.imgur.com/2XwQg3W.png) shows a low-energy transfer from Trappist-1e to Trappist-1f with ballistic capture where the final orbit exhibits resonance with the rest of the system.
 
 We used the most recently published observational data (from [K2](https://en.wikipedia.org/wiki/Kepler_(spacecraft)#Second_Light_(K2)) and [Spitzer](https://en.wikipedia.org/wiki/Spitzer_Space_Telescope)) and ran a [transit-timing variation](https://en.wikipedia.org/wiki/Transit-timing_variation) optimization to build a configuration that accurately models the real-life behavior of the planetary system (the transits are accurate to within a minute).
 
