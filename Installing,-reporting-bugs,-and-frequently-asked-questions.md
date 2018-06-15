@@ -18,7 +18,7 @@ Our mini-mod comes as a patch on top of [@GregroxMun](https://github.com/Gregrox
 * Install [SLIPPIST-1](https://forum.kerbalspaceprogram.com/index.php?/topic/157020-143-seven-worlds-around-slippist-1-v05-update-june-7th-2018/).
 * Install [Kopernicus](https://forum.kerbalspaceprogram.com/index.php?/topic/140580-143-kopernicus-release-2-may-6/).
 * Download the [`trappist-1 for principia dedekind.zip`](https://goo.gl/hJ1wSS) file, unzip it, and drop the `Trappist-1 for Principia` folder in the `GameData` folder of your installation of KSP.
-* Start KSP and enjoy the view.
+* Start KSP and enjoy the view: ![](https://i.imgur.com/aynfI5j.png)
 
 # Troubleshooting 
 ## It's not starting!
