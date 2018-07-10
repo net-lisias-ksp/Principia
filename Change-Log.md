@@ -1,3 +1,24 @@
+# [Δημόκριτος](https://en.wikipedia.org/wiki/Democritus)
+
+*This is a draft of the change log.  Δημόκριτος is not available yet.*
+
+## User-facing features
+
+* Support for KSP 1.4.4 has been added: this version supports 1.3.1 and 1.4.x. Make sure you download the correct binary for your favourite version of KSP (the game will crash otherwise). 
+
+* Vessels are now managed by Principia when they are in the atmosphere.  This means that it's possible to see the history and prediction and to plan flight plans immediately after launch.  This works both with stock KSP and with Ferram Aerospace Research.
+
+* The “Trappist-1 for Principia” mini-mod has been improved to better reflect the physical properties of the celestials.  It works fine with the latest version of SLIPPIST-1 (0.5) but will be more aesthetically pleasing with the upcoming version (0.6?).
+
+## Bug fixes
+
+* Subtle inaccuracies in the adaptive-step integrators would sometimes result in crashes because of attempts to integrate backwards in time or beyond the end of the ephemeris ([#1839](https://github.com/mockingbirdnest/Principia/issues/1839), [#1864](https://github.com/mockingbirdnest/Principia/issues/1864)).  This has been fixed by ensuring that the adaptative-step integrators never undershoot or overshoot the final time.
+
+* The “Trappist-1 for Principia” mini-mod would crash when used with 1.4.3 or later because of an incompatibility with Kopernicus.  This has been fixed.
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-06-10T21%3A00%3A00..2018-07-10T20%3A59%3A59+sort%3Acreated-asc) pull requests between Δημόκριτος and Dedekind.
+
+
 # [Dedekind](https://en.wikipedia.org/wiki/Richard_Dedekind)
 
 ## User-facing features
