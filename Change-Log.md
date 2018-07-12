@@ -4,7 +4,7 @@
 
 * Support for KSP 1.4.4 has been added: this version supports 1.3.1 and 1.4.x. Make sure you download the correct binary for your favourite version of KSP (the game will crash otherwise). 
 
-* Vessels are now managed by Principia when they are in the atmosphere.  This means that it's possible to see the history and prediction and to plan flight plans immediately after launch.  This works both with stock KSP and with Ferram Aerospace Research.
+* Vessels are now managed by Principia when they are in the atmosphere.  This means that it's possible to see the history and prediction and to prepare flight plans immediately after launch.  This works both with stock KSP and with Ferram Aerospace Research.
 
 * The “Trappist-1 for Principia” mini-mod has been improved to better reflect the physical properties of the celestials.  It works fine with the latest version of SLIPPIST-1 (0.5) but will be more aesthetically pleasing with the upcoming version (0.6?).
 
