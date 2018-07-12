@@ -1,7 +1,5 @@
 # [Δημόκριτος](https://en.wikipedia.org/wiki/Democritus)
 
-*This is a draft of the change log.  Δημόκριτος is not available yet.*
-
 ## User-facing features
 
 * Support for KSP 1.4.4 has been added: this version supports 1.3.1 and 1.4.x. Make sure you download the correct binary for your favourite version of KSP (the game will crash otherwise). 
@@ -16,7 +14,7 @@
 
 * The “Trappist-1 for Principia” mini-mod would crash when used with 1.4.3 or later because of an incompatibility with Kopernicus.  This has been fixed.
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-06-10T21%3A00%3A00..2018-07-10T20%3A59%3A59+sort%3Acreated-asc) pull requests between Δημόκριτος and Dedekind.
+For more details see all [24](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-06-10T21%3A00%3A00..2018-07-10T20%3A59%3A59+sort%3Acreated-asc) pull requests between Δημόκριτος and Dedekind.
 
 
 # [Dedekind](https://en.wikipedia.org/wiki/Richard_Dedekind)
