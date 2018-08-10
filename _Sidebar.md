@@ -1,4 +1,5 @@
 ### Versions
+* [Desargues](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#desargues)
 * [Δημόκριτος](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#%CE%94%CE%B7%CE%BC%CF%8C%CE%BA%CF%81%CE%B9%CF%84%CE%BF%CF%82)
 * [Dedekind](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#dedekind)
 * [Darboux](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#darboux)
