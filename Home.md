@@ -1,4 +1,4 @@
-To install the mod, download the binaries for Ubuntu, macOS and Windows using the links found in the [README](https://github.com/mockingbirdnest/Principia/blob/master/README.md) file.  Both KSP versions 1.2.2 and 1.3 are supported.
+To install the mod, download the binaries for Ubuntu, macOS and Windows using the links found in the [README](https://github.com/mockingbirdnest/Principia/blob/master/README.md) file.  Both KSP versions 1.3.1 and 1.4.5 are supported.
 
 Before using the mod we recommend that you read the [concepts](https://github.com/mockingbirdnest/Principia/wiki/Concepts) document which explains the most important parts of Principia.  In particular, you should learn about the [plotting frame](https://github.com/mockingbirdnest/Principia/wiki/Concepts#plotting-frame) and [flight planning](https://github.com/mockingbirdnest/Principia/wiki/Concepts#flight-planning).
 
