@@ -67,6 +67,15 @@ In particular, if you simply add bodies to the existing Kerbal system, even if t
 
 A possible solution to the Jool problem specifically is to increase the size of the orbits of the Joolian moons, while making Bop's orbit retrograde. [This Kopernicus configuration](https://gist.githubusercontent.com/eggrobin/31f6d0c246ecbe50423488f867fe7051/raw/55b814cd14b3c9fdd63119cee96dacb847e2e9ea/retrobop.cfg) will do this, like Principia does on a stock system. A word of warning: if your mod rescales the stock system, that config will not do the job; make a big (or small) retrobop yourself.
 
+## SigmaBinary users
+
+SigmaBinary and Principia are mutually incompatible.  Install one or the other.  In the [words of the author of SigmaBinary](
+https://forum.kerbalspaceprogram.com/index.php?/topic/162200-wip131-145-principia%E2%80%94version-desargues-released-2018-08-11%E2%80%94n-body-and-extended-body-gravitation-axial-tilt/&do=findComment&comment=3289320):
+
+> My mod is a hack to allow fake binaries in KSP physics, Principia "hacks" KSP to use real physics.
+>
+> I would say, Principia should be able to provide binaries without the need of extra plugins, it's probably just a matter of setting the initial conditions correctly I would assume.
+
 # Reporting bugs
 So, you crashed, or something similarly unpleasant happened.
 
