@@ -17,7 +17,7 @@ The simulation uses the most recently published observational data (from [K2](ht
 Our mini-mod comes as a patch on top of [@GregroxMun](https://github.com/GregroxMun)'s SLIPPIST-1 mod.  To install, do the following:
 * Install [SLIPPIST-1](https://forum.kerbalspaceprogram.com/index.php?/topic/157020-143-seven-worlds-around-slippist-1-v05-update-june-7th-2018/).
 * Install [Kopernicus](https://forum.kerbalspaceprogram.com/index.php?/topic/140580-143-kopernicus-release-2-may-6/).
-* Download the [`trappist-1 for principia dedekind.zip`](https://goo.gl/hJ1wSS) file, unzip it, and drop the `Trappist-1 for Principia` folder in the `GameData` folder of your installation of KSP.
+* Download the [`trappist-1 for principia δημόκριτος.zip`](https://goo.gl/pGVfXz) file, unzip it, and drop the `Trappist-1 for Principia` folder in the `GameData` folder of your installation of KSP.
 * Start KSP and enjoy the view: ![](https://i.imgur.com/aynfI5j.png)
 
 # Troubleshooting 
