@@ -8,7 +8,7 @@
 
 ## Library changes
 
-We started work on improving geopotential modeling.  This should make it possible in future versions to have more realistic orbits around celestial with large mass concentrations such as Mars and the Moon.
+* We started work on improving geopotential modeling.  This should make it possible in future versions to have more realistic orbits around celestials with large mass concentrations such as Mars and the Moon.
 
 For more details see all [30](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-08-10T23:00:00..2018-09-09T13:59:59+sort%3Acreated-asc) pull requests between Descartes and Desargues.
 
