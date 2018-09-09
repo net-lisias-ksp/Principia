@@ -4,7 +4,7 @@
 
 * Principia no longer supports macOS El Capitan, as that version is no longer supported by Apple.  We now require macOS Sierra or later.  As a consequence of this change we were able to upgrade to a newer version of the C++ standard library.  This brings macOS to parity with the other platform in terms of multithreaded integration of vessels.  Users should see a significant speed-up, especially at high warp ([#1908](https://github.com/mockingbirdnest/Principia/issues/1908)).
 
-* Integration of burns has been rewritten to use an embedded explicit generalized Runge-Kutta-Nyström method.  This is significantly more precise that the previous hacky technique of doing 100 small integrations.  It makes a difference for long burns (e.g., with ion engines) as such burns are now more economical.
+* The integration of burns in the flight plan has been rewritten to use an embedded explicit generalized Runge-Kutta-Nyström method.  This is significantly more precise that the previous hacky technique of doing 100 small integrations.  It makes a difference for long burns (e.g., with ion engines) as they are more accurately predicted.
 
 ## Library changes
 
