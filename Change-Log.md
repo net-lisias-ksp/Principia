@@ -1,3 +1,17 @@
+# [Descartes](https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes)
+
+## User-facing features
+
+* Principia no longer supports macOS El Capitan, as that version is no longer supported by Apple.  We now require macOS Sierra or later.  As a consequence of this change we were able to upgrade to a newer version of the C++ standard library.  This brings macOS to parity with the other platform in terms of multithreaded integration of vessels.  Users are expected to see a significant speed-up, especially at high warp [#1908](https://github.com/mockingbirdnest/Principia/issues/1908).
+
+* Integration of burns has been rewritten to use an embedded explicit generalized Runge-Kutta-Nyström method.  This is significantly more precise that the previous hacky technique of doing 100 small integrations.  It makes a difference for long burns (e.g., with ion engines) as such burns are significantly more economical.
+
+## Library changes
+
+We started work on improving geopotential modeling.  This should make it possible in future versions to have more realistic orbits around celestial with large mass concentrations such as Mars and the Moon.
+
+For more details see all [30](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-08-10T23:00:00..2018-09-09T13:59:59+sort%3Acreated-asc) pull requests between Descartes and Desargues.
+
 # [Desargues](https://en.wikipedia.org/wiki/Girard_Desargues)
 
 ## User-facing features
