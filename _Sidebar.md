@@ -1,4 +1,5 @@
 ### Versions
+* [Διόφαντος](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#%CE%94%CE%B9%CF%8C%CF%86%CE%B1%CE%BD%CF%84%CE%BF%CF%82)
 * [Descartes](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#descartes)
 * [Desargues](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#desargues)
 * [Δημόκριτος](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#%CE%94%CE%B7%CE%BC%CF%8C%CE%BA%CF%81%CE%B9%CF%84%CE%BF%CF%82)
