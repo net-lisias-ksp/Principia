@@ -1,3 +1,15 @@
+# [Διόφαντος](https://en.wikipedia.org/wiki/Diophantus)
+
+# User-facing features
+
+No new features in this version.  We have spent a fair amount of time improving geopotential modeling, but that feature is not fast enough yet.
+
+## Library changes
+
+We now have realistic geopotential modeling at arbitrary degrees, we have validated the correctness of our code and we have done quite a bit of optimization.  We have also added a more realistic model of the rotation of the Earth.  Still, the performance is not yet sufficient to be used in the game.  We will have to implement some screening so as to avoid computing the effect of the Himalayas on Pluto.
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-09-09T14:00:00..2018-10-09T19:59:59+sort%3Acreated-asc) pull requests between Διόφαντος and Descartes.
+
 # [Descartes](https://en.wikipedia.org/wiki/Ren%C3%A9_Descartes)
 
 ## User-facing features
