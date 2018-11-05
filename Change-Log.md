@@ -1,6 +1,20 @@
+# [Ἐρατοσθένης](https://en.wikipedia.org/wiki/Eratosthenes)
+
+*This is a draft of the change log.  Ἐρατοσθένης is not available yet.
+
+## User-facing features
+
+* Support for KSP 1.5.1 has been added: this version supports 1.3.1, 1.4.x and 1.5.1. Make sure you download the correct binary for your favourite version of KSP (the game will crash otherwise).
+
+## Library changes
+
+* We have been working on damping the effect of the geopotential to make it possible to have complex gravitational fields without performance degradation.
+
+For more details see all [13](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-10-09T21:00:00..2018-11-05T20:59:59+sort%3Acreated-asc) pull requests between Ἐρατοσθένης and Διόφαντος.
+
 # [Διόφαντος](https://en.wikipedia.org/wiki/Diophantus)
 
-# User-facing features
+## User-facing features
 
 No new features in this version.  We have spent a fair amount of time improving geopotential modeling, but that feature is not fast enough yet.
 
