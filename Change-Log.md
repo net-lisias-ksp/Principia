@@ -1,6 +1,6 @@
 # [Ἐρατοσθένης](https://en.wikipedia.org/wiki/Eratosthenes)
 
-*This is a draft of the change log.  Ἐρατοσθένης is not available yet.
+*This is a draft of the change log.  Ἐρατοσθένης is not available yet.*
 
 ## User-facing features
 
