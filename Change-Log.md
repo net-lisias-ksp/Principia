@@ -1,7 +1,5 @@
 # [Ἐρατοσθένης](https://en.wikipedia.org/wiki/Eratosthenes)
 
-*This is a draft of the change log.  Ἐρατοσθένης is not available yet.*
-
 ## User-facing features
 
 * Support for KSP 1.5.1 has been added: this version supports 1.3.1, 1.4.x and 1.5.1. Make sure you download the correct binary for your favourite version of KSP (the game will crash otherwise).
