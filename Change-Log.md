@@ -8,7 +8,7 @@
 
 ## Bug fixes
 
-* Parallel integration has been changed to use [`absl::Mutex`](https://github.com/abseil/abseil-cpp/blob/master/absl/synchronization/mutex.h) instead of `std::mutex`.  This has no effect on Windows or Linux, but it speeds things up considerably on MacOS ([#1955](https://github.com/mockingbirdnest/Principia/issues/1955)).
+* Parallel integration has been changed to use [`absl::Mutex`](https://github.com/abseil/abseil-cpp/blob/master/absl/synchronization/mutex.h) instead of `std::mutex`; this has no effect on Windows or Linux, but it speeds things up considerably on MacOS ([#1955](https://github.com/mockingbirdnest/Principia/issues/1955)).
 
 * The `numerics_blueprint.cfg` file releases with the “Trappist-1 for Principia” mini-mod was incorrect, resulting in large errors in the transit times of the `b` planet.  An updated configuration is included in the Erdős version of the mini-mod ([#1999](https://github.com/mockingbirdnest/Principia/issues/1999)).
 
