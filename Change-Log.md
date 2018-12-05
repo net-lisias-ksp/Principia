@@ -4,13 +4,17 @@
 
 ## User-facing features
 
-* Support for realistic geopotential modeling at arbitrary degrees is finally available, with appropriate damping to ensure that the computations are not overly costly: our benchmarks indicate that this should not have any significant impact on the performance of the game.  We have added a 10th-degree model of the Earth geopotential to our RealSolarSystem configuration, and we'll have more advanced modelling in future versions.
+* Support for realistic geopotential modeling at arbitrary degrees is finally available, with appropriate damping to ensure that the computations are not overly costly: our benchmarks indicate that this should not have any significant impact on the performance of the game.  We have added a 10th-degree model of the Earth geopotential to our RealSolarSystem configuration, and we'll have more advanced modelling for other bodies (Moon, Mars, etc.) in future versions.
 
 ## Bug fixes
 
 * Parallel integration has been changed to use [`absl::Mutex`](https://github.com/abseil/abseil-cpp/blob/master/absl/synchronization/mutex.h) instead of `std::mutex`; this has no effect on Windows or Linux, but it speeds things up considerably on MacOS ([#1955](https://github.com/mockingbirdnest/Principia/issues/1955)).
 
-* The `numerics_blueprint.cfg` file releases with the “Trappist-1 for Principia” mini-mod was incorrect, resulting in large errors in the transit times of the `b` planet.  An updated configuration is included in the Erdős version of the mini-mod ([#1999](https://github.com/mockingbirdnest/Principia/issues/1999)).
+* The `numerics_blueprint.cfg` file releases with the “Trappist-1 for Principia” mini-mod was incorrect, resulting in large errors in the transit times of the `b` planet.  An updated configuration is included in the Erdős version of the mini-mod ([#1999](https://github.com/mockingbirdnest/Principia/issues/1999)) but this is only a stopgap measure.  We'll redo the full Trappist-1 optimization and deliver another update in a future version.
+
+## Library changes
+
+* Our physical units are now compliant with the recent [redefinition of the SI base units](https://en.wikipedia.org/wiki/2019_redefinition_of_SI_base_units).
 
 For more details see all [29](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-11-05T21:00:00..2018-12-05T12:59:59+sort%3Acreated-asc) pull requests between Erdős and Ἐρατοσθένης.
 
