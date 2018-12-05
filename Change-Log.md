@@ -1,3 +1,11 @@
+# [Erdős](https://en.wikipedia.org/wiki/Paul_Erd%C5%91s)
+
+*This is a draft of the change log.  Erdős is not available yet.*
+
+## User-facing features
+
+For more details see all [28](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-11-05T21:00:00..2018-12-05T12:59:59+sort%3Acreated-asc) pull requests between Erdős and Ἐρατοσθένης.
+
 # [Ἐρατοσθένης](https://en.wikipedia.org/wiki/Eratosthenes)
 
 ## User-facing features
