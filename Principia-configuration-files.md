@@ -132,9 +132,11 @@ A *nominal* `body` configuration node contains the following values.
   
   Defaults to the stock [`radius`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L11).
 
+- `geopotential` TODO(egg): document.
+
 A *sufficient* `body` configuration node is a *nominal* `body` configuration node where:
 - `gravitational_parameter`, `reference_instant`, `mean_radius`, `axis_right_ascension`, `axis_declination`, `reference_angle`, and `angular_frequency` are present;
-- `j2` and `reference_radius` are either both present or both absent.
+- `j2` and `reference_radius` are either both present or both absent [TODO(egg): update for `geopotential`].
 
 > *Example*: All `body` nodes in [sol_gravity_model.cfg](https://github.com/mockingbirdnest/Principia/blob/2018011702-Clifford/astronomy/sol_gravity_model.cfg),
 provided with Principia, are *sufficient*.
