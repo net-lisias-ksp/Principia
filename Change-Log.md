@@ -1,14 +1,12 @@
 # [Erdős](https://en.wikipedia.org/wiki/Paul_Erd%C5%91s)
 
-*This is a draft of the change log.  Erdős is not available yet.*
-
 ## User-facing features
 
 * Support for realistic geopotential modeling at arbitrary degrees is finally available, with appropriate damping to ensure that the computations are not overly costly: our benchmarks indicate that this should not have any significant impact on the performance of the game.  We have added a 10th-degree model of the Earth geopotential to our RealSolarSystem configuration, and we'll have more advanced modelling for other bodies (Moon, Mars, etc.) in future versions.
 
 ## Bug fixes
 
-* Parallel integration has been changed to use [`absl::Mutex`](https://github.com/abseil/abseil-cpp/blob/master/absl/synchronization/mutex.h) instead of `std::mutex`; this has no effect on Windows or Linux, but it speeds things up considerably on MacOS ([#1955](https://github.com/mockingbirdnest/Principia/issues/1955)).
+* Parallel integration has been changed to use [`absl::Mutex`](https://github.com/abseil/abseil-cpp/blob/master/absl/synchronization/mutex.h) instead of `std::mutex`; this has no effect on Windows or Linux, but it speeds things up considerably on macOS ([#1955](https://github.com/mockingbirdnest/Principia/issues/1955)).
 
 * The `numerics_blueprint.cfg` file releases with the “Trappist-1 for Principia” mini-mod was incorrect, resulting in large errors in the transit times of the `b` planet.  An updated configuration is included in the Erdős version of the mini-mod ([#1999](https://github.com/mockingbirdnest/Principia/issues/1999)) but this is only a stopgap measure.  We'll redo the full Trappist-1 optimization and deliver another update in a future version.
 
