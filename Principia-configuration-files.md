@@ -146,11 +146,11 @@ A *nominal* `body` configuration node contains the following values:
 
       - `cos`: a required `floating_point_number`.
 
-        The coefficient of the cosine spherical harmonic of the given degree and order.  For degree *i* and order *j* this is traditionally known as C*ij*.
+        The coefficient of the cosine spherical harmonic of the given degree and order.  For degree *n* and order *m* this is traditionally known as C*nm*.
 
       - `sin`: a required `floating_point_number`.
 
-        The coefficient of the sine spherical harmonic of the given degree and order.  For degree *i* and order *j* this is traditionally known as S*ij*.
+        The coefficient of the sine spherical harmonic of the given degree and order.  For degree *n* and order *m* this is traditionally known as S*nm*.
 
 A *sufficient* `body` configuration node is a *nominal* `body` configuration node where:
 - `gravitational_parameter`, `reference_instant`, `mean_radius`, `axis_right_ascension`, `axis_declination`, `reference_angle`, and `angular_frequency` are present;
