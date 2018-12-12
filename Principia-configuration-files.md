@@ -82,7 +82,7 @@ In that case, `principia_gravity_model` need not cover all celestial bodies. It 
 ### The `principia_gravity_model` configuration
 The `principia_gravity_model` configuration consists of a sequence of `body` configuration nodes.
 
-A *nominal* `body` configuration node contains the following values.
+A *nominal* `body` configuration node contains the following values:
 - `name`: a required `string`.
 
   This is the [`name`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L7) of the celestial body whose gravity model is being defined.
@@ -121,25 +121,44 @@ A *nominal* `body` configuration node contains the following values.
   Defaults to the stock [`angularV`](https://kerbalspaceprogram.com/api/class_celestial_body.html#a30efc17a6ccf98a1e25a3239f08ab83a), which is indirectly configurable in Kopernicus, as it is |2π rad / [`rotationPeriod`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L16)|.
 
   TODO(eggrobin): we don't handle retrograde rotation correctly when configured with Kopernicus (with a negative period), since `angularV` is an absolute value...
-- `j2`: an optional `floating_point_number`.
-
-  The dimensionless zonal harmonic *J*<sub>2</sub>.
-  
-  Defaults to 0.
 - `reference_radius`: an optional `quantity(length)`.
 
   The reference radius *a*<sub>*e*</sub> used to make the spherical harmonics dimensionless.
   
   Defaults to the stock [`radius`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L11).
 
-- `geopotential` TODO(egg): document.
+- `j2`: an optional `floating_point_number`.
+
+  The dimensionless zonal harmonic *J*<sub>2</sub>.
+  
+  Defaults to 0.
+- `geopotential_row`: an optional sequence of `geopotential_row` configuration nodes describing the spherical harmonics of the geopotential of the body.  A *nominal* `geopotential_row` contains the following values:
+
+    - `degree`: a required `signed_integer`.
+
+      The degree of the geopotential row.
+
+    - `geopotential_column`: an optional sequence of `geopotential_column` configuration nodes describing the spherical harmonics for the given degree.  A *nominal* `geopotential_column` contains the following values:
+
+      - `order`: a required `signed_integer`.
+
+        The order of the geopotential column.
+
+      - `cos`: a required `floating_point_number`.
+
+        The coefficient of the cosine spherical harmonic of the given degree and order.  For degree *i* and order *j* this is traditionally known as C*ij*.
+
+      - `sin`: a required `floating_point_number`.
+
+        The coefficient of the sine spherical harmonic of the given degree and order.  For degree *i* and order *j* this is traditionally known as S*ij*.
 
 A *sufficient* `body` configuration node is a *nominal* `body` configuration node where:
 - `gravitational_parameter`, `reference_instant`, `mean_radius`, `axis_right_ascension`, `axis_declination`, `reference_angle`, and `angular_frequency` are present;
-- `j2` and `reference_radius` are either both present or both absent [TODO(egg): update for `geopotential`].
+- `reference_radius` is present if and only if `j2` or `geopotential_row`s are present.
+- `j2` and `geopotential_row`s are not present at the same time.
 
 > *Example*: All `body` nodes in [sol_gravity_model.cfg](https://github.com/mockingbirdnest/Principia/blob/2018011702-Clifford/astronomy/sol_gravity_model.cfg),
-provided with Principia, are *sufficient*.
+provided with Principia, are *sufficient*.  Numerous bodies have a `j2`.  The Earth has `geopotential_row`s.
 
 #### Semantics of the quantities used for body rotation
 The quantities *W* = *W*<sub>0</sub> + *Ẇ* (*t* - *t*<sub>0</sub>), *α*<sub>0</sub>, and *δ*<sub>0</sub> are Euler angles defining the orientation of the celestial body, as shown on figure 1 of [the 2009 report of the IAU Working Group on Cartographic Coordinates and Rotational Elements](https://astropedia.astrogeology.usgs.gov/download/Data/WGCCRE/WGCCRE2009reprint.pdf), where *t* is terrestrial time.
@@ -184,7 +203,7 @@ The `ephemeris` node contains the following values:
 - `fixed_step_size_integrator`, a required `fixed_step_size_integrator`;
 - `integration_step_size`, a required `quantity(time)`.
 - `fitting_tolerance`, a required `quantity(length)`.
-- `geopotential_tolerance`, a required `double`.
+- `geopotential_tolerance`, a required `floating_point_number`.
 
 The integration of the motion of the celestial bodies is performed by the ephemeris with the
 given `fixed_step_size_integrator` at the given `integration_step_size`.  The result of the integration is approximated by a polynomial with a maximum error given by `fitting_tolerance`.  Any geopotential effects are ignored if their relative magnitude with respect to the central force is less than `geopotential_tolerance`.
