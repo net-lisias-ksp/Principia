@@ -183,17 +183,20 @@ The `principia_numerics_blueprint` configuration consists of:
 The `ephemeris` node contains the following values:
 - `fixed_step_size_integrator`, a required `fixed_step_size_integrator`;
 - `integration_step_size`, a required `quantity(time)`.
+- `fitting_tolerance`, a required `quantity(length)`.
+- `geopotential_tolerance`, a required `double`.
 
 The integration of the motion of the celestial bodies is performed by the ephemeris with the
-given `fixed_step_size_integrator` at the given `integration_step_size`.
+given `fixed_step_size_integrator` at the given `integration_step_size`.  The result of the integration is approximated by a polynomial with a maximum error given by `fitting_tolerance`.  Any geopotential effects are ignored if their relative magnitude with respect to the central force is less than `geopotential_tolerance`.
 
-> *Example*: The following `principia_numerics_blueprint` node describes the default integration
-method used by Principia.
+> *Example*: The following `principia_numerics_blueprint` node describes the default numerics blueprint used by Principia.
 > ```ini
 >principia_numerics_blueprint {
 >  ephemeris {
 >    fixed_step_size_integrator = QUINLAN_TREMAINE_1990_ORDER_12
 >    integration_step_size      = 10 min
+>    fitting_tolerance = 1 mm
+>    geopotential_tolerance = 0x1.0p-24
 >  }
 >}
 >```
