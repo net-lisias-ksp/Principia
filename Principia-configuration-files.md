@@ -132,13 +132,13 @@ A *nominal* `body` configuration node contains the following values:
   The dimensionless zonal harmonic *J*<sub>2</sub>.
   
   Defaults to 0.
-- `geopotential_row`: an optional sequence of `geopotential_row` configuration nodes describing the spherical harmonics of the geopotential of the body.  A *nominal* `geopotential_row` contains the following values:
+- `geopotential_row`: an optional sequence of `geopotential_row` configuration nodes describing the spherical harmonics of the geopotential of the body.  A `geopotential_row` contains the following values:
 
     - `degree`: a required `signed_integer`.
 
       The degree of the geopotential row.
 
-    - `geopotential_column`: an optional sequence of `geopotential_column` configuration nodes describing the spherical harmonics for the given degree.  A *nominal* `geopotential_column` contains the following values:
+    - `geopotential_column`: an optional sequence of `geopotential_column` configuration nodes describing the spherical harmonics for the given degree.  A `geopotential_column` contains the following values:
 
       - `order`: a required `signed_integer`.
 
