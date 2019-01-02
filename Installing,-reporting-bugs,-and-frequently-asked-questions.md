@@ -91,6 +91,21 @@ Put the contents of the `error.log` on gist as well as the contents of the `outp
 
 The list of [issues](https://github.com/mockingbirdnest/Principia/issues) contains mostly ideas for future improvements.  We use the label [bug](https://github.com/mockingbirdnest/Principia/labels/bug) for issues that lead to incorrect behavior (not necessarily crashes, though).
 
+## The case of `BadImageFormatException`
+
+The following traces are expected and harmless; seeing them in the KSP logs should not be cause for alarm:
+```
+Load(Assembly): Principia/x64/<some assembly>
+AssemblyLoader: Loading assembly at <ksp path>\GameData\Principia\x64\<some assembly>.dll
+Failed to load assembly <ksp path>\GameData\Principia\x64\<some assembly>.dll:
+System.BadImageFormatException: Format of the executable (.exe) or library (.dll) is invalid.
+<stack trace>
+```
+
+As outlined in the [technical overview](https://github.com/mockingbirdnest/Principia/wiki/Technical-Overview), all the work is done in native DLLs (compiled from C++) called from a comparatively lightweight C♯ adapter that handles UI and interactions with the game itself.
+
+These native DLLs are not loaded by KSP directly, and cannot be, but KSP tries to load any DLL it sees, resulting in these exceptions.
+
 # Interesting things to do
 
 ## Go to L<sub>4</sub> or L<sub>5</sub>?
