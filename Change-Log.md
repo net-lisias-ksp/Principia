@@ -12,9 +12,9 @@
 
 ## Bug fixes
 
+* Switching between scenes (or loading a save) was very long if there ever was in the game a very long (years) flight plan or prediction, even if it had been shortened/deleted.  This was because the solar system was recomputed up to the most distant time ever reached.  This has been fixed by only recomputing the solar system as far as needed by the current flight plan and prediction ([#2038](https://github.com/mockingbirdnest/Principia/issues/2038)).
 
-
-For more details see all [39](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-12-05T13:00:00..2019-01-05T14:59:59+sort%3Acreated-asc) pull requests between Εὔδοξος and Erdős.
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-12-05T13:00:00..2019-01-05T14:59:59+sort%3Acreated-asc) pull requests between Εὔδοξος and Erdős.
 
 # [Erdős](https://en.wikipedia.org/wiki/Paul_Erd%C5%91s)
 
