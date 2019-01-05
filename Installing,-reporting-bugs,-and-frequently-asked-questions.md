@@ -17,7 +17,8 @@ The simulation uses the most recently published observational data (from [K2](ht
 Our mini-mod comes as a patch on top of [@GregroxMun](https://github.com/GregroxMun)'s SLIPPIST-1 mod.  To install, do the following:
 * Install [SLIPPIST-1](https://forum.kerbalspaceprogram.com/index.php?/topic/157020-143-seven-worlds-around-slippist-1-v05-update-june-7th-2018/).
 * Install [Kopernicus](https://forum.kerbalspaceprogram.com/index.php?/topic/140580-143-kopernicus-release-2-may-6/).
-* Download the [`trappist-1 for principia erdős.zip`](https://goo.gl/g57iea) file, unzip it, and drop the `Trappist-1 for Principia` folder in the `GameData` folder of your installation of KSP.
+* Optionally, install [RSSTimeFormatter](https://github.com/KSP-RO/RSSTimeFormatter/releases) to display the correct date for the state of the TRAPPIST-1 system.
+* Download the [`trappist-1 for principia εὔδοξος.zip`](https://goo.gl/vbm1zr) file, unzip it, and drop the `Trappist-1 for Principia` folder in the `GameData` folder of your installation of KSP.
 * Start KSP and enjoy the view: ![](https://i.imgur.com/aynfI5j.png)
 
 # Troubleshooting 
