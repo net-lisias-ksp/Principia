@@ -1,3 +1,21 @@
+# [Εὔδοξος](https://en.wikipedia.org/wiki/Eudoxus_of_Cnidus)
+
+*Εὔδοξος is not available yet.  This is a draft of the change log.*
+
+## User-facing features
+
+* We have added a degree-30 geopotential configuration to the Moon for RealSolarSystem.  This configuration reproduces the complex (and sometimes unstable) orbits caused by mass concentrations on the Moon.  It should now be [significantly harder](https://en.wikipedia.org/wiki/Lunar_orbit#Perturbation_effects) to have stable low-altitude orbits around the Moon.
+
+* Saves are now encoded in [base64](https://en.wikipedia.org/wiki/Base64) instead of [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal).  This makes them more compact by 30%, but more importantly they load about twice as fast.
+
+* The “Trappist-1 for Principia” mini-mod has been updated to use a configuration of the Trappist-1 system that correctly fits the observations.  The previous version used an integrator that was not converged for the *b* planet ([#1999](https://github.com/mockingbirdnest/Principia/issues/1999)).  You'll need to start a new game to see the changes.  Also, we are now including a configuration for RSSTimeFormatter that properly displays the (Earth) date and time.
+
+## Bug fixes
+
+
+
+For more details see all [39](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2018-12-05T13:00:00..2019-01-05T14:59:59+sort%3Acreated-asc) pull requests between Εὔδοξος and Erdős.
+
 # [Erdős](https://en.wikipedia.org/wiki/Paul_Erd%C5%91s)
 
 ## User-facing features
