@@ -1,4 +1,5 @@
 ### Versions
+* [Εὔδοξος](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#%CE%95%E1%BD%94%CE%B4%CE%BF%CE%BE%CE%BF%CF%82)
 * [Erdős](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#erd%C5%91s)
 * [Ἐρατοσθένης](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#%E1%BC%98%CF%81%CE%B1%CF%84%CE%BF%CF%83%CE%B8%CE%AD%CE%BD%CE%B7%CF%82)
 * [Διόφαντος](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#%CE%94%CE%B9%CF%8C%CF%86%CE%B1%CE%BD%CF%84%CE%BF%CF%82)
