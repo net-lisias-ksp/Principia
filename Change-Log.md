@@ -3,6 +3,7 @@
 ## User-facing features
 
 * We have added a selenopotential (lunar gravity model) complete to degree and order 30 to the Moon for RealSolarSystem, truncated from the GRAIL gravity model [GRGM1200A](https://www.hou.usra.edu/meetings/lpsc2016/pdf/1484.pdf).  This configuration reproduces the complex (and sometimes unstable) orbits caused by mass concentrations on the Moon.  It should now be [significantly harder](https://en.wikipedia.org/wiki/Lunar_orbit#Perturbation_effects) to have stable low-altitude orbits around the Moon.
+Note that this change will only take effect if you create a new save; existing saves will retain the simpler gravity model.
 
 * Saves are now encoded in [base64](https://en.wikipedia.org/wiki/Base64) instead of [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal).  This makes them more compact by 30%, but more importantly they load about twice as fast.
 
