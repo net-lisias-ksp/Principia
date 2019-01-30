@@ -12,7 +12,7 @@
 
 * Principia would crash when a vessel (or a fragment thereof) was getting close to the centre of a celestial.  This could happen during atmospheric reentry followed by rapid unscheduled disassembly: fragments ejected very fast could go below ground without KSP noticing.  This has been fixed by killing the fragment when this situation was detected by Principia ([#2056](https://github.com/mockingbirdnest/Principia/issues/2056)).
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-01-05T15:00:00..2019-01-30T18:59:59+sort%3Acreated-asc) pull requests between Εὐκλείδης and Εὔδοξος.
+For more details see all [9](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-01-05T15:00:00..2019-01-30T18:59:59+sort%3Acreated-asc) pull requests between Εὐκλείδης and Εὔδοξος.
 
 # [Εὔδοξος](https://en.wikipedia.org/wiki/Eudoxus_of_Cnidus)
 
