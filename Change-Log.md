@@ -1,3 +1,13 @@
+# [Εὐκλείδης](https://en.wikipedia.org/wiki/Euclid)
+
+*This is a draft of the change log; Εὐκλείδης is not available yet.*
+
+## User-facing features
+
+## Bug fixes
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-01-05T15:00:00..2019-01-30T18:59:59+sort%3Acreated-asc) pull requests between Εὐκλείδης and Εὔδοξος.
+
 # [Εὔδοξος](https://en.wikipedia.org/wiki/Eudoxus_of_Cnidus)
 
 ## User-facing features
