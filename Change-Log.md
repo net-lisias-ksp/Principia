@@ -1,7 +1,5 @@
 # [Εὐκλείδης](https://en.wikipedia.org/wiki/Euclid)
 
-*This is a draft of the change log; Εὐκλείδης is not available yet.*
-
 ## User-facing features
 
 * Support for KSP 1.6.1 has been added: this version supports 1.3.1, 1.4.x, 1.5.1 and 1.6.1. Make sure you download the correct binary for your favourite version of KSP (the game will crash otherwise).
