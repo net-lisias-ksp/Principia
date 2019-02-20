@@ -1,4 +1,5 @@
 ### Versions
+* [Euler](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#euler)
 * [Εὐκλείδης](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#%CE%95%E1%BD%90%CE%BA%CE%BB%CE%B5%CE%AF%CE%B4%CE%B7%CF%82)
 * [Εὔδοξος](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#%CE%95%E1%BD%94%CE%B4%CE%BF%CE%BE%CE%BF%CF%82)
 * [Erdős](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#erd%C5%91s)
