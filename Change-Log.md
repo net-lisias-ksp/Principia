@@ -1,3 +1,17 @@
+# [Euler](https://en.wikipedia.org/wiki/Leonhard_Euler)
+
+*This is draft of the change log.  Euler is not available yet.*
+
+## Bug fixes
+
+In RealSolarSystem, the intrinsic forces (parachutes, engines, etc.) used to be ignore below an altitude of 8.4 m on Earth.  This manifested itself, for instance, by a brutal drop when landing a vessel with a parachute.  This has been fixed by properly accounting for intrinsic forces close to the surface ([#2072](https://github.com/mockingbirdnest/Principia/issues/2072)).
+
+## Modder-facing changes
+
+APIs have been added to make it possible for third-party mods to access our geopotential models ([#2074](https://github.com/mockingbirdnest/Principia/issues/2074)).
+
+For more details see all [9](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-01-30T19:00:00..2019-02-19T00:59:59+sort%3Acreated-asc) pull requests between Euler and Εὐκλείδης.
+
 # [Εὐκλείδης](https://en.wikipedia.org/wiki/Euclid)
 
 ## User-facing features
