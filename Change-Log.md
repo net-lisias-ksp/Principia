@@ -1,7 +1,5 @@
 # [Euler](https://en.wikipedia.org/wiki/Leonhard_Euler)
 
-*This is draft of the change log.  Euler is not available yet.*
-
 ## Bug fixes
 
 In RealSolarSystem, the intrinsic forces (parachutes, engines, etc.) used to be ignored below an altitude of 8.4 m on Earth.  This manifested itself, for instance, by a brutal drop when landing a vessel with a parachute.  This has been fixed by properly accounting for intrinsic forces close to the surface ([#2072](https://github.com/mockingbirdnest/Principia/issues/2072)).
