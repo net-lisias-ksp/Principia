@@ -65,8 +65,8 @@ While the IERS conventions use an overline to denote normalization, the normaliz
 
 Callers should check the convention for their usage, and unnormalize the result of `GeopotentialGetCoefficient` as needed.
 
-For Earth, the normalized value of 𝐶<sub>32</sub> is about 9.0476×10<sup>-07</sup>, while
-the unnormalized value is 3.0904×10<sup>-07</sup>.
+For Earth, the normalized value of 𝐶<sub>32</sub> is about 9.0476×10<sup>−7</sup>, while
+the unnormalized value is 3.0904×10<sup>−7</sup>.
 
 The zonal harmonics 𝐶<sub>𝑛0</sub> are often given as 𝐽<sub>𝑛</sub>.
 𝐽<sub>𝑛</sub> is always given *unnormalized*, 𝐽<sub>𝑛</sub> = −𝐶<sub>𝑛0</sub> with the *unnormalized* value of 𝐶<sub>𝑛0</sub>.
