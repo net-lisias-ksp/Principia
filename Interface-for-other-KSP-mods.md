@@ -50,7 +50,7 @@ When an exception is thrown, additional information may be found in the Principi
       int order);
 ```
 
-Returns the normalized geopotential coefficient of the given `degree` and `order` of the body whose `flightGlobalsIndex` is `body_index`.
+Returns the *normalized* geopotential coefficient of the given `degree` and `order` of the body whose `flightGlobalsIndex` is `body_index`.
 For degree 𝑛 and order 𝑚, the `x` member of the result is 𝐶<sub>𝑛𝑚</sub> and the `y` member is 𝑆<sub>𝑛𝑚</sub>.
 
 Throws an exception if:
@@ -60,8 +60,9 @@ Throws an exception if:
 
 ### Notes
 The coefficients 𝐶<sub>𝑛𝑚</sub> may be given as normalized or unnormalized coefficients (most often the former); callers should check the convention for their usage.
+
 For Earth, the normalized value of 𝐶<sub>32</sub> is about 9.0476×10<sup>-07</sup>;
-the *unnormalized* value is 3.0904×10<sup>-07</sup>.
+the unnormalized value is 3.0904×10<sup>-07</sup>.
 
 The zonal harmonics 𝐶<sub>𝑛0</sub> are often given as 𝐽<sub>𝑛</sub>.
 𝐽<sub>𝑛</sub> is always given *unnormalized*, 𝐽<sub>𝑛</sub> = −𝐶<sub>𝑛0</sub> with the *unnormalized* value of 𝐶<sub>𝑛0</sub>.
