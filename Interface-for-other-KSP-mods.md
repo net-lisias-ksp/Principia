@@ -61,7 +61,7 @@ Throws an exception if:
 ### Notes
 The coefficients 𝐶<sub>𝑛𝑚</sub> and 𝑆<sub>𝑛𝑚</sub> may be given as normalized or unnormalized coefficients (most often the former).
 See the [IERS conventions (2010), chapter 6](https://www.iers.org/SharedDocs/Publikationen/EN/IERS/Publications/tn/TechnNote36/tn36_079.pdf?__blob=publicationFile&v=1) for definition of the normalized and unnormalized coefficients.
-The IERS uses an overline to denote normalization, the normalized coefficients are often referred to as 𝐶<sub>𝑛𝑚</sub> as well.
+While the IERS conventions use an overline to denote normalization, the normalized coefficients are often referred to as 𝐶<sub>𝑛𝑚</sub> as well.
 
 Callers should check the convention for their usage, and unnormalize the result of `GeopotentialGetCoefficient` as needed.
 
