@@ -151,7 +151,7 @@ public static class Reflection {
   public static void SetValue<T>(this object obj, string name, T value) {
     if (obj == null) {
       throw new NullReferenceException(
-          $"Cannot access {typeof(T).FullName} {name} on null object");
+          $"Cannot set {typeof(T).FullName} {name} on null object");
     }
     Type type = obj.GetType();
     FieldInfo field = type.GetField(name, public_instance);
@@ -168,7 +168,8 @@ public static class Reflection {
           $@"Could not set {
               (field == null ? "property" : "field")} {
               (field?.FieldType ?? property.PropertyType).FullName} {
-              type.FullName}.{name} to {typeof(T).FullName} {value}",
+              type.FullName}.{name} to {typeof(T).FullName} {
+              value?.GetType().FullName ?? "null"} {value}",
           exception);
     }
   }
@@ -180,11 +181,14 @@ public static class Reflection {
   public delegate T BoundMethod<T>(params object[] args);
 
   public static BoundMethod<T> Call<T>(this object obj, string name) {
+    if (obj == null) {
+      throw new NullReferenceException($"Cannot call {name} on null object");
+    }
     Type type = obj.GetType();
     MethodInfo method = type.GetMethod(name, public_instance);
     if (method == null) {
      throw new KeyNotFoundException(
-         $"No public instance method {name} in {obj.GetType().FullName}");
+         $"No public instance method {name} in {type.FullName}");
     }
     return args => {
       object result = method.Invoke(obj, args);
