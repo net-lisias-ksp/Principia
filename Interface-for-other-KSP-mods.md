@@ -140,13 +140,13 @@ public static class Principia {
 }
 
 // This class provides the following extension methods on all objects:
-// — obj.Call("name")(args).
+// — obj.Call("name")(args);
 // — obj.GetValue("name");
-// — obj.SetValue("name", value);
+// — obj.SetValue("name", value).
 // The following generics are equivalent to casting the result of the
 // non-generic versions, with better error messages:
-// — obj.Call<T>("name")(args).
-// — obj.GetValue<T>("name");
+// — obj.Call<T>("name")(args);
+// — obj.GetValue<T>("name").
 public static class Reflection {
   // Returns the value of the property or field of |obj| with the given name.
   public static T GetValue<T>(this object obj, string name) {
