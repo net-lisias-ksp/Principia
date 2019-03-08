@@ -24,7 +24,7 @@ which:
 # Interface types
 
 The interface types are declared in namespace `principia.ksp_plugin_adapter`.
-We give qualitative declarations with fields below, however, *it is unspecified whether the members are fields or properties*; interfacing mods should accept either by reflection.
+We give sample declarations with fields below, however, *it is unspecified whether the members are fields or properties*; interfacing mods should accept either by reflection.
 
 ## `XY`
 ```C#
