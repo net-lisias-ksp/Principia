@@ -5,12 +5,12 @@ Principia provides an API that allows other mods to take its effects into accoun
 
 Mods should use the interface by reflection.
 
-## The `ExternalInterface` object
+# The `ExternalInterface` object
 
 The interface consists of instance methods of the class
 `principia.ksp_plugin_adapter.ExternalInterface`.
 
-### `ExternalInterface.Get()`
+## `ExternalInterface.Get()`
 
 An instance of this class can be obtained by calling the static method
 ```C#
@@ -21,12 +21,12 @@ which:
 - returns `null` if the Principia `ScenarioModule` is not loaded, for instance in the editor scene, where Principia does not run;
 - throws `DllNotFoundException` if the Principia native DLL could not be loaded; this indicates an incorrect Principia installation.
 
-## Interface types
+# Interface types
 
 The interface types are declared in namespace `principia.ksp_plugin_adapter`.
 We give qualitative declarations with fields below, however, *it is unspecified whether the members are fields or properties*; interfacing mods should accept either by reflection.
 
-### `XY`
+## `XY`
 ```C#
 struct XY {
   double x;
@@ -34,14 +34,14 @@ struct XY {
 }
 ```
 
-## Interface functions
+# Interface functions
 
 The example usages of the interface functions given in this section make use of some utilities to limit the reflection boilerplate at the call site. See the appendix for their definition.
 
 The types of the exceptions thrown by erroneous interface calls are unspecified.
 When an exception is thrown, additional information may be found in the Principia logs.
 
-### `GeopotentialGetCoefficient`
+## `GeopotentialGetCoefficient`
 
 ```C#
   public XY GeopotentialGetCoefficient(
@@ -58,7 +58,7 @@ Throws an exception if:
 - there is no `CelestialBody` whose `flightGlobalsIndex` is `body_index`;
 - the relation `0 ≤ order ≤ degree` is not satisfied.
 
-#### Notes
+### Notes
 The coefficients 𝐶<sub>𝑛𝑚</sub> may be given as normalized or unnormalized coefficients (most often the former); callers should check the convention for their usage.
 For Earth, the normalized value of 𝐶<sub>32</sub> is about 9.0476×10<sup>-07</sup>;
 the *unnormalized* value is 3.0904×10<sup>-07</sup>.
@@ -68,7 +68,7 @@ The zonal harmonics 𝐶<sub>𝑛0</sub> are often given as 𝐽<sub>𝑛</sub>.
 
 With the *normalized* value of 𝐶<sub>𝑛0</sub>, this becomes 𝐽<sub>𝑛</sub> = −𝐶<sub>𝑛0</sub> √(2𝑛 + 1).
 
-#### Example: computing 𝐽<sub>2</sub> for Earth
+### Example: computing 𝐽<sub>2</sub> for Earth
 ```C#
 var principia = Principia.Get();
 CelestialBody earth = FlightGlobals.GetHomeBody();
@@ -77,7 +77,7 @@ double c20 = c20_s20.GetValue<double>("x");
 double j2 = -c20 * Math.Sqrt(5);
 ```
 
-### `GeopotentialGetReferenceRadius`
+## `GeopotentialGetReferenceRadius`
 
 ```C#
   public XY GeopotentialReferenceRadius(
@@ -90,7 +90,7 @@ Throws an exception if:
 - the Principia plugin is not started;
 - there is no `CelestialBody` whose `flightGlobalsIndex` is `body_index`.
 
-#### Example: computing the precession of the ascending node due to 𝐽<sub>2</sub> (in radians per second)
+### Example: computing the precession of the ascending node due to 𝐽<sub>2</sub> (in radians per second)
 ```C#
 double J2NodalPrecession(Orbit orbit) {
   var principia = Principia.Get();
@@ -106,7 +106,7 @@ double J2NodalPrecession(Orbit orbit) {
 }
 ```
 
-## Appendix: reflection utilities
+# Appendix: reflection utilities
 
 ```C#
 // This class provides the following extension methods on all objects:
