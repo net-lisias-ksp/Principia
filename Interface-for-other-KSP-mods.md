@@ -56,7 +56,7 @@ For degree 𝑛 and order 𝑚, the `x` member of the result is 𝐶<sub>𝑛�
 Throws an exception if:
 - the Principia plugin is not started;
 - there is no `CelestialBody` whose `flightGlobalsIndex` is `body_index`;
-- the relation `0 ≤ order ≤ degree` is not satisfied.
+- the relation `0` ≤ `order` ≤ `degree` is not satisfied.
 
 ### Notes
 The coefficients 𝐶<sub>𝑛𝑚</sub> may be given as normalized or unnormalized coefficients (most often the former); callers should check the convention for their usage.
