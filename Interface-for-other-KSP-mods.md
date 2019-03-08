@@ -107,7 +107,8 @@ double J2NodalPrecession(Orbit orbit) {
       orbit.referenceBody.flightGlobalsIndex);
   double μ = orbit.referenceBody.gravParameter;
   return -3.0 / 2.0 * orbit.meanMotion *
-      Math.Pow(referenceRadius / orbit.semiLatusRectum, 2) * Math.Cos(orbit.inclination);
+      Math.Pow(referenceRadius / orbit.semiLatusRectum, 2) *
+      Math.Cos(orbit.inclination * Math.PI / 180);
 }
 ```
 
