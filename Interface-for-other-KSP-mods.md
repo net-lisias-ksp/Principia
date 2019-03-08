@@ -5,7 +5,7 @@ Principia provides an API that allows other mods to take its effects into accoun
 
 Mods should use the interface by reflection.
 
-### The `ExternalInterface` object
+## The `ExternalInterface` object
 
 The interface consists of instance methods of the class
 `principia.ksp_plugin_adapter.ExternalInterface`.
