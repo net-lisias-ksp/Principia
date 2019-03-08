@@ -109,6 +109,31 @@ double J2NodalPrecession(Orbit orbit) {
 # Appendix: reflection utilities
 
 ```C#
+// Principia-specific utilities.
+public static class Principia {
+  public static string AssemblyName() {
+    foreach (var loaded_assembly in AssemblyLoader.loadedAssemblies) {
+      if (loaded_assembly.assembly.GetName().Name == "ksp_plugin_adapter") {
+        return loaded_assembly.assembly.FullName;
+      }
+    }
+    throw new DllNotFoundException(
+        "ksp_plugin_adapter not in AssemblyLoader.loadedAssemblies");
+  }
+
+  public static Type GetType(string name) {
+    return Type.GetType(
+      $"principia.ksp_plugin_adapter.{name}, {AssemblyName()}");
+  }
+
+  // principia.ksp_plugin_adapter.ExternalInterface.Get().
+  public static object Get() {
+    return GetType("ExternalInterface")
+        .GetMethod("Get")
+        .Invoke(null, null);
+  }
+}
+
 // This class provides the following extension methods on all objects:
 // — obj.Call("name")(args).
 // — obj.GetValue("name");
@@ -210,30 +235,5 @@ public static class Reflection {
 
   private const BindingFlags public_instance =
       BindingFlags.Public | BindingFlags.Instance;
-}
-
-// Principia-specific utilities.
-public static class Principia {
-  public static string AssemblyName() {
-    foreach (var loaded_assembly in AssemblyLoader.loadedAssemblies) {
-      if (loaded_assembly.assembly.GetName().Name == "ksp_plugin_adapter") {
-        return loaded_assembly.assembly.FullName;
-      }
-    }
-    throw new DllNotFoundException(
-        "ksp_plugin_adapter not in AssemblyLoader.loadedAssemblies");
-  }
-
-  public static Type GetType(string name) {
-    return Type.GetType(
-      $"principia.ksp_plugin_adapter.{name}, {AssemblyName()}");
-  }
-
-  // principia.ksp_plugin_adapter.ExternalInterface.Get().
-  public static object Get() {
-    return GetType("ExternalInterface")
-        .GetMethod("Get")
-        .Invoke(null, null);
-  }
 }
 ```
