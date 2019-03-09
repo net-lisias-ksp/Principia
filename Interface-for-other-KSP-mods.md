@@ -29,8 +29,8 @@ We give sample declarations with fields below, however, *it is unspecified wheth
 ## `XY`
 ```C#
 struct XY {
-  double x;
-  double y;
+  public double x;
+  public double y;
 }
 ```
 
