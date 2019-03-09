@@ -37,7 +37,7 @@ When constructing an object of an interface type to pass it as a parameter to an
 
 ## `XY`
 ```C#
-struct XY {
+public struct XY {
   public double x;
   public double y;
 }
@@ -45,7 +45,8 @@ struct XY {
 
 # Interface functions
 
-The example usages of the interface functions given in this section make use of some utilities (classes `Principia` and `Reflection`) to limit the reflection boilerplate at the call site. See the appendix for their definition.
+The example usages of the interface functions given in this section make use of some utilities (classes `Principia` and `Reflection`) to limit the reflection boilerplate at the call site.
+We have tried to make the identifiers e See the appendix for their definition.
 
 The types of the exceptions thrown by erroneous interface calls are unspecified.
 When an exception is thrown, additional information may be found in the Principia logs.
