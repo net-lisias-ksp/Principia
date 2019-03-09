@@ -106,6 +106,10 @@ Throws an exception if:
 - the Principia plugin is not started;
 - there is no `CelestialBody` whose `flightGlobalsIndex` is `body_index`.
 
+### Notes
+
+The reference radius is the quantity denoted by 𝑎<sub>𝑒</sub> in the [IERS conventions (2010), chapter 6](https://www.iers.org/SharedDocs/Publikationen/EN/IERS/Publications/tn/TechnNote36/tn36_079.pdf?__blob=publicationFile&v=1).
+
 ### Example: computing the precession of the ascending node due to 𝐽<sub>2</sub> (in radians per second)
 ```C#
 double J2NodalPrecession(Orbit orbit) {
