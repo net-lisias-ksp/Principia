@@ -145,7 +145,7 @@ public static class Principia {
 // This class provides the following methods:
 // — Reflection.Call(obj, "name")(args);
 // — Reflection.GetValue(obj, "name");
-// — Reflection.SetValue(obj,"name", value).
+// — Reflection.SetValue(obj, "name", value).
 // The following generics are equivalent to casting the result of the
 // non-generic versions, with better error messages:
 // — Reflection.Call<T>(obj, "name")(args) for (T)Reflection.Call(obj, "name")(args);
@@ -208,7 +208,7 @@ public static class Reflection {
   }
 
   public static object GetValue(object obj, string name) {
-    return Reflection.GetValue<object>(obj, name);
+    return GetValue<object>(obj, name);
   }
 
   public delegate T BoundMethod<T>(params object[] args);
