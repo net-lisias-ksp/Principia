@@ -79,7 +79,7 @@ var principia = Principia.Get();
 CelestialBody earth = FlightGlobals.GetHomeBody();
 var c20_s20 = Reflection.Call(principia, "GeopotentialGetCoefficient")(
     earth.flightGlobalsIndex, 2, 0);
-double c20 = Reflection.GetValue<double>(c20_s20, "x");
+double c20 = Reflection.GetFieldOrPropertyValue<double>(c20_s20, "x");
 double j2 = -c20 * Math.Sqrt(5);
 ```
 
@@ -102,7 +102,7 @@ double J2NodalPrecession(Orbit orbit) {
   var principia = Principia.Get();
   var c20_s20 = Reflection.Call(principia, "GeopotentialGetCoefficient")(
       orbit.referenceBody.flightGlobalsIndex, 2, 0);
-  double c20 = Reflection.GetValue<double>(c20_s20, "x");
+  double c20 = Reflection.GetFieldOrPropertyValue<double>(c20_s20, "x");
   double j2 = -c20 * Math.Sqrt(5);
   double reference_radius =
       Reflection.Call<double>(principia, "GeopotentialGetReferenceRadius")(
@@ -144,15 +144,16 @@ public static class Principia {
 
 // This class provides the following methods:
 // — Reflection.Call(obj, "name")(args);
-// — Reflection.GetValue(obj, "name");
-// — Reflection.SetValue(obj, "name", value).
+// — Reflection.GetFieldOrPropertyValue(obj, "name");
+// — Reflection.SetFieldOrPropertyValue(obj, "name", value).
 // The following generics are equivalent to casting the result of the
 // non-generic versions, with better error messages:
 // — Reflection.Call<T>(obj, "name")(args) for (T)Reflection.Call(obj, "name")(args);
-// — Reflection.GetValue<T>(obj, "name") for (T)Reflection.GetValue(obj, "name").
+// — Reflection.GetFieldOrPropertyValue<T>(obj, "name") for
+//   (T)Reflection.GetFieldOrPropertyValue(obj, "name").
 public static class Reflection {
   // Returns the value of the property or field of |obj| with the given name.
-  public static T GetValue<T>(object obj, string name) {
+  public static T GetFieldOrPropertyValue<T>(object obj, string name) {
     if (obj == null) {
       throw new NullReferenceException(
           $"Cannot access {typeof(T).FullName} {name} on null object");
@@ -181,7 +182,7 @@ public static class Reflection {
     }
   }
 
-  public static void SetValue<T>(object obj, string name, T value) {
+  public static void SetFieldOrPropertyValue<T>(object obj, string name, T value) {
     if (obj == null) {
       throw new NullReferenceException(
           $"Cannot set {typeof(T).FullName} {name} on null object");
@@ -207,8 +208,8 @@ public static class Reflection {
     }
   }
 
-  public static object GetValue(object obj, string name) {
-    return GetValue<object>(obj, name);
+  public static object GetFieldOrPropertyValue(object obj, string name) {
+    return GetFieldOrPropertyValue<object>(obj, name);
   }
 
   public delegate T BoundMethod<T>(params object[] args);
