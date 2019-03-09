@@ -26,6 +26,8 @@ which:
 The interface types are declared in namespace `principia.ksp_plugin_adapter`.
 We give sample declarations with fields below, however, *it is unspecified whether the members are fields or properties*; interfacing mods should accept either by reflection.
 
+Not accepting both will cause future breakage in the event we need to change between fields and properties.  Accepting both will keep calling code operational when these refactorings take place.
+
 ## `XY`
 ```C#
 struct XY {
