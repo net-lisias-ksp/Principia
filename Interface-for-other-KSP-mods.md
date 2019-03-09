@@ -122,7 +122,6 @@ double J2NodalPrecession(Orbit orbit) {
       Reflection.Call<double>(principia, "GeopotentialGetReferenceRadius")(
           orbit.referenceBody.flightGlobalsIndex);
 
-  double μ = orbit.referenceBody.gravParameter;
   double i = orbit.inclination * Math.PI / 180;
   double n = orbit.meanMotion;
   double p = orbit.semiLatusRectum;
