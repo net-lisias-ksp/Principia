@@ -77,8 +77,9 @@ With the *normalized* value of 𝐶<sub>𝑛0</sub>, this becomes 𝐽<sub>𝑛<
 ```C#
 var principia = Principia.Get();
 CelestialBody earth = FlightGlobals.GetHomeBody();
-var c20_s20 = principia.Call("GeopotentialGetCoefficient")(earth.flightGlobalsIndex, 2, 0);
-double c20 = c20_s20.GetValue<double>("x");
+var c20_s20 = Reflection.Call(principia, "GeopotentialGetCoefficient")(
+    earth.flightGlobalsIndex, 2, 0);
+double c20 = Reflection.GetValue<double>(c20_s20, "x");
 double j2 = -c20 * Math.Sqrt(5);
 ```
 
@@ -99,12 +100,13 @@ Throws an exception if:
 ```C#
 double J2NodalPrecession(Orbit orbit) {
   var principia = Principia.Get();
-  var c20_s20 = principia.Call("GeopotentialGetCoefficient")(
+  var c20_s20 = Reflection.Call(principia, "GeopotentialGetCoefficient")(
       orbit.referenceBody.flightGlobalsIndex, 2, 0);
-  double c20 = c20_s20.GetValue<double>("x");
+  double c20 = Reflection.GetValue<double>(c20_s20, "x");
   double j2 = -c20 * Math.Sqrt(5);
-  double reference_radius = principia.Call<double>("GeopotentialGetReferenceRadius")(
-      orbit.referenceBody.flightGlobalsIndex);
+  double reference_radius =
+      Reflection.Call<double>(principia, "GeopotentialGetReferenceRadius")(
+          orbit.referenceBody.flightGlobalsIndex);
   double μ = orbit.referenceBody.gravParameter;
   return -3.0 / 2.0 * orbit.meanMotion *
       Math.Pow(referenceRadius / orbit.semiLatusRectum, 2) *
@@ -140,17 +142,17 @@ public static class Principia {
   }
 }
 
-// This class provides the following extension methods on all objects:
-// — obj.Call("name")(args);
-// — obj.GetValue("name");
-// — obj.SetValue("name", value).
+// This class provides the following methods:
+// — Reflection.Call(obj, "name")(args);
+// — Reflection.GetValue(obj, "name");
+// — Reflection.SetValue(obj,"name", value).
 // The following generics are equivalent to casting the result of the
 // non-generic versions, with better error messages:
-// — obj.Call<T>("name")(args);
-// — obj.GetValue<T>("name").
+// — Reflection.Call<T>(obj, "name")(args) for (T)Reflection.Call(obj, "name")(args);
+// — Reflection.GetValue<T>("name") for (T)Reflection.GetValue(obj, "name").
 public static class Reflection {
   // Returns the value of the property or field of |obj| with the given name.
-  public static T GetValue<T>(this object obj, string name) {
+  public static T GetValue<T>(object obj, string name) {
     if (obj == null) {
       throw new NullReferenceException(
           $"Cannot access {typeof(T).FullName} {name} on null object");
@@ -179,7 +181,7 @@ public static class Reflection {
     }
   }
 
-  public static void SetValue<T>(this object obj, string name, T value) {
+  public static void SetValue<T>(object obj, string name, T value) {
     if (obj == null) {
       throw new NullReferenceException(
           $"Cannot set {typeof(T).FullName} {name} on null object");
@@ -205,13 +207,13 @@ public static class Reflection {
     }
   }
 
-  public static object GetValue(this object obj, string name) {
-    return obj.GetValue<object>(name);
+  public static object GetValue(object obj, string name) {
+    return Reflection.GetValue<object>(obj, name);
   }
 
   public delegate T BoundMethod<T>(params object[] args);
 
-  public static BoundMethod<T> Call<T>(this object obj, string name) {
+  public static BoundMethod<T> Call<T>(object obj, string name) {
     if (obj == null) {
       throw new NullReferenceException($"Cannot call {name} on null object");
     }
@@ -235,8 +237,8 @@ public static class Reflection {
     };
   }
 
-  public static BoundMethod<object> Call(this object obj, string name) {
-    return obj.Call<object>(name);
+  public static BoundMethod<object> Call(object obj, string name) {
+    return Call<object>(obj, name);
   }
 
   private const BindingFlags public_instance =
