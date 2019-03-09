@@ -28,6 +28,11 @@ We give sample declarations with fields below, however, *it is unspecified wheth
 
 Not accepting both will cause future breakage in the event we need to change between fields and properties.  Accepting both will keep calling code operational when these refactorings take place.
 
+It is also unspecified whether the interface types are value types or reference types (`struct` or `class`).
+If they are reference types, they have a default constructor.
+Since the types are boxed when accessed by reflection, this mostly does not matter.
+When constructing an object of an interface type to pass it as a parameter to an interface function, callers should use [`Activator.CreateInstance(Type)`](https://docs.microsoft.com/en-us/dotnet/api/system.activator.createinstance?view=netframework-4.7.2#System_Activator_CreateInstance_System_Type_).
+
 ## `XY`
 ```C#
 struct XY {
