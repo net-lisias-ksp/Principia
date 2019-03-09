@@ -5,6 +5,8 @@ Principia provides an API that allows other mods to take its effects into accoun
 
 Mods should use the interface by reflection.
 
+The interface is provided by an assembly whose `AssemblyName.Name` is `principia.ksp_plugin_adapter` (the actual file name is different, currently `ksp_plugin_adapter.dll` in the `Principia` directory; callers should not depend on the file name).
+
 # The `ExternalInterface` object
 
 The interface consists of instance methods of the class
