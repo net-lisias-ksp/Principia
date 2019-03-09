@@ -149,7 +149,7 @@ public static class Principia {
 // The following generics are equivalent to casting the result of the
 // non-generic versions, with better error messages:
 // — Reflection.Call<T>(obj, "name")(args) for (T)Reflection.Call(obj, "name")(args);
-// — Reflection.GetValue<T>("name") for (T)Reflection.GetValue(obj, "name").
+// — Reflection.GetValue<T>(obj, "name") for (T)Reflection.GetValue(obj, "name").
 public static class Reflection {
   // Returns the value of the property or field of |obj| with the given name.
   public static T GetValue<T>(object obj, string name) {
