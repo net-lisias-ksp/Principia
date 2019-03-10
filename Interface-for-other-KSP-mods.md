@@ -95,7 +95,7 @@ double j2 = -c20 * Math.Sqrt(5);
 ## `GeopotentialGetReferenceRadius`
 
 ```C#
-  public XY GeopotentialReferenceRadius(int body_index);
+  public XY GeopotentialGetReferenceRadius(int body_index);
 ```
 
 Returns the value in metres of the reference radius of the geopotential model for the body whose `flightGlobalsIndex` is `body_index`.
