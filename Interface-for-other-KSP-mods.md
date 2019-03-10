@@ -54,10 +54,9 @@ When an exception is thrown, additional information may be found in the Principi
 ## `GeopotentialGetCoefficient`
 
 ```C#
-  public XY GeopotentialGetCoefficient(
-      int body_index,
-      int degree,
-      int order);
+  public XY GeopotentialGetCoefficient(int body_index,
+                                       int degree,
+                                       int order);
 ```
 
 Returns the *normalized* geopotential coefficient of the given `degree` and `order` of the body whose `flightGlobalsIndex` is `body_index`.
@@ -96,8 +95,7 @@ double j2 = -c20 * Math.Sqrt(5);
 ## `GeopotentialGetReferenceRadius`
 
 ```C#
-  public XY GeopotentialReferenceRadius(
-      int body_index);
+  public XY GeopotentialReferenceRadius(int body_index);
 ```
 
 Returns the value in metres of the reference radius of the geopotential model for the body whose `flightGlobalsIndex` is `body_index`.
