@@ -77,7 +77,7 @@ Callers should check the convention for their usage, and unnormalize the result 
 For Earth, the normalized value of 𝐶<sub>32</sub> is about 9.0476×10<sup>−7</sup>, while
 the unnormalized value is 3.0904×10<sup>−7</sup>.
 
-The zonal harmonics 𝐶<sub>𝑛0</sub> are often given as 𝐽<sub>𝑛</sub>.
+The zonal harmonics 𝐶<sub>𝑛0</sub> are often specified using 𝐽<sub>𝑛</sub>.
 𝐽<sub>𝑛</sub> is always given *unnormalized*, 𝐽<sub>𝑛</sub> = −𝐶<sub>𝑛0</sub> with the *unnormalized* value of 𝐶<sub>𝑛0</sub>.
 
 With the *normalized* value of 𝐶<sub>𝑛0</sub>, this becomes 𝐽<sub>𝑛</sub> = −𝐶<sub>𝑛0</sub> √(2𝑛 + 1).
