@@ -5,8 +5,14 @@
 ## User-facing features
 
 * Predictions are now computed asynchronously without blocking the UI thread.  This means that it's possible to have long predictions while retaining good playability: this is especially important close to celestials like the Earth or the Moon that have a complex geopotential.  Long predictions just refresh infrequently, which in practice is mostly invisible.  Note however that some computations (e.g., rendering) are still computed on the UI thread, so extremely long predictions  still reduce the frame rate.
-* As a consequence of the previous change, we limit the number of nodes that are displayed in map view to 64 by type (apsides, approaches, etc.).  That's because KSP is *extremely* inefficient at displaying large number of nodes, and while Principia could easily compute thousands of nodes there is no way that KSP could display them.
+* As a consequence of the previous change, we limit the number of nodes that are displayed in map view to 64 by type (apsides, approaches, etc.).  That's because KSP is *extremely* inefficient at displaying large numbers of nodes, and while Principia could easily compute thousands of nodes there is no way that KSP could display them.
 * The UI code has been extensively restructured and rewritten.  While it doesn't change the UI much, this rewrite fixes a few minor bugs and improves usability a bit, for instance by properly persisting the state of windows between scene changes.  More importantly, it provides a sound foundation for future improvements.
+
+## Bug fixes
+
+* The map nodes (apsis markers, ascending and descending node markers, etc.) no longer lag behind when the camera is moved in map view.
+
+* The ascending and descending nodes of the flight plan were incorrectly labeled as “Predicted Ascending Node” (or “Predicted Descending Node”), as if they were nodes of the prediction. They now are now correctly labeled as “Planned Ascending Node” (or “Planned Descending Node”).
 
 ## Modder-facing changes
 
