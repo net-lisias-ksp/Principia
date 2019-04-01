@@ -1,3 +1,19 @@
+# [Fano](https://en.wikipedia.org/wiki/Gino_Fano)
+
+*Fano is not available yet.  This is a draft of the change log.*
+
+## User-facing features
+
+* Predictions are now computed asynchronously without blocking the UI thread.  This means that it's possible to have long predictions while retaining good playability: this is especially important close to celestials like the Earth or the Moon that have a complex geopotential.  Long predictions just refresh infrequently, which in practice is mostly invisible.  Note however that some computations (e.g., rendering) are still computed on the UI thread, so extremely long predictions  still reduce the frame rate.
+* As a consequence of the previous change, we limit the number of nodes that are displayed in map view to 64 by type (apsides, approaches, etc.).  That's because KSP is *extremely* inefficient at displaying large number of nodes, and while Principia could easily compute thousands of nodes there is no way that KSP could display them.
+* The UI code has been extensively restructured and rewritten.  While it doesn't change the UI much, this rewrite fixes a few minor bugs and improves usability a bit, for instance by properly persisting the state of windows between scene changes.  More importantly, it provides a sound foundation for future improvements.
+
+## Modder-facing changes
+
+Some bugs have been fixed in the APIs provided for accessing our geopotential models.
+
+For more details see all [31](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-02-19T01:00:00..2019-04-01T21:59:59+sort%3Acreated-asc) pull requests between Fano and Euler.
+
 # [Euler](https://en.wikipedia.org/wiki/Leonhard_Euler)
 
 ## Bug fixes
