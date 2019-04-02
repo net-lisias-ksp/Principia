@@ -18,7 +18,7 @@
 
 Some bugs have been fixed in the APIs provided for accessing our geopotential models.
 
-For more details see all [31](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-02-19T01:00:00..2019-04-01T21:59:59+sort%3Acreated-asc) pull requests between Fano and Euler.
+For more details see all [32](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-02-19T01:00:00..2019-04-02T08:59:59+sort%3Acreated-asc) pull requests between Fano and Euler.
 
 # [Euler](https://en.wikipedia.org/wiki/Leonhard_Euler)
 
