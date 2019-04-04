@@ -1,7 +1,5 @@
 # [Fano](https://en.wikipedia.org/wiki/Gino_Fano)
 
-*Fano is not available yet.  This is a draft of the change log.*
-
 ## User-facing features
 
 * Predictions are now computed asynchronously without blocking the UI thread.  This means that it's possible to have long predictions while retaining good playability: this is especially important close to celestials like the Earth or the Moon that have a complex geopotential.  Long predictions just refresh infrequently, which in practice is mostly invisible.  Note however that some computations (e.g., rendering) are still computed on the UI thread, so extremely long predictions  still reduce the frame rate.
