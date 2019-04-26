@@ -1,6 +1,3 @@
-*This is a draft of the API documentation.
-The API is not yet implemented.*
-
 Principia provides an API that allows other mods to take its effects into account.
 
 Mods should use the interface by reflection.
