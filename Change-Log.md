@@ -1,3 +1,13 @@
+# [Fáry](https://en.wikipedia.org/wiki/Istv%C3%A1n_F%C3%A1ry)
+
+*This is a draft of the change log.  Fáry is not available yet.*
+
+## User-facing features
+
+## Bug fixes
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-04-02T09:00:00..2019-04-28T14:59:59+sort%3Acreated-asc) pull requests between Fáry and Fano.
+
 # [Fano](https://en.wikipedia.org/wiki/Gino_Fano)
 
 ## User-facing features
