@@ -5,7 +5,7 @@
 ## User-facing features
 
 * The Principia UI now scales with the KSP "UI Scale" and "Apps Scale".  This should make the UI easier to use on 4k/8k screens.  Note that changes to the scale only take effect on save load or scene changes.
-* The parameters of manœuvres may now be edited using a text field in addition to a slider.  The input is taken into account when 'Return' is typed.  The text turns orange if the syntax of the input is incorrect.  ([#2121](https://github.com/mockingbirdnest/Principia/issues/2121)).
+* The parameters of manœuvres may now be edited using a text field in addition to a slider.  The input is taken into account when _return_ is typed.  The text turns orange if the syntax of the input is incorrect.  ([#2121](https://github.com/mockingbirdnest/Principia/issues/2121)).
 * The Principia UI has been made slightly more compact by rearranging the fields and the controls.  Informational messages are now displayed in grey and warnings in orange.
 * The “Trappist-1 for Principia” mini-mod has been updated to work with versions 0.7.x of the [SLIPPIST-1](https://github.com/GregroxMun/Seven-Worlds-of-SLIPPIST-1) mod.
 
