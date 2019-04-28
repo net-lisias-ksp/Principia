@@ -1,4 +1,5 @@
 ### Versions
+* [Fáry](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#f%C3%A1ry)
 * [Fano](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#fano)
 * [Euler](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#euler)
 * [Εὐκλείδης](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#%CE%95%E1%BD%90%CE%BA%CE%BB%CE%B5%CE%AF%CE%B4%CE%B7%CF%82)
