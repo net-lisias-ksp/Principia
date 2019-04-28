@@ -4,9 +4,16 @@
 
 ## User-facing features
 
+* The Principia UI now scales with the KSP "UI Scale" and "Apps Scale".  This should make the UI easier to use on 4k/8k screens.  Note that changes to the scale only take effect on save load or scene changes.
+* The parameters of manœuvres may now be edited using a text field in addition to a slider.  The input is taken into account when 'Return' is typed.  The text turns orange if the syntax of the input is incorrect.  ([#2121](https://github.com/mockingbirdnest/Principia/issues/2121)).
+* The Principia UI has been made slightly more compact by rearranging the fields and the controls.
+* The “Trappist-1 for Principia” mini-mod has been updated to work with versions 0.7.x of the [SLIPPIST-1](https://github.com/GregroxMun/Seven-Worlds-of-SLIPPIST-1) mod.
+
 ## Bug fixes
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-04-02T09:00:00..2019-04-28T14:59:59+sort%3Acreated-asc) pull requests between Fáry and Fano.
+* A longstanding bug has been fixed whereby the upcoming manœuvre was not always properly shown on the navball ([#1565](https://github.com/mockingbirdnest/Principia/issues/1565)).
+
+For more details see all [19](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-04-02T09:00:00..2019-04-28T14:59:59+sort%3Acreated-asc) pull requests between Fáry and Fano.
 
 # [Fano](https://en.wikipedia.org/wiki/Gino_Fano)
 
