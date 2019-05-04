@@ -1,7 +1,5 @@
 # [Fáry](https://en.wikipedia.org/wiki/Istv%C3%A1n_F%C3%A1ry)
 
-*This is a draft of the change log.  Fáry is not available yet.*
-
 ## User-facing features
 
 * The Principia UI now scales with the KSP "UI Scale" and "Apps Scale".  This should make the UI easier to use on 4k/8k screens.  Note that changes to the scale only take effect on save load or scene changes.
