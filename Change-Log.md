@@ -2,6 +2,10 @@
 
 ## User-facing features
 
+* Support for KSP 1.7.0 has been added: this version supports 1.3.1, 1.4.x, 1.5.1, 1.6.1 and 1.7.0. Make sure you download the correct binary for your favourite version of KSP (the game will crash otherwise).  Note that we don't use the new widget for editing manœuvres: trying to edit manœuvre parameters in that widget will probably lead to unexpected results.
+
+* This is the last version to support KSP 1.3.1 and 1.4.x.  The next version will only support 1.5.1 and up.
+
 * The nodes of a trajectory with respect to the equator of the closest celestial are now displayed when the trajectory is "sufficiently close" to that celestial; this helps adjusting orbits with respect to the equator and addresses a longstanding feature request ([#1841](https://github.com/mockingbirdnest/Principia/pull/1841)).
 
 ## Bug fixes
