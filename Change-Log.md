@@ -26,9 +26,6 @@
 
 For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-04-28T15:00:00..2019-05-30T14:59:59+sort%3Acreated-asc) pull requests between Fatou and Fáry.
 
-*This is a draft of the change log; Fatou is not available yet.*
-
-
 # [Fáry](https://en.wikipedia.org/wiki/Istv%C3%A1n_F%C3%A1ry)
 
 ## User-facing features
