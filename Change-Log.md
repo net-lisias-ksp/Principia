@@ -4,6 +4,10 @@
 
 ## Bug fixes
 
+* The Ap/Pe/AN/DN nodes shown on the trajectories where sometimes displayed without a name or in the wrong color; this was due to improper reuse of nodes and has been fixed by correctly tracking the celestial to which a node refers ([#2162](https://github.com/mockingbirdnest/Principia/pull/2162)).
+
+* Performance was significantly degraded when the flight planning window was displayed compared to when it was hidden; this was due to the UI improperly thinking that the flight plan had been changed at each frame and needed to be recomputed, and has been fixed by properly tracking manœuvre changes ([#2157](https://github.com/mockingbirdnest/Principia/issues/2157)).
+
 * Manœuvres would sometimes move to the future (instead of being fixed in time) when the history was short; this problem was introduced in Fáry where we started to use the beginning of the flight plan as a time base for the manœuvres, and that time base would move in this situation; this was fixed by properly anchoring the manœuvres in time ([#2166](https://github.com/mockingbirdnest/Principia/issues/2166)).
 
 * Principia would sometimes crash when warping at high speed with a short history; with was due to a race condition introduced in Fano with the asynchronous computation of predictions, and it has been fixed by properly guarding the parameters passed to the ephemeris ([#2165](https://github.com/mockingbirdnest/Principia/issues/2165)).
