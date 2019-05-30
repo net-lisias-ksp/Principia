@@ -2,7 +2,11 @@
 
 ## User-facing features
 
+* The nodes of a trajectory with respect to the equator of the closest celestial are now displayed when the trajectory is "sufficiently close" to that celestial; this helps adjusting orbits with respect to the equator and addresses a longstanding feature request ([#1841](https://github.com/mockingbirdnest/Principia/pull/1841)).
+
 ## Bug fixes
+
+* The flight plan window would reduce to size 0 when a flight plan had no manœuvres at the time of a scene switch; this has been fixed by properly redisplaying the flight plan final time ([#2158](https://github.com/mockingbirdnest/Principia/pull/2158)).
 
 * The Ap/Pe/AN/DN nodes shown on the trajectories where sometimes displayed without a name or in the wrong color; this was due to improper reuse of nodes and has been fixed by correctly tracking the celestial to which a node refers ([#2162](https://github.com/mockingbirdnest/Principia/pull/2162)).
 
