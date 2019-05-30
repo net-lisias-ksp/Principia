@@ -1,5 +1,7 @@
 # [Fatou](https://en.wikipedia.org/wiki/Pierre_Fatou)
 
+*This is draft of the change log.  Fatou is not available yet.*
+
 ## User-facing features
 
 * Support for KSP 1.7.0 has been added: this version supports 1.3.1, 1.4.x, 1.5.1, 1.6.1 and 1.7.0. Make sure you download the correct binary for your favourite version of KSP (the game will crash otherwise).  Note that we don't use the new widget for editing manœuvres: trying to edit manœuvre parameters in that widget will probably lead to unexpected results.
