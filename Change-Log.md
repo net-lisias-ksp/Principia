@@ -20,8 +20,6 @@
 
 * Manœuvres would sometimes move to the future (instead of being fixed in time) when the history was short; this problem was introduced in Fáry where we started to use the beginning of the flight plan as a time base for the manœuvres, and that time base would move in this situation; this was fixed by properly anchoring the manœuvres in time ([#2166](https://github.com/mockingbirdnest/Principia/issues/2166)).
 
-* Principia would sometimes crash when warping at high speed with a short history; with was due to a race condition introduced in Fano with the asynchronous computation of predictions, and it has been fixed by properly guarding the parameters passed to the ephemeris ([#2165](https://github.com/mockingbirdnest/Principia/issues/2165)).
-
 * The description of the "Target Local Vertical/Horizontal" frame in the frame selector was garbled and unreadable; this has been fixed by properly displaying multiline text ([#2169](https://github.com/mockingbirdnest/Principia/issues/2169)).
 
 For more details see all [24](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-04-28T15:00:00..2019-05-30T14:59:59+sort%3Acreated-asc) pull requests between Fatou and Fáry.
