@@ -5,7 +5,7 @@
 ## User-facing features
 
 * Support for KSP 1.7.1 and 1.7.2 has been added, and support for 1.3.1 and 1.4.x has been removed: this version of Principia requires at least KSP 1.5.1.
-* All manœuvres in a flight plan can now be edited.  This addresses a long-standing inconvenience where, if you wanted to edit an earlier manœuvre after planning many manœuvres, you had to delete the manœuvres after it ([1936](https://github.com/mockingbirdnest/Principia/issues/1936)).
+* All manœuvres in a flight plan can now be edited.  This addresses a long-standing inconvenience where, if you wanted to edit an earlier manœuvre after planning many manœuvres, you had to delete the manœuvres after it.  Also, more precise error messages are emitted to guide the user when formulating the flight plan ([1936](https://github.com/mockingbirdnest/Principia/issues/1936)).
 * The duration of manœuvres now takes into account the thrust limiter, just like stock manœuvres do ([2128](https://github.com/mockingbirdnest/Principia/issues/2128)).
 
 ## Library changes
