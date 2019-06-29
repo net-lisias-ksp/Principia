@@ -2,7 +2,17 @@
 
 *This is a draft of the change log.  Fermat is not available yet.*
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-06-01T21:00:00..2019-06-29T19:59:59+sort%3Acreated-asc) pull requests between Fermat and Fatou.
+## User-facing features
+
+* Support for KSP 1.7.1 and 1.7.2 has been added, and support for 1.3.1 and 1.4.x has been removed: this version of Principia requires at least KSP 1.5.1.
+* All manœuvres in a flight plan can now be edited.  This addresses a long-standing inconvenience where, if you wanted to edit an earlier manœuvre after planning many manœuvres, you had to delete the manœuvres after it ([1936](https://github.com/mockingbirdnest/Principia/issues/1936)).
+* The duration of manœuvres now takes into account the thrust limiter, just like stock manœuvres do ([2128](https://github.com/mockingbirdnest/Principia/issues/2128)).
+
+## Library changes
+
+* Elliptic integrals and functions have been added.  This is the first step towards properly solving [Euler's equations](https://en.wikipedia.org/wiki/Euler%27s_equations_(rigid_body_dynamics)) and correctly handling the rotation of vessels around their centre of mass, something which KSP does very badly.  This is going to be a multi-month effort.
+
+For more details see all [39](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-06-01T21:00:00..2019-06-29T19:59:59+sort%3Acreated-asc) pull requests between Fermat and Fatou.
 
 # [Fatou](https://en.wikipedia.org/wiki/Pierre_Fatou)
 
