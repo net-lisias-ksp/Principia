@@ -1,7 +1,5 @@
 # [Fermat](https://en.wikipedia.org/wiki/Pierre_de_Fermat)
 
-*This is a draft of the change log.  Fermat is not available yet.*
-
 ## User-facing features
 
 * Support for KSP 1.7.1 and 1.7.2 has been added, and support for 1.3.1 and 1.4.x has been removed: this version of Principia requires at least KSP 1.5.1.
