@@ -1,4 +1,5 @@
 ### Versions
+* [Ferrari](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#ferrari)
 * [Fermat](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#fermat)
 * [Fatou](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#fatou)
 * [Fáry](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#f%C3%A1ry)
