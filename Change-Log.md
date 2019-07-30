@@ -8,6 +8,9 @@
 
 ## Bug fixes
 
+* The "new release" message used to make the main Principia window very wide.  It also improperly detected if KSP was a pre-1.5 version.  This has been fixed so that the message is displayed on multiple lines and the version is correctly determined ([2249](https://github.com/mockingbirdnest/Principia/issues/2249)).
+* The prediction parameters (tolerance, number of steps) were not always properly persisted after being changed in the UI.  Also, when no vessel was selected, the default values were displayed, which was confusing.  This has been fixed by persisting the parameter directly in the UI, and by leaving the fields empty when no vessel is selected ([2239](https://github.com/mockingbirdnest/Principia/issues/2239)).
+
 ## Library changes
 
 * A solver has been added for [Euler's equations](https://en.wikipedia.org/wiki/Euler%27s_equations_(rigid_body_dynamics)).  This is another step towards properly handling the rotation of vessels around their centre of mass.
