@@ -1,3 +1,21 @@
+# [Ferrari](https://en.wikipedia.org/wiki/Lodovico_Ferrari)
+
+*This is a draft of the change log; Ferrari is not available yet.*
+
+## User-facing features
+
+* Support for KSP 1.7.3 has been added.
+
+## Bug fixes
+
+## Library changes
+
+* A solver has been added for [Euler's equations](https://en.wikipedia.org/wiki/Euler%27s_equations_(rigid_body_dynamics)).  This is another step towards properly handling the rotation of vessels around their centre of mass.
+
+* Support for finding the recurrence of orbits has been added.  This is the first step towards computing and displaying orbital elements of vessels.
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-06-29T20:00:00..2019-07-30T19:59:59+sort%3Acreated-asc) pull requests between Ferrari and Fermat.
+
 # [Fermat](https://en.wikipedia.org/wiki/Pierre_de_Fermat)
 
 ## User-facing features
