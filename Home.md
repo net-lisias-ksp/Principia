@@ -13,3 +13,5 @@ The [change log](https://github.com/mockingbirdnest/Principia/wiki/Change-Log) g
 If you try to design your own solar system, e.g., using Kopernicus, you should be aware that the Jool system is unstable in the stock game and read our [analysis of its stability](https://github.com/mockingbirdnest/Principia/wiki/On-the-dynamical-stability-of-Principia's-modified-Jool-system).  We have a detailed description of the [configuration files](https://github.com/mockingbirdnest/Principia/wiki/Principia-configuration-files) that describe the gravity model, the initial state and the numerics parameters for a custom-made solar system.
 
 For those interested about how things work behind the scenes, we recommend looking at the [technical overview](https://github.com/mockingbirdnest/Principia/wiki/Technical-Overview) to understand the overall structure of the project.
+
+We also expose an [API](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods) to allow other mods to take Principia's effects into account.
