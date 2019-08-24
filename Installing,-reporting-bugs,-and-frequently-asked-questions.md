@@ -28,7 +28,7 @@ Our mini-mod comes as a patch on top of [@GregroxMun](https://github.com/Gregrox
 Make sure you put the DLL in the right place. The Principia DLL should be at `<KSP directory>\GameData\Principia\{Linux64,MacOS64,x64}\principia.dll`.
 
 #### Windows users
-If you get the message "Dependencies, namely the Visual C++ Redistributable Packages for Visual Studio 2017 on x64, were not found", well, you need to install the [Visual C++ Redistributable Packages for Visual Studio 2017 on x64](https://go.microsoft.com/fwlink/?LinkId=746572).
+If you get the message "Dependencies, namely the Visual C++ Redistributable Packages for Visual Studio 2017 on x64, were not found", well, you need to install the [Visual C++ Redistributable Packages for Visual Studio 2017 on x64](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads).
 
 #### Mac users
 You need El Capitan or later.
