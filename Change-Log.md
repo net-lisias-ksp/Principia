@@ -4,13 +4,15 @@
 
 ## User-facing features
 
-* The Principia UI is no longer shown in the space center in the contexts where it is not relevant: administration, astronaut complex, mission control, and research and development ([2262](https://github.com/mockingbirdnest/Principia/issues/2262)).
+* The Principia UI is no longer shown in the space center in the buildings where it is not relevant: administration, astronaut complex, mission control, and research and development ([2262](https://github.com/mockingbirdnest/Principia/issues/2262)).
 
 * The log files produced by Principia now have the extension `.log` which makes them easier to open on Windows.
 
 * In RealSolarSystem, geopotentials have been added for Mercury, Venus, Mars, Jupiter, Saturn, Uranus, and Neptune.  This makes the motion of the satellites of these planets more realistic.
 
 * Principia used to compute all the apsides and nodes for the prediction and flight plan, even though it only displayed 64.  This led to poor performance for long trajectories.  This has been fixed by limiting the number of computed apsides and nodes to 64.  In addition, the computations have been optimized slightly.
+
+* Detection of bad installations has been improved somewhat.  We now recommend that users install the unified [C++ 2015-2019 Redistributable](https://download.visualstudio.microsoft.com/download/pr/cc0046d4-e7b4-45a1-bd46-b1c079191224/9c4042a4c2e6d1f661f4c58cf4d129e9/vc_redist.x64.exe).
 
 ## Bug fixes
 
