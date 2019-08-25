@@ -18,7 +18,7 @@
 
 * The apsides displayed on the prediction would sometimes have an incorrect text that would not reflect what they represented (e.g., "Kerbin Apoapsis" when the selected body is Minmus).  This has been fixed ([2257](https://github.com/mockingbirdnest/Principia/issues/2257)).
 
-* The minimal radius of celestials is propagated from the game and used (instead of the mean radius) when detecting collisions.  This matters when orbiting or landing on potato-shaped celestials like Phobos, as collisions would improperly be detected above the surface ([2237](https://github.com/mockingbirdnest/Principia/issues/2237)).  
+* The minimal radius of celestials is propagated from the game and used (instead of the mean radius) when detecting collisions.  This matters when orbiting or landing on potato-shaped celestials like Phobos, as collisions would improperly be detected above the surface.  This change only takes effect on new saves ([2237](https://github.com/mockingbirdnest/Principia/issues/2237)).  
 
 For more details see all [31](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-07-30T20:00:00..2019-08-25T16:59:59+sort%3Acreated-asc) pull requests between del Ferro and Ferrari.
 
