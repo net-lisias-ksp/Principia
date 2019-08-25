@@ -1,3 +1,17 @@
+# [del Ferro](https://en.wikipedia.org/wiki/Scipione_del_Ferro)
+
+*This is a draft of the change log.  Del Ferro is not available yet.*
+
+## User-facing features
+
+* The Principia UI is no longer shown in the space center in the contexts where it is not relevant: administration, astronaut complex, mission control, and research and development ([2262](https://github.com/mockingbirdnest/Principia/issues/2262)).
+
+*
+
+## Bug fixes
+
+For more details see all [31](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-07-30T20:00:00..2019-08-25T16:59:59+sort%3Acreated-asc) pull requests between del Ferro and Ferrari.
+
 # [Ferrari](https://en.wikipedia.org/wiki/Lodovico_Ferrari)
 
 ## User-facing features
