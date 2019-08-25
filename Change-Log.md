@@ -8,7 +8,7 @@
 
 * The log files produced by Principia now have the extension `.log` which makes them easier to open on Windows.
 
-* In RealSolarSystem, geopotentials have been added for Mercury, Venus, Mars, Jupiter, Saturn, Uranus, and Neptune.  This makes the motion of the satellites of these planets more realistic.
+* In RealSolarSystem, geopotentials have been added for Mercury, Venus, Mars, Jupiter, Saturn, Uranus, and Neptune.  This makes the motion of the satellites of these planets more realistic.  This change only takes effect on new saves.
 
 * Principia used to compute all the apsides and nodes for the prediction and flight plan, even though it only displayed 64.  This led to poor performance for long trajectories.  This has been fixed by limiting the number of computed apsides and nodes to 64.  In addition, the computations have been optimized slightly.
 
