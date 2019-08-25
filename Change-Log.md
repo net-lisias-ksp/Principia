@@ -6,9 +6,17 @@
 
 * The Principia UI is no longer shown in the space center in the contexts where it is not relevant: administration, astronaut complex, mission control, and research and development ([2262](https://github.com/mockingbirdnest/Principia/issues/2262)).
 
-*
+* The log files produced by Principia now have the extension `.log` which makes them easier to open on Windows.
+
+* In RealSolarSystem, geopotentials have been added for Mercury, Venus, Mars, Jupiter, Saturn, Uranus, and Neptune.  This makes the motion of the satellites of these planets more realistic.
+
+* Principia used to compute all the apsides and nodes for the prediction and flight plan, even though it only displayed 64.  This led to poor performance for long trajectories.  This has been fixed by limiting the number of computed apsides and nodes to 64.  In addition, the computations have been optimized slightly.
 
 ## Bug fixes
+
+* The apsides displayed on the prediction would sometimes have an incorrect text that would not reflect what they represented (e.g., "Kerbin Apoapsis" when the selected body is Minmus).  This has been fixed ([2257](https://github.com/mockingbirdnest/Principia/issues/2257)).
+
+* The minimal radius of celestials is propagated from the game and used (instead of the mean radius) when detecting collisions.  This matters when orbiting or landing on potato-shaped celestials like Phobos, as collisions would improperly be detected above the surface ([2237](https://github.com/mockingbirdnest/Principia/issues/2237)).  
 
 For more details see all [31](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-07-30T20:00:00..2019-08-25T16:59:59+sort%3Acreated-asc) pull requests between del Ferro and Ferrari.
 
