@@ -1,7 +1,5 @@
 # [del Ferro](https://en.wikipedia.org/wiki/Scipione_del_Ferro)
 
-*This is a draft of the change log.  Del Ferro is not available yet.*
-
 ## User-facing features
 
 * The Principia UI is no longer shown in the space center in the buildings where it is not relevant: administration, astronaut complex, mission control, and research and development ([2262](https://github.com/mockingbirdnest/Principia/issues/2262)).
