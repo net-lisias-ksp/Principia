@@ -10,7 +10,7 @@
 
 * Many users reported that Principia would fail to load on Windows machines which had some Nvidia software (GeForce Experience?) installed because we would try to load Nvidia's `libproto.dll` instead of our own; this has been fixed by using embedded manifests to unambiguously locate our DLLs ([2297](https://github.com/mockingbirdnest/Principia/issues/2297), [2334](https://github.com/mockingbirdnest/Principia/issues/2334)).
 
-For more details see all [26](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-08-25T17:00:00..2019-09-28T19:29:59+sort%3Acreated-asc) pull requests between Fibonacci and del Ferro.
+For more details see all [28](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-08-25T17:00:00..2019-09-28T23:59:59+sort%3Acreated-asc) pull requests between Fibonacci and del Ferro.
 
 # [del Ferro](https://en.wikipedia.org/wiki/Scipione_del_Ferro)
 
