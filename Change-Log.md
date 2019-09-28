@@ -2,6 +2,8 @@
 
 ## User-facing features
 
+* Support has been added for analysis of orbits.  The main Principia window has a new button `Orbit analysis...` which brings up a separate window showing the average orbital elements of the predicted trajectory.  This computation is done asynchronously and makes it easier to put a satellite on a particular orbit (geosynchronous, heliosynchronous, etc.).
+
 ## Bug fixes
 
 * The use of the Switch To button to switch to another vessel used to crash Principia; this has been fixed by avoiding accesses to the Principia plugin during scene switches ([2313](https://github.com/mockingbirdnest/Principia/issues/2313)).
