@@ -1,10 +1,8 @@
 # [Fibonacci](https://en.wikipedia.org/wiki/Fibonacci)
 
-*This is a draft of the change log; Fibonacci is not available yet.*
-
 ## User-facing features
 
-* Support has been added for analysis of orbits.  The main Principia window has a new button `Orbit analysis...` which brings up a separate window showing the average orbital elements of the predicted trajectory.  This computation is done asynchronously and makes it easier to put a satellite on a particular orbit (geosynchronous, heliosynchronous, etc.).
+* Support has been added for analysis of orbits.  The main Principia window has a new button `Orbit analysis...` which brings up a separate window showing the average orbital elements of the predicted trajectory.  This computation is done asynchronously and makes it easier to put a satellite on a particular orbit (geosynchronous, geostationary, Molniya, etc.).
 
 ## Bug fixes
 
