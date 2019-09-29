@@ -2,7 +2,7 @@
 
 ## User-facing features
 
-* Support has been added for analysis of orbits.  The main Principia window has a new button `Orbit analysis...` which brings up a separate window showing the average orbital elements of the predicted trajectory.  This computation is done asynchronously and makes it easier to put a satellite on a particular orbit (geosynchronous, geostationary, Molniya, etc.).
+* Support has been added for analysis of orbits.  The main Principia window has a new button `Orbit analysis...` which brings up a separate window showing the mean orbital elements of the predicted trajectory, as the properties of its ground track cycle.  This computation is done asynchronously and makes it easier to put a satellite on a particular orbit (geosynchronous, geostationary, Молния, etc.).
 
 ## Bug fixes
 
