@@ -15,10 +15,27 @@ Below the progress bar is the orbit analysis report from the last computation.
 Three periods are given.
 
 - The sidereal period is the period of the mean longitude Ω+ω+M. 
-- The nodal period is the period of the mean argument of latitude ω+M. This approximately corresponds to the time between successive ascending nodes.
-- The anomalistic period is the period of the mean anomaly M. This approximately corresponds to the time between successive periapsides.
+- The nodal period is the period of the (mean) mean argument of latitude ω&#773;+M&#773;. This approximately corresponds to the time between successive ascending nodes.
+- The anomalistic period is the period of the (mean) mean anomaly M&#773;. This approximately corresponds to the time between successive periapsides.
+
+In a Kepler orbit, the longitude of the ascending node Ω and the argument of the periapsis ω are constant, so that all these periods are the same; this is not the case when the orbit is perturbed, and both Ω and ω vary.
 
 ### Mean elements
+
+The elements given here are free from *short-period* variations, that is, variations whose period is approximately one revolution.
+This is in contrast to the osculating elements (those shown, e.g., by the MechJeb `Orbit Info` window, or the Kerbal Engineer Redux orbital display), which will exhibit strong periodic variations over a revolution.
+
+While short-period variations are eliminated, long-period and secular variations remain in these elements.
+In order to express the magnitude of these variations, the elements are given as a range expressed as `midpoint`±`half-width`, indicating that the mean element remains within `half-width` of `midpoint` over the mission duration.
+
+The following elements are displayed:
+- the mean semimajor axis a&#773;;
+- the mean eccentricity e&#773;;
+- the mean inclination i&#773;;
+- the mean longitude of the ascending node Ω&#773;;
+- the mean argument of the periapsis ω&#773;.
+
+In addition, the precession rate of Ω (the rate of [nodal precession](https://en.wikipedia.org/wiki/Nodal_precession), i.e., how fast ascending node moves along the equator) is shown. Indeed, in most situations, the nodes will precess at a mostly constant rate.
 
 ## Recurrence properties
 
