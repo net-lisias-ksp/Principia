@@ -91,14 +91,23 @@ The corresponding distance along the equator is given in parentheses. On planets
 
 | | |
 |---|---|
-| In this map, we can see an equatorial shift of -25°.2: the ground track starts north of New Guinea, and, one revolution later, is 25°.2 West of its starting point (2810 km away), over Borneo.  | ![One nodal revolution of Sentinel-3A](https://i.imgur.com/BQX9O1A.png) |
+| In this map, we can see an equatorial shift of -25°.2, or 2810 km: the ground track starts north of New Guinea, and, one revolution later, is 2810 km west of its starting point, over Borneo.  | ![One nodal revolution of Sentinel-3A](https://i.imgur.com/BQX9O1A.png) |
 
-The grid interval is the interval between neighbouring tracks on the equator; note that neighbouring tracks may be many revolutions apart.
+The grid interval is the angle, measured on the surface, between neighbouring tracks on the equator; note that neighbouring tracks may be many revolutions apart. As for the equatorial shift, the corresponding distance along the equator is given in parentheses.
 
 | | |
 |---|---|
-| In this map, we can see an equatorial shift of -25°.2: the ground track starts north of New Guinea, and, one revolution later, is 25°.2 West of its starting point (2810 km away), over Borneo.  | ![One nodal revolution of Sentinel-3A](https://i.imgur.com/BQX9O1A.png) |
+| In this map, we can see grid interval of 0°.93, or 104 km: the ground track traces a grid whose spacing on the equator is 104 km; over the course of 27 days, the satellite will fly over locations 104 km apart along the equator.  | ![Ground track of Sentinel-3A over Borneo](https://i.imgur.com/Vqj9wfq.png) |
 
+The grid interval is important for observation satellites: the instrument swath (the extent of the surface which is seen by the instrument) must be wider than the grid interval in order for the whole surface to be observed.
+
+The subcycle is the number of days after which the ground track comes back to within one grid interval of its starting point.
+
+| | |
+|---|---|
+| In this map, we can see the ground track of Sentinel-3A over one subcycle (4 days); the last ascending pass (in blue) is one grid interval away from the first one (in red), north of New Guinea. All ascending passes before that are further away. | ![Ground track of Sentinel-3A over one subcycle](https://i.imgur.com/alioW0T.png)
+
+The subcycle measures how quickly the satellite will come “close” (as defined by the grid interval) to any point on the surface; a short grid interval allows the satellite to quickly observe any given target; a long grid interval may require waiting a full ground track cycle before an observation can be made.
 
 ## Equatorial crossings
 
