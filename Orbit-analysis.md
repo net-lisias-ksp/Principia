@@ -127,7 +127,7 @@ The grid interval is the angle, measured on the surface, between neighbouring tr
 
 | | |
 |---|---|
-| In this map, we can see grid interval of 0°.93, or 104 km: the ground track traces a grid whose spacing on the equator is 104 km; over the course of 27 days, the satellite will fly over locations 104 km apart along the equator.  | ![Ground track of Sentinel-3A over Borneo](https://i.imgur.com/Vqj9wfq.png) |
+| In this map, we can see a grid interval of 0°.93, or 104 km: the ground track traces a grid whose spacing on the equator is 104 km; over the course of 27 days, the satellite will fly over locations 104 km apart along the equator.  | ![Ground track of Sentinel-3A over Borneo](https://i.imgur.com/Vqj9wfq.png) |
 
 The grid interval is important for observation satellites: the instrument swath (the extent of the surface which is seen by the instrument) must be wider than the grid interval in order for the whole surface to be observed.
 
