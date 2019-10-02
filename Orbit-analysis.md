@@ -67,10 +67,6 @@ The other kind of frozen orbit requires ω = 90° or ω = 270°, i.e., apsides o
 
 The dependence of the frozen eccentricity on the inclination and semimajor axis can be complex; we recommend studying the literature on the subject, and, in practice, experimenting to see which values of the eccentricity keep the eccentricity and argument of periapsis under control for a given orbit.
 
-See below for some plots of the frozen eccentricity of a lunar orbit as a function of inclination, for several semimajor axes. These plots are from Martín Lara (2011), *Design of long-lifetime lunar orbits: A hybrid approach*.
-
-![lunar frozen eccentricity graphs](https://i.imgur.com/LJEcuKN.png)
-
 ## Recurrence properties
 
 The treatment of that subject in the orbit analysis tooling, and in particular the notation of the recurrence triple, is heavily inspired by Michel Capderou (2012), *Satellites : de Kepler au GPS*. The figures in this section are produced using Capderou's tool [Ἰξίων](https://climserv.ipsl.polytechnique.fr/ixion/).
