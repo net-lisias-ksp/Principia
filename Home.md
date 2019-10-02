@@ -2,7 +2,7 @@ To install the mod, download the binaries for Ubuntu, macOS and Windows using th
 
 Before using the mod we recommend that you read the [concepts](https://github.com/mockingbirdnest/Principia/wiki/Concepts) document which explains the most important parts of Principia.  In particular, you should learn about the [plotting frame](https://github.com/mockingbirdnest/Principia/wiki/Concepts#plotting-frame) and [flight planning](https://github.com/mockingbirdnest/Principia/wiki/Concepts#flight-planning).
 
-The [orbit analysis](https://github.com/mockingbirdnest/Principia/wiki/Orbit-analysis) tool is very powerful to help you reach the desired orbits but it requires a good understanding of the underlying concepts so it has extensive documentation.
+Even orbits that are nearly Keplerian are subject to perturbations, which makes them harder to describe than in stock. Principia provides a powerful [orbit analysis tool](https://github.com/mockingbirdnest/Principia/wiki/Orbit-analysis) to help you reach your desired orbit; as it requires a good understanding of the underlying concepts, it has extensive documentation.
 
 You might also want to go through our
 [tutorial](https://github.com/mockingbirdnest/Principia/wiki/A-guide-to-going-to-the-Mun-with-Principia) which shows how 
