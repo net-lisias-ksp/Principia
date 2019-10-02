@@ -119,5 +119,7 @@ The longitude of ascending pass differs from the previous one by the equatorial 
 
 The longitudes of the equatorial crossings of the ascending and descending passes are given as ranges of longitudes on the equator. The midpoint describes where the recurrence grid is situated on the planet; the width describes how much the satellite deviates from the nominal recurrence grid. This deviation is also indicated as a distance measured along the equator.
 
+On a well-kept orbit, this deviation should be much smaller than the grid interval.
+
 ## Mean solar time
 (Not yet implemented)
