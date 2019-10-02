@@ -37,6 +37,40 @@ The following elements are displayed:
 
 In addition, the precession rate of Ω (the rate of [nodal precession](https://en.wikipedia.org/wiki/Nodal_precession), i.e., how fast ascending node moves along the equator) is shown. Indeed, in most situations, the nodes will precess at a mostly constant rate.
 
+### Orbit stability
+
+Besides describing the general look and feel of the orbit, these numbers can be used to determine whether an orbit is stable.
+
+For a stable orbit, the variation of the semimajor axis and inclination will remain small.
+
+Most orbits will experience a precession (long-term drift) of Ω and ω (nodal and apsidal precession). When orbiting an oblate body, the nodal precession can only be eliminated if the orbit is strictly polar.
+
+### Frozen orbits
+
+It is often interesting to eliminate the apsidal precession and the variation of the eccentricity, as this means that the satellite will fly over the same latitudes at the same height. This is useful for communications or navigation satellites on eccentric orbits, such as Молния or QZSS, in order to keep the apoapsis (where the satellite spends the most time) above the latitudes being serviced. It is also useful for low Earth orbit observation satellites, as it means that the same locations will be imaged in the same conditions: the satellite being at the same altitude, it will have the same field of view.
+
+On a more pragmatic note, curtailing the variation of the eccentricity also means that the periapsis will not change too much, and in particular will not go under the surface: an orbit with constant eccentricity will not wander into the ground over time.
+
+Orbits that have no apsidal precession and roughly constant eccentricity are called *frozen*.
+
+These can be classified (following the terminology of Ulrich Walter) in type I and type II frozen orbits.
+
+#### Type I frozen orbits: the critical inclination.
+
+If the inclination is i = 63°.43, the *critical inclination*, apsidal precession due to the geopotential is eliminated. This means that ω will remain constant, i.e., the apoapsis will remain in the same place on the orbit, regardless of the eccentricity and semimajor axis (note that, because of higher degree terms, the exact value of the critical inclination actually depends slightly on the semimajor axis).
+
+This property is used by the [orbit of the Молния satellites](https://en.wikipedia.org/wiki/Molniya_orbit), in order to keep the apoapsis over the northern latitudes that they service.
+
+#### Type II frozen orbits: frozen eccentricity.
+
+The other kind of frozen orbit requires ω = 90° or ω = 270°, i.e., apsides over the poles. In that case, the eccentricity must have a specific value, the *frozen eccentricity*, which depends on the inclination and the semimajor axis, as well as the gravitational field of the primary body.
+
+The dependence of the frozen eccentricity on the inclination and semimajor axis can be complex; we recommend studying the literature on the subject, and, in practice, experimenting to see which values of the eccentricity keep the eccentricity and argument of periapsis under control for a given orbit.
+
+See below for some plots of the frozen eccentricity of a lunar orbit as a function of inclination, for several semimajor axes. These plots are from Martín Lara (2011), *Design of long-lifetime lunar orbits: A hybrid approach*.
+
+![lunar frozen eccentricity graphs](https://i.imgur.com/LJEcuKN.png)
+
 ## Recurrence properties
 
 The treatment of that subject in the orbit analysis tooling, and in particular the notation of the recurrence triple, is heavily inspired by Michel Capderou (2012), *Satellites : de Kepler au GPS*. The figures in this section are produced using Capderou's tool [Ἰξίων](https://climserv.ipsl.polytechnique.fr/ixion/).
