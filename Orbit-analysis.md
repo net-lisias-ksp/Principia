@@ -80,7 +80,7 @@ C<sub>T<sub>o</sub></sub> is the number of days per cycle.
 D<sub>T<sub>o</sub></sub> is the number of orbits per cycle in excess of ν<sub>o</sub> C<sub>T<sub>o</sub></sub>.
 In other words, the number of orbits per day is ν<sub>o</sub> + D<sub>T<sub>o</sub></sub> / C<sub>T<sub>o</sub></sub>.
 
-This means that orbits that have similar periods will have similar values of ν<sub>o</sub>, the approximate number of orbits in a single day: even though а ГЛОНАСС satellite has a 17 revolution cycle and a Galileo satellite has a 10 revolution cycle, both have ν<sub>o</sub> = 2, i.e., they are close to semisynchronous.
+This means that orbits that have similar periods will have similar values of ν<sub>o</sub>, the approximate number of orbits in a single day: even though а ГЛОНАСС satellite has an 8-day, 17-revolution cycle and a Galileo satellite has a 10-day, 17-revolution cycle, a GPS satellite has a 2-day, 1-revolution cycle, and a 北斗 MEO satellite has a 7-day, 13-revolution cycle, all have ν<sub>o</sub> = 2, i.e., they are close to semisynchronous.
 
 If D<sub>T<sub>o</sub></sub> = 0, there is an integer number of orbits per day; the orbit is synchronous or sub-synchronous. Note that this induces stronger resonances with the geopotential, so such orbits are less stable than similar orbits with a longer cycle.
 
