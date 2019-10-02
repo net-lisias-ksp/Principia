@@ -111,5 +111,13 @@ The subcycle measures how quickly the satellite will come “close” (as define
 
 ## Equatorial crossings
 
+The properties of the recurrence described in the preceding section are purely theoretical. The analysis of the equatorial crossings of the *actual* orbit describes how well that orbit follows the nominal recurrence.
+
+The passes are numbered as follows: on the recurrence grid, the ascending pass whose equatorial crossing has the smallest longitude East of the reference meridian is pass 1; subsequent passes are numbered chronologically, with revolution n comprising ascending pass 2n-1 and descending pass 2n: odd passes are ascending, even passes descending.
+
+The longitude of ascending pass differs from the previous one by the equatorial shift.
+
+The longitudes of the equatorial crossings of the ascending and descending passes are given as ranges of longitudes on the equator. The midpoint describes where the recurrence grid is situated on the planet; the width describes how much the satellite deviates from the nominal recurrence grid. This deviation is also indicated as a distance measured along the equator.
+
 ## Mean solar time
 (Not yet implemented)
