@@ -61,7 +61,7 @@ Many satellites however have more complex recurrence relations; for instance the
 | ![Galileo orbit, stereographic](https://i.imgur.com/n2J5GDD.png) | ![Galileo orbit, mercator](https://i.imgur.com/vHj6PFJ.png) |
 |---|---|
 
-Low Earth Orbit satellites also tend to have a ground track recurrence, especially when they are dedicated to Earth observation. For instance, the ground track of [Sentinel-3A](https://en.wikipedia.org/wiki/Sentinel-3A) repeats every 385 revolutions, which corresponds to 27 days.  A whole-Earth map of this ground track over the whole cycle would be an unreadable: it track traces a tight net around the planet. We show instead the whole-Earth ground track over a couple of days, and the ground track over Western Europe over one ground track cycle.
+Low Earth Orbit satellites also tend to have a ground track recurrence, especially when they are dedicated to Earth observation. For instance, the ground track of [Sentinel-3A](https://en.wikipedia.org/wiki/Sentinel-3A) repeats every 385 revolutions, which corresponds to 27 days.  A whole-Earth map of this ground track over the whole cycle would be unreadable: it traces a tight net around the planet. We show instead the whole-Earth ground track over a couple of days, and the ground track over Western Europe over one ground track cycle.
 
 | ![Sentinel-3A whole Earth](https://i.imgur.com/irgbQgY.png) | ![Sentinel-3A whole cycle](https://i.imgur.com/99tnSrM.png) |
 |---|---|
