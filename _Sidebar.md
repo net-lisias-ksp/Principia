@@ -1,4 +1,5 @@
 ### Versions
+* [Fourier](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#fourier)
 * [Fibonacci](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#fibonacci)
 * [del Ferro](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#del-ferro)
 * [Ferrari](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#ferrari)
