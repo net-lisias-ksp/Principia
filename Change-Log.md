@@ -1,3 +1,19 @@
+# [Fourier](https://en.wikipedia.org/wiki/Joseph_Fourier)
+
+*This is a draft of the change log; Fourier is not available yet.*
+
+## Bug fixes
+
+* Changing the flight plan in a way that would cause the last burn to end after the end of the flight plan would sometimes cause Principia to crash; this has been fixed by automatically extending the flight plan in that case ([2357](https://github.com/mockingbirdnest/Principia/issues/2357)).
+
+* If the upcoming manœuvre was anomalous (i.e., happened at a point before which the integrator had encountered a singularity, maybe because it timed out), Principia would crash when trying to display it on the navball; this has been fixed by not displaying the upcoming manœuvre node in that case  ([2358](https://github.com/mockingbirdnest/Principia/issues/2358)).
+
+## Library changes
+
+* A solver has been added for Arnold's equations. This is another step towards properly handling the rotation of vessels around their centre of mass.
+
+For more details see all [15](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-09-29T00:00:00..2019-10-26T09:59:59+sort%3Acreated-asc) pull requests between Fourier and Fibonacci.
+
 # [Fibonacci](https://en.wikipedia.org/wiki/Fibonacci)
 
 ## User-facing features
