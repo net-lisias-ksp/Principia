@@ -1,7 +1,5 @@
 # [Fourier](https://en.wikipedia.org/wiki/Joseph_Fourier)
 
-*This is a draft of the change log; Fourier is not available yet.*
-
 ## Bug fixes
 
 * Changing the flight plan in a way that would cause the last burn to end after the end of the flight plan would sometimes cause Principia to crash; this has been fixed by automatically extending the flight plan in that case ([2357](https://github.com/mockingbirdnest/Principia/issues/2357)).
