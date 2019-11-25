@@ -1,3 +1,23 @@
+# [פרנקל](https://en.wikipedia.org/wiki/Abraham_Fraenkel)
+
+*This is draft of the change log; פרנקל is not available yet.*
+
+## User-facing features
+
+* Principia now plots the trajectories of celestials, instead of relying on KSP to do so.  This plotting obey the settings of the current frame, so trajectories can have rather interesting shapes; for instance, [here](https://user-images.githubusercontent.com/2284290/68534053-8dc47f00-0330-11ea-8f65-1e0504b38bd7.png) is an example of the motion of the Jool system (including its satellites) around the Sun.  We use KSP to decide which bodies to show exactly (so that, at a sufficient distance from Jool, its satellites won't be displayed).  We only plot the parts of the trajectory since the beginning of the game, so for distant planets (e.g., Pluto) you will only see one arc of the ellipse (unless you are *very* patient).
+
+* The setting for the history length in the main Principia window now hides the histories (for both vessels and celestials) instead of forgetting them.  This means that it is possible to shorten and then extend again the histories without losing any information.  The length is now controlled by a slider which display the duration of the histories in a human-readable manner.
+
+## Library changes
+
+* Support has been added to represent the inertia tensor of a solid and its transforms. This is another step towards properly handling the rotation of vessels around their centre of mass.
+
+## Known issues
+
+* The release name, being in Hebrew, is written right-to-left. KSP doesn't know how to do such an advanced thing, so it shows up inverted in the UI. Apologies to Hebrew speakers.  (We had the same problem with release بوژگانی, around June 2016...)
+
+For more details see all [11](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-10-26T10:00:00..2019-11-23T22:59:59+sort%3Acreated-asc) pull requests between פרנקל and Fourier.
+
 # [Fourier](https://en.wikipedia.org/wiki/Joseph_Fourier)
 
 ## Bug fixes
