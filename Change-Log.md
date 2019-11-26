@@ -1,7 +1,5 @@
 # [פרנקל](https://en.wikipedia.org/wiki/Abraham_Fraenkel)
 
-*This is draft of the change log; פרנקל is not available yet.*
-
 ## User-facing features
 
 * Principia now plots the trajectories of celestials, instead of relying on KSP to do so.  This plotting obey the settings of the current frame, so trajectories can have rather interesting shapes; for instance, [here](https://user-images.githubusercontent.com/2284290/68534053-8dc47f00-0330-11ea-8f65-1e0504b38bd7.png) is an example of the motion of the Jool system (including its satellites) around the Sun.  We use KSP to decide which bodies to show exactly (so that, at a sufficient distance from Jool, its satellites won't be displayed).  We only plot the parts of the trajectory since the beginning of the game, so for distant planets (e.g., Pluto) you will only see one arc of the ellipse (unless you are *very* patient).
