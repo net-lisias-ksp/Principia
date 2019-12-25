@@ -2,9 +2,16 @@
 
 ## User-facing features
 
+* Support for KSP 1.8.1 has been added: this version supports 1.5.1, 1.6.1, 1.7.x and 1.8.1. Make sure you download the correct binary for your favourite version of KSP (the game will crash otherwise).
+
+* The camera is now positioned so that the horizontal in map view is the reference plane of the selected plotting frame.
+Further, the camera rotates with the plotting frame (in particular, if the camera is looking at a body which is fixed in the plotting frame, the camera is fixed in the plotting frame). This mean that the plotted trajectories do not rotate as time passes, a behaviour which was somewhat confusing and annoying.
+
 ## Known issues
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-11-23T23:00:00..2019-12-26T11:59:59+sort%3Acreated-asc) pull requests between Fréchet and פרנקל.
+* When bringing up the game menu in map view, the camera will rotate in the background.  We will try to address this problem in a future version.
+
+For more details see all [26](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-11-23T23:00:00..2019-12-26T11:59:59+sort%3Acreated-asc) pull requests between Fréchet and פרנקל.
 
 # [פרנקל](https://en.wikipedia.org/wiki/Abraham_Fraenkel)
 
