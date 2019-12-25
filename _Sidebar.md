@@ -1,4 +1,5 @@
 ### Versions
+* [Fréchet](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#fr%C3%A9chet)
 * [פרנקל](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#%D7%A4%D7%A8%D7%A0%D7%A7%D7%9C)
 * [Fourier](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#fourier)
 * [Fibonacci](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#fibonacci)
