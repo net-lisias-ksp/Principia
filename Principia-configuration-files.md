@@ -83,69 +83,69 @@ In that case, `principia_gravity_model` need not cover all celestial bodies. It 
 The `principia_gravity_model` configuration consists of a sequence of `body` configuration nodes.
 
 A *nominal* `body` configuration node contains the following values:
-- `name`: a required `string`.
+- <a id=name></a>[`name`](#name): a required [`string`](#string).
 
   This is the [`name`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L7) of the celestial body whose gravity model is being defined.
-- `gravitational_parameter`: an optional `quantity(length^3 / time^2)`.
+- <a id=gravitational_parameter></a>[`gravitational_parameter`](#gravitational_parameter): an optional [`quantity(length^3 / time^2)`](#quantity).
 
   The gravitational parameter *μ*. Corresponds to the stock [`gravParameter`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L14).
-- `reference_instant`: an optional `instant`.
+- <a id=reference_instant></a>[`reference_instant`](#reference_instant): an optional [`instant`](#instant).
 
   This is the instant *t*<sub>0</sub> at which the rotation *W* of the body is *W*<sub>0</sub>.
   
   Defaults to JD2451545.0 (2000-01-01T12:00:00).
-- `axis_right_ascension`: an optional `quantity(angle)`. 
+- <a id=axis_right_ascension></a>[`axis_right_ascension`](#axis_right_ascension): an optional [`quantity(angle)`](#quantity). 
 
   The angle *α*<sub>0</sub>.
   
   Defaults to -90°.
-- `axis_declination`: an optional `quantity(angle)`. 
+- <a id=axis_declination></a>[`axis_declination`](#axis_declination): an optional [`quantity(angle)`](#quantity). 
 
   The angle *δ*<sub>0</sub>.
   
   Defaults to 90°.
-- `reference_angle`: an optional `quantity(angle)`.
+- <a id=reference_angle></a>[`reference_angle`](#reference_angle): an optional [`quantity(angle)`](#quantity).
 
   The angle *W*<sub>0</sub>.
 
   Defaults to the stock [`initialRotation`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L18).
-- `angular_frequency`: an optional `quantity(angle / time)`.
+- <a id=angular_frequency></a>[`angular_frequency`](#angular_frequency): an optional [`quantity(angle / time)`](#quantity).
 
   The time derivative *Ẇ* of the angle *W*.
 
   Defaults to the stock [`angularV`](https://kerbalspaceprogram.com/api/class_celestial_body.html#a30efc17a6ccf98a1e25a3239f08ab83a), which is indirectly configurable in Kopernicus, as it is |2π rad / [`rotationPeriod`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L16)|.
 
   TODO(eggrobin): we don't handle retrograde rotation correctly when configured with Kopernicus (with a negative period), since `angularV` is an absolute value...
-- `reference_radius`: an optional `quantity(length)`.
+- <a id=reference_radius></a>[`reference_radius`](#reference_radius): an optional [`quantity(length)`](#quantity).
 
   The reference radius *a*<sub>*e*</sub> used to make the spherical harmonics dimensionless.
   
   Defaults to the stock [`radius`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L11).
 
-- `j2`: an optional `floating_point_number`.
+- <a id=j2></a>[`j2`](#j2): an optional [`floating_point_number`](#floating_point_number).
 
   The dimensionless zonal harmonic *J*<sub>2</sub>.
   
   Defaults to 0.
-- `geopotential_row`: an optional sequence of `geopotential_row` configuration nodes describing the spherical harmonics of the geopotential of the body.  A `geopotential_row` contains the following values:
+- <a id=geopotential_row></a>[`geopotential_row`](#geopotential_row): an optional sequence of `geopotential_row` configuration nodes describing the spherical harmonics of the geopotential of the body.  A `geopotential_row` contains the following values:
 
-    - `degree`: a required `signed_integer`.
+    - <a id=degree></a>[`degree`](#degree): a required [`signed_integer`](#signed_integer).
 
       The degree of the geopotential row.
 
-    - `geopotential_column`: an optional sequence of `geopotential_column` configuration nodes describing the spherical harmonics for the given degree.  A `geopotential_column` contains the following values:
+    - <a id=geopotential_column></a>[`geopotential_column`](#geopotential_column): an optional sequence of `geopotential_column` configuration nodes describing the spherical harmonics for the given degree.  A `geopotential_column` contains the following values:
 
-      - `order`: a required `signed_integer`.
+      - <a id=order></a>[`order`](#order): a required [`signed_integer`](#signed_integer).
 
         The order of the geopotential column.
 
-      - `cos`: a required `floating_point_number`.
+      - <a id=cos></a>[`cos`](#cos): a required [`floating_point_number`](#floating_point_number).
 
-        The coefficient of the cosine spherical harmonic of the given degree and order.  For degree *n* and order *m* this is traditionally known as C*nm*.
+        The coefficient of the cosine spherical harmonic of the given degree and order.  For degree *n* and order *m* this is traditionally known as *C*<sub>*nm*</sub>.
 
-      - `sin`: a required `floating_point_number`.
+      - <a id=sin></a>[`sin`](#sin): a required [`floating_point_number`](#floating_point_number).
 
-        The coefficient of the sine spherical harmonic of the given degree and order.  For degree *n* and order *m* this is traditionally known as S*nm*.
+        The coefficient of the sine spherical harmonic of the given degree and order.  For degree *n* and order *m* this is traditionally known as *S*<sub>*nm*</sub>.
 
 A *sufficient* `body` configuration node is a *nominal* `body` configuration node where:
 - `gravitational_parameter`, `reference_instant`, `axis_right_ascension`, `axis_declination`, `reference_angle`, and `angular_frequency` are present;
@@ -234,7 +234,7 @@ but they can fail catastrophically if they are not yet converged.
 The single-step methods (symplectic partitioned Runge-Kutta, symplectic Runge-Kutta-Nyström) produce physically
 credible behaviour even when they have errors resulting from an overly large time step.
 
-Solar system designers should test the actual stability of their system with a symplectic Runge-Kutta-Nyström
+Solar system designers should test the actual stability of their system with a symplectic Runge-Kutta-Nyström method
 and a small time step, and then try increasing the step size and switching to a linear multistep integrator
 to reduce computational cost for their users.
 
