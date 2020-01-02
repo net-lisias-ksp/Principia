@@ -2,9 +2,9 @@
 
 ## Definitions of scalar types
 
-`string` is any text that can be stored in a value of a KSP configuration node and retrieved by `GetValue`. 
+<a id=string></a>[`string`](#string) is any text that can be stored in a value of a KSP configuration node and retrieved by `GetValue`. 
 
-`fixed_step_size_integrator` is the name of a [fixed step size integrator](https://github.com/mockingbirdnest/Principia/blob/2018011702-Clifford/integrators/integrators.hpp#L73-L132) supported by Principia.
+<a id=fixed_step_size_integrator></a>[`fixed_step_size_integrator`](#fixed_step_size_integrator) is the name of a [fixed step size integrator](https://github.com/mockingbirdnest/Principia/blob/2018011702-Clifford/integrators/integrators.hpp#L73-L132) supported by Principia.
 [Note that this is case-sensitive.]
 
 See also the comments on the declarations of the [symplectic partitioned Runge-Kutta integrators](https://github.com/mockingbirdnest/Principia/blob/2018011702-Clifford/integrators/symplectic_partitioned_runge_kutta_integrator.hpp#L108-L344), [symplectic Runge-Kutta-Nyström integrators](https://github.com/mockingbirdnest/Principia/blob/2018011702-Clifford/integrators/symplectic_runge_kutta_nystr%C3%B6m_integrator.hpp#L141-L222), and [symmetric linear multistep integrators](https://github.com/mockingbirdnest/Principia/blob/2018011702-Clifford/integrators/symmetric_linear_multistep_integrator.hpp#L134-L168) and the references cited therein for more on these integrators.
@@ -26,12 +26,12 @@ fixed_step_size_integrator ⩴ BLANES_MOAN_2002_SRKN_6B
 ```
 
 
-`floating_point_number` is a floating point number as accepted by
+<a id=floating_point_number></a>[`floating_point_number`](#floating_point_number) is a floating point number as accepted by
 [`std::strtod`](http://en.cppreference.com/w/cpp/string/byte/strtod).
 
-`signed_integer` is a signed integer as accepted by [`std::strtol`](http://en.cppreference.com/w/cpp/string/byte/strtol) in base 10.
+<a id=signed_integer></a>[`signed_integer`](#signed_integer) is a signed integer as accepted by [`std::strtol`](http://en.cppreference.com/w/cpp/string/byte/strtol) in base 10.
 
-`unit` is one of the following units, as defined
+<a id=unit></a>[`unit`](#unit) is one of the following units, as defined
 [in quantities/parser_body.hpp](https://github.com/mockingbirdnest/Principia/blob/2018011702-Clifford/quantities/parser_body.hpp#L100-L143):
 ```
 length_unit      ⩴ μm | mm | cm | m | km | au
@@ -43,23 +43,23 @@ solid_angle_unit ⩴ sr
 unit             ⩴ length_unit | time_unit | power_unit | angle_unit | solid_angle_unit
 ```
 
-`quantity` is defined by the following grammar from
+<a id=quantity></a>[`quantity`](#quantity) is defined by the following grammar from
 [quantities/parser.hpp](https://github.com/mockingbirdnest/Principia/blob/2018011702-Clifford/quantities/parser.hpp#L12-L18):
-```
-quantity            ⩴ floating_point_number quotient_unit
+<pre>
+quantity            ⩴ <a href=#floating_point_number>floating_point_number</a> quotient_unit
 quotient_unit       ⩴ quotient_unit / exponentiation_unit
                     | product_unit
 product_unit        ⩴ exponentiation_unit [product_unit]
-exponentiation_unit ⩴ unit [^ exponent]
-exponent            ⩴ signed_integer
-```
+exponentiation_unit ⩴ <a href=#unit>unit</a> [^ exponent]
+exponent            ⩴ <a href=#signed_integer>signed_integer</a>
+</pre>
 
 We will use `quantity(length)`, `quantity(length / time^2)`, etc. to refer to quantities that are required
 to have the dimensions given in parentheses.
 
 > *Example*: `-1.5e+09 km/s` is a `quantity(length / time)`.
 
-`instant` is a date either given as a Julian Date or a Modified Julian Date (where the decimal mark must be a full stop "."), or as an ISO 8601 complete representation of date and time, where Principia requires that the comma "," be used as a decimal sign if a decimal fraction of seconds is used.
+<a id=instant></a>[`instant`](#instant) is a date either given as a Julian Date or a Modified Julian Date (where the decimal mark must be a full stop "."), or as an ISO 8601 complete representation of date and time, where Principia requires that the comma "," be used as a decimal sign if a decimal fraction of seconds is used.
 It is interpreted as [TT (*Temps Terrestre*, terrestrial time)](https://www.iers.org/IERS/EN/Science/Recommendations/recommendation4.html).
 
 > *Example*: `JD2451545.0`, `MJD51544.5`, `2000-01-01T12:00:00`, `1999-W52-6T12:00:00,000`, `2000001T120000` all represent the standard epoch [J2000](https://en.wikipedia.org/wiki/J2000).
