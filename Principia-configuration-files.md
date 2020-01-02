@@ -94,11 +94,6 @@ A *nominal* `body` configuration node contains the following values:
   This is the instant *t*<sub>0</sub> at which the rotation *W* of the body is *W*<sub>0</sub>.
   
   Defaults to JD2451545.0 (2000-01-01T12:00:00).
-- `mean_radius`: an optional `quantity(length)`.
-
-  Vessels going below this radius will be destroyed by Principia, even at high time warp.
-  
-  Defaults to the stock [`radius`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L11). 
 - `axis_right_ascension`: an optional `quantity(angle)`. 
 
   The angle *α*<sub>0</sub>.
@@ -153,7 +148,7 @@ A *nominal* `body` configuration node contains the following values:
         The coefficient of the sine spherical harmonic of the given degree and order.  For degree *n* and order *m* this is traditionally known as S*nm*.
 
 A *sufficient* `body` configuration node is a *nominal* `body` configuration node where:
-- `gravitational_parameter`, `reference_instant`, `mean_radius`, `axis_right_ascension`, `axis_declination`, `reference_angle`, and `angular_frequency` are present;
+- `gravitational_parameter`, `reference_instant`, `axis_right_ascension`, `axis_declination`, `reference_angle`, and `angular_frequency` are present;
 - `reference_radius` is present if and only if `j2` or `geopotential_row`s are present.
 - `j2` and `geopotential_row`s are not present at the same time.
 
