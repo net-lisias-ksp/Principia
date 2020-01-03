@@ -73,16 +73,16 @@ These are `principia_gravity_model` which defines the physical properties of the
 and `principia_numerics_blueprint` which defines the numerical methods used to compute the evolution of the system.
 
 If `principia_initial_state` is provided, it must define the initial positions and velocities for all celestial bodies,
-and `principia_gravity_model` must be *sufficient* for all celestial bodies.
+and `principia_gravity_model` must be [*sufficient*](#principia_gravity_model.body:sufficient) for all celestial bodies.
 
 If `principia_initial_state` is *not* provided, the initial state is obtained by interpreting KSP's orbital elements
 as [osculating elements](https://en.wikipedia.org/wiki/Osculating_orbit#Kepler_elements) for [Jacobi coordinates](https://en.wikipedia.org/wiki/Jacobi_coordinates).
-In that case, `principia_gravity_model` need not cover all celestial bodies. It must be *nominal* for the bodies it covers.
+In that case, `principia_gravity_model` need not cover all celestial bodies. It must be [*nominal*](#principia_gravity_model.body:nominal) for the bodies it covers.
 
 ### The `principia_gravity_model` configuration
 The `principia_gravity_model` configuration consists of a sequence of [`body`](#principia_gravity_model.body) configuration nodes.
 
-<a id=principia_gravity_model.body></a>A *nominal* [`body`](#principia_gravity_model.body) configuration node contains the following values:
+<a id=principia_gravity_model.body></a>A [`body`](#principia_gravity_model.body) configuration node contains the following values:
 - <a id=principia_gravity_model.body.name></a>[`name`](#principia_gravity_model.body.name): a required [`string`](#string).
 
   This is the [`name`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L7) of the celestial body whose gravity model is being defined.
@@ -147,10 +147,13 @@ The `principia_gravity_model` configuration consists of a sequence of [`body`](#
 
         The coefficient of the sine spherical harmonic of the given degree and order.  For degree *n* and order *m* this is traditionally known as *S*<sub>*nm*</sub>.
 
-A *sufficient* `body` configuration node is a *nominal* `body` configuration node where:
+<a id=principia_gravity_model.body:nominal></a>A `body` configuration node is [*nominal*](#principia_gravity_model.body:nominal) if:
+- `j2` and `geopotential_row`s are not present at the same time;
+- either `reference_radius` is absent, or one of `j2` and `geopotential_row` is present.
+
+<a id=principia_gravity_model.body:sufficient></a>A [*sufficient*](#principia_gravity_model.body:sufficient) `body` configuration node is a [*nominal*](#principia_gravity_model.body:nominal) `body` configuration node where:
 - `gravitational_parameter`, `reference_instant`, `axis_right_ascension`, `axis_declination`, `reference_angle`, and `angular_frequency` are present;
 - `reference_radius` is present if and only if `j2` or `geopotential_row`s are present.
-- `j2` and `geopotential_row`s are not present at the same time.
 
 > *Example*: All `body` nodes in [sol_gravity_model.cfg](https://github.com/mockingbirdnest/Principia/blob/2018011702-Clifford/astronomy/sol_gravity_model.cfg),
 provided with Principia, are *sufficient*.  Numerous bodies have a `j2`.  The Earth has `geopotential_row`s.
