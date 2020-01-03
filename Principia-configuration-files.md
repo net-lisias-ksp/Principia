@@ -164,7 +164,7 @@ The `principia_gravity_model` configuration consists of a sequence of [`body`](#
 - `reference_radius` is present if and only if `j2` or `geopotential_row`s are present.
 
 > *Example*: All `body` nodes in [sol_gravity_model.cfg](https://github.com/mockingbirdnest/Principia/blob/2018011702-Clifford/astronomy/sol_gravity_model.cfg),
-provided with Principia, are *sufficient*.  Numerous bodies have a `j2`.  The Earth has `geopotential_row`s.
+provided with Principia, are *sufficient*.  The Sun has a `j2`.  The giant planets have `geopotential_row`s that use `j`.  The Earth, the Moon, Mars, and some other planets have `geopotential_row`s that use `cos`.
 
 #### Semantics of the quantities used for body rotation
 The quantities *W* = *W*<sub>0</sub> + *Ẇ* (*t* - *t*<sub>0</sub>), *α*<sub>0</sub>, and *δ*<sub>0</sub> are Euler angles defining the orientation of the celestial body, as shown on figure 1 of [the 2009 report of the IAU Working Group on Cartographic Coordinates and Rotational Elements](https://astropedia.astrogeology.usgs.gov/download/Data/WGCCRE/WGCCRE2009reprint.pdf), where *t* is terrestrial time.
