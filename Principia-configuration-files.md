@@ -80,70 +80,70 @@ as [osculating elements](https://en.wikipedia.org/wiki/Osculating_orbit#Kepler_e
 In that case, `principia_gravity_model` need not cover all celestial bodies. It must be *nominal* for the bodies it covers.
 
 ### The `principia_gravity_model` configuration
-The `principia_gravity_model` configuration consists of a sequence of `body` configuration nodes.
+The `principia_gravity_model` configuration consists of a sequence of [`body`](#principia_gravity_model.body) configuration nodes.
 
-A *nominal* `body` configuration node contains the following values:
-- <a id=name></a>[`name`](#name): a required [`string`](#string).
+<a id=principia_gravity_model.body></a>A *nominal* [`body`](#principia_gravity_model.body) configuration node contains the following values:
+- <a id=principia_gravity_model.body.name></a>[`name`](#principia_gravity_model.body.name): a required [`string`](#string).
 
   This is the [`name`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L7) of the celestial body whose gravity model is being defined.
-- <a id=gravitational_parameter></a>[`gravitational_parameter`](#gravitational_parameter): an optional [`quantity(length^3 / time^2)`](#quantity).
+- <a id=principia_gravity_model.body.gravitational_parameter></a>[`gravitational_parameter`](#principia_gravity_model.body.gravitational_parameter): an optional [`quantity(length^3 / time^2)`](#quantity).
 
   The gravitational parameter *μ*. Corresponds to the stock [`gravParameter`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L14).
-- <a id=reference_instant></a>[`reference_instant`](#reference_instant): an optional [`instant`](#instant).
+- <a id=principia_gravity_model.body.reference_instant></a>[`reference_instant`](#principia_gravity_model.body.reference_instant): an optional [`instant`](#instant).
 
   This is the instant *t*<sub>0</sub> at which the rotation *W* of the body is *W*<sub>0</sub>.
   
   Defaults to JD2451545.0 (2000-01-01T12:00:00).
-- <a id=axis_right_ascension></a>[`axis_right_ascension`](#axis_right_ascension): an optional [`quantity(angle)`](#quantity). 
+- <a id=principia_gravity_model.body.axis_right_ascension></a>[`axis_right_ascension`](#principia_gravity_model.body.axis_right_ascension): an optional [`quantity(angle)`](#quantity). 
 
   The angle *α*<sub>0</sub>.
   
   Defaults to -90°.
-- <a id=axis_declination></a>[`axis_declination`](#axis_declination): an optional [`quantity(angle)`](#quantity). 
+- <a id=principia_gravity_model.body.axis_declination></a>[`axis_declination`](#principia_gravity_model.body.axis_declination): an optional [`quantity(angle)`](#quantity). 
 
   The angle *δ*<sub>0</sub>.
   
   Defaults to 90°.
-- <a id=reference_angle></a>[`reference_angle`](#reference_angle): an optional [`quantity(angle)`](#quantity).
+- <a id=principia_gravity_model.body.reference_angle></a>[`reference_angle`](#principia_gravity_model.body.reference_angle): an optional [`quantity(angle)`](#quantity).
 
   The angle *W*<sub>0</sub>.
 
   Defaults to the stock [`initialRotation`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L18).
-- <a id=angular_frequency></a>[`angular_frequency`](#angular_frequency): an optional [`quantity(angle / time)`](#quantity).
+- <a id=principia_gravity_model.body.angular_frequency></a>[`angular_frequency`](#principia_gravity_model.body.angular_frequency): an optional [`quantity(angle / time)`](#quantity).
 
   The time derivative *Ẇ* of the angle *W*.
 
   Defaults to the stock [`angularV`](https://kerbalspaceprogram.com/api/class_celestial_body.html#a30efc17a6ccf98a1e25a3239f08ab83a), which is indirectly configurable in Kopernicus, as it is |2π rad / [`rotationPeriod`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L16)|.
 
   TODO(eggrobin): we don't handle retrograde rotation correctly when configured with Kopernicus (with a negative period), since `angularV` is an absolute value...
-- <a id=reference_radius></a>[`reference_radius`](#reference_radius): an optional [`quantity(length)`](#quantity).
+- <a id=principia_gravity_model.body.reference_radius></a>[`reference_radius`](#principia_gravity_model.body.reference_radius): an optional [`quantity(length)`](#quantity).
 
   The reference radius *a*<sub>*e*</sub> used to make the spherical harmonics dimensionless.
   
   Defaults to the stock [`radius`](https://github.com/Kopernicus/kittopia-dumps/blob/e09154a/Configs/Bop.cfg#L11).
 
-- <a id=j2></a>[`j2`](#j2): an optional [`floating_point_number`](#floating_point_number).
+- <a id=principia_gravity_model.body.j2></a>[`j2`](#principia_gravity_model.body.j2): an optional [`floating_point_number`](#floating_point_number).
 
   The dimensionless zonal harmonic *J*<sub>2</sub>.
   
   Defaults to 0.
-- <a id=geopotential_row></a>[`geopotential_row`](#geopotential_row): an optional sequence of `geopotential_row` configuration nodes describing the spherical harmonics of the geopotential of the body.  A `geopotential_row` contains the following values:
+- <a id=principia_gravity_model.body.geopotential_row></a>[`geopotential_row`](#principia_gravity_model.body.geopotential_row): an optional sequence of `geopotential_row` configuration nodes describing the spherical harmonics of the geopotential of the body.  A `geopotential_row` contains the following values:
 
-    - <a id=degree></a>[`degree`](#degree): a required [`signed_integer`](#signed_integer).
+    - <a id=principia_gravity_model.body.geopotential_row.degree></a>[`degree`](#principia_gravity_model.body.geopotential_row.degree): a required [`signed_integer`](#signed_integer).
 
       The degree of the geopotential row.
 
-    - <a id=geopotential_column></a>[`geopotential_column`](#geopotential_column): an optional sequence of `geopotential_column` configuration nodes describing the spherical harmonics for the given degree.  A `geopotential_column` contains the following values:
+    - <a id=principia_gravity_model.body.geopotential_row.geopotential_column></a>[`geopotential_column`](#principia_gravity_model.body.geopotential_row.geopotential_column): an optional sequence of `geopotential_column` configuration nodes describing the spherical harmonics for the given degree.  A `geopotential_column` contains the following values:
 
-      - <a id=order></a>[`order`](#order): a required [`signed_integer`](#signed_integer).
+      - <a id=principia_gravity_model.body.geopotential_row.geopotential_column.order></a>[`order`](#principia_gravity_model.body.geopotential_row.geopotential_column.order): a required [`signed_integer`](#signed_integer).
 
         The order of the geopotential column.
 
-      - <a id=cos></a>[`cos`](#cos): a required [`floating_point_number`](#floating_point_number).
+      - <a id=principia_gravity_model.body.geopotential_row.geopotential_column.cos></a>[`cos`](#principia_gravity_model.body.geopotential_row.geopotential_column.cos): a required [`floating_point_number`](#floating_point_number).
 
         The coefficient of the cosine spherical harmonic of the given degree and order.  For degree *n* and order *m* this is traditionally known as *C*<sub>*nm*</sub>.
 
-      - <a id=sin></a>[`sin`](#sin): a required [`floating_point_number`](#floating_point_number).
+      - <a id=principia_gravity_model.body.geopotential_row.geopotential_column.sin></a>[`sin`](#principia_gravity_model.body.geopotential_row.geopotential_column.sin): a required [`floating_point_number`](#floating_point_number).
 
         The coefficient of the sine spherical harmonic of the given degree and order.  For degree *n* and order *m* this is traditionally known as *S*<sub>*nm*</sub>.
 
