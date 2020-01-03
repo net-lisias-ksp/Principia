@@ -124,7 +124,7 @@ The `principia_gravity_model` configuration consists of a sequence of [`body`](#
 
 - <a id=principia_gravity_model.body.j2></a>[`j2`](#principia_gravity_model.body.j2): an optional [`floating_point_number`](#floating_point_number).
 
-  The dimensionless zonal harmonic *J*<sub>2</sub>.
+  The unnormalized zonal harmonic *J*<sub>2</sub>.
   
   Defaults to 0.
 - <a id=principia_gravity_model.body.geopotential_row></a>[`geopotential_row`](#principia_gravity_model.body.geopotential_row): an optional sequence of `geopotential_row` configuration nodes describing the spherical harmonics of the geopotential of the body.  A `geopotential_row` contains the following values:
@@ -139,17 +139,25 @@ The `principia_gravity_model` configuration consists of a sequence of [`body`](#
 
         The order of the geopotential column.
 
-      - <a id=principia_gravity_model.body.geopotential_row.geopotential_column.cos></a>[`cos`](#principia_gravity_model.body.geopotential_row.geopotential_column.cos): a required [`floating_point_number`](#floating_point_number).
+      - <a id=principia_gravity_model.body.geopotential_row.geopotential_column.j></a>[`j`](#principia_gravity_model.body.geopotential_row.geopotential_column.j): an optional [`floating_point_number`](#floating_point_number).
 
-        The coefficient of the cosine spherical harmonic of the given degree and order.  For degree *n* and order *m* this is traditionally known as *C*<sub>*nm*</sub>.
+        The unnormalized coefficient of the zonal spherical harmonic of the given degree.  For degree *n*, this is traditionally known as *J*<sub>*n*</sub>.
+
+      - <a id=principia_gravity_model.body.geopotential_row.geopotential_column.cos></a>[`cos`](#principia_gravity_model.body.geopotential_row.geopotential_column.cos): an optional [`floating_point_number`](#floating_point_number).
+
+        The normalized coefficient of the cosine spherical harmonic of the given degree and order.  For degree *n* and order *m* this is traditionally known as *C*<sub>*nm*</sub>.
 
       - <a id=principia_gravity_model.body.geopotential_row.geopotential_column.sin></a>[`sin`](#principia_gravity_model.body.geopotential_row.geopotential_column.sin): a required [`floating_point_number`](#floating_point_number).
 
-        The coefficient of the sine spherical harmonic of the given degree and order.  For degree *n* and order *m* this is traditionally known as *S*<sub>*nm*</sub>.
+        The normalized coefficient of the sine spherical harmonic of the given degree and order.  For degree *n* and order *m* this is traditionally known as *S*<sub>*nm*</sub>.
 
 <a id=principia_gravity_model.body:nominal></a>A `body` configuration node is [*nominal*](#principia_gravity_model.body:nominal) if:
 - `j2` and `geopotential_row`s are not present at the same time;
-- either `reference_radius` is absent, or one of `j2` and `geopotential_row` is present.
+- either `reference_radius` is absent, or one of `j2` and `geopotential_row` is present;
+- no two `geopotential_row`s share the same `degree`;
+- within each `geopotential_row`, no two `geopotential_columns` share the same `order`;
+- each `geopotential_column` contains exactly one of `cos` and `j`;
+- each `geopotential_column` whose `degree` is not 0 contains a `cos`.
 
 <a id=principia_gravity_model.body:sufficient></a>A [*sufficient*](#principia_gravity_model.body:sufficient) `body` configuration node is a [*nominal*](#principia_gravity_model.body:nominal) `body` configuration node where:
 - `gravitational_parameter`, `reference_instant`, `axis_right_ascension`, `axis_declination`, `reference_angle`, and `angular_frequency` are present;
