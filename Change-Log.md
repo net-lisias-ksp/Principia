@@ -8,7 +8,7 @@
 
 ## Bug fixes
 
-* As mentioned in the known issues for Fréchet, the camera would spin wildly when the game was paused in map view.  This has been fixed by not adjusting the camera when the game is paused.  It also fixes a more subtle issue whereby changing the plotting frame when the game was paused would fail to preserve the orientation of the camera.
+* As mentioned in the [Known Issues for Fréchet](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#known-issues), the camera would spin wildly when the game was paused in map view.  This has been fixed by not adjusting the camera when the game is paused.  It also fixes a more subtle issue whereby changing the plotting frame when the game was paused would fail to preserve the orientation of the camera.
 
 * If some prerequisite of Principia (e.g., the Microsoft Visual C++ 2015-2019 Redistributable) was missing, the problem would only be detected *after* loading a save, and the Principia data would be lost from the save; this has been fixed by activating Principia when the KSP main menu is shown, i.e., before touching any save ([2385](https://github.com/mockingbirdnest/Principia/issues/2385)). 
 
