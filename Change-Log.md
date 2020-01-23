@@ -10,7 +10,9 @@
 
 * As mentioned in the known issues for Fréchet, the camera would spin wildly when the game was paused in map view.  This has been fixed by not adjusting the camera when the game is paused.  It also fixes a more subtle issue whereby changing the plotting frame when the game was paused would fail to preserve the orientation of the camera.
 
+* The `reference_radius` in the `principia_gravity_model` configuration was documented as defaulting to `radius` but in reality it did not default to anything; this has been fixed by making the code consistent with the documentation ([2429](https://github.com/mockingbirdnest/Principia/issues/2429)).
 
+* If some prerequisite of Principia (e.g., the Microsoft Visual C++ 2015-2019 Redistributable) was missing, the problem would only be detected *after* loading a save, and the Principia data would be lost from the save; this has been fixed by activating Principia when the KSP main menu is shown, i.e., before touching any save ([2385](https://github.com/mockingbirdnest/Principia/issues/2385)). 
 
 For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-12-26T12:00:00..2020-01-23T19:29:59+sort%3Acreated-asc) pull requests between Frege and Fréchet.
 
