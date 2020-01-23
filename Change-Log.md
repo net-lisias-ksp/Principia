@@ -1,3 +1,13 @@
+# [Frege](https://en.wikipedia.org/wiki/Gottlob_Frege)
+
+*This is a draft of the change log.  Frege is not available yet.*
+
+## User-facing features
+
+## Bug fixes
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-12-26T12:00:00..2020-01-23T19:29:59+sort%3Acreated-asc) pull requests between Frege and Fréchet.
+
 # [Fréchet](https://en.wikipedia.org/wiki/Maurice_Ren%C3%A9_Fr%C3%A9chet)
 
 ## User-facing features
