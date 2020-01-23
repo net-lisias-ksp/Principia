@@ -14,7 +14,7 @@
 
 * The `reference_radius` in the `principia_gravity_model` configuration was documented as defaulting to `radius` but in reality it did not default to anything; this has been fixed by making the code consistent with the documentation ([2429](https://github.com/mockingbirdnest/Principia/issues/2429)).
 
-* When a vessel touched the ground, its prediction parameters (tolerance and steps) would be lost, which was annoying when biome hopping; this has been fixed by retaining the prediction parameters of all the vessels, even if they are not managed by Principia  ([2443](https://github.com/mockingbirdnest/Principia/issues/2443))
+* When a vessel touched the ground, its prediction parameters (tolerance and steps) would be lost, which was annoying when biome hopping; this has been fixed by retaining the prediction parameters of all the vessels, even if they are not managed by Principia  ([2443](https://github.com/mockingbirdnest/Principia/issues/2443)).
 
 For more details see all [39](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-12-26T12:00:00..2020-01-23T19:29:59+sort%3Acreated-asc) pull requests between Frege and Fréchet.
 
