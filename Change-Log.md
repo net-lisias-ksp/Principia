@@ -4,7 +4,13 @@
 
 ## User-facing features
 
+* The celestial histories are now displayed before the beginning of the history of the active vessel.  Long celestial histories can now be seen in map view, along with the shorter history of a vessel. Predictions still end where the active vessel's does.
+
 ## Bug fixes
+
+* As mentioned in the known issues for Fréchet, the camera would spin wildly when the game was paused in map view.  This has been fixed by not adjusting the camera when the game is paused.  It also fixes a more subtle issue whereby changing the plotting frame when the game was paused would fail to preserve the orientation of the camera.
+
+
 
 For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2019-12-26T12:00:00..2020-01-23T19:29:59+sort%3Acreated-asc) pull requests between Frege and Fréchet.
 
