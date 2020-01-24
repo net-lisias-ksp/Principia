@@ -1,7 +1,5 @@
 # [Frege](https://en.wikipedia.org/wiki/Gottlob_Frege)
 
-*This is a draft of the change log.  Frege is not available yet.*
-
 ## User-facing features
 
 * The celestial histories are now displayed before the beginning of the history of the active vessel.  Long celestial histories can now be seen in map view, along with the shorter history of a vessel. Predictions still end where the active vessel's does.
