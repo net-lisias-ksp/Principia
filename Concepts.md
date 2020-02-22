@@ -174,12 +174,8 @@ In Principia, all three components of Δv depend on the choice of frame.  In add
 
 # Limitations
 
-The trajectories of celestial bodies and other vessels are currently drawn by KSP, and thus appear to wobble (see the FAQ) and are not drawn in the current plotting frame; eventually Principia will handle these trajectories too.
-
 At the moment, flight planning suffers from the following limitations, which we'll try to address in future releases:
 
 * The engines used for a burn are either the active engines, the RCS or an instant impulse.  In practice this means that you'll probably want to have an active engine when doing your planning.  Furthermore, solid-state engines cannot be activated without running them at full power, so it's not really possible to use them in planning.
 
 * The mass used for computing the flight plan is the one when you actually create the plan.  If you later do a vessel separation, it will change the mass and will effectively make the flight plan useless: you'll need to delete it and re-create it.
-
-* Displaying the history may be slow.  If that happens, you may want to try shortening the history.  In the future we plan to address this problem by downsampling the history for rendering purposes.
