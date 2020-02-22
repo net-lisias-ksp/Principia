@@ -1,3 +1,13 @@
+# [Frenet](https://fr.wikipedia.org/wiki/Jean_Fr%C3%A9d%C3%A9ric_Frenet)
+
+*This is a draft of the change log; Frenet is not available yet.*
+
+## User-facing features
+
+No new features in this version.  We have spent a fair amount of time implementing the rotational motion of vessels, and hope to be able to release it in the next version (Frobenius).  This release has quite a few (invisible) changes to the management of parts and vessels, so we invite users to upgrade to help us find any problems/bugs that we could have introduced.
+
+For more details see all [16](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-01-23T19:30..2020-02-22T17:59:59+sort%3Acreated-asc) pull requests between Frenet and Frege.
+
 # [Frege](https://en.wikipedia.org/wiki/Gottlob_Frege)
 
 ## User-facing features
