@@ -1,4 +1,4 @@
-# [Frenet](https://fr.wikipedia.org/wiki/Jean_Fr%C3%A9d%C3%A9ric_Frenet)
+# [Frenet](https://en.wikipedia.org/wiki/Jean_Fr%C3%A9d%C3%A9ric_Frenet)
 
 *This is a draft of the change log; Frenet is not available yet.*
 
