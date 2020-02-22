@@ -180,7 +180,7 @@ It would hardly improve performance and it would be messy to implement. This is 
 ## I'm using a custom solar system mod, why isn't it stable?
 It all depends on whether your system was sanely designed. If it has 50 Duna-sized planets orbiting a Jool-sized body, many of these are going to interplanetary space today.
 
-## Couldn't you gain performance by ignoring the influence/oblateness of far-away bodies or by using a nonsymplectic integrator instead
+## Couldn't you gain performance by ignoring the influence of far-away bodies or by using a nonsymplectic integrator instead
 We have thought about these options, and we will implement those that might yield improvements in due time in order to get as much accuracy as we can out of a given computational cost.
 
 ## What is oblateness / *J*<sub>2</sub> / *C*<sub>2</sub><sup>0</sup>?
