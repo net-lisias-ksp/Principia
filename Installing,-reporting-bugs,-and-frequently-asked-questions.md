@@ -77,6 +77,10 @@ https://forum.kerbalspaceprogram.com/index.php?/topic/162200-wip131-145-principi
 >
 > I would say, Principia should be able to provide binaries without the need of extra plugins, it's probably just a matter of setting the initial conditions correctly I would assume.
 
+## Orbital Decay users
+
+Orbital Decay and Principia are mutually incompatible.  Install one or the other.  Orbital Decay changes the orbits of vessels in time warp and Principia keeps an authoritative copy of the state of every vessels: the two mods would fight each other and Principia would win.
+
 # Reporting bugs
 So, you crashed, or something similarly unpleasant happened.
 
