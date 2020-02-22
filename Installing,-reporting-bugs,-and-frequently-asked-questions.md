@@ -2,7 +2,7 @@
 
 In these FAQ, `<KSP directory>` is the directory such that the KSP executable is found in `<KSP directory>/KSP.exe`.
 
-Note that Principia currently targets KSP 1.5.1, 1.6.1, and 1.7.x.
+Note that Principia currently targets KSP 1.5.1, 1.6.1, 1.7.x, and 1.8.1.
 
 # Installing Principia
 The binaries for Windows, macOS, and Ubuntu x64 can be found in the [README](https://github.com/mockingbirdnest/Principia/blob/master/README.md).  Unzip the archive and copy the `Principia` folder into the `GameData` folder of your installation of KSP.
@@ -167,17 +167,11 @@ It is true that some splittings of the Hamiltonian, e.g., those given by Wisdom 
 
 At this point we will have code for Kepler evolution and integrators that could be shoehorned into having Keplerian-only behaviour for massive bodies, but we will nonetheless not provide Keplerian-only behaviour, because in the end we're just not interested in that, we're here for the numerical integration problem.
 
-## Orbits are wobbly
-The orbits you see plotted in KSP with Principia (e.g. Jool around the Sun, or the Mun around Kerbin) are wobbly not because the actual orbits are wobbly, but because the wrong thing is plotted (specifically, the osculating orbital elements of the bodies are plotted, rather than the mean elements of subsystem barycentres). The orbit of the Mun is plotted *as if it were orbiting the centre of Kerbin*, rather than as an orbit around the barycentre of the Kerbin-Mun system. Similarly the orbit of *the centre of Jool* is plotted *as if it were orbiting the centre of the Sun*, rather than the orbit of the barycentre of the Jool system around the barycentre of the solar system.
-Eventually we will replace KSP's faulty stock plots with our own and the orbits will cease to appear wobbly.
-
-## Ok, they're not really wobbly, but I'd like the planets to follow their stock orbits
+## I'd like the planets to follow their stock orbits
 This would break physics. As an example, if planets were to do that, you would not get Lagrange points. It is an interesting exercise to compute the sum of the centrifugal and gravitational potentials for a body orbiting *the centre* of another (rather than their barycentre) in the reference frame that fixes both bodies and the orbital plane, and computing its gradient. It is easily seen that this gradient does not vanish in 5 points, but in only 3 instead.
 
 ## Why don't you parallelize?
 It would hardly improve performance and it would be messy to implement. This is just the kind of algorithm that doesn't lend itself well to that.  Let's look at numbers. The only thing that's performance-critical here is the computation of trajectory predictions and flight plans. For those we're simulating the interactions of all massive bodies, and only one massless body. Computing all the forces costs 30 μs, and we *need* to synchronize outside of the force computation. Let's say we have a pool of 8 threads. We have to enqueue pointers to our data to our threads, and dequeue them, that's 16 locks. An uncontended lock costs about 50 ns, so that's 800 ns to start working, and 800 ns to synchronize when we're done. On a task that's 30 μs when single-threaded, we've spent 1.6 μs doing nothing. Whatever we might nibble away like that is not worth it.
-
-There is a small opportunity for parallelization in issue [761](https://github.com/mockingbirdnest/Principia/issues/761).  Even so it's not clear if the benefits will overcome the cost of contention.
 
 ## I'm using a custom solar system mod, why isn't it stable?
 It all depends on whether your system was sanely designed. If it has 50 Duna-sized planets orbiting a Jool-sized body, many of these are going to interplanetary space today.
