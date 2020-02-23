@@ -1,7 +1,5 @@
 # [Frenet](https://en.wikipedia.org/wiki/Jean_Fr%C3%A9d%C3%A9ric_Frenet)
 
-*This is a draft of the change log; Frenet is not available yet.*
-
 ## User-facing features
 
 No new features in this version.  We have spent a fair amount of time implementing the rotational motion of vessels, and hope to be able to release it in the next version (Frobenius).  This release has quite a few (invisible) changes to the management of parts and vessels, so we invite users to upgrade to help us find any problems/bugs that we could have introduced.
