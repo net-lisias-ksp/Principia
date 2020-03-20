@@ -2,7 +2,24 @@
 
 *This is a draft of the change log; Frobenius is not available yet.*
 
+## User-facing features
 
+* After nearly a year of work, Principia properly implements the rotational motion of vessels.  This makes the physical simulation more correct in the following areas:
+  * Angular momentum is now preserved and the vessel obeys [Euler's equations for the motion of rigid bodies](https://en.wikipedia.org/wiki/Euler%27s_equations_(rigid_body_dynamics)).  This remains true if the geometry or the distribution of mass in a vessel changes over time.
+  * Vessels properly rotate during warp, and rotation is continuous when warping/unwarping.
+  * Vessels remain properly oriented when crossing the sphere of influence of a celestial; this fixes a longstanding bug ([1639](https://github.com/mockingbirdnest/Principia/issues/1639)).
+
+  Rotational motion brings more realism to the game: please take a moment to watch two short videos which illustrate interesting effects:
+  * [Video #1](): Transferring fuel from one tank to another causes the angular velocity to change in the same manner that figure skaters control their speed.
+  * [Video #2](): Rotational around the second axis of inertia exhibits the surprising instability known as [Джанибеков effect](https://en.wikipedia.org/wiki/Tennis_racket_theorem) ([compare with a real experiment in zero-G](https://www.youtube.com/watch?v=1n-HMSCDYtM)).
+
+  Note that the implementation uses closed-form formulæ so its CPU cost is virtually zero even at the highest warp speed.
+
+  If you have been using PersistentRotation, we recommend that you uninstall it as the two mods would fight each other.
+
+* Saves now use [zfp](https://computing.llnl.gov/projects/floating-point-compression) to compress the trajectories of vessels.  This makes the saves about 4x smaller, and may significantly reduce the time needed to switch scenes.
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-02-22T18:00:00..2020-03-20T23:29:59+sort%3Acreated-asc) pull requests between Frobenius and Frenet.
 
 # [Frenet](https://en.wikipedia.org/wiki/Jean_Fr%C3%A9d%C3%A9ric_Frenet)
 
