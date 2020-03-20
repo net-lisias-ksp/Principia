@@ -1,3 +1,9 @@
+# [Frobenius](https://en.wikipedia.org/wiki/Ferdinand_Georg_Frobenius)
+
+*This is a draft of the change log; Frobenius is not available yet.*
+
+
+
 # [Frenet](https://en.wikipedia.org/wiki/Jean_Fr%C3%A9d%C3%A9ric_Frenet)
 
 ## User-facing features
