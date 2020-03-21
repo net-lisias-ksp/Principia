@@ -15,7 +15,7 @@
 
   Note that the implementation uses closed-form formulæ so its CPU cost is virtually zero even at the highest warp speed, and there is no accumulation of errors or drifts.
 
-  If you have been using PersistentRotation, we recommend that you uninstall it as the two mods would fight each other and PersistentRotation is not physically correct.
+  If you have been using PersistentRotation, we recommend that you uninstall it as the two mods would fight each other and PersistentRotation is not physically correct anyway.
 
 * Saves now use [zfp](https://computing.llnl.gov/projects/floating-point-compression) to compress the trajectories of vessels.  This makes them about 4x smaller, and may significantly reduce the time needed to switch scenes.
 
