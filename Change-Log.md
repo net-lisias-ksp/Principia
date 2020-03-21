@@ -9,15 +9,20 @@
   * Vessels properly rotate during warp, and rotation is continuous when warping/unwarping.
   * Vessels remain properly oriented when crossing the sphere of influence of a celestial; this fixes a longstanding bug ([1639](https://github.com/mockingbirdnest/Principia/issues/1639)).
 
-  Rotational motion brings more realism to the game: please take a moment to watch two short videos which illustrate interesting effects:
-  * [Video #1](): Transferring fuel from one tank to another causes the angular velocity to change in the same manner that figure skaters control their speed.
-  * [Video #2](): Rotational around the second axis of inertia exhibits the surprising instability known as [Джанибеков effect](https://en.wikipedia.org/wiki/Tennis_racket_theorem) ([compare with a real experiment in zero-G](https://www.youtube.com/watch?v=1n-HMSCDYtM)).
+  Rotational motion brings more realism to the game: please take a moment to watch two short videos which illustrate interesting phenomena:
+  * [The figure skater effect](): Transferring fuel from one tank to another causes the angular velocity to change in the same manner that figure skaters control their speed.
+  * [The Джанибеков effect](): Rotational motion around the second axis of inertia exhibits a surprising instability ([compare with a real experiment in zero-G](https://www.youtube.com/watch?v=1n-HMSCDYtM)).
 
   Note that the implementation uses closed-form formulæ so its CPU cost is virtually zero even at the highest warp speed, and there is no accumulation of errors or drifts.
 
-  If you have been using PersistentRotation, we recommend that you uninstall it as the two mods would fight each other.
+  If you have been using PersistentRotation, we recommend that you uninstall it as the two mods would fight each other and PersistentRotation is not physically correct.
 
-* Saves now use [zfp](https://computing.llnl.gov/projects/floating-point-compression) to compress the trajectories of vessels.  This makes the saves about 4x smaller, and may significantly reduce the time needed to switch scenes.
+* Saves now use [zfp](https://computing.llnl.gov/projects/floating-point-compression) to compress the trajectories of vessels.  This makes them about 4x smaller, and may significantly reduce the time needed to switch scenes.
+
+## Known issues
+
+* KSP gives us no indication of how angular momentum is lost when an engine burns.  In this version we assume that solid rocket boosters lose all their angular momentum and other engines don't lose any.  We will probably want to have better heuristics/models in future versions.
+* Games which are very far from the origin of time (e.g., if you are around year 2020 in a RealSolarSystem game) may take a long time to save, load, or switch scene.  We are looking into better representation of the trajectories of celestial over long periods to address this problem ([2400](https://github.com/mockingbirdnest/Principia/issues/2400)).
 
 For more details see all [20](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-02-22T18:00:00..2020-03-20T23:29:59+sort%3Acreated-asc) pull requests between Frobenius and Frenet.
 
