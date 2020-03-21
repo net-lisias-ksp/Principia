@@ -19,7 +19,7 @@
 
 * Saves now use [zfp](https://computing.llnl.gov/projects/floating-point-compression) to compress the trajectories of vessels.  This makes the saves about 4x smaller, and may significantly reduce the time needed to switch scenes.
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-02-22T18:00:00..2020-03-20T23:29:59+sort%3Acreated-asc) pull requests between Frobenius and Frenet.
+For more details see all [20](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-02-22T18:00:00..2020-03-20T23:29:59+sort%3Acreated-asc) pull requests between Frobenius and Frenet.
 
 # [Frenet](https://en.wikipedia.org/wiki/Jean_Fr%C3%A9d%C3%A9ric_Frenet)
 
