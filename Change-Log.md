@@ -10,8 +10,8 @@
   * Vessels remain properly oriented when crossing the sphere of influence of a celestial; this fixes a longstanding bug ([1639](https://github.com/mockingbirdnest/Principia/issues/1639)).
 
   Rotational motion brings more realism to the game: please take a moment to watch two short videos which illustrate interesting phenomena:
-  * [The figure skater effect](): Transferring fuel from one tank to another causes the angular velocity to change in the same manner that figure skaters control their speed.
-  * [The Джанибеков effect](): Rotational motion around the second axis of inertia exhibits a surprising instability ([compare with a real experiment in zero-G](https://www.youtube.com/watch?v=1n-HMSCDYtM)).
+  * [The figure skater effect](https://youtu.be/QWiRvKfe3SE): Transferring fuel from one tank to another causes the angular velocity to change in the same manner that figure skaters control their speed.
+  * [The Джанибеков effect](https://youtu.be/jy-_AUxAA7c): Rotational motion around the second axis of inertia exhibits a surprising instability ([compare with a real experiment in zero-G](https://www.youtube.com/watch?v=1n-HMSCDYtM)).
 
   Note that the implementation uses closed-form formulæ so its CPU cost is virtually zero even at the highest warp speed, and there is no accumulation of errors or drifts.
 
