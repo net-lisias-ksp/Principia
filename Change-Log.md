@@ -22,7 +22,7 @@
 ## Known issues
 
 * KSP gives us no indication of how angular momentum is lost when an engine burns.  In this version we assume that solid rocket boosters lose all their angular momentum and other engines don't lose any.  We will probably want to have better heuristics/models in future versions.
-* Games which are very far from the origin of time (e.g., if you are around year 2020 in a RealSolarSystem game) may take a long time to save, load, or switch scene.  We are looking into better representation of the trajectories of celestial over long periods to address this problem ([2400](https://github.com/mockingbirdnest/Principia/issues/2400)).
+* Games which are very far from the origin of time (e.g., if you are around year 2020 in a RealSolarSystem game) may take a long time to save, load, or switch scene.  We are looking into better representations of the trajectories of celestial over long periods to address this problem ([2400](https://github.com/mockingbirdnest/Principia/issues/2400)).
 
 For more details see all [20](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-02-22T18:00:00..2020-03-20T23:29:59+sort%3Acreated-asc) pull requests between Frobenius and Frenet.
 
