@@ -13,7 +13,7 @@
   * [Video #1](): Transferring fuel from one tank to another causes the angular velocity to change in the same manner that figure skaters control their speed.
   * [Video #2](): Rotational around the second axis of inertia exhibits the surprising instability known as [Джанибеков effect](https://en.wikipedia.org/wiki/Tennis_racket_theorem) ([compare with a real experiment in zero-G](https://www.youtube.com/watch?v=1n-HMSCDYtM)).
 
-  Note that the implementation uses closed-form formulæ so its CPU cost is virtually zero even at the highest warp speed.
+  Note that the implementation uses closed-form formulæ so its CPU cost is virtually zero even at the highest warp speed, and there is no accumulation of errors or drifts.
 
   If you have been using PersistentRotation, we recommend that you uninstall it as the two mods would fight each other.
 
