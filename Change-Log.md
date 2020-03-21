@@ -4,7 +4,7 @@
 
 ## User-facing features
 
-* After nearly a year of work, Principia properly implements the rotational motion of vessels.  This makes the physical simulation more correct in the following areas:
+* After nearly a year of work, Principia now implements the rotational motion of vessels.  This makes the physical simulation more correct in the following areas:
   * Angular momentum is now preserved and the vessel obeys [Euler's equations for the motion of rigid bodies](https://en.wikipedia.org/wiki/Euler%27s_equations_(rigid_body_dynamics)).  This remains true if the geometry or the distribution of mass in a vessel changes over time.
   * Vessels properly rotate during warp, and rotation is continuous when warping/unwarping.
   * Vessels remain properly oriented when crossing the sphere of influence of a celestial; this fixes a longstanding bug ([1639](https://github.com/mockingbirdnest/Principia/issues/1639)).
