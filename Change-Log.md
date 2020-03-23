@@ -1,7 +1,5 @@
 # [Frobenius](https://en.wikipedia.org/wiki/Ferdinand_Georg_Frobenius)
 
-*This is a draft of the change log; Frobenius is not available yet.*
-
 ## User-facing features
 
 * After nearly a year of work, Principia now implements the rotational motion of vessels.  This makes the physical simulation more correct in the following areas:
