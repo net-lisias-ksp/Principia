@@ -49,6 +49,11 @@ Timewarping with vessels is smooth at timewarp 100 000× (the maximum warp sup
 
 When no vessels are present timewarp should be very smooth, even at 6 000 000× (in RealSolarSystem).
 
+## Compatibility with other mods
+Any mod that tries to move vessels or otherwise change orbits either (1) without using engines or (2) during time warp, is incompatible with Principia.
+
+Many mods do that, and they are as a consequence all incompatible with Principia.  We document some high-profile incompatibilities below, but we cannot really know about all of them.  Mod users are advised to think about possible incompatibilities when using multiple mods.
+
 ## RealSolarSystem users
 Principia comes with initial state and gravity models configs for all celestial bodies in RealSolarSystem as of 2016-08-22. Moreover, initial states and gravity models are provided for the following celestials from pozine's *RSS Planets & Moons expanded*:
 - Titania
