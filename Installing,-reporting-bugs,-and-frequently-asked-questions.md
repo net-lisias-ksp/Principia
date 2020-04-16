@@ -109,7 +109,7 @@ In order to help us analyse the most complicated bugs, Principia includes a jour
 1. try to reproduce the problem that you ran into (note that journaling makes the game slow as it writes lots of data to disk);
 1. if you are successful in reproducing the problem, send us the relevant `*.log` files and the `JOURNAL.*` file found in your `glog\Principia` directory.
 
-Don't forget to deselect `Record journal (starts on load)` or your game will be slow forever.  The journal does not contain any personally identifiable information other than the names and configuration of your vessels and celestials.
+Don't forget to deselect `Record journal (starts on load)` or your game will be slow forever.  The journal does not contain any personally identifiable information other than the name of your machine, and the names and configuration of your vessels and celestials.
 
 # Known bugs
 
