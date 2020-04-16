@@ -101,6 +101,16 @@ You probably encountered a glog `CHECK` failure. Go to `<KSP directory>\glog`, c
 ## Have a crash folder, i.e., a folder whose name is the date in your KSP install directory
 Put the contents of the `error.log` on gist as well as the contents of the `output_log.txt` (a copy may exist in the crash folder, otherwise if the game has not been restarted since the crash it is found at a location is documented on the KSP fora). In that case this may either be a stock KSP bug or a bug on our side, we will determine that by looking at the logs.  Link the gist in your github issue.
 
+## Journaling
+In order to help us analyse the most complicated bugs, Principia includes a journaling mechanism that records all the interactions between KSP and Principia.  We will replay these interactions to understand what happened, e.g., in case of a crash.  If we ask you for a journal, please follow the following steps:
+1. open `Logging Settings` in the main Principia window;
+1. select `Record journal (starts on load)` at the bottom left;
+1. do a scene change to make sure that journaling is enabled (you should see `Journaling is ON` at the bottom right of the Principia window);
+1. try to reproduce the problem that you ran into (note that journaling makes the game slow as it writes lots of data to disk);
+1. if you are successful in reproducing the problem, send us the relevant `*.log` files and the `JOURNAL.*` file found in your `glog\Principia` directory.
+
+Don't forget to deselect `Record journal (starts on load)` or your game will be slow forever.  The journal does not contain any personally identifiable information other than the names and configuration of your vessels and celestials.
+
 # Known bugs
 
 The list of [issues](https://github.com/mockingbirdnest/Principia/issues) contains mostly ideas for future improvements.  We use the label [bug](https://github.com/mockingbirdnest/Principia/labels/bug) for issues that lead to incorrect behavior (not necessarily crashes, though).
