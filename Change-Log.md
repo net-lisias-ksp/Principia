@@ -8,7 +8,11 @@
 
 * The flight plan is now automatically extended when moving forward the start time of the last manœuvre or increasing its Δv; note that for engines that have very low thrust, this may result in a very long flight plan, in which case the length will effectively be limited by the number of steps of the integrator ([852](https://github.com/mockingbirdnest/Principia/issues/852)).
 
+* The flight planner and the orbit analyser can now be displayed in the tracking station ([2531](https://github.com/mockingbirdnest/Principia/issues/2531)).
+
 ## Bug fixes
+
+* The angular momentum correction introduced in [Frobenius](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#frobenius) was found to create non-physical oscillations or rotations, especially when reentering the atmosphere, where large forces apply to the vessel; this has been addressed by adjusting the orientation of the vessel instead of its angular velocity, which should cause less disruption to the PhysX integrator ([2519](https://github.com/mockingbirdnest/Principia/issues/2519)).
 
 * Undocking two vessels would sometimes cause Principia to crash. This is a bug that has been with us for a long time, and suddenly started to bite many users in March, maybe because of changes in some other mod. It was probably triggered by large forces being applied to the vessel at the time of the uncoupling, and has been fixed by skipping the points computed by the adaptive step integrator that turn out to be in the past ([2490](https://github.com/mockingbirdnest/Principia/issues/2490), [2507](https://github.com/mockingbirdnest/Principia/issues/2507)).
 
