@@ -1,3 +1,15 @@
+# [Fubini](https://en.wikipedia.org/wiki/Guido_Fubini)
+
+*This is a draft of the change log; Fubini is not available yet.*
+
+## User-facing features
+
+* Support for KSP 1.9.1 has been added: this version supports 1.5.1, 1.6.1, 1.7.x, 1.8.1 and 1.9.1. Make sure you download the correct binary for your favourite version of KSP (the game will crash otherwise).
+
+## Bug fixes
+
+For more details see all [23](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-03-20T23:30:00..2020-04-19T10:59:59+sort%3Acreated-asc) pull requests between Fubini and Frobenius.
+
 # [Frobenius](https://en.wikipedia.org/wiki/Ferdinand_Georg_Frobenius)
 
 ## User-facing features
