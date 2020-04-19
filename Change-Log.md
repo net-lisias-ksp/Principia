@@ -12,6 +12,8 @@
 
 * Undocking two vessels would sometimes cause Principia to crash. This is a bug that has been with us for a long time, and suddenly started to bite many users in March, maybe because of changes in some other mod. It was probably triggered by large forces being applied to the vessel at the time of the uncoupling, and has been fixed by skipping the points computed by the adaptive step integrator that turn out to be in the past ([2490](https://github.com/mockingbirdnest/Principia/issues/2490), [2507](https://github.com/mockingbirdnest/Principia/issues/2507)).
 
+* Principia would sometimes crash when parts were about to be destroyed by KSP; this has been fixed by ignoring the parts whose positions, velocities, angular velocities, forces or torques are `NaN`s ([2532](https://github.com/mockingbirdnest/Principia/pull/2532)).
+
 For more details see all [23](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-03-20T23:30:00..2020-04-19T10:59:59+sort%3Acreated-asc) pull requests between Fubini and Frobenius.
 
 # [Frobenius](https://en.wikipedia.org/wiki/Ferdinand_Georg_Frobenius)
