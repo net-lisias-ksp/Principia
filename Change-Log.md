@@ -6,7 +6,11 @@
 
 * Support for KSP 1.9.1 has been added: this version supports 1.5.1, 1.6.1, 1.7.x, 1.8.1 and 1.9.1. Make sure you download the correct binary for your favourite version of KSP (the game will crash otherwise).
 
+* The flight plan is now automatically extended when moving forward the start time of the last manœuvre or increasing its Δv; note that for engines that have very low thrust, this may result in a very long flight plan, in which case the length will effectively be limited by the number of steps of the integrator ([852](https://github.com/mockingbirdnest/Principia/issues/852)).
+
 ## Bug fixes
+
+* Undocking two vessels would sometimes cause Principia to crash. This is a bug that has been with us for a long time, and suddenly started to bite many users in March, maybe because of changes in some other mod. It was probably triggered by large forces being applied to the vessel at the time of the uncoupling, and has been fixed by skipping the points computed by the adaptive step integrator that turn out to be in the past ([2490](https://github.com/mockingbirdnest/Principia/issues/2490), [2507](https://github.com/mockingbirdnest/Principia/issues/2507)).
 
 For more details see all [23](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-03-20T23:30:00..2020-04-19T10:59:59+sort%3Acreated-asc) pull requests between Fubini and Frobenius.
 
