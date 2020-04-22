@@ -1,7 +1,5 @@
 # [Fubini](https://en.wikipedia.org/wiki/Guido_Fubini)
 
-*This is a draft of the change log; Fubini is not available yet.*
-
 ## User-facing features
 
 * Support for KSP 1.9.1 has been added: this version supports 1.5.1, 1.6.1, 1.7.x, 1.8.1 and 1.9.1. Make sure you download the correct binary for your favourite version of KSP (the game will crash otherwise).
