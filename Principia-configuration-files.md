@@ -48,6 +48,7 @@ unit             ⩴ length_unit | time_unit | power_unit | angle_unit | solid_a
 <pre>
 quantity            ⩴ <a href=#floating_point_number>floating_point_number</a> quotient_unit
 quotient_unit       ⩴ quotient_unit / exponentiation_unit
+                    | / exponentiation_unit
                     | product_unit
 product_unit        ⩴ exponentiation_unit [product_unit]
 exponentiation_unit ⩴ <a href=#unit>unit</a> [^ exponent]
