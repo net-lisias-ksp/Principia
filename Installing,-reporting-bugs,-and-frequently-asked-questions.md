@@ -34,7 +34,7 @@ If you get the message "Dependencies, namely the Microsoft Visual C++ 2015-2019 
 You need El Capitan or later.
 
 #### Linux users
-You need libc++ and libc++abi 6.0-2.
+You need libc++ and libc++abi 8.
 
 Also, your working directory *needs* to be `<KSP directory>`, otherwise `principia.so` will not be found.
 
