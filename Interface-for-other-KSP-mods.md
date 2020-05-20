@@ -86,6 +86,7 @@ The angles `planetocentric_latitude_in_degrees` and `planetocentric_longitude_in
 The `radius` is in metres.
 
 The parameter `time` is in KSP’s universal time, in seconds, as given, e.g., by `Planetarium.GetUniversalTime()`.
+
 The result is given in metres, in a reference frame whose origin is the centre of the body, and whose axes are those of Unity’s world.
 
 ## `GeopotentialGetCoefficient`
