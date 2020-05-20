@@ -23,9 +23,8 @@ which:
 # Interface types
 
 The interface types are declared in namespace `principia.ksp_plugin_adapter`.
-We give sample declarations with fields below, however, *it is unspecified whether the members are fields or properties*; interfacing mods should accept either by reflection.
 
-Not accepting both will cause future breakage in the event we need to change between fields and properties.  Accepting both will keep calling code operational when these refactorings take place.
+☡ We give sample declarations with fields below, however, *it is unspecified whether the members are fields or properties*; interfacing mods should accept either by reflection. Not accepting both will cause future breakage in the event we need to change between fields and properties.  Accepting both will keep calling code operational when these refactorings take place.
 
 It is also unspecified whether the interface types are value types or reference types (`struct` or `class`).
 If they are reference types, they have a default constructor.
@@ -40,13 +39,51 @@ public struct XY {
 }
 ```
 
+## `XYZ`
+```C#
+public struct XYZ {
+  public double x;
+  public double y;
+  public double z;
+}
+```
+
 # Interface functions
 
 The example usages of the interface functions given in this section make use of some utilities (classes `Principia` and `Reflection`) to limit the reflection boilerplate at the call site.
-We have tried to make the identifiers e See the appendix for their definition.
+We have tried to make the utility identifiers self-explanatory; see the appendix for their definition.
 
 The types of the exceptions thrown by erroneous interface calls are unspecified.
 When an exception is thrown, additional information may be found in the Principia logs.
+
+## `CelestialGetPosition`
+
+```C#
+  public XYZ CelestialGetPosition(int body_index, double time);
+```
+Returns the position of the body whose `flightGlobalsIndex` is `body_index` at the given `time`.
+
+### Notes
+The parameter `time` is in KSP’s universal time, in seconds, as given, e.g., by `Planetarium.GetUniversalTime()`.
+The result is given in metres, in a reference frame whose origin is the barycentre of the solar system, and whose axes are those of Unity’s world.
+
+## `CelestialGetSurfacePosition`
+
+```C#
+    public XYZ CelestialGetSurfacePosition(
+      int body_index,
+      double planetocentric_latitude_in_degrees,
+      double planetocentric_longitude_in_degrees,
+      double radius,
+      double time);
+```
+Returns the position of the point at the given planetocentric coordinates and at a distance of `radius` from the body centre on the body whose `flightGlobalsIndex` is `body_index` at the given `time`.
+
+### Notes
+The angles `planetocentric_latitude_in_degrees` and `planetocentric_longitude_in_degrees` are, as their name indicates, in degrees. These are *planetocentric* coordinates, rather than *planetographic* coordinates: they do not take into account any reference ellipsoid, and are straightforward spherical coordinates, with positive longitudes eastwards.
+The `radius` is in metres.
+The parameter `time` is in KSP’s universal time, in seconds, as given, e.g., by `Planetarium.GetUniversalTime()`.
+The result is given in metres, in a reference frame whose origin is the centre of the body, and whose axes are those of Unity’s world.
 
 ## `GeopotentialGetCoefficient`
 
@@ -123,6 +160,17 @@ double J2NodalPrecession(Orbit orbit) {
   return -3.0 / 2.0 * n * j2 * Math.Pow(ae / p, 2) * Math.Cos(i);
 }
 ```
+
+## `VesselGetPosition`
+
+```C#
+  public XYZ VesselGetPosition(string vessel_guid, double time);
+```
+Returns the position of the vessel whose `Vessel.id.ToString()` is `vessel_guid`, at the given `time`.
+
+### Notes
+The parameter `time` is in KSP’s universal time, in seconds, as given, e.g., by `Planetarium.GetUniversalTime()`.
+The result is given in metres, in a reference frame whose origin is the barycentre of the solar system, and whose axes are those of Unity’s world.
 
 # Appendix: reflection utilities
 
