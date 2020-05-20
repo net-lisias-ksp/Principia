@@ -63,8 +63,9 @@ When an exception is thrown, additional information may be found in the Principi
 ```
 Returns the position of the body whose `flightGlobalsIndex` is `body_index` at the given `time`.
 
-### Notes
+### Units and reference systems
 The parameter `time` is in KSP’s universal time, in seconds, as given, e.g., by `Planetarium.GetUniversalTime()`.
+
 The result is given in metres, in a reference frame whose origin is the barycentre of the solar system, and whose axes are those of Unity’s world.
 
 ## `CelestialGetSurfacePosition`
@@ -79,9 +80,11 @@ The result is given in metres, in a reference frame whose origin is the barycent
 ```
 Returns the position of the point at the given planetocentric coordinates and at a distance of `radius` from the body centre on the body whose `flightGlobalsIndex` is `body_index` at the given `time`.
 
-### Notes
+### Units and reference systems
 The angles `planetocentric_latitude_in_degrees` and `planetocentric_longitude_in_degrees` are, as their name indicates, in degrees. These are *planetocentric* coordinates, rather than *planetographic* coordinates: they do not take into account any reference ellipsoid, and are straightforward spherical coordinates, with positive longitudes eastwards.
+
 The `radius` is in metres.
+
 The parameter `time` is in KSP’s universal time, in seconds, as given, e.g., by `Planetarium.GetUniversalTime()`.
 The result is given in metres, in a reference frame whose origin is the centre of the body, and whose axes are those of Unity’s world.
 
@@ -168,8 +171,9 @@ double J2NodalPrecession(Orbit orbit) {
 ```
 Returns the position of the vessel whose `Vessel.id.ToString()` is `vessel_guid`, at the given `time`.
 
-### Notes
+### Units and reference systems
 The parameter `time` is in KSP’s universal time, in seconds, as given, e.g., by `Planetarium.GetUniversalTime()`.
+
 The result is given in metres, in a reference frame whose origin is the barycentre of the solar system, and whose axes are those of Unity’s world.
 
 # Appendix: reflection utilities
