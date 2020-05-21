@@ -1,3 +1,13 @@
+# [Fuchs](https://en.wikipedia.org/wiki/Lazarus_Fuchs)
+
+*This is a draft of the change log; Fuchs is not available yet.*
+
+## User-facing features
+
+* Principia used to only support days of 6 hours (for stock KSP) or 24 hours (for Real Solar System).  It now uses the correct KSP APIs to figure out the length of the day.  This makes it compatible with Kronometer and with Je Ne Sais Quoi which embeds Kronometer and has days of 12 hours ([2520](https://github.com/mockingbirdnest/Principia/issues/2520)).
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-04-19T11:00:00..2020-05-21T10:59:59+sort%3Acreated-asc) pull requests between Fuchs and Fubini.
+
 # [Fubini](https://en.wikipedia.org/wiki/Guido_Fubini)
 
 ## User-facing features
