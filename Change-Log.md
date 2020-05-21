@@ -6,13 +6,15 @@
 
 * Principia used to only support days of 6 hours (for stock KSP) or 24 hours (for Real Solar System).  It now uses the correct KSP APIs to figure out the length of the day.  This makes it compatible with Kronometer and with Je Ne Sais Quoi which embeds Kronometer and has days of 12 hours ([2520](https://github.com/mockingbirdnest/Principia/issues/2520)).
 
+* The manœuvre node marker on the navball used to follow the Frenet frame prior to ignition, which was not very useful for manual burns and confused MechJeb.  It now shows the initial ignition orientation prior to ignition and then follows the Frenet frame during the burn.  This will make it possible for a future version of MechJeb to execute Principia manœuvres  ([2577](https://github.com/mockingbirdnest/Principia/issues/2577)).
+
 ## Bug fixes
 
-* Principia failed to start with a mysterious error message if installed in a path that includes non-ASCII characters on a system where the code page is non compatible with UTF-8.  The root of the problem appears to be a Mono bug so there is not much that we can do to fix it, but we are now emitting the more understandable error message `<path> contains the non-ASCII character <c>; this is known to confuse Mono` ([2548](https://github.com/mockingbirdnest/Principia/issues/2548)).
+* Principia would fail to start with a mysterious error message if installed in a path that includes non-ASCII characters on a system where the code page is non compatible with UTF-8.  The root of the problem appears to be a Mono bug so there is not much that we can do to fix it, but we are now emitting the more understandable error message `<path> contains the non-ASCII character <c>; this is known to confuse Mono` ([2548](https://github.com/mockingbirdnest/Principia/issues/2548)).
 
 ## Modder-facing changes
 
-* Three new APIs, [`CelestialGetPosition`](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods#celestialgetposition), [`CelestialGetSurfacePosition`](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods#celestialgetsurfaceposition), and [`VesselGetPosition`](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods#vesselgetposition) have been added to allow third-party mods to access the position of celestials and vessels computed by Principia.  This will be used by a future version of Kerbalism to implement contracts compatible with *n*-body physics.
+* Three new APIs, [`CelestialGetPosition`](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods#celestialgetposition), [`CelestialGetSurfacePosition`](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods#celestialgetsurfaceposition), and [`VesselGetPosition`](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods#vesselgetposition) have been added to allow third-party mods to access the position of celestials and vessels computed by Principia.  This will be used by a future version of Kerbalism to implement contracts compatible with *n*-body physics  ([2542](https://github.com/mockingbirdnest/Principia/issues/2542)).
 
 For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-04-19T11:00:00..2020-05-21T10:59:59+sort%3Acreated-asc) pull requests between Fuchs and Fubini.
 
