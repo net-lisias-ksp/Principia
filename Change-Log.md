@@ -14,7 +14,7 @@
 
 * The rotational bugs that were introduced in Frobenius and Fubini (uncontrolled spin-up, jerky motion, oscillations, etc.) have been traced to incorrect physics simulation by PhysX and mostly fixed.  We are still aware of one contrived example where after a vessel explodes a part starts rotating wildly, and are investigating it ([2519](https://github.com/mockingbirdnest/Principia/issues/2519)).
 
-* Principia would fail to start with a mysterious error message if installed in a path that includes non-ASCII characters on a system where the code page is non compatible with UTF-8.  The root of the problem appears to be a Mono bug so there is not much that we can do to fix it, but we are now emitting the more understandable error message `<path> contains the non-ASCII character <c>; this is known to confuse Mono` ([2548](https://github.com/mockingbirdnest/Principia/issues/2548)).
+* Principia would fail to start with a mysterious error message if installed in a path that includes non-ASCII characters on a system where the code page is not compatible with UTF-8.  The root of the problem appears to be a Mono bug so there is not much that we can do to fix it, but we are now emitting the more understandable error message `<path> contains the non-ASCII character <c>; this is known to confuse Mono` ([2548](https://github.com/mockingbirdnest/Principia/issues/2548)).
 
 ## Modder-facing changes
 
