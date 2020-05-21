@@ -1,7 +1,5 @@
 # [Fuchs](https://en.wikipedia.org/wiki/Lazarus_Fuchs)
 
-*This is a draft of the change log; Fuchs is not available yet.*
-
 ## User-facing features
 
 * This is the last version to support KSP 1.5.x, 1.6.x and 1.7.x. The next version will only support 1.8.1 and up.
