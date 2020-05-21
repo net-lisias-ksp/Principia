@@ -4,6 +4,10 @@
 
 ## User-facing features
 
+* This is the last version to support KSP 1.5.x, 1.6.x and 1.7.x. The next version will only support 1.8.1 and up.
+
+* The rotational bugs that were introduced in Frobenius and Fubini (uncontrolled spin-up, jerky motion, oscillations, etc.) have been traced to incorrect physics simulation by PhysX and mostly fixed.  We are still aware of one contrived example where after a vessel explodes a part starts rotating wildly, and are investigating it ([2519](https://github.com/mockingbirdnest/Principia/issues/2519)).
+
 * Principia used to only support days of 6 hours (for stock KSP) or 24 hours (for Real Solar System).  It now uses the correct KSP APIs to figure out the length of the day.  This makes it compatible with Kronometer and with Je Ne Sais Quoi which embeds Kronometer and has days of 12 hours ([2520](https://github.com/mockingbirdnest/Principia/issues/2520)).
 
 * The manœuvre node marker on the navball used to follow the Frenet frame prior to ignition, which was not very useful for manual burns and confused MechJeb.  It now shows the initial ignition orientation prior to ignition and then follows the Frenet frame during the burn.  This will make it possible for a future version of MechJeb to execute Principia manœuvres  ([2577](https://github.com/mockingbirdnest/Principia/issues/2577)).
@@ -16,7 +20,7 @@
 
 * Three new APIs, [`CelestialGetPosition`](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods#celestialgetposition), [`CelestialGetSurfacePosition`](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods#celestialgetsurfaceposition), and [`VesselGetPosition`](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods#vesselgetposition) have been added to allow third-party mods to access the position of celestials and vessels computed by Principia.  This will be used by a future version of Kerbalism to implement contracts compatible with *n*-body physics  ([2542](https://github.com/mockingbirdnest/Principia/issues/2542)).
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-04-19T11:00:00..2020-05-21T10:59:59+sort%3Acreated-asc) pull requests between Fuchs and Fubini.
+For more details see all [28](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-04-19T11:00:00..2020-05-21T10:59:59+sort%3Acreated-asc) pull requests between Fuchs and Fubini.
 
 # [Fubini](https://en.wikipedia.org/wiki/Guido_Fubini)
 
