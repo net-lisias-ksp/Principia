@@ -6,13 +6,13 @@
 
 * This is the last version to support KSP 1.5.x, 1.6.x and 1.7.x. The next version will only support 1.8.1 and up.
 
-* The rotational bugs that were introduced in Frobenius and Fubini (uncontrolled spin-up, jerky motion, oscillations, etc.) have been traced to incorrect physics simulation by PhysX and mostly fixed.  We are still aware of one contrived example where after a vessel explodes a part starts rotating wildly, and are investigating it ([2519](https://github.com/mockingbirdnest/Principia/issues/2519)).
-
 * Principia used to only support days of 6 hours (for stock KSP) or 24 hours (for Real Solar System).  It now uses the correct KSP APIs to figure out the length of the day.  This makes it compatible with Kronometer and with Je Ne Sais Quoi which embeds Kronometer and has days of 12 hours ([2520](https://github.com/mockingbirdnest/Principia/issues/2520)).
 
 * The manœuvre node marker on the navball used to follow the Frenet frame prior to ignition, which was not very useful for manual burns and confused MechJeb.  It now shows the initial ignition orientation prior to ignition and then follows the Frenet frame during the burn.  This will make it possible for a future version of MechJeb to execute Principia manœuvres  ([2577](https://github.com/mockingbirdnest/Principia/issues/2577)).
 
 ## Bug fixes
+
+* The rotational bugs that were introduced in Frobenius and Fubini (uncontrolled spin-up, jerky motion, oscillations, etc.) have been traced to incorrect physics simulation by PhysX and mostly fixed.  We are still aware of one contrived example where after a vessel explodes a part starts rotating wildly, and are investigating it ([2519](https://github.com/mockingbirdnest/Principia/issues/2519)).
 
 * Principia would fail to start with a mysterious error message if installed in a path that includes non-ASCII characters on a system where the code page is non compatible with UTF-8.  The root of the problem appears to be a Mono bug so there is not much that we can do to fix it, but we are now emitting the more understandable error message `<path> contains the non-ASCII character <c>; this is known to confuse Mono` ([2548](https://github.com/mockingbirdnest/Principia/issues/2548)).
 
