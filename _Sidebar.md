@@ -1,4 +1,5 @@
 ### Versions
+* [Fuchs](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#fuchs)
 * [Fubini](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#fubini)
 * [Frobenius](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#frobenius)
 * [Frenet](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#frenet)
