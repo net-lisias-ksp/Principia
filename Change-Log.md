@@ -18,7 +18,7 @@
 
 ## Modder-facing changes
 
-* Three new APIs, [`CelestialGetPosition`](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods#celestialgetposition), [`CelestialGetSurfacePosition`](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods#celestialgetsurfaceposition), and [`VesselGetPosition`](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods#vesselgetposition) have been added to allow third-party mods to access the position of celestials and vessels computed by Principia.  This will be used by a future version of Kerbalism to implement contracts compatible with *n*-body physics  ([2542](https://github.com/mockingbirdnest/Principia/issues/2542)).
+* Three new APIs, [`CelestialGetPosition`](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods#celestialgetposition), [`CelestialGetSurfacePosition`](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods#celestialgetsurfaceposition), and [`VesselGetPosition`](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods#vesselgetposition) have been added to allow third-party mods to access the position of celestials and vessels computed by Principia.  This will be used by a future version of KerbalismContracts to implement contracts compatible with *n*-body physics  ([2542](https://github.com/mockingbirdnest/Principia/issues/2542)).
 
 For more details see all [28](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-04-19T11:00:00..2020-05-21T10:59:59+sort%3Acreated-asc) pull requests between Fuchs and Fubini.
 
