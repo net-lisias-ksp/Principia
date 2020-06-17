@@ -17,3 +17,5 @@ If you try to design your own solar system, e.g., using Kopernicus, you should b
 For those interested about how things work behind the scenes, we recommend looking at the [technical overview](https://github.com/mockingbirdnest/Principia/wiki/Technical-Overview) to understand the overall structure of the project.
 
 We also expose an [API](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods) to allow other mods to take Principia's effects into account.
+
+<a href="https://www.jetbrains.com/?from=Principia"><img src="https://github.com/mockingbirdnest/Principia/blob/master/documentation/resharper_logo.png" alt="Built using ReSharper" width="50" height="50"></a>
