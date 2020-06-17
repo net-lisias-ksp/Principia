@@ -18,4 +18,5 @@ For those interested about how things work behind the scenes, we recommend looki
 
 We also expose an [API](https://github.com/mockingbirdnest/Principia/wiki/Interface-for-other-KSP-mods) to allow other mods to take Principia's effects into account.
 
+*Built using ReSharper*.<br/>
 <a href="https://www.jetbrains.com/?from=Principia"><img src="https://github.com/mockingbirdnest/Principia/blob/master/documentation/resharper_logo.png" alt="Built using ReSharper" width="50" height="50"></a>
