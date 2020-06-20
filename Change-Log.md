@@ -2,6 +2,12 @@
 
 *This is a draft of the change log; Galileo is not available yet.*
 
+## User-facing features
+
+* Contrary to what had been announced previously, this version still supports KSP 1.5.x, 1.6.x and 1.7.x.  The reason is that issues [2560](https://github.com/mockingbirdnest/Principia/issues/2560) and [2562](https://github.com/mockingbirdnest/Principia/issues/2562) are serious usability problems, and it would not be nice to leave 1.7.x users stuck with these problems.
+
+* This is the last version to support KSP 1.5.x, 1.6.x and 1.7.x. The next version will only support 1.8.1 and up.
+
 ## Bug fixes
 
 * The flight plan window would sometimes emit the unhelpful message "The computation failed, try changing the flight plan".  This has been fixed by propagating a more detailed status message from the flight plan computation to the UI ([2583](https://github.com/mockingbirdnest/Principia/issues/2583)).
