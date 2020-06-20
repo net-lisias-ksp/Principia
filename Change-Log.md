@@ -4,9 +4,11 @@
 
 ## Bug fixes
 
-* The external APIs that throw an exception in case of error now include in the exception, in addition to the status code, a short message in English detailing the circumstances of the error ([2585](https://github.com/mockingbirdnest/Principia/issues/2585)).
+* The flight plan window would sometimes emit the unhelpful message "The computation failed, try changing the flight plan".  This has been fixed by propagating a more detailed status message from the flight plan computation to the UI ([2583](https://github.com/mockingbirdnest/Principia/issues/2583)).
 
 ## Modder-facing changes
+
+* The external APIs that throw an exception in case of error now include in the exception, in addition to the status code, a short message in English detailing the circumstances of the error ([2585](https://github.com/mockingbirdnest/Principia/issues/2585)).
 
 For more details see all [14](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-05-21T11:00:00..2020-06-20T11:59:59+sort%3Acreated-asc) pull requests between Galileo and Fuchs.
 
