@@ -1,3 +1,13 @@
+# [Galileo](https://en.wikipedia.org/wiki/Galileo_Galilei)
+
+*This is a draft of the change log; Galileo is not available yet.*
+
+## Bug fixes
+
+## Modder-facing changes
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-05-21T11:00:00..2020-06-20T11:59:59+sort%3Acreated-asc) pull requests between Galileo and Fuchs.
+
 # [Fuchs](https://en.wikipedia.org/wiki/Lazarus_Fuchs)
 
 ## User-facing features
