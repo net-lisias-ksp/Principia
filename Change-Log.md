@@ -8,6 +8,8 @@
 
 * When a Kerbal started EVA, it would sometimes cause the vessel to jump to a different location tens of meters away  (this was particularly visible if there was a second vessel in close proximity).  This has been fixed by ignoring any collision between the Kerbal and the vessel until the Kerbal is ready (one or two frames).  There have been reports in the past of the flight plan disappearing when a Kerbal starts EVA; this is the same underlying bug ([2590](https://github.com/mockingbirdnest/Principia/issues/2590)).
 
+* Starting with [Frobenius](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#frobenius), vessels (especially airplanes) would sometimes be extremely hard to fly.  This would happen if the vessel contained parts the centre of mass of which does not coincide with the KSP centre of the part.  This has been fixed by properly taking into account the difference between these two points ([2560](https://github.com/mockingbirdnest/Principia/issues/2560), [2562](https://github.com/mockingbirdnest/Principia/issues/2562)).
+
 ## Modder-facing changes
 
 * The external APIs that throw an exception in case of error now include in the exception, in addition to the status code, a short message in English detailing the circumstances of the error ([2585](https://github.com/mockingbirdnest/Principia/issues/2585)).
