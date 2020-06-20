@@ -4,7 +4,7 @@
 
 ## User-facing features
 
-* Contrary to what had been announced previously, this version still supports KSP 1.5.x, 1.6.x and 1.7.x.  The reason is that issues [2560](https://github.com/mockingbirdnest/Principia/issues/2560) and [2562](https://github.com/mockingbirdnest/Principia/issues/2562) are serious usability problems, and it would not be nice to leave 1.7.x users stuck with these problems.
+* Contrary to what had been announced previously, this version still supports KSP 1.5.x, 1.6.x and 1.7.x.
 
 * This is the last version to support KSP 1.5.x, 1.6.x and 1.7.x. The next version will only support 1.8.1 and up.
 
@@ -14,13 +14,17 @@
 
 * When a Kerbal started EVA, it would sometimes cause the vessel to jump to a different location tens of meters away  (this was particularly visible if there was a second vessel in close proximity).  This has been fixed by ignoring any collision between the Kerbal and the vessel until the Kerbal is ready (one or two frames).  There have been reports in the past of the flight plan disappearing when a Kerbal starts EVA; this is the same underlying bug ([2590](https://github.com/mockingbirdnest/Principia/issues/2590)).
 
-* Starting with [Frobenius](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#frobenius), some airplanes would be extremely hard to fly.  This would happen if the vessel contained parts the centre of mass of which does not coincide with the KSP centre of the part.  This has been fixed by properly taking into account the difference between these two points ([2560](https://github.com/mockingbirdnest/Principia/issues/2560), [2562](https://github.com/mockingbirdnest/Principia/issues/2562)).
+* Starting with [Frobenius](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#frobenius), some airplanes would be extremely hard to fly.  This would happen if the vessel contained parts the centre of mass of which does not coincide with the KSP centre of the part.  This has been fixed by properly taking into account the difference between these two points ([2560](https://github.com/mockingbirdnest/Principia/issues/2560).
 
 ## Modder-facing changes
 
 * The external APIs that throw an exception in case of error now include in the exception, in addition to the status code, a short message in English detailing the circumstances of the error ([2585](https://github.com/mockingbirdnest/Principia/issues/2585)).
 
 For more details see all [14](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-05-21T11:00:00..2020-06-20T11:59:59+sort%3Acreated-asc) pull requests between Galileo and Fuchs.
+
+## Known issues
+
+* [2607](https://github.com/mockingbirdnest/Principia/issues/2607): parachuting EVA Kerbals behave unphysically (this issue was already present in Fuchs).
 
 # [Fuchs](https://en.wikipedia.org/wiki/Lazarus_Fuchs)
 
