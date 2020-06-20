@@ -4,9 +4,11 @@
 
 ## Bug fixes
 
+* The external APIs that throw an exception in case of error now include in the exception, in addition to the status code, a short message in English detailing the circumstances of the error ([2585](https://github.com/mockingbirdnest/Principia/issues/2585)).
+
 ## Modder-facing changes
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-05-21T11:00:00..2020-06-20T11:59:59+sort%3Acreated-asc) pull requests between Galileo and Fuchs.
+For more details see all [14](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-05-21T11:00:00..2020-06-20T11:59:59+sort%3Acreated-asc) pull requests between Galileo and Fuchs.
 
 # [Fuchs](https://en.wikipedia.org/wiki/Lazarus_Fuchs)
 
