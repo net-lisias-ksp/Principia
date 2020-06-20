@@ -6,7 +6,7 @@
 
 * The flight plan window would sometimes emit the unhelpful message "The computation failed, try changing the flight plan".  This has been fixed by propagating a more detailed status message from the flight plan computation to the UI ([2583](https://github.com/mockingbirdnest/Principia/issues/2583)).
 
-* When a Kerbal started EVA, it would sometimes cause the vessel to jump to a different location tens of meters away  (this was particularly visible if there was a second vessel in close proximity).  This has been fixed by ignoring any collision between the Kerbal and the vessel until the Kerbal is ready (one or two frames).  There have been reports in the past of the flight plan disappearing when a Kerbal starts EVA, and this is the same underlying bug ((2590)[https://github.com/mockingbirdnest/Principia/issues/2590]).
+* When a Kerbal started EVA, it would sometimes cause the vessel to jump to a different location tens of meters away  (this was particularly visible if there was a second vessel in close proximity).  This has been fixed by ignoring any collision between the Kerbal and the vessel until the Kerbal is ready (one or two frames).  There have been reports in the past of the flight plan disappearing when a Kerbal starts EVA; this is the same underlying bug ([2590](https://github.com/mockingbirdnest/Principia/issues/2590)).
 
 ## Modder-facing changes
 
