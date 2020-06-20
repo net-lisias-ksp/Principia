@@ -1,7 +1,5 @@
 # [Galileo](https://en.wikipedia.org/wiki/Galileo_Galilei)
 
-*This is a draft of the change log; Galileo is not available yet.*
-
 ## User-facing features
 
 * Contrary to what had been announced previously, this version still supports KSP 1.5.x, 1.6.x and 1.7.x.
