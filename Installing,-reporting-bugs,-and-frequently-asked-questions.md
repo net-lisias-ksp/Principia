@@ -31,7 +31,7 @@ Make sure you put the DLL in the right place. The Principia DLL should be at `<K
 If you get the message "Dependencies, namely the Microsoft Visual C++ 2015-2019 Redistributable, were not found", well, you need to install the [Microsoft Visual C++ 2015-2019 Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads).
 
 #### Mac users
-You need El Capitan or later.
+You need Sierra or later.
 
 #### Linux users
 You need libc++ and libc++abi 8.
