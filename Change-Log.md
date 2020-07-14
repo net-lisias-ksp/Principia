@@ -6,6 +6,11 @@
 
 * Support for KSP 1.5.x, 1.6.x and 1.7.x has been removed: this version of Principia requires at least KSP 1.8.1.
 
+* A `Rebase` button has been added to the flight plan.  This button discards past manœuvres, and sets the flight plan initial state to the current state (in terms of mass as well as position and velocity).
+
+* The navball guidance node has been changed so that, at the end of the burn, the SAS switches to holding attitude, and MechJeb (if used) ceases burn execution and shuts down the engines.
+
+
 For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-06-20T12:00:00..2020-07-15T19:59:59+sort%3Acreated-asc) pull requests between Gallai and Galileo.
 
 # [Galileo](https://en.wikipedia.org/wiki/Galileo_Galilei)
