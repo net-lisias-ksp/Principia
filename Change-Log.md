@@ -10,6 +10,19 @@
 
 * The navball guidance node has been changed so that, at the end of the burn, the SAS switches to holding attitude, and MechJeb (if used) ceases burn execution and shuts down the engines.
 
+* A number of features have been added to the orbit analysis window:
+  * a warning if any of the following occur over the course of the mission:
+    * dropping below the nominal atmosphere height: reentry,
+    * dropping below the highest terrain altitude: collision risk,
+    * dropping below the lowest terrain altitude or, on a planet with oceans, sea level, whichever one is higher: collision);
+  * lowest altitude: the lowest altitude reached over the course of the mission;
+  * altitude of mean periapsis: the altitude corresponding to the periapsis distance itself corresponding to the mean semimajor axis and mean eccentricity;
+  * altitude of mean apoapsis: the altitude corresponding to the apoapsis distance itself corresponding to the mean semimajor axis and mean eccentricity;
+
+* The message emitted on Linux and macOS in case of an error loading the Principia DLL has been made more precise.
+
+## Bug fixes
+
 
 For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-06-20T12:00:00..2020-07-15T19:59:59+sort%3Acreated-asc) pull requests between Gallai and Galileo.
 
