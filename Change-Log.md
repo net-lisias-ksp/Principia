@@ -14,7 +14,7 @@
   * a warning if any of the following occur over the course of the mission:
     * dropping below the nominal atmosphere height: reentry,
     * dropping below the highest terrain altitude: collision risk,
-    * dropping below the lowest terrain altitude or, on a planet with oceans, sea level, whichever one is higher: collision);
+    * dropping below the lowest terrain altitude or, on a planet with oceans, sea level, whichever one is higher: collision;
   * lowest altitude: the lowest altitude reached over the course of the mission;
   * altitude of mean periapsis: the altitude corresponding to the periapsis distance itself corresponding to the mean semimajor axis and mean eccentricity;
   * altitude of mean apoapsis: the altitude corresponding to the apoapsis distance itself corresponding to the mean semimajor axis and mean eccentricity;
@@ -23,11 +23,13 @@
 
 ## Bug fixes
 
+* Vessels would sometimes vibrate, disintegrate and send pieces flying off at absurd speeds.  That has been fixed by refining the computation of the eigenvectors of the inertia tensor when two eigenvalues are very close ([#2611](https://github.com/mockingbirdnest/Principia/issues/2611)).
+
 * Due to bugs in the KSP management of collisions, a Kerbal performing an EVA would sometimes still be considered part of the vessel it had just left, leading to non-physical effects.  This has been fixed by changing Principia to manage the collisions itself instead of trusting KSP ([#2607](https://github.com/mockingbirdnest/Principia/issues/2607)).
 
 * Parachutes were interacting poorly with Principia's handling of rotational physics, causing Kerbals to spin wildly while parachuting and to end up head down (and parachute down).  This has been fixed by recomputing the angular momentum change from the angular velocity change applied by KSP ([#2607](https://github.com/mockingbirdnest/Principia/issues/2607)).
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-06-20T12:00:00..2020-07-15T19:59:59+sort%3Acreated-asc) pull requests between Gallai and Galileo.
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-06-20T12:00:00..2020-07-14T20:59:59+sort%3Acreated-asc) pull requests between Gallai and Galileo.
 
 # [Galileo](https://en.wikipedia.org/wiki/Galileo_Galilei)
 
