@@ -29,6 +29,8 @@
 
 * Parachutes were interacting poorly with Principia's handling of rotational physics, causing Kerbals to spin wildly while parachuting and to end up head down (and parachute down).  This has been fixed by recomputing the angular momentum change from the angular velocity change applied by KSP ([#2607](https://github.com/mockingbirdnest/Principia/issues/2607)).
 
+* Root parts with an offset centre of mass (notably the making history Mk2 capsule) would lead to jumpiness when coming out of warp, or, under some circumstances, to permanent deformation of the vessel.  This has been fixed by properly taking the offset into account when the root part is at the origin.
+
 For more details see all [32](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-06-20T12:00:00..2020-07-15T21:59:59+sort%3Acreated-asc) pull requests between Gallai and Galileo.
 
 # [Galileo](https://en.wikipedia.org/wiki/Galileo_Galilei)
