@@ -158,7 +158,7 @@ For instance, this is the solar eclipse of 1952-02-25, as seen from Semnan:
 ![](http://i.imgur.com/DJy03zo.png)
 
 ## Can I do rendezvous?
-Yes, but it's a bit tricky because we don't have (yet) a plotting frame that helps with this.  [This video](https://www.youtube.com/watch?v=uWTsh1KswDg) shows how it can be done (near the end).
+Yes; we have a plotting frame for that, target-centred local-vertical, local-horizontal, which is a fan favourite. See [this guide](https://github.com/mockingbirdnest/Principia/wiki/A-guide-to-performing-low-orbit-rendezvous).
 
 # Getting Help
 ## IRC channel
