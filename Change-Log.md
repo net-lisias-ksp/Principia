@@ -1,7 +1,5 @@
 # [Gallai](https://en.wikipedia.org/wiki/Tibor_Gallai)
 
-*This is a draft of the change log.  Gallai is not available yet.*
-
 ## User-facing features
 
 * Support for KSP 1.5.x, 1.6.x and 1.7.x has been removed: this version of Principia requires at least KSP 1.8.1.
