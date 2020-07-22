@@ -102,7 +102,7 @@ In stock KSP your vessel is always within the *sphere of influence* of a single 
 
 In Principia things get more complicated because (in the interesting missions at least) your vessel is not under the influence of a single celestial, but of several (or many) celestials.  This is for instance the case when navigating to a [Lagrangian points](https://en.wikipedia.org/wiki/Lagrangian_point) or when orbiting a complex system like Jupiter and its natural satellites.  Having the navball align on the celestial that currently has the largest influence is not very helpful because it would appear to flip semi-randomly depending on who pulls the stronger.
 
-The Principia UI has a button `Fix navball in plotting frame` which you can use to align the navball on the elements that are invariant in the plotting frame that you selected.  The navball also changes color to give you a visual clue of its meaning.  The exact meaning of the navball in each plotting frame is as follows:
+The navball also changes color to give you a visual clue of its meaning.  The exact meaning of the navball in each plotting frame is as follows:
 
 * Reference frame fixing the surface of a celestial
 
