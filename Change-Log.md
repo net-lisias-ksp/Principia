@@ -1,3 +1,20 @@
+# [Galois](https://en.wikipedia.org/wiki/%C3%89variste_Galois)
+
+*This is a draft of the change log; Galois is not available yet.*
+
+## User-facing features
+
+* The RCS thrust is now computed as the sum of the individual thrusts rather than the average since multi-port thrusters appear to be able to deliver full thrust down any single port.  Thanks to [@RCrockford](https://github.com/RCrockford) for this contribution.
+
+## Bug fixes
+
+* Rebasing a flight plan when past the end of the plan would crash Principia; this has been fixed.  ([#2568](https://github.com/mockingbirdnest/Principia/pull/2658))
+
+* Rebasing a flight plan would preserve the flight plan duration instead of its end time, which was inconvenient; this has been fixed by preserving the end time whenever possible.  ([#2565](https://github.com/mockingbirdnest/Principia/pull/2655))
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-07-15T22:00:00..2020-08-18T10:59:59+sort%3Acreated-asc) pull requests between Galois and Gallai.
+
+
 # [Gallai](https://en.wikipedia.org/wiki/Tibor_Gallai)
 
 ## User-facing features
