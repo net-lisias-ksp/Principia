@@ -20,8 +20,7 @@
 
 * When the periapsis of a trajectory was below the surface of an ocean, Principia would report a collision **risk**.  This has been fixed to report a *bona fide* collision.
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-07-15T22:00:00..2020-08-18T10:59:59+sort%3Acreated-asc) pull requests between Galois and Gallai.
-
+For more details see all [19](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-07-15T22:00:00..2020-08-15T18:59:59+sort%3Acreated-asc) pull requests between Galois and Gallai.
 
 # [Gallai](https://en.wikipedia.org/wiki/Tibor_Gallai)
 
