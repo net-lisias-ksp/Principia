@@ -1,4 +1,5 @@
 ### Versions
+* [Galois](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#galois)
 * [Gallai](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#gallai)
 * [Galileo](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#galileo)
 * [Fuchs](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#fuchs)
