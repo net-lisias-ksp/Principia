@@ -4,7 +4,7 @@
 
 ## User-facing features
 
-* The RCS burns for multi-port thrusters is now computed using the sum of the individual thrusts rather than the average since multi-port thrusters appear to be able to deliver full thrust down any single port.  Thanks to [@RCrockford](https://github.com/RCrockford) for this contribution ([#2571](https://github.com/mockingbirdnest/Principia/pull/2671)).
+* In the flight planner, the RCS burns for multi-port thrusters are now computed using the sum of the individual thrusts rather than the average since multi-port thrusters appear to be able to deliver full thrust down any single port.  Thanks to [@RCrockford](https://github.com/RCrockford) for this contribution ([#2571](https://github.com/mockingbirdnest/Principia/pull/2671)).
 
 * It is now possible to remove manœuvres other than the last in the flight plan.
 
