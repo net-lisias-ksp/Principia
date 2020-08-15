@@ -10,7 +10,7 @@
 
 * It is now possible to insert manœuvres at any place in the flight plan.
 
-* Manœuvres may now be colapsed/expanded (hidden/shown) in the flight plan.  This makes it easier to edit long flight plans.
+* Manœuvres may now be collapsed/expanded (hidden/shown) in the flight plan.  This makes it easier to edit long flight plans.
 
 ## Bug fixes
 
