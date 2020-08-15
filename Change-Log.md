@@ -4,7 +4,7 @@
 
 ## User-facing features
 
-* The RCS thrust is now computed as the sum of the individual thrusts rather than the average since multi-port thrusters appear to be able to deliver full thrust down any single port.  Thanks to [@RCrockford](https://github.com/RCrockford) for this contribution.
+* The RCS burns for multi-port thrusters is now computed using the sum of the individual thrusts rather than the average since multi-port thrusters appear to be able to deliver full thrust down any single port.  Thanks to [@RCrockford](https://github.com/RCrockford) for this contribution ([#2571](https://github.com/mockingbirdnest/Principia/pull/2671)).
 
 * It is now possible to remove manœuvres other than the last in the flight plan.
 
@@ -14,9 +14,9 @@
 
 ## Bug fixes
 
-* Rebasing a flight plan when past the end of the plan would crash Principia; this has been fixed.  ([#2568](https://github.com/mockingbirdnest/Principia/pull/2658))
+* Rebasing a flight plan when past the end of the plan would crash Principia; this has been fixed ([#2568](https://github.com/mockingbirdnest/Principia/pull/2658)).
 
-* Rebasing a flight plan would preserve the flight plan duration instead of its end time, which was inconvenient; this has been fixed by preserving the end time whenever possible.  ([#2565](https://github.com/mockingbirdnest/Principia/pull/2655))
+* Rebasing a flight plan would preserve the flight plan duration instead of its end time, which was inconvenient; this has been fixed by preserving the end time whenever possible ([#2565](https://github.com/mockingbirdnest/Principia/pull/2655)).
 
 * When the periapsis of a trajectory was below the surface of an ocean, Principia would report a collision **risk**.  This has been fixed to report a *bona fide* collision.
 
