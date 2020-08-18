@@ -1,7 +1,5 @@
 # [Galois](https://en.wikipedia.org/wiki/%C3%89variste_Galois)
 
-*This is a draft of the change log; Galois is not available yet.*
-
 ## User-facing features
 
 * In the flight planner, the RCS burns for multi-port thrusters are now computed using the sum of the individual thrusts rather than the average since multi-port thrusters appear to be able to deliver full thrust down any single port.  Thanks to [@RCrockford](https://github.com/RCrockford) for this contribution ([#2571](https://github.com/mockingbirdnest/Principia/pull/2671)).
