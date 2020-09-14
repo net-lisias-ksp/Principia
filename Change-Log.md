@@ -8,13 +8,13 @@ Support for KSP 1.10.1 has been added: this version supports 1.8.1, 1.9.1, and 1
 
 Principia used to save the prediction on scene changes.  However, the prediction could be quite large for interplanetary travel, and this could cause scene changes to take several minutes.  This has been fixed by not saving the prediction and recomputing it after a scene change.  This should make the game more responsive and should alleviate user discomfort ([#2685](https://github.com/mockingbirdnest/Principia/pull/2685)).
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-08-15T19:00:00..2020-09-14T21:59:59+sort%3Acreated-asc) pull requests between Gateaux and Galois.
+For more details see all [37](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-08-15T19:00:00..2020-09-14T21:59:59+sort%3Acreated-asc) pull requests between Gateaux and Galois.
 
 # [Galois](https://en.wikipedia.org/wiki/%C3%89variste_Galois)
 
 ## User-facing features
 
-* In the flight planner, the RCS burns for multi-port thrusters are now computed using the sum of the individual thrusts rather than the average since multi-port thrusters appear to be able to deliver full thrust down any single port.  Thanks to [@RCrockford](https://github.com/RCrockford) for this contribution ([#2671](https://github.com/mockingbirdnest/Principia/pull/2671)).
+* In the flight planner, the RCS burns for multi-port thrusters are now computed using the sum of the individual thrusts rather than the average since multi-port thrusters appear to be able to deliver full thrust down any single port.  Thanks to [@RCrockford](https://github.com/RCrockford) for this contribution ([#2571](https://github.com/mockingbirdnest/Principia/pull/2571)).
 
 * It is now possible to remove manœuvres other than the last in the flight plan.
 
