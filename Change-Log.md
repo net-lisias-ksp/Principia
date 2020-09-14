@@ -1,12 +1,20 @@
 # [Gateaux](https://en.wikipedia.org/wiki/Ren%C3%A9_Gateaux)
 
+## User-facing features
+
+Support for KSP 1.10.1 has been added: this version supports 1.8.1, 1.9.1, and 1.10.1.  Please note that the behaviour of Principia in the presence of comets is hard to test, so users who encounter problems when comets are present are invited to report bugs.
+
+## Bug fixes
+
+Principia used to save the prediction on scene changes.  However, the prediction could be quite large for interplanetary travel, and this could cause scene changes to take several minutes.  This has been fixed by not saving the prediction and recomputing it after a scene change.  This should make the game more responsive and should alleviate user discomfort ([#2685](https://github.com/mockingbirdnest/Principia/pull/2685)).
+
 For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-08-15T19:00:00..2020-09-14T21:59:59+sort%3Acreated-asc) pull requests between Gateaux and Galois.
 
 # [Galois](https://en.wikipedia.org/wiki/%C3%89variste_Galois)
 
 ## User-facing features
 
-* In the flight planner, the RCS burns for multi-port thrusters are now computed using the sum of the individual thrusts rather than the average since multi-port thrusters appear to be able to deliver full thrust down any single port.  Thanks to [@RCrockford](https://github.com/RCrockford) for this contribution ([#2571](https://github.com/mockingbirdnest/Principia/pull/2671)).
+* In the flight planner, the RCS burns for multi-port thrusters are now computed using the sum of the individual thrusts rather than the average since multi-port thrusters appear to be able to deliver full thrust down any single port.  Thanks to [@RCrockford](https://github.com/RCrockford) for this contribution ([#2671](https://github.com/mockingbirdnest/Principia/pull/2671)).
 
 * It is now possible to remove manœuvres other than the last in the flight plan.
 
@@ -18,7 +26,7 @@ For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls
 
 * Rebasing a flight plan when past the end of the plan would crash Principia; this has been fixed ([#2568](https://github.com/mockingbirdnest/Principia/pull/2658)).
 
-* Rebasing a flight plan would preserve the flight plan duration instead of its end time, which was inconvenient; this has been fixed by preserving the end time whenever possible ([#2565](https://github.com/mockingbirdnest/Principia/pull/2655)).
+* Rebasing a flight plan would preserve the flight plan duration instead of its end time, which was inconvenient; this has been fixed by preserving the end time whenever possible ([#2665](https://github.com/mockingbirdnest/Principia/pull/2655)).
 
 * When the periapsis of a trajectory was below the surface of an ocean, Principia would report a collision **risk**.  This has been fixed to report a *bona fide* collision.
 
