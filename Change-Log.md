@@ -1,3 +1,7 @@
+# [Gateaux](https://en.wikipedia.org/wiki/Ren%C3%A9_Gateaux)
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-08-15T19:00:00..2020-09-14T21:59:59+sort%3Acreated-asc) pull requests between Gateaux and Galois.
+
 # [Galois](https://en.wikipedia.org/wiki/%C3%89variste_Galois)
 
 ## User-facing features
