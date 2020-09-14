@@ -24,7 +24,7 @@ For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls
 
 ## Bug fixes
 
-* Rebasing a flight plan when past the end of the plan would crash Principia; this has been fixed ([#2568](https://github.com/mockingbirdnest/Principia/pull/2658)).
+* Rebasing a flight plan when past the end of the plan would crash Principia; this has been fixed ([#2658](https://github.com/mockingbirdnest/Principia/pull/2658)).
 
 * Rebasing a flight plan would preserve the flight plan duration instead of its end time, which was inconvenient; this has been fixed by preserving the end time whenever possible ([#2665](https://github.com/mockingbirdnest/Principia/pull/2655)).
 
