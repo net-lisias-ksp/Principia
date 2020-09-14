@@ -1,5 +1,7 @@
 # [Gateaux](https://en.wikipedia.org/wiki/Ren%C3%A9_Gateaux)
 
+*This is a draft of the change log.  Gateaux is not available yet.*
+
 ## User-facing features
 
 Support for KSP 1.10.1 has been added: this version supports 1.8.1, 1.9.1, and 1.10.1.  Please note that the behaviour of Principia in the presence of comets is hard to test, so users who encounter problems when comets are present are invited to report bugs.
