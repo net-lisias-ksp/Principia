@@ -1,6 +1,6 @@
-This page is a bit of a wall of text.  Why should you read it, when you have just downloaded Principia and want to go play with it and have fun?
+This page is a bit of a wall of text.  Why should you read it? Especially when you have just downloaded Principia and want to go play with it and have fun?
 
-Well, it turns out that N-body celestial mechanics is rather more complicated than the 2-body simplification offered by stock KSP.  In order to help planning and understanding elaborate missions that take advantage of N-body physics, Principia provides a number of tools that let you look at trajectories in different frames, use more advanced navballs and plan complex flight paths.
+Well, it turns out that N-body celestial mechanics is _rather_ more complicated than the 2-body simplification offered by stock KSP.  In order to help planning and understanding elaborate missions that take advantage of N-body physics, Principia provides a number of tools that let you look at trajectories in different frames, use more advanced navballs and plan complex flight paths.
 
 So if you want to become a senior rocket pilot, to execute [horseshoe orbits](https://en.wikipedia.org/wiki/Horseshoe_orbit), [Lissajous orbits](https://en.wikipedia.org/wiki/Lissajous_orbit), [heliosynchronous orbits](https://en.wikipedia.org/wiki/Sun-synchronous_orbit) and [ballistic captures](https://en.wikipedia.org/wiki/Ballistic_capture), please read on.  Oh, and you'll be able to say these [six words you never say at NASA](https://xkcd.com/1244/).
 
@@ -24,7 +24,7 @@ For the active vessel, Principia may display three trajectories:
 * The *flight plan*, painted in alternating segments of solid pink ![](http://via.placeholder.com/10/ff81c0?text=%20) and dashed periwinkle blue ![](http://via.placeholder.com/10/8f99fb?text=%20), shows where your vessel will go if you execute the planned flight plan with no errors (more on flight planning later).
 
 If there is a target vessel and the selected frame is not centred on the target, the trajectory of the target is also displayed:
-* its history is shown in goldenrod ![](http://via.placeholder.com/10/fac205?text=%20);
+* its history is shown in goldenrod ![](http://via.placeholder.com/10/fac205?text=%20).
 * its prediction is shown in light mauve ![](http://via.placeholder.com/10/c292a1?text=%20).
 
 The main Principia UI let you control the length of the history (`Max history length`) and the settings of the prediction and flight plan (`Tolerance` and `Length` under `Prediction Settings`).  There are trade-offs in using these parameters: keeping a long history is aesthetically pleasing but it may also be confusing and may consume a lot of memory.  Computing a long prediction (or flight plan) with a low tolerance may end up consuming lots of CPU and make the game feel unresponsive.  Use your judgement: you probably don't need a 1 metre tolerance when planning a multi-month trip to Jupiter, but you may need that when entering orbit.
