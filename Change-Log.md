@@ -1,3 +1,13 @@
+# [Gauss](https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss)
+
+*This is a draft of the change log; Gauss is not available yet.*
+
+## Bug fixes
+
+* Principia would sometimes crash when decoupling or destroying parts with the error `other != nullptr`.  This has been fixed by properly performing inertia tensor diagonalizations for parts having near exact symmetries ([#2716](https://github.com/mockingbirdnest/Principia/pull/2716)). 
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-09-14T22:00:00..2020-10-14T16:59:59+sort%3Acreated-asc) pull requests between Gauss and Gateaux.
+
 # [Gateaux](https://en.wikipedia.org/wiki/Ren%C3%A9_Gateaux)
 
 ## User-facing features
