@@ -2,7 +2,7 @@
 
 ## User-facing features
 
-* The implementation of vessel trajectories has been optimized to make iterations cheaper by reducing heap allocations/deallocations.  This brings a 5x-10x speedup on computations for which iteration is critical (drawing, finding apsides, etc.).  Thanks to @rnlahaye for a very valuable contribution ([#2776](https://github.com/mockingbirdnest/Principia/pull/2776)).
+* The implementation of vessel trajectories has been optimized to make iterations cheaper by reducing heap allocations/deallocations.  This brings a 5x-10x speedup on computations for which iteration is critical (drawing, finding apsides, etc.).  Thanks to [@rnlahaye](https://github.com/rnlahaye) for a very valuable contribution ([#2776](https://github.com/mockingbirdnest/Principia/pull/2776)).
 
 ## Bug fixes
 
