@@ -1,3 +1,16 @@
+# [Гельфанд](https://en.wikipedia.org/wiki/Israel_Gelfand)
+
+## User-facing features
+
+* The implementation of vessel trajectories has been optimized to make iterations cheaper by reducing heap allocations/deallocations.  This brings a 5x-10x speedup on computations for which iteration is critical (drawing, finding apsides, etc.).  Thanks to @rnlahaye for a very valuable contribution ([#2776](https://github.com/mockingbirdnest/Principia/pull/2776)).
+
+## Bug fixes
+
+* Principia would sometimes try to compute the closest approaches between a vessel and itself, and would crash when doing so.  This has been fixed by detecting this situation and exiting the computation early ([#2640](https://github.com/mockingbirdnest/Principia/pull/2640)).
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-10-14T17:00:00..2020-11-14T18:59:59+sort%3Acreated-asc) pull requests between Гельфанд and Gauss.
+
+
 # [Gauss](https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss)
 
 ## Bug fixes
