@@ -6,7 +6,7 @@
 
 * The orbit analyzer is now always active in the background and displays the result of its latest analysis in the `Analysis` button.  To do so, it automatically detects the primary celestial body.  Its computation is interrupted when the mission duration changes or when a different vessel is selected, so its effect on performance is minimal.
 
-* The colors and styles used to display the trajectories may now be configured using a ModuleManager patch.  Thanks to [@RCrockford](https://github.com/RCrockford) for his contribution ([#2816](https://github.com/mockingbirdnest/Principia/pull/2816)).
+* The colours and styles used to display the trajectories may now be configured using a ModuleManager patch.  Thanks to [@RCrockford](https://github.com/RCrockford) for his contribution ([#2816](https://github.com/mockingbirdnest/Principia/pull/2816)).
 
 ## Bug fixes
 
