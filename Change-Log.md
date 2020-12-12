@@ -6,7 +6,9 @@
 
 * The orbit analyzer is now always active in the background and displays the result of its latest analysis in the `Analysis` button.  To do so, it automatically detects the primary celestial body.  Its computation is interrupted when the mission duration changes or when a different vessel is selected, so its effect on performance is minimal.
 
-* 
+* The colors and styles used to display the trajectories may now be configured using a ModuleManager patch.  Thanks to [@RCrockford](https://github.com/RCrockford) for his contribution ([#2816](https://github.com/mockingbirdnest/Principia/pull/2816)).
+
+* Principia would occasionally crash while descending towards the surface of a body.  This has been fixed by detecting trajectories that get too close to the gravitational singularity and have absurd orbital elements ([#2811](https://github.com/mockingbirdnest/Principia/pull/2811)).
 
 ## Bug fixes
 
