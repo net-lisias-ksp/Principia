@@ -1,3 +1,13 @@
+# [Гельфонд][https://en.wikipedia.org/wiki/Alexander_Gelfond]
+
+*This is a draft of the change log; Гельфонд is not available yet.*
+
+## User-facing features
+
+## Bug fixes
+
+For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-11-14T20:00:00..2020-12-12T15:59:59+sort%3Acreated-asc) pull requests between Гельфонд and Гельфанд.
+
 # [Гельфанд](https://en.wikipedia.org/wiki/Israel_Gelfand)
 
 ## User-facing features
