@@ -8,9 +8,9 @@
 
 * The colors and styles used to display the trajectories may now be configured using a ModuleManager patch.  Thanks to [@RCrockford](https://github.com/RCrockford) for his contribution ([#2816](https://github.com/mockingbirdnest/Principia/pull/2816)).
 
-* Principia would occasionally crash while descending towards the surface of a body.  This has been fixed by detecting trajectories that get too close to the gravitational singularity and have absurd orbital elements ([#2811](https://github.com/mockingbirdnest/Principia/pull/2811)).
-
 ## Bug fixes
+
+* Principia would occasionally crash while descending towards the surface of a body.  This has been fixed by detecting trajectories that get too close to the gravitational singularity and have absurd orbital elements ([#2811](https://github.com/mockingbirdnest/Principia/pull/2811)).
 
 For more details see all [29](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-11-14T20:00:00..2020-12-12T15:59:59+sort%3Acreated-asc) pull requests between Гельфонд and Гельфанд.
 
