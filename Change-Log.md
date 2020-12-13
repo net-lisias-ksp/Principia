@@ -4,7 +4,8 @@
 
 ## User-facing features
 
-* The orbit analyzer is now always active in the background and displays the result of its latest analysis in the `Analysis` button.  To do so, it automatically detects the primary celestial body.  Its computation is interrupted when the mission duration changes or when a different vessel is selected, so its effect on performance is minimal.
+* The orbit analyzer is now always active in the background and displays a summary of its latest analysis in the `Analysis` button.  To do so, it automatically detects the primary celestial body.  When the orbit analysis window is open, changing the mission duration restarts the analysis,
+avoiding situations where the window is stuck analysing an unwanted trajectory for a long period of time. This is a step towards having ±1 revolution buttons in the flight plan.
 
 * The colours and styles used to display the trajectories may now be configured using a ModuleManager patch.  Thanks to [@RCrockford](https://github.com/RCrockford) for his contribution ([#2816](https://github.com/mockingbirdnest/Principia/pull/2816)).
 
