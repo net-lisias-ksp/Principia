@@ -272,11 +272,11 @@ Each of these nodes contain the same set of values:
 >  }
 >  prediction {
 >    colour = #ed0dd9    // Fuchsia
->    style = dashed
+>    style = solid
 >  }
 >  flight_plan {
 >    colour = #8f99fb    // Periwinkle Blue
->    style = solid
+>    style = dashed
 >  }
 >  burn {
 >    colour = #ff81c0    // Pink
