@@ -238,6 +238,18 @@ given `fixed_step_size_integrator` at the given `integration_step_size`.  The re
 >}
 >```
 
+**☡ The `history` and `psychohistory` nodes are reserved for internal use.
+Modders should not define these nodes.**
+
+The `history` node contains the following values:
+- `fixed_step_size_integrator`, a required `fixed_step_size_integrator`;
+- `integration_step_size`, a required `quantity(time)`.
+
+The `psychohistory` node contains the following values:
+- `adaptive_step_size_integrator`, a required `adaptive_step_size_integrator`;
+- `length_integration_tolerance`, a required `quantity(length)`;
+- `speed_integration_tolerance`, a required `quantity(length / time)`.
+
 ### The `principia_draw_styles` configuration
 The `principia_draw_styles` configuration consists of:
 - an optional `history` node;
@@ -260,7 +272,7 @@ Each of these nodes contain the same set of values:
 >  }
 >  prediction {
 >    colour = #ed0dd9    // Fuchsia
->    style = solid
+>    style = dashed
 >  }
 >  flight_plan {
 >    colour = #8f99fb    // Periwinkle Blue
@@ -280,18 +292,6 @@ Each of these nodes contain the same set of values:
 >  }
 >}
 >```
-
-**☡ The `history` and `psychohistory` nodes are reserved for internal use.
-Modders should not define these nodes.**
-
-The `history` node contains the following values:
-- `fixed_step_size_integrator`, a required `fixed_step_size_integrator`;
-- `integration_step_size`, a required `quantity(time)`.
-
-The `psychohistory` node contains the following values:
-- `adaptive_step_size_integrator`, a required `adaptive_step_size_integrator`;
-- `length_integration_tolerance`, a required `quantity(length)`;
-- `speed_integration_tolerance`, a required `quantity(length / time)`.
 
 ## Annex: choosing a fixed step size integrator
 The symmetric linear multistep integrators tend to be faster when they have converged to small errors,
