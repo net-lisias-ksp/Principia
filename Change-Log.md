@@ -1,7 +1,5 @@
 # [Гельфонд](https://en.wikipedia.org/wiki/Alexander_Gelfond)
 
-*This is a draft of the change log; Гельфонд is not available yet.*
-
 ## User-facing features
 
 * The orbit analyzer is now always active in the background and displays a summary of its latest analysis in the `Analysis` button.  To do so, it automatically detects the primary celestial body.  When the orbit analysis window is open, changing the mission duration restarts the analysis,
