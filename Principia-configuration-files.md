@@ -65,13 +65,24 @@ It is interpreted as [TT (*Temps Terrestre*, terrestrial time)](https://www.iers
 
 > *Example*: `JD2451545.0`, `MJD51544.5`, `2000-01-01T12:00:00`, `1999-W52-6T12:00:00,000`, `2000001T120000` all represent the standard epoch [J2000](https://en.wikipedia.org/wiki/J2000).
 
+<a id=colour></a>[`colour`](#colour) is an HTML style colour code in RGB order.
+
+> *Example*: `#aaff32`
+
+<a id=style></a>[`style`](#style) is one of the following styles, as defined
+[in ksp_plugin_adapter/gl_lines.cs](https://github.com/mockingbirdnest/Principia/blob/3e38c957ce70d276c7a2d0944d69e3b01ef82236/ksp_plugin_adapter/gl_lines.cs#L7-10):
+```
+style            ⩴ solid | dashed | faded
+```
+
 ## The top-level configurations
 
-Principia supports three top-level configuration nodes.
+Principia supports four top-level configuration nodes.
 There may be at most one of each node [for instance, having two `principia_gravity_model` nodes will result in a crash].
 These are `principia_gravity_model` which defines the physical properties of the celestial bodies,
 `principia_initial_state` which defines their initial positions and velocities,
-and `principia_numerics_blueprint` which defines the numerical methods used to compute the evolution of the system.
+`principia_numerics_blueprint` which defines the numerical methods used to compute the evolution of the system,
+and `principia_draw_styles` which defines drawing styles for trajectories.
 
 If `principia_initial_state` is provided, it must define the initial positions and velocities for all celestial bodies,
 and `principia_gravity_model` must be [*sufficient*](#principia_gravity_model.body:sufficient) for all celestial bodies.
@@ -223,6 +234,49 @@ given `fixed_step_size_integrator` at the given `integration_step_size`.  The re
 >    integration_step_size      = 10 min
 >    fitting_tolerance = 1 mm
 >    geopotential_tolerance = 0x1.0p-24
+>  }
+>}
+>```
+
+### The `principia_draw_styles` configuration
+The `principia_draw_styles` configuration consists of:
+- an optional `history` node;
+- an optional `prediction` node;
+- an optional `flight_plan` node;
+- an optional `burn` node;
+- an optional `target_history` node;
+- an optional `target_prediction` node.
+
+Each of these nodes contain the same set of values:
+- `colour`, a required `colour`;
+- `style`, a required `style`.
+
+> *Example*: The following `principia_draw_styles` node describes the default draw styles used by Principia.
+> ```ini
+>principia_draw_styles {
+>  history {
+>    colour = #aaff32    // Lime
+>    style = faded
+>  }
+>  prediction {
+>    colour = #ed0dd9    // Fuchsia
+>    style = solid
+>  }
+>  flight_plan {
+>    colour = #8f99fb    // Periwinkle Blue
+>    style = solid
+>  }
+>  burn {
+>    colour = #ff81c0    // Pink
+>    style = solid
+>  }
+>  target_history {
+>    colour = #fac205    // Goldenrod
+>    style = faded
+>  }
+>  target_prediction {
+>    colour = #c292a1    // LightMauve
+>    style = solid
 >  }
 >}
 >```
