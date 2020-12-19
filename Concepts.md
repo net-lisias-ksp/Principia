@@ -10,9 +10,12 @@ Principia changes some of the ways that you interact with the map view compared 
 
 * To select a target vessel in map view, check `Select target vessel...` in the main Principia window, and click on the target.
 
+* To select a target celestial in map view, open "KSP Features and check 'Select target celestial' in the main Principia window, and click on target. If playing in career, you will need to have upgraded your Tracking Station to the appropriate level.
+
 * To switch to a vessel from map view, target it then press `Switch To` in the main Principia window.
 
 * To centre the camera on a celestial or vessel, left-click on it.
+
 
 # Trajectories
 
