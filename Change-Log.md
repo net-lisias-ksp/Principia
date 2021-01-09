@@ -12,7 +12,7 @@
 
 * The predicted trajectory, and also the flight plan in map view did update very slowly whilst a target was selected, but the view was not in target-centric mode; this has been fixed by updating all predictions simultaneously ([#2824](https://github.com/mockingbirdnest/Principia/pull/2824)).
 
-* The vessel would jump a bit on liftoff and when Kerbals started or stopped doing an EVA.  This was hardly visible, but with the introduction of EVA construction much larger mass changes are possible which made the problem more visible.
+* The vessel would jump a bit on liftoff and when Kerbals started or stopped doing an EVA.  This was hardly visible, but with the introduction of EVA construction much larger mass changes are possible which made the problem more visible.  This has been fixed by correctly adjusting the position based on the Krakensbane velocity.
 
 For more details see all [30](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-12-12T19:00:00..2021-01-09T17:59:59+sort%3Acreated-asc) pull requests between Germain and Гельфонд.
 
