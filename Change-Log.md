@@ -1,5 +1,13 @@
 # [Germain](https://en.wikipedia.org/wiki/Sophie_Germain)
 
+*This is a draft of the change log; Germain is not available yet.*
+
+## User-facing features
+
+Support for KSP 1.10.1 has been added: this version supports 1.8.1, 1.9.1, 1.10.1, and 1.11.0.  Please note that the behaviour of Principia in the presence of EVA construction may be unphysical and lead to reactionless motion because of the way KSP represents part changes.  We will try to improve this in the future, but may be limited by the APIs exported by KSP.
+
+## Bug fixes
+
 For more details see all [30](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-12-12T19:00:00..2021-01-09T17:59:59+sort%3Acreated-asc) pull requests between Germain and Гельфонд.
 
 # [Гельфонд](https://en.wikipedia.org/wiki/Alexander_Gelfond)
