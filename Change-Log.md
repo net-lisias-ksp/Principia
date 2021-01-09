@@ -4,15 +4,15 @@
 
 ## User-facing features
 
-* Support for KSP 1.10.1 has been added: this version supports 1.8.1, 1.9.1, 1.10.1, and 1.11.0.  Please note that the behaviour of Principia in the presence of EVA construction may be unphysical and lead to reactionless motion because of the way KSP represents part changes.  We will try to improve this in the future, but may be limited by the APIs exported by KSP.
+* Support for KSP 1.10.1 has been added: this version supports 1.8.1, 1.9.1, 1.10.1, and 1.11.0.  Please note that the behaviour of Principia in the presence of EVA construction may be unphysical and lead to reactionless motion because of the way KSP represents part changes.  We will try to improve this in the future, but may be limited by the APIs exposed by KSP.
 
 * The flight plan analyser is now integrated with the flight plan, and may be used to determine the shape of the trajectory at the end of the plan.  This is useful to verify that the flight plan (if executed correctly) will put the vessel in the desired orbit around a celestial.
 
 ## Bug fixes
 
-* The predicted trajectory, and also the flight plan in map view did update very slowly whilst a target was selected, but the view was not in target-centric mode; this has been fixed by updating all predictions simultaneously ([#2824](https://github.com/mockingbirdnest/Principia/pull/2824)).
+* The predicted trajectory, and also the flight plan in map view, did update very slowly whilst a target was selected, but the view was not in target-centric mode; this has been fixed by updating all predictions simultaneously ([#2824](https://github.com/mockingbirdnest/Principia/pull/2824)).
 
-* The vessel would jump a bit on liftoff and when Kerbals started or stopped doing an EVA.  This was hardly visible, but with the introduction of EVA construction much larger mass changes are possible which made the problem more visible.  This has been fixed by correctly adjusting the position based on the Krakensbane velocity.
+* The vessel would jump a bit on liftoff and when Kerbals started or stopped doing an EVA.  This was hardly visible, but with the introduction of EVA construction much larger mass changes are possible which made the problem more prominent.  This has been fixed by correctly adjusting the position based on the Krakensbane velocity.
 
 For more details see all [30](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-12-12T19:00:00..2021-01-09T17:59:59+sort%3Acreated-asc) pull requests between Germain and Гельфонд.
 
