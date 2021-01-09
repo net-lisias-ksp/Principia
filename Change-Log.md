@@ -1,3 +1,7 @@
+# [Germain](https://en.wikipedia.org/wiki/Sophie_Germain)
+
+For more details see all [30](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2020-12-12T19:00:00..2021-01-09T17:59:59+sort%3Acreated-asc) pull requests between Germain and Гельфонд.
+
 # [Гельфонд](https://en.wikipedia.org/wiki/Alexander_Gelfond)
 
 ## User-facing features
