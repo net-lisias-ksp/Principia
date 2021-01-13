@@ -1,7 +1,5 @@
 # [Germain](https://en.wikipedia.org/wiki/Sophie_Germain)
 
-*This is a draft of the change log; Germain is not available yet.*
-
 ## User-facing features
 
 * Support for KSP 1.10.1 has been added: this version supports 1.8.1, 1.9.1, 1.10.1, and 1.11.0.  Please note that the behaviour of Principia in the presence of EVA construction may be unphysical and lead to reactionless motion because of the way KSP represents part changes.  We will try to improve this in the future, but may be limited by the APIs exposed by KSP.
