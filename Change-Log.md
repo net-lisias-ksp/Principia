@@ -8,7 +8,11 @@
 
 ## Bug fixes
 
-* Principia used to crash in some cases involving explosion of a nearby vessel; this was due to numerical instabilities in the diagonalization of the inertia tensor and has been fixed by rewriting that code to use a well-conditioned algorithm ([#2853(https://github.com/mockingbirdnest/Principia/pull/2853)).
+* Principia used to crash in some cases involving explosion of a nearby vessel or vessel separation; this was due to numerical instabilities in the diagonalization of the inertia tensor and has been fixed by rewriting that code to use a well-conditioned algorithm ([#2853](https://github.com/mockingbirdnest/Principia/pull/2853), [#2866](https://github.com/mockingbirdnest/Principia/pull/2866)).
+
+* Principia used to crash when deleting a flight plan with the flight plan's orbital analyzer window opened; this has been fixed ([#2862](https://github.com/mockingbirdnest/Principia/pull/2862)).
+
+* Principia would sometimes crash when editing a flight plan whose last coast was very short; this has been fixed ([#2867](https://github.com/mockingbirdnest/Principia/pull/2867)).
 
 For more details see all [30](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2021-01-09T18:00:00..2021-02-09T18:59:59+sort%3Acreated-asc) pull requests between Gödel and Germain.
 
