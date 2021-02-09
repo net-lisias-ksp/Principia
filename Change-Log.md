@@ -4,7 +4,7 @@
 
 * Support for KSP 1.11.1 has been added: this version supports 1.8.1, 1.9.1, 1.10.1, 1.11.0, and 1.11.1.
 
-* Principia is now localizable, and supports English and Simplified Chinese.  Thanks to @CindyRIng for going through our code and putting in place all the localization code and the basis translations, and to @Zaikarion for helping with matters of linguistics.  We welcome feedback on the localization or contributions regarding other languages.
+* Principia is now localizable, and supports English and Simplified Chinese.  Thanks to [@CindyRIng](https://github.com/CindyRIng) for going through our code and putting in place all the localization calls and the basis translations, and to [@Zaikarion](https://github.com/Zaikarion) for helping with matters of linguistics.  We welcome feedback on the localization or contributions regarding other languages.
 
 ## Bug fixes
 
