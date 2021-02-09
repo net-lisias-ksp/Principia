@@ -1,3 +1,17 @@
+# [Gödel](https://en.wikipedia.org/wiki/Kurt_G%C3%B6del)
+
+## User-facing features
+
+* Support for KSP 1.11.1 has been added: this version supports 1.8.1, 1.9.1, 1.10.1, 1.11.0, and 1.11.1.
+
+* Principia is now localizable, and supports English and Simplified Chinese.  Thanks to @CindyRIng for going through our code and putting in place all the localization code and the basis translations, and to @Zaikarion for helping with matters of linguistics.  We welcome feedback on the localization or contributions regarding other languages.
+
+## Bug fixes
+
+* Principia used to crash in some cases involving explosion of a nearby vessel; this was due to numerical instabilities in the diagonalization of the inertia tensor and has been fixed by rewriting that code to use a well-conditioned algorithm ([#2853(https://github.com/mockingbirdnest/Principia/pull/2853)).
+
+For more details see all [30](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2021-01-09T18:00:00..2021-02-09T18:59:59+sort%3Acreated-asc) pull requests between Gödel and Germain.
+
 # [Germain](https://en.wikipedia.org/wiki/Sophie_Germain)
 
 ## User-facing features
