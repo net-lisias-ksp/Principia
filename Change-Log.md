@@ -1,5 +1,7 @@
 # [Gödel](https://en.wikipedia.org/wiki/Kurt_G%C3%B6del)
 
+*This is a draft of the change log; Gödel is not available yet.*
+
 ## User-facing features
 
 * Support for KSP 1.11.1 has been added: this version supports 1.8.1, 1.9.1, 1.10.1, 1.11.0, and 1.11.1.
