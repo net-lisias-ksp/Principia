@@ -4,13 +4,17 @@
 
 ## User-facing features
 
-* 
+* Some changes have been made to the Chinese translations to make them more idiomatic.
+
+* The computation of the prediction of vessels would sometimes do busy waiting and burn CPU for no good reason.  Thanks to [@rnlahaye](https://github.com/rnlahaye) for finding and fixing this issue.
+
+* [@rnlahaye](https://github.com/rnlahaye) discovered that Unity installs its own handlers for storage allocation and deallocation, which involves serialization through a mutex.  On macOS, mutexes are known to be very expensive, so over 80% of the CPU ended up being spent in synchronization code.  This was fixed by bypassing the Unity allocator and using the system allocator directly when creating STL containers on macOS.  This resulted in a 3× speedup when the game is idle, and a 50× speedup at high warp.  Kudos to [@rnlahaye](https://github.com/rnlahaye) for an amazing contribution ([#2899](https://github.com/mockingbirdnest/Principia/pull/2899)).
 
 ## Bug fixes
 
-*
+* Some airplanes which behaved properly in stock were hard to fly or unstable with Principia; this has tracked to improper handling of the lever arm of the parts whose centre of mass is offset ([#2808](https://github.com/mockingbirdnest/Principia/pull/2808)).
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2021-02-09T19:00:00..2021-03-11T17:29:59+sort%3Acreated-asc) pull requests between Goldbach and Gödel.
+For more details see all [9](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2021-02-09T19:00:00..2021-03-11T17:29:59+sort%3Acreated-asc) pull requests between Goldbach and Gödel.
 
 # [Gödel](https://en.wikipedia.org/wiki/Kurt_G%C3%B6del)
 
