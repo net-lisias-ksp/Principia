@@ -1,7 +1,5 @@
 # [Goldbach](https://en.wikipedia.org/wiki/Christian_Goldbach)
 
-*This is a draft of the change log; Goldbach is not available yet.*
-
 ## User-facing features
 
 * Some changes have been made to the Chinese translations to make them more idiomatic.
