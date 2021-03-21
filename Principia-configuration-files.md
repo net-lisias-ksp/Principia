@@ -293,6 +293,21 @@ Each of these nodes contain the same set of values:
 >}
 >```
 
+### The `principia_override_version_check` configuration
+
+Principia performs a strict check of the KSP version in use.  This means that, for instance, a version of Principia built for KSP 1.11.2 refuses to start in a KSP 1.11.3 or 1.12.0 installation.  We realize that users might want to try newer versions of KSP that are not yet supported by Principia, or that KSP installations might be automatically updated by Steam.  Therefore, we provide an escape hatch that makes it possible to override the version check.  Note however that there will be *no support whatsoever* if the version check is overridden.
+
+The `principia_override_version_check` configuration consists of a list of `version` values indicating for which versions of KSP the check should be overridden.
+
+> *Example*: The following `principia_override_version_check` node overrides the version check when using Principia with KSP versions 0.24.2, 1.11.3 and 2.0.666 (if that ever exists).  Obviously, while 1.11.3 is a reasonable version to try to use, there is not a chance in hell of Principia working with KSP 0.24 or with KSP 2.
+> ```ini
+> principia_override_version_check {
+>   version = 0.24.2
+>   version = 1.11.3
+>   version = 2.0.666
+> }
+> ```
+
 ## Annex: choosing a fixed step size integrator
 The symmetric linear multistep integrators tend to be faster when they have converged to small errors,
 but they can fail catastrophically if they are not yet converged.
