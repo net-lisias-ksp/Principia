@@ -98,7 +98,7 @@ We would like to hear from this.  Please create a [github issue](https://github.
 ## Windows dialog box or SIGABRT
 You probably encountered a glog `CHECK` failure. Go to `<KSP directory>\glog`, check that there is a recent `FATAL` file.  Take the most recent `FATAL` and `INFO` files, upload them on gist.  Link the gist in your github issue.
 
-## Have a crash folder, i.e., a folder whose name is the date in your KSP install directory
+## Have a crash folder, i.e., a folder whose name is the date in the `%USERPROFILE%\AppData\LocalLow\Squad\Kerbal Space Program\Crashes` directory
 Put the contents of the `error.log` on gist as well as the contents of the `output_log.txt` (a copy may exist in the crash folder, otherwise if the game has not been restarted since the crash it is found at a location is documented on the KSP fora). In that case this may either be a stock KSP bug or a bug on our side, we will determine that by looking at the logs.  Link the gist in your github issue.
 
 ## Journaling
