@@ -8,6 +8,8 @@
 
 * The mechanism for overriding the version check (for users who want to experiment with a new version of KSP before we officially support it) has been improved and [documented](https://github.com/mockingbirdnest/Principia/wiki/Principia-configuration-files#the-principia_override_version_check-configuration).  As usual, we won't support installations that override the version check.
 
+* Some strings were missing a Chinese translation, and would consequently appear in English in a Chinese installation; this has been fixed: thanks to [@WC12366](https://github.com/WC12366) for this contribution.
+
 ## Bug fixes
 
 * The trajectory produced by the orbit analyzer for long flight plans was previously not downsampled.  This would lead to excessive (and ever-increasing) memory use.  This has been fixed by downsampling them like is done for the history ([#2919](https://github.com/mockingbirdnest/Principia/pull/2919)).
