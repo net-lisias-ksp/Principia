@@ -2,6 +2,16 @@
 
 *This is a draft of the change log; Grassmann is not available yet.*
 
+## User-facing features
+
+* Support for KSP 1.11.2 has been added: this version supports 1.8.1, 1.9.1, 1.10.1, 1.11.0, 1.11.1 and 1.11.2.
+
+* The mechanism for overriding the version check (for users who want to experiment with a new version of KSP before we officially support it) has been improved and [documented](https://github.com/mockingbirdnest/Principia/wiki/Principia-configuration-files#the-principia_override_version_check-configuration).  As usual, we won't support installations that override the version check.
+
+## Bug fixes
+
+* The trajectory produced by the orbit analyzer for long flight plans was previously not downsampled.  This would lead to excessive (and ever-increasing) memory use.  This has been fixed by downsampling them like is done for the history ([#2919](https://github.com/mockingbirdnest/Principia/pull/2919)).
+
 For more details see all [x](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2021-03-11T18:30:00..2021-04-10T19:59:59+sort%3Acreated-asc) pull requests between Grassmann and Goldbach.
 
 # [Goldbach](https://en.wikipedia.org/wiki/Christian_Goldbach)
