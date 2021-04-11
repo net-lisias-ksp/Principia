@@ -1,7 +1,5 @@
 # [Grassmann](https://en.wikipedia.org/wiki/Hermann_Grassmann)
 
-*This is a draft of the change log; Grassmann is not available yet.*
-
 ## User-facing features
 
 * Support for KSP 1.11.2 has been added: this version supports 1.8.1, 1.9.1, 1.10.1, 1.11.0, 1.11.1 and 1.11.2.
@@ -14,7 +12,7 @@
 
 * The trajectory produced by the orbit analyzer for long flight plans was previously not downsampled.  This would lead to excessive (and ever-increasing) memory use.  This has been fixed by downsampling them like is done for the history ([#2919](https://github.com/mockingbirdnest/Principia/pull/2919)).
 
-For more details see all [29](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2021-03-11T18:30:00..2021-04-10T19:59:59+sort%3Acreated-asc) pull requests between Grassmann and Goldbach.
+For more details see all [30](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2021-03-11T18:30:00..2021-04-10T23:59:59+sort%3Acreated-asc) pull requests between Grassmann and Goldbach.
 
 # [Goldbach](https://en.wikipedia.org/wiki/Christian_Goldbach)
 
