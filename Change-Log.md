@@ -6,7 +6,9 @@
 
 ## Bug fixes
 
-* Principia used to crash in hard-to-reproduce scenarios involving staging, decoupling or collisions.  Procedural Fairings seemed to make these crashes more frequent, although it Principia was the real culprit.  This had been reported several times, but could only be tracked once we had a journal: it was a bug when constructing the history of a vessel using parts that were subject to an intrinsic acceleration  ([#2641](https://github.com/mockingbirdnest/Principia/pull/2641),  [#2931](https://github.com/mockingbirdnest/Principia/pull/2931), [#2967](https://github.com/mockingbirdnest/Principia/pull/2967).
+* Principia used to crash in hard-to-reproduce scenarios involving staging, decoupling or collisions.  Procedural Fairings seemed to make these crashes more frequent, but Principia was the real culprit.  This had been reported several times, but could only be tracked once we had a journal: it boiled down to a bug when constructing the history of a vessel whose parts were subject to an intrinsic acceleration  ([#2641](https://github.com/mockingbirdnest/Principia/pull/2641),  [#2931](https://github.com/mockingbirdnest/Principia/pull/2931), [#2967](https://github.com/mockingbirdnest/Principia/pull/2967)).
+
+* Switching to a vessel that didn't have a flight plan when the orbit analyser window was open would sometimes cause a crash; this has been fixed by properly destroying the orbit analyser in that case ([#2974](https://github.com/mockingbirdnest/Principia/pull/2974)).
 
 * Some operations that involved the destruction of the orbit analyser took a very long time.  This is a regression that was introduced in Grassmann and was visible, for instance when destroying the last manœuvre of a flight plan, when changing the duration of the orbit analyser, or simply when changing scenes.  This has been fixed by making the integrators interruptible ([#2957](https://github.com/mockingbirdnest/Principia/pull/2957)).
 
