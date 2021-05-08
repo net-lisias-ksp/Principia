@@ -6,6 +6,8 @@
 
 ## Bug fixes
 
+* Some operations that involved the destruction of the orbit analyser took a very long time.  This is a regression that was introduced in Grassmann and was visible, for instance when destroying the last manœuvre of a flight plan, when changing the duration of the orbit analyser, or simply when changing scenes.  This has been fixed by making the integrators interruptible ([#2957](https://github.com/mockingbirdnest/Principia/pull/2957)).
+
 For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2021-04-11T00:00:00..2021-05-08T17:59:59+sort%3Acreated-asc) pull requests between Green and Grassmann.
 
 # [Grassmann](https://en.wikipedia.org/wiki/Hermann_Grassmann)
