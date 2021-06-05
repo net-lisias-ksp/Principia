@@ -2,6 +2,11 @@
 
 *This is a draft of the change log; Gröbner is not available yet.*
 
+## User-facing features
+
+* Some operations on vessel trajectories have been optimized, with speed-ups of 3× to 5×.  While the overall speed improvement is going to be smaller than that, it should make Principia measurably faster when processing long trajectories.  Thanks to [@rnlahaye](https://github.com/rnlahaye) for another valuable contribution.  [#2981](https://github.com/mockingbirdnest/Principia/pull/2981)).
+
+
 For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2021-05-10T18:00:00..2021-06-05T17:59:59+sort%3Acreated-asc) pull requests between Gröbner and Green.
 
 
