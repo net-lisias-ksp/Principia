@@ -13,8 +13,6 @@
 
   Note that long vessel trajectories are still expensive to save/restore.  This will be addressed in a future version.  ([#2400](https://github.com/mockingbirdnest/Principia/pull/2400).)
 
-* When running on Windows with modern processors Principia will try to use a [fused multiply-add](https://en.wikipedia.org/wiki/Multiply%E2%80%93accumulate_operation#Fused_multiply%E2%80%93add) (FMA) instruction to improve the speed of some calculations.  We plan to extend the use of FMA in future versions.
-
 * Some operations on vessel trajectories have been optimized, with speed-ups of 3× to 5×.  While the overall speed improvement is going to be smaller than that, it should make Principia measurably faster when processing long trajectories.  Thanks to [@rnlahaye](https://github.com/rnlahaye) for another valuable contribution.
 
 ## Bug fixes
