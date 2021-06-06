@@ -4,6 +4,15 @@
 
 ## User-facing features
 
+* Progress has been made on the problem of long scene changes.  Consider a game that takes place in 2020 with RealSolarSystem.  Because the origin of time in RealSolarSystem is 1950, prior to this version every scene change was involving a complete re-integration of the celestials from 1950 to 2020, which took 2-3 minutes and was blocking the UI thread.
+
+  Starting with this version, Principia performs the re-integration of celestials asynchronously.  Furthermore, this computation is done *backwards* by segments of 180 days.  This approach has two benefits:
+
+  1. After a scene change, the UI becomes available quickly (seconds) and the trajectories of the celestials reappears progressively (about 1 segment per second). This make the game much more responsive at the expense of some flickering.
+  1. It is virtually never necessary to recompute the trajectories all the way back to 1950: a user playing around 2020 will probably only display a few months of history, which should reconstruct in seconds.
+
+  Note that long vessel trajectories are still expensive to save/restore.  This will be addressed in a future version.
+
 * Some operations on vessel trajectories have been optimized, with speed-ups of 3× to 5×.  While the overall speed improvement is going to be smaller than that, it should make Principia measurably faster when processing long trajectories.  Thanks to [@rnlahaye](https://github.com/rnlahaye) for another valuable contribution.  ([#2981](https://github.com/mockingbirdnest/Principia/pull/2981).)
 
 ## Bug fixes
