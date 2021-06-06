@@ -11,15 +11,17 @@
   1. After a scene change, the UI becomes available quickly (seconds) and the trajectories of the celestials reappears progressively (about 1 segment per second). This make the game much more responsive at the expense of some flickering.
   1. It is virtually never necessary to recompute the trajectories all the way back to 1950: a user playing around 2020 will probably only display a few months of history, which should reconstruct in seconds.
 
-  Note that long vessel trajectories are still expensive to save/restore.  This will be addressed in a future version.
+  Note that long vessel trajectories are still expensive to save/restore.  This will be addressed in a future version.  ([#2400](https://github.com/mockingbirdnest/Principia/pull/2400).)
 
-* Some operations on vessel trajectories have been optimized, with speed-ups of 3× to 5×.  While the overall speed improvement is going to be smaller than that, it should make Principia measurably faster when processing long trajectories.  Thanks to [@rnlahaye](https://github.com/rnlahaye) for another valuable contribution.  ([#2981](https://github.com/mockingbirdnest/Principia/pull/2981).)
+* When running on Windows with modern processors Principia will try to use a [fused multiply-add](https://en.wikipedia.org/wiki/Multiply%E2%80%93accumulate_operation#Fused_multiply%E2%80%93add) (FMA) instruction to improve the speed of some calculations.  We plan to extend the use of FMA in future versions.
+
+* Some operations on vessel trajectories have been optimized, with speed-ups of 3× to 5×.  While the overall speed improvement is going to be smaller than that, it should make Principia measurably faster when processing long trajectories.  Thanks to [@rnlahaye](https://github.com/rnlahaye) for another valuable contribution.
 
 ## Bug fixes
 
 * Principia would sometimes crash when decoupling vessels with FARc Mader installed.  This has been traced to a vessel being close to destruction and having parts whose degrees of freedom were meaningless.  This was fixed by ignoring such vessels.  ([#2922](https://github.com/mockingbirdnest/Principia/pull/2922).)
 
-For more details see all [xx](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2021-05-10T18:00:00..2021-06-05T17:59:59+sort%3Acreated-asc) pull requests between Gröbner and Green.
+For more details see all [42](https://github.com/mockingbirdnest/Principia/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+merged%3A2021-05-10T18:00:00..2021-06-05T17:59:59+sort%3Acreated-asc) pull requests between Gröbner and Green.
 
 # [Green](https://en.wikipedia.org/wiki/George_Green_(mathematician))
 
