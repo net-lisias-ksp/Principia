@@ -1,4 +1,5 @@
 ### Versions
+* [Gröbner](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#gr%C3%B6bner)
 * [Green](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#green)
 * [Grassmann](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#grassmann)
 * [Goldbach](https://github.com/mockingbirdnest/Principia/wiki/Change-Log#goldbach)
