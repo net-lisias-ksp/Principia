@@ -1,7 +1,5 @@
 # [Gröbner](https://en.wikipedia.org/wiki/Wolfgang_Gr%C3%B6bner)
 
-*This is a draft of the change log; Gröbner is not available yet.*
-
 ## User-facing features
 
 * Progress has been made on the problem of long scene changes.  Consider a game that takes place in 2020 with RealSolarSystem.  Because the origin of time in RealSolarSystem is 1950, prior to this version every scene change was involving a complete re-integration of the celestials from 1950 to 2020, which took 2-3 minutes and was blocking the UI thread.
